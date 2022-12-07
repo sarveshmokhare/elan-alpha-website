@@ -7,19 +7,15 @@ import Competitions from './Pages/Competitions'
 import Sponsors from './Pages/Sponsors'
 import Litfest from './Pages/Litfest'
 import ThemeState from './Contexts/ThemeState'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
 
 function App() {
 
   return (
     <ThemeState>
       <Router>
-        <nav>
-          <Link to="/"> Home </Link>
-          <Link to="/events"> Events </Link>
-          <Link to="/competitions"> Competitions </Link>
-          <Link to="/sponsors"> Sponsors </Link>
-          <Link to="/litfest"> Litfest </Link>
-        </nav>
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/events" element={<Events />} />
@@ -27,9 +23,7 @@ function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/litfest" element={<Litfest />} />
         </Routes>
-        <footer>
-          Footer
-        </footer>
+        <Footer />
       </Router>
     </ThemeState>
   )
