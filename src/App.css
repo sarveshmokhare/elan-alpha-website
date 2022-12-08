@@ -1,17 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: century-schoolbook;
+  src: url(/src/assets/century_schoolbook.ttf);
+}
+
 #root {
   width: 100vw;
   margin: 0;
+  font-family: century-schoolbook;
 }
 
 /* desktop */
-@media (max-width: 1024px){
-  
-}
+@media (max-width: 1024px) {}
+
 /* tablet */
-@media (max-width: 850px){
-  
-}
+@media (max-width: 850px) {}
+
 /* mobile */
-@media (max-width: 480px){
-  
-}
+@media (max-width: 480px) {}

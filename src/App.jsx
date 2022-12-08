@@ -9,7 +9,6 @@ import Litfest from './Pages/Litfest'
 import ThemeState from './Contexts/ThemeState'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import styles from "./index.css"
 
 function App() {
 
