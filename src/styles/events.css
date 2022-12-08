@@ -1,3 +1,50 @@
 #dark .heading{
-    color: aliceblue;
+    color: rgb(254, 211, 149);
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 3rem;
+    padding: 2rem 0 1rem 0;
+    display:block;
 }
+#dark{
+    background-color: #080F24;
+
+}
+
+#dark #options{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#dark #options button{
+    /* width: max-content; */
+    height: 2.5rem;
+    border-radius: .2rem;
+    background-color: #080F24;
+    color: #FED395;
+}
+#dark #options button.active{
+    /* width: max-content; */
+    color: #080F24;
+    height: 2.5rem;
+    border-radius: .2rem;
+    background-color: rgb(254, 211, 149)
+}
+
+#dark #content div{
+    display: none;
+}
+
+#dark #content div.active{
+    display: block;
+}
+/* #dark #pronites{
+    display: block;
+}
+
+#dark #workshops{
+    display: none;
+}
+
+#dark #informals{
+    display: none;
+} */
