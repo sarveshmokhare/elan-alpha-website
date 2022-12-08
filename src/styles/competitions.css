@@ -1,0 +1,66 @@
+#dark .heading {
+  color: rgb(254, 211, 149);
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3rem;
+  padding: 2rem 0 1rem 0;
+  display: block;
+}
+
+#dark {
+  background-color: #080F24;
+
+}
+
+#dark #options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#dark #options button {
+  /* width: max-content; */
+  height: 2.5rem;
+  border-radius: .2rem;
+  background-color: #080F24;
+  color: #FED395;
+  padding: 1rem;
+}
+
+#dark #options button.active {
+  /* width: max-content; */
+  color: #080F24;
+  height: 2.5rem;
+  border-radius: .2rem;
+  background-color: rgb(254, 211, 149)
+}
+
+#dark #content .sub_content {
+  display: none;
+  color: aliceblue;
+}
+
+#dark #content .sub_content.active {
+  display: block;
+  color: aliceblue;
+}
+
+/* #dark #pronites{
+    display: block;
+}
+
+#dark #workshops{
+    display: none;
+}
+
+#dark #informals{
+    display: none;
+} */
+#dark #content .sub_content {
+  margin-top: 5rem;
+}
+
+#dark #content .sub_content .sub_heading {
+  font-family: 'Cinzel Decorative';
+  font-size: 3rem;
+  color: rgb(254, 211, 149);
+  font-weight: 800;
+}

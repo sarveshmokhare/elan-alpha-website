@@ -19,17 +19,17 @@ function Events() {
         <button onClick={click} className="informals" >Informals</button>
       </div>
       <div id="content">
-        <div id="pronites" className="pronites active">
+        <div id="pronites" className="sub_content pronites active">
           <div className='sub_heading' >
             PRONITES
           </div>
         </div>
-        <div className="workshops">
-          <div className='sub_heading' >
+        <div className="sub_content workshops">
+          <div className='sub_heading'>
             WORKSHOPS
           </div>
         </div>
-        <div className="informals">
+        <div className="sub_content informals">
           <div className='sub-heading' >
             INFORMALS
           </div>
@@ -45,7 +45,7 @@ function click(event){
 
   console.log(classname)
 
-  document.getElementById("sub_heading").getElementsByClassName("active")[0].classList.remove("active")
+  document.getElementById("options").getElementsByClassName("active")[0].classList.remove("active")
 
   event.target.classList.add("active")
 
