@@ -7,6 +7,8 @@ module.exports = {
         'red': '#7D001E',
         'golden': '#FED395',
         'black': '#080F24',
+        'green': '#0B8661',
+        'yellow': '#FFB345'
       },
       fontFamily: {
         'berkshire': ['Berkshire Swash', 'cursive'],
