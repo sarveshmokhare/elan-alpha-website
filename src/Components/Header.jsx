@@ -24,14 +24,12 @@ function Header() {
                         </div>
                     </Link>
 
-                    <div className='flex items-center'>
-                        <div className='h-8 bg-red p-1 mr-8' onClick={context.toggleTheme}>Switch theme</div>
-                        <div className='flex flex-col items-center cursor-pointer h-[7vh] lg:mb-2' onClick={toggleMenu}>
-                            <div className='h-[80%]'>
-                                <img className='h-full' src={menuIcon} alt='menu'></img>
-                            </div>
-                            <h1 className='text-md'>Menu</h1>
+
+                    <div className='flex flex-col items-center cursor-pointer h-[7vh] lg:mb-2' onClick={toggleMenu}>
+                        <div className='h-[80%]'>
+                            <img className='h-full' src={menuIcon} alt='menu'></img>
                         </div>
+                        <h1 className='text-md'>Menu</h1>
                     </div>
 
                 </div>

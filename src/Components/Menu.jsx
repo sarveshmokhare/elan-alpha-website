@@ -12,18 +12,22 @@ import teamCard from '../assets/team_card.svg'
 function Menu(props) {
     const toggleMenu = props.toggleMenu;
     const eventsData = {
+        route: '/events',
         card: eventsCard,
         subtitles: ['Pronites', 'Infi', 'Workshops'],
     }
     const competitionsData = {
+        route: '/competitions',
         card: competitionsCard,
         subtitles: ['Culti', 'Techy'],
     }
     const litfestData = {
+        route: '/litfest',
         card: litfestCard,
         subtitles: ['Inked Verse', 'What if?', 'Any many more...'],
     }
     const teamData = {
+        route: '/teams',
         card: teamCard,
         subtitles: [],
     }
@@ -43,7 +47,7 @@ function Menu(props) {
     }
 
     return (
-        <div className='h-screen w-screen overflow-y-scroll dark:bg-black fixed z-10 dark:text-white'>
+        <div className='h-screen w-screen overflow-y-scroll dark:bg-black fixed z-50 dark:text-white'>
             {/* menu and close wala div */}
             <div className='flex justify-between px-10 sm:px-8 py-5 text-lg'>
                 <Link className='flex items-center' to='/' onClick={toggleMenu}>
@@ -63,7 +67,7 @@ function Menu(props) {
                         <Link onMouseEnter={litfestHoverHandler} className='py-4' onClick={toggleMenu} to='/litfest'>LitFest</Link>
                         <Link className='py-4' onClick={toggleMenu} to='/'>Social Cause</Link>
                         <Link className='py-4' onClick={toggleMenu} to='/sponsors'>Sponsors</Link>
-                        <Link onMouseEnter={teamHoverHandler} className='py-4' onClick={toggleMenu} to='/'>Team</Link>
+                        <Link onMouseEnter={teamHoverHandler} className='py-4' onClick={toggleMenu} to='/team'>Team</Link>
                         <Link className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Schedule</Link>
                         <Link className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Contact us</Link>
                     </div>
@@ -74,7 +78,7 @@ function Menu(props) {
                 <div className='w-1/2 sm:w-3/4 lg:w-1/2 flex flex-col'>
                     {/* card div */}
                     <div className='hidden sm:flex justify-center'>
-                        <Link onClick={toggleMenu} to='/'>
+                        <Link onClick={toggleMenu} to={hoveredTitle.route}>
                             <img className='h-52 lg:h-64' alt='card' src={hoveredTitle.card} />
 
                             <div className='flex justify-evenly text-golden text-xl my-6'>

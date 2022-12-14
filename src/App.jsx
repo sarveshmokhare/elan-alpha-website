@@ -10,6 +10,7 @@ import ThemeState from './Contexts/ThemeState'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import ScrollToTop from './helpers/ScrollToTop'
+import Teams from './Pages/Teams'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
             <Route path="/competitions" element={<Competitions />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/litfest" element={<Litfest />} />
+            <Route path="/team" element={<Teams />} />
           </Routes>
           <Footer />
         </ScrollToTop>
