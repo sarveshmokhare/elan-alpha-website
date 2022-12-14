@@ -8,11 +8,13 @@ module.exports = {
         'golden': '#FED395',
         'black': '#080F24',
         'green': '#0B8661',
-        'yellow': '#FFB345'
+        'yellow': '#FFB345',
+        'blue':'#0D1838'
       },
       fontFamily: {
         'berkshire': ['Berkshire Swash', 'cursive'],
         'cinzel': ['Cinzel Decorative', 'cursive'],
+        'century':['Century Schoolbook']
       },
     },
   },

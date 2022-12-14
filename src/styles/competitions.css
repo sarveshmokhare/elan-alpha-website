@@ -1,4 +1,4 @@
-#dark .heading {
+/* #dark .heading {
   color: rgb(254, 211, 149);
   font-family: 'Berkshire Swash', cursive;
   font-size: 3rem;
@@ -17,7 +17,6 @@
 }
 
 #dark #options button {
-  /* width: max-content; */
   height: 2.5rem;
   border-radius: .2rem;
   background-color: #080F24;
@@ -26,7 +25,6 @@
 }
 
 #dark #options button.active {
-  /* width: max-content; */
   color: #080F24;
   height: 2.5rem;
   border-radius: .2rem;
@@ -43,17 +41,7 @@
   color: aliceblue;
 }
 
-/* #dark #pronites{
-    display: block;
-}
 
-#dark #workshops{
-    display: none;
-}
-
-#dark #informals{
-    display: none;
-} */
 #dark #content .sub_content {
   margin-top: 5rem;
 }
@@ -63,4 +51,4 @@
   font-size: 3rem;
   color: rgb(254, 211, 149);
   font-weight: 800;
-}
+} */
