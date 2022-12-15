@@ -27,7 +27,6 @@ function Sponsors() {
 
   
 
-  // console.log(year);
   return (
     <div className="bg-[#080f24] flex flex-col">
       <div>
