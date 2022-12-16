@@ -1,22 +1,24 @@
 .popup-content {
-  width: 50%;
-  position: fixed;
-  top: 0;
-  right: 0;
+  position: fixed !important;
+  width: 50% ; 
+  height: fit-content;
+  top: 50% !important;
+  left: 50% !important;
+  z-index: 999;
+  transform: translate(-50%, -50%) !important;
 }
 
 .popup-arrow {
-  color: rgb(158, 33, 33);
+  color: rgb(142, 127, 127);
   display: none;
   /* justify-content: ; */
 }
 
-@keyframes bannermove {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+*{
+  box-sizing: border-box;
 }
