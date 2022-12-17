@@ -1,11 +1,14 @@
 .popup-content {
   position: fixed !important;
-  width: 50% ; 
-  height: fit-content;
+  width: 90% ; 
+  max-width: 700px;
+  max-height: 95% !important;
+  height: 95% !important;
   top: 50% !important;
   left: 50% !important;
   z-index: 999;
   transform: translate(-50%, -50%) !important;
+
 }
 
 .popup-arrow {
@@ -13,7 +16,9 @@
   display: none;
   /* justify-content: ; */
 }
-
+.heading{
+  text-shadow: 0 0 10px #080F24;
+}
 
 .popup-overlay {
   background: rgba(0, 0, 0, 0.5);
