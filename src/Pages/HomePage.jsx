@@ -1,11 +1,10 @@
-import React, { useContext, useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useLayoutEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 import ThemeContext from '../Contexts/ThemeContext'
-import '../styles/homepage.css'
 import elanLogo from '../assets/logo_white.png'
 import caPortalIcon from '../assets/ca_portal_icon.svg'
 import valenrowIcon from '../assets/valenrow_icon.svg'
@@ -28,16 +27,36 @@ import exploreBg from '../assets/explore.svg'
 import galleryBg from '../assets/gallery.svg'
 import galleryBtmBg from '../assets/gallery_btm.svg'
 import statsBg from '../assets/stats.svg'
+import Header from '../Components/Header'
+import inviteText from '../assets/invite_text.svg'
+import fullMoon from '../assets/moon_full.svg'
+import cresentRight from '../assets/cresent_right.svg'
+import halfMoon from '../assets/moon_half.svg'
+import cresentLeft from '../assets/cresent_left.svg'
+import topLine from '../assets/top_line.svg'
+import sampleVid from '../assets/video.mp4'
 
 
 function HomePage() {
-  const context = useContext(ThemeContext)
+  const timelineImgs = [
+    'https://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg',
+    'https://media.istockphoto.com/id/490736905/photo/meenakshi-hindu-temple-in-madurai-tamil-nadu-south-india.jpg?s=612x612&w=0&k=20&c=OlOLvdryIdkdyKcY9gRPsM1RZa5HiP6QBr2JVAIvPb0=',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcB9pt3Tasegrjl6637LB1iJqCND1jp2oLA&usqp=CAU',
+    'https://media.springernature.com/lw703/springer-static/image/art%3A10.1038%2F528452a/MediaObjects/41586_2015_Article_BF528452a_Figg_HTML.jpg',
+    'https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg',
+    'https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg',
+    'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+    'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg',
+    'https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg',
+    'https://wallup.net/wp-content/uploads/2016/01/288160-space-universe-stars-Milky_Way.jpg',
+    'https://media.istockphoto.com/id/1368264124/photo/extreme-close-up-of-thrashing-emerald-ocean-waves.jpg?b=1&s=170667a&w=0&k=20&c=qha_PaU54cu9QCu1UTlORP4-sW0MqLGERkdFKmC06lI=',
+    'https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg'];
 
   const exploreBtnRef = useRef(null)
   const timelineRef = useRef(null)
   const timelineParentRef = useRef(null)
   const exploreRef = useRef(null)
-  const giantDivRef = useRef(null)
+  const section1 = useRef(null)
   const pt1Ref = useRef(null)
   const pt2Ref = useRef(null)
   const pt3Ref = useRef(null)
@@ -46,81 +65,133 @@ function HomePage() {
   const pt6Ref = useRef(null)
   const highlightedCircleRef = useRef(null)
   const scrollDivRef = useRef(null)
-  const firstImgRef = useRef(null)
-  const secondImgRef = useRef(null)
-  const thirdImgRef = useRef(null)
-  const fourthImgRef = useRef(null)
-  const fifthImgRef = useRef(null)
-  const sixthImgRef = useRef(null)
+  // timeline scrollable div sections
+  const sec1Ref = useRef(null)
+  const sec2Ref = useRef(null)
+  const sec3Ref = useRef(null)
+  const sec4Ref = useRef(null)
+  const sec5Ref = useRef(null)
+  const sec6Ref = useRef(null)
 
   useEffect(() => {
-    const timelineDiv = timelineRef.current;
-    const scrollDiv = scrollDivRef.current;
-    const giantDiv = giantDivRef.current;
-    const sections = document.getElementsByClassName('curr-year-imgs');
+    document.body.style.overflowY = 'hidden'
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 
     const ctx = gsap.context(() => {
-      // const tlDefaults = {
-      //   ease: "slow.inOut",
-      //   duration: 1.25
-      // };
-      gsap.to(scrollDiv, {
+
+      // master timeline
+      const masterTl = gsap.timeline({ onComplete: () => document.body.style.overflowY = 'scroll', });
+
+
+      // constant rotation animation
+      const rotationTl = gsap.timeline({ defaults: { rotation: 360, repeat: Infinity, repeatDelay: 0, ease: 'none' } });
+      rotationTl.to('.moon3', { duration: 4 })
+      rotationTl.to('.moon2', { duration: 2 }, '-=3')
+      rotationTl.to('.moon4', { duration: 2 }, '-=2')
+
+      // moons moving to right timeline
+      function moonsTl() {
+        const movementTl = gsap.timeline({ default: { ease: 'power3.out', }, autoRemoveChildren: true, delay: 2, onComplete: () => rotationTl.pause() });
+
+        movementTl.to('.moon1', {
+          right: '-7%',
+          duration: 1.75,
+        })
+        movementTl.to('.moon5', {
+          right: '-7%',
+          duration: 2.25,
+        }, '-=1.5')
+        movementTl.to('.moon2', {
+          right: '-7%',
+          duration: 2.25,
+        }, '-=2')
+        movementTl.to('.moon4', {
+          right: '-7%',
+          duration: 2.25,
+        }, '-=2.5')
+        movementTl.to('.moon3', {
+          right: '-10%',
+          duration: 1.25,
+          delay: 0.2,
+        }, '-=1.75')
+        movementTl.timeScale(1.8)
+
+        return movementTl;
+      }
+
+      masterTl.add(moonsTl());
+
+      function logoTl() {
+        const tl = gsap.timeline({ defaults: {} });
+
+        tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
+        tl.to('.elan-logo', { height: '13vh', top: '38%', duration: 1, }, '<')
+        tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
+        tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
+        tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
+        tl.to('.invite-text', { opacity: 0, duration: 1 })
+        tl.to('.valenrow-logo', { opacity: 1, duration: 1 }, '<+0.8')
+        tl.to('.buttons>*', { opacity: 1, stagger: 0.5 })
+          .to(section1.current, {
+            background: 'rgb(8, 15, 36, 0.1)',
+            duration: 6,
+            ease: 'power2.inOut'
+          })
+
+        return tl;
+      }
+      masterTl.add(logoTl())
+
+      // scroll animation for timeline section
+      gsap.to('.scroll-div', {
         scrollTrigger: {
-          trigger: timelineDiv,
+          trigger: '.timeline-div',
           // markers: true,
-          start: '70% 50%',
-          end: 'bottom+=20%',
+          start: '33% 50%',
           scrub: true,
+          pin: '.giant-div',
         },
         scrollTo: 'max',
-      })
-      ScrollTrigger.create({
-        trigger: timelineDiv,
-        pin: giantDiv,
-        // markers: true,
-        // id: 'giant-div-marker',
-        start: '70% 50%',
-        end: 'bottom+=80%',
-        scrub: true,
       })
 
 
     });
 
-    return () => ctx.revert(); // cleanup!
+    return () => { ctx.revert(); document.body.style.overflowY = 'scroll' }; // cleanup!
   }, []);
 
   const [highlightedCircleYPos, sethighlightedCircleYPos] = useState(20)
 
   // set scrollable div's scroll position in sync with the highlighted circle
-  // doing two things in here: 1. on clicking the a point, highlighted circle moves to that point
+  // doing two things in here: 1. on clicking a point, highlighted circle moves to that point
   // 2. scrollable div's scroll position moves to corresponding image
   function ptClickHandler(e) {
     const pointNum = Number(e.target.getAttribute('pointnum'))
 
     switch (pointNum) {
       case 1:
-        scrollDivRef.current.scrollTop = firstImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec1Ref.current.offsetTop;
         sethighlightedCircleYPos(pt1Ref.current.cy.baseVal.value);
         break;
       case 2:
-        scrollDivRef.current.scrollTop = secondImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec2Ref.current.offsetTop;
         sethighlightedCircleYPos(pt2Ref.current.cy.baseVal.value);
         break;
       case 3:
-        scrollDivRef.current.scrollTop = thirdImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec3Ref.current.offsetTop;
         sethighlightedCircleYPos(pt3Ref.current.cy.baseVal.value);
         break;
       case 4:
-        scrollDivRef.current.scrollTop = fourthImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec4Ref.current.offsetTop;
         sethighlightedCircleYPos(pt4Ref.current.cy.baseVal.value);
         break;
       case 5:
-        scrollDivRef.current.scrollTop = fifthImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec5Ref.current.offsetTop;
         sethighlightedCircleYPos(pt5Ref.current.cy.baseVal.value);
         break;
       case 6:
-        scrollDivRef.current.scrollTop = sixthImgRef.current.offsetTop;
+        scrollDivRef.current.scrollTop = sec6Ref.current.offsetTop;
         sethighlightedCircleYPos(pt6Ref.current.cy.baseVal.value);
         break;
     }
@@ -129,80 +200,99 @@ function HomePage() {
   // set circle position in sync with the scrollable div's scroll distance
   function scrollHandler(e) {
     const scrollTopVal = e.target.scrollTop;
+    const scrollDivHeight = e.target.offsetHeight;
+    const heightFraction = 0.3;
+    const removedHeight = heightFraction * scrollDivHeight;
 
-    if (scrollTopVal < secondImgRef.current.offsetTop) sethighlightedCircleYPos(pt1Ref.current.cy.baseVal.value);
-    else if (scrollTopVal >= secondImgRef.current.offsetTop && scrollTopVal < thirdImgRef.current.offsetTop) sethighlightedCircleYPos(pt2Ref.current.cy.baseVal.value);
-    else if (scrollTopVal >= thirdImgRef.current.offsetTop && scrollTopVal < fourthImgRef.current.offsetTop) sethighlightedCircleYPos(pt3Ref.current.cy.baseVal.value);
-    else if (scrollTopVal >= fourthImgRef.current.offsetTop && scrollTopVal < fifthImgRef.current.offsetTop) sethighlightedCircleYPos(pt4Ref.current.cy.baseVal.value);
-    else if (scrollTopVal >= fifthImgRef.current.offsetTop && scrollTopVal < sixthImgRef.current.offsetTop) sethighlightedCircleYPos(pt5Ref.current.cy.baseVal.value);
-    else if (scrollTopVal >= sixthImgRef.current.offsetTop) sethighlightedCircleYPos(pt6Ref.current.cy.baseVal.value);
+    if (scrollTopVal <= sec2Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt1Ref.current.cy.baseVal.value);
+
+    else if (scrollTopVal > sec2Ref.current.offsetTop - removedHeight && scrollTopVal <= sec3Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt2Ref.current.cy.baseVal.value);
+
+    else if (scrollTopVal > sec3Ref.current.offsetTop - removedHeight && scrollTopVal <= sec4Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt3Ref.current.cy.baseVal.value);
+
+    else if (scrollTopVal > sec4Ref.current.offsetTop - removedHeight && scrollTopVal <= sec5Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt4Ref.current.cy.baseVal.value);
+
+    else if (scrollTopVal > sec5Ref.current.offsetTop - removedHeight && scrollTopVal <= sec6Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt5Ref.current.cy.baseVal.value);
+
+    else if (scrollTopVal > sec6Ref.current.offsetTop - removedHeight) sethighlightedCircleYPos(pt6Ref.current.cy.baseVal.value);
   }
 
   return (
-    <div className={context.theme}>
-      <div className='dark:bg-black pt-20 md:pt-0' ref={giantDivRef}>
-        {/* Intro */}
-        <div className='dark:text-white mb-10 lg:mb-20 font-cinzel font-bold sm:h-[80vh] relative'>
+    <div>
+
+      <div className='giant-div'>
+        {/* Intro section */}
+        <div ref={section1} className='bg-black text-white font-cinzel font-bold h-[40vh] sm:h-[90vh] relative'>
+          {/* top decor line */}
+          <div className='top-line absolute top-0 right-[7%] w-[68vw]'><img className='h-[40%]' alt='decor' src={topLine}></img></div>
+
           {/* left decoration */}
-          <div className='hidden sm:block absolute h-[50vh] lg:h-[60vh] left-3.5 top-5'>
+          <div className='left-decor hidden sm:block absolute h-[50vh] lg:h-[75vh] left-3.5 top-0'>
             <img className='h-full' src={sec1DecorLeft} />
           </div>
-          <div className='flex flex-col sm:flex-row items-center sm:justify-center'>
-            {/* elan and valenrow logos' div */}
-            <div className='flex flex-col items-center justify-center sm:py-8 sm:absolute bottom-[10%] lg:bottom-[15%]'>
-              <div>
-                <img src={elanLogo} className='h-16' />
-              </div>
 
-              <div className='py-6 sm:px-8'>
-                <img className='sm:h-[14vh]' alt='valenrow_logo' src={valenrowLogo} />
-              </div>
-            </div>
+          {/* right animating moon */}
+          <div className='moon1 absolute h-[3vh] md:h-[4vh] lg:h-[4vh] right-[8%] top-[-10%] md:top-[10%] lg:top-[10%]'><img className='h-full' src={fullMoon}></img></div>
 
-            {/* buttons div for mobiles */}
-            <div className='sm:hidden flex flex-col items-center'>
-              <a className='bg-red text-golden py-4 px-8 rounded-md my-4'>Merch</a>
-              <a href='https://ca.elan.org.in' target='_blank' className='bg-green py-2.5 px-2.5 rounded-md flex items-center my-4'>
-                <img src={caPortalIcon} className='h-8 pr-2.5' alt='icon' />
-                <div>CA Portal</div>
-              </a>
-              <div className='flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative' style={{ borderRadius: '40px' }}>
-                <img src={valenrowIcon} className='h-24 absolute -top-2' alt='icon' />
-                <div className='absolute left-12 text-sm' ref={exploreBtnRef} onClick={() => exploreBtnRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Explore Valenrow</div>
-              </div>
-            </div>
+          <div className='moon2 absolute h-[5vh] md:h-[7vh] lg:h-[8vh] right-[7%] top-[8%] md:top-[23%] lg:top-[20%]'><img className='h-full' src={cresentRight}></img></div>
 
-            <div className='sm:hidden pt-6'>
-              <img src={sec1BottomGraphics} alt='graphic' />
-            </div>
+          <div className='moon3 absolute h-[9vh] md:h-[11vh] lg:h-[14vh] right-[5.5%] top-[30%] md:top-[39%] lg:top-[37%]'><img className='h-full' src={halfMoon}></img></div>
+
+          <div className='moon4 absolute h-[5vh] md:h-[7vh] lg:h-[8vh] right-[7%] top-[65%] md:top-[62%] lg:top-[63%]'><img className='h-full' src={cresentLeft}></img></div>
+
+          <div className='moon5 absolute h-[3vh] md:h-[4vh] lg:h-[4vh] right-[8%] top-[85%] lg:top-[80%]'><img className='h-full' src={fullMoon}></img></div>
+
+          {/* elan and valenrow logos */}
+          <div className='elan-logo pb-5 h-[10vh] md:h-[14vh] lg:h-[16vh] absolute right-0 left-0 flex justify-center top-[10%] md:top-[20%] lg:top-[18%]'>
+            <img className='h-full' alt='elan_logo' src={elanLogo} />
           </div>
 
-          {/* buttons div for desktops */}
-          <div className='hidden sm:flex flex-col items-center absolute top-20 right-16 lg:right-32 text-[2.6vh] lg:text-[3vh]'>
-            <a href='/' className='flex items-center bg-red text-golden py-4 px-6 rounded-md my-4 h-[10vh]'>
-              <div>Merch</div>
-            </a>
+          <div className='invite-text h-[7vh] md:h-[17vh] lg:h-[22vh] absolute right-0 left-0 flex justify-center top-[37%]'>
+            <img className='h-full' alt='elan_text' src={inviteText} ></img>
+          </div>
 
-            <a href='https://ca.elan.org.in' target='_blank' className='bg-green p-0 rounded-md flex items-center justify-evenly my-4 w-[34vw] lg:w-[15vw] h-[10vh]'>
-              <img src={caPortalIcon} className='w-1/6' alt='icon' />
-              <div>CA Portal</div>
-            </a>
+          <div className='valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 sm:h-[26vh] absolute right-0 left-0 flex justify-center top-[50%]'>
+            <img className='h-full' alt='valenrow_logo' src={valenrowLogo} />
+          </div>
 
-            <div className='flex items-center justify-evenly text-center bg-yellow rounded-[40px] h-[10vh] sm:w-[40vw] lg:w-[16vw] p-3 my-4 text-[2.5vh] overflow-visible cursor-pointer'>
-              <img src={valenrowIcon} className='h-[13vh] pt-2' alt='icon' />
-              <div className='' ref={exploreBtnRef} onClick={() => exploreBtnRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Explore Valenrow</div>
-            </div>
+          {/* buttons div */}
+          <div className='buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] lg:absolute right-28 top-20'>
+            <button className='opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[52vw] md:w-[38vw] lg:w-[15.5vw]'>
+              <a href='/'><div>Merch</div></a>
+            </button>
+
+            <button className='opacity-0 bg-green px-1 rounded-lg my-4 w-[52vw] md:w-[38vw] lg:w-[15.5vw] h-[8vh] lg:h-[10vh]'>
+              <a className='flex items-center justify-evenly' href='https://ca.elan.org.in' target='_blank' >
+                <img src={caPortalIcon} className='w-1/6' alt='icon' />
+                <div className='lg:text-xl'>CA Portal</div>
+              </a>
+            </button>
+
+            <button className='opacity-0 flex items-center justify-evenly text-center bg-yellow p-3 rounded-[40px] h-[10vh] lg:h-[11vh] w-[55vw] md:w-[38vw] lg:w-[16vw] my-4 relative'>
+              <div className='h-[22vh] md:h-[25vh] lg:h-[26vh] pt-3 md:pt-4 lg:pt-3'><img src={valenrowIcon} className='h-full' alt='icon' /></div>
+
+              <div className='text-xl md:text-3xl lg:text-lg' ref={exploreBtnRef}>Explore Valenrow</div>
+            </button>
+          </div>
+
+          {/* bottom graphic */}
+          <div className='sm:hidden flex items-center justify-center absolute bottom-[5%] left-0 right-0'>
+            <img src={sec1BottomGraphics} alt='graphic' />
           </div>
 
           {/* large moon line graphics */}
-          <div className='hidden sm:flex items-center justify-center w-[100vw] absolute bottom-0 h-24 px-20'>
+          <div className='hidden sm:flex items-center justify-center w-[100vw] absolute bottom-[1%] h-24 px-20  lg:pb-14'>
             <img className='w-full' src={sec1BottomGraphicsLarge} />
           </div>
+
+          <video autoPlay loop muted className='w-full h-full absolute -z-10 object-cover top-0'>
+            <source src={sampleVid} type='video/mp4' />
+          </video>
         </div>
 
 
         {/* About Us */}
-        <div className='dark:bg-black text-golden py-8 lg:pt-20 border-y-2 dark:border-golden relative z-10'>
+        <div className='text-golden py-8 lg:pt-20 border-y-2 border-golden relative'>
           <div className='flex justify-evenly sm:justify-around sm:px-20'>
             <img className='w-[12vw]' alt='graphic' src={aboutLeft} />
             <h1 className='text-3xl md:text-5xl lg:text-6xl font-cinzel font-bold z-10'>About Us</h1>
@@ -236,73 +326,104 @@ function HomePage() {
 
         {/* Timeline */}
         <div ref={timelineParentRef} className='text-golden py-10 lg:px-16 lg:text-xl relative'>
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0'>Timeline</h1>
+          {/* background imgs */}
+          <div className='absolute h-[40%] top-0 right-0' ><img className='h-full relative' src={timelineJug}></img></div>
+          <div className='absolute h-[75%] left-0 -bottom-[40%]' ><img className='h-full' src={timelineBtm}></img></div>
+          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative z-20'>Timeline</h1>
 
-          <div ref={timelineRef} className='flex pt-11 items-center justify-evenly'>
-            <div>
+          <div ref={timelineRef} className='timeline-div flex pt-11 items-center justify-evenly relative z-20'>
+            <div className=''>
               <svg width="100" height="250">
                 <line x1={29} y1={20} x2={29} y2={220} stroke='#FED395' strokeWidth={1} />
                 {/* circles and corresponding years  */}
                 <circle className='cursor-pointer' ref={pt1Ref} pointnum={1} onClick={ptClickHandler} cx={29} cy={20} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={25} fill='#FED395'>2017</text>
+
                 <circle className='cursor-pointer' ref={pt2Ref} pointnum={2} onClick={ptClickHandler} cx={29} cy={60} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={65} fill='#FED395'>2018</text>
+
                 <circle className='cursor-pointer' ref={pt3Ref} pointnum={3} onClick={ptClickHandler} cx={29} cy={100} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={105} fill='#FED395'>2019</text>
+
                 <circle className='cursor-pointer' ref={pt4Ref} pointnum={4} onClick={ptClickHandler} cx={29} cy={140} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={145} fill='#FED395'>2020</text>
+
                 <circle className='cursor-pointer' ref={pt5Ref} pointnum={5} onClick={ptClickHandler} cx={29} cy={180} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={185} fill='#FED395'>2021</text>
+
                 <circle className='cursor-pointer' ref={pt6Ref} pointnum={6} onClick={ptClickHandler} cx={29} cy={220} r='0.8vh' fill='white' stroke='#FED395' />
                 <text x={55} y={225} fill='#FED395'>2022</text>
+
                 {/* highlighted circle */}
                 <circle ref={highlightedCircleRef} cx={29} cy={highlightedCircleYPos} r='0.8vh' fill='#FED395' />
               </svg>
             </div>
 
-            <div onScroll={scrollHandler} ref={scrollDivRef} className='bg-white h-[30vh] lg:h-[50vh] w-[40vw] overflow-y-auto scroll-smooth relative z-10'>
-              <div className='curr-year-imgs h-full w-full'>
-                <div ref={firstImgRef} className='p-3 flex justify-center'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
-                <div ref={secondImgRef} className='h-1/2 w-full p-3 flex justify-center'><img className='h-full' src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg' /></div>
-              </div>
+            <div onScroll={scrollHandler} ref={scrollDivRef} className='scroll-div bg-white h-[40vh] lg:h-[60vh] w-[50vw] lg:w-[40vw] overflow-y-auto relative flex flex-wrap justify-center'>
 
-              <div className='curr-year-imgs h-full w-full'>
-                <div ref={thirdImgRef} className='h-1/2 w-full p-3 flex justify-center'><img className='h-full' src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' /></div>
-                <div ref={fourthImgRef} className='h-1/2 w-full p-3 flex justify-center'><img className='h-full' src='https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg' /></div>
-              </div>
+              {timelineImgs.map((img, ind) => {
+                let currRef;
+                switch (ind / 4) {
+                  case 0:
+                    currRef = sec1Ref;
+                    break;
+                  case 1:
+                    currRef = sec2Ref;
+                    break;
+                  case 2:
+                    currRef = sec3Ref;
+                    break;
+                  case 3:
+                    currRef = sec4Ref;
+                    break;
+                  case 4:
+                    currRef = sec5Ref;
+                    break;
+                  case 5:
+                    currRef = sec6Ref;
+                    break;
+                }
+                return (
+                  <div key={ind} ref={currRef} className='p-3 flex justify-center h-1/2 lg:w-1/2'>
+                    <img className='h-full' src={img} />
+                  </div>
+                )
+              })}
 
-              <div className='curr-year-imgs h-full w-full'>
-                <div ref={fifthImgRef} className='h-1/2 w-full p-3 flex justify-center'><img className='h-full' src='https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg' /></div>
-                <div ref={sixthImgRef} className='h-1/2 w-full p-3 flex justify-center'><img className='h-full' src='https://wallup.net/wp-content/uploads/2016/01/288160-space-universe-stars-Milky_Way.jpg' /></div>
-              </div>
+              {/* <div ref={firstImgRef} className='p-3 flex justify-center h-1/2 w-1/2'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
 
-              <div className='curr-year-imgs h-1/2 w-full'>
-                <div ref={firstImgRef} className='p-3 flex justify-center'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
-              </div>
+              <div ref={secondImgRef} className='p-3 flex justify-center h-1/2 w-1/2'><img className='h-full' src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg' /></div>
+
+              <div ref={thirdImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' /></div>
+
+              <div ref={fourthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg' /></div>
+
+              <div ref={fifthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg' /></div>
+
+              <div ref={sixthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://wallup.net/wp-content/uploads/2016/01/288160-space-universe-stars-Milky_Way.jpg' /></div>
+
+              <div ref={firstImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
+         */}
             </div>
           </div>
-
-          {/* background imgs */}
-          <div className='absolute h-[70%] -top-[20%] right-0' ><img className='h-full' src={timelineJug}></img></div>
-          <div className='absolute h-[75%] left-0 -bottom-[40%] z-10' ><img className='h-full' src={timelineBtm}></img></div>
         </div>
 
         {/* Explore */}
-        <div ref={exploreRef} className='dark:bg-black text-golden py-10 lg:px-16 box-content h-[30vh] lg:h-[60vh] relative'>
+        <div ref={exploreRef} className='text-golden py-10 lg:px-16 box-content h-[30vh] lg:h-[60vh] relative'>
           {/* bg images */}
           <div className='absolute h-[55%] right-0 bottom-[10%]' ><img className='h-full' src={exploreBg}></img></div>
 
-        <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 z-20 relative'>Explore</h1>
+          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Explore</h1>
 
         </div>
 
         {/* Gallery */}
-        <div className='dark:bg-black text-golden py-10 lg:px-16 box-content relative h-[40vh] lg:h-[80vh]'>
+        <div className='text-golden py-10 lg:px-16 box-content relative h-[40vh] lg:h-[80vh]'>
           {/* bg images */}
           <div className='absolute h-[85%] left-0 top-[10%]' ><img className='h-full' src={galleryBg}></img></div>
           <div className='absolute h-[70%] right-0 -bottom-[20%]' ><img className='h-full' src={galleryBtmBg}></img></div>
 
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 z-20 relative'>Gallery</h1>
+          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Gallery</h1>
 
         </div>
 
@@ -311,7 +432,7 @@ function HomePage() {
           {/* bg images */}
           <div className='absolute h-[85%] left-0 top-[5%]' ><img className='h-full' src={statsBg}></img></div>
 
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 z-20 relative'>Stats</h1>
+          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Stats</h1>
 
         </div>
       </div>

@@ -7,7 +7,6 @@ import logo from '../assets/logo_white.png'
 import mail_icon from '../assets/mail_icon.svg'
 
 function Footer() {
-    const context = useContext(ThemeContext)
 
     function scrollTop() {
         document.documentElement.scrollTo({
@@ -18,14 +17,14 @@ function Footer() {
     }
 
     return (
-        <div className={context.theme}>
-            <div className='w-full dark:bg-red py-18 text-white relative'>
+        <div>
+            <div className='w-full bg-red py-18 text-white relative'>
                 <div className='flex flex-col lg:flex-row lg:justify-between items-center pt-8 pb-3 lg:pb-8 lg:px-20'>
                     <div className='flex flex-col w-full lg:w-[40vw] items-center lg:py-20'>
                         {/* elan logo */}
                         <div onClick={scrollTop}><Link to='/'><img src={logo} className='h-[14.5vh] lg:mb-10'></img></Link></div>
                         {/* social media icons */}
-                        <div className='flex w-4/5 lg:w-2/3 justify-center dark:text-golden my-6 lg:mb-10 text-4xl lg:text-[2.5rem]'>
+                        <div className='flex w-4/5 lg:w-2/3 justify-center text-golden my-6 lg:mb-10 text-4xl lg:text-[2.5rem]'>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.instagram.com/elan_nvision.iith/' target="_blank"><BsInstagram /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.youtube.com/user/ElanIITHyderabad' target="_blank"><BsYoutube /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.linkedin.com/company/elan-nvision-iith/' target="_blank"><BsLinkedin /></a>
@@ -36,15 +35,15 @@ function Footer() {
 
                     {/* contact us */}
                     <div className='flex items-start flex-col lg:pr-[10%]'>
-                        <div className='pt-5 pb-3 lg:py-5 dark:text-golden text-4xl lg:text-5xl font-berkshire'><h1>Contact Us</h1></div>
+                        <div className='pt-5 pb-3 lg:py-5 text-golden text-4xl lg:text-5xl font-berkshire'><h1>Contact Us</h1></div>
                         <div className='flex flex-col items-center lg:items-start pb-1.5 lg:pb-8'>
                             <h2 className='text-xl lg:text-xl'>Swapnish Sahare</h2>
-                            <h3 className='dark:text-golden text-base lg:text-md'>Overall Coordinator</h3>
+                            <h3 className='text-golden text-base lg:text-md'>Overall Coordinator</h3>
                             <h3 className='text-base lg:text-md'><a href='tel:+917821825892'>(+91) 78218 25892</a></h3>
                         </div>
                         <div className='flex flex-col items-center lg:items-start pb-5'>
                             <h2 className='text-xl lg:text-xl'>KN Vardhan</h2>
-                            <h3 className='dark:text-golden text-base lg:text-md'>Head of Public Relations</h3>
+                            <h3 className='text-golden text-base lg:text-md'>Head of Public Relations</h3>
                             <h3 className='text-base lg:text-md'><a href='tel:+919652793113'>(+91) 96527 93113</a></h3>
                         </div>
                     </div>
@@ -70,7 +69,7 @@ function Footer() {
                             <h3>elan@iith.ac.in</h3>
                         </a>
                     </div>
-                    <div><h5 className='text-xs opacity-80 pt-2 '>Elan and nVision 2023. All Rights Reserved.</h5></div>
+                    <div><h5 className='text-xs opacity-80 pt-2 '>Elan and ηVision 2023. All Rights Reserved.</h5></div>
                 </div>
             </div>
         </div>

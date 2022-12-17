@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import gsap from 'gsap'
 
 import caPortalIcon from '../assets/ca_portal_icon.svg'
 import valenrowLogo from '../assets/valenrow_icon.svg'
@@ -11,6 +12,22 @@ import teamCard from '../assets/team_card.svg'
 
 function Menu(props) {
     const toggleMenu = props.toggleMenu;
+    const menuOpen = props.menuOpen;
+
+    const menuDiv = useRef(null)
+
+    if (menuOpen) {
+        const tl = gsap.timeline()
+        tl.to(menuDiv.current, { height: '100vh',})
+        // tl.to('.event-name', { fontSize: '1.875rem', stagger: 0.15,  }, '<')
+    }
+    else {
+        const tl = gsap.timeline()
+        tl.to(menuDiv.current, { height: 0, })
+        // tl.to('.event-name', { fontSize: 0, })
+    }
+
+
     const eventsData = {
         route: '/events',
         card: eventsCard,
@@ -33,28 +50,50 @@ function Menu(props) {
     }
 
     const [hoveredTitle, setHoveredTitle] = useState(eventsData)
-    function eventsHoverHandler() {
+    function eventsHoverHandler(e) {
         hoveredTitle !== eventsData ? setHoveredTitle(eventsData) : setHoveredTitle(eventsData)
+
+        gsap.to(e.target.querySelector('.event-name'), { x: 10, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 12, duration: 0.3 })
     }
-    function competitionsHoverHandler() {
+    function competitionsHoverHandler(e) {
         hoveredTitle !== competitionsData ? setHoveredTitle(competitionsData) : setHoveredTitle(eventsData)
+
+        gsap.to(e.target.querySelector('.event-name'), { x: 10, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 12, duration: 0.3 })
     }
-    function litfestHoverHandler() {
+    function litfestHoverHandler(e) {
         hoveredTitle !== litfestData ? setHoveredTitle(litfestData) : setHoveredTitle(eventsData)
+
+        gsap.to(e.target.querySelector('.event-name'), { x: 10, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 12, duration: 0.3 })
     }
-    function teamHoverHandler() {
+    function teamHoverHandler(e) {
         hoveredTitle !== teamData ? setHoveredTitle(teamData) : setHoveredTitle(eventsData)
+
+        gsap.to(e.target.querySelector('.event-name'), { x: 10, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 12, duration: 0.3 })
+    }
+    function linksHoverHandler(e) {
+        gsap.to(e.target.querySelector('.event-name'), { x: 10, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 12, duration: 0.3 })
+    }
+    function linksLeaveHandler(e) {
+        gsap.to(e.target.querySelector('.event-name'), { x: 0, duration: 0.3 })
+        gsap.to(e.target.querySelector('.ring-icon'), { height: 0, duration: 0.3 })
     }
 
     return (
-        <div className='h-screen w-screen overflow-y-scroll dark:bg-black fixed z-50 dark:text-white'>
+        <div ref={menuDiv} className='h-0 w-screen overflow-y-scroll bg-black fixed z-50 text-white'>
             {/* menu and close wala div */}
-            <div className='flex justify-between px-10 sm:px-8 py-5 text-lg'>
+            <div className='flex justify-between px-10 sm:px-5 py-5 text-lg'>
                 <Link className='flex items-center' to='/' onClick={toggleMenu}>
-                    <img className='h-4 pr-2 hidden sm:block' src={menuRing} alt='icon' />
+                    <div className='h-4 pr-2 sm:block'>
+                        <img className='h-full' src={menuRing} alt='icon' />
+                    </div>
                     <h3>Home</h3>
                 </Link>
-                <h3 className='dark:text-golden cursor-pointer' onClick={props.toggleMenu}>Close</h3>
+                <h3 className='text-golden cursor-pointer' onClick={props.toggleMenu}>Close</h3>
             </div>
 
             {/* main div */}
@@ -62,14 +101,39 @@ function Menu(props) {
                 {/* links div */}
                 <div className='flex flex-col w-1/3 lg:w-1/5'>
                     <div className='flex flex-col'>
-                        <Link onMouseEnter={eventsHoverHandler} className='py-4' onClick={toggleMenu} to='/events'>Events</Link>
-                        <Link onMouseEnter={competitionsHoverHandler} className='py-4' onClick={toggleMenu} to='/competitions' >Competitions</Link>
-                        <Link onMouseEnter={litfestHoverHandler} className='py-4' onClick={toggleMenu} to='/litfest'>LitFest</Link>
-                        <Link className='py-4' onClick={toggleMenu} to='/'>Social Cause</Link>
-                        <Link className='py-4' onClick={toggleMenu} to='/sponsors'>Sponsors</Link>
-                        <Link onMouseEnter={teamHoverHandler} className='py-4' onClick={toggleMenu} to='/team'>Team</Link>
-                        <Link className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Schedule</Link>
-                        <Link className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Contact us</Link>
+                        <Link onMouseEnter={eventsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/events'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >Events</div>
+                        </Link>
+
+                        <Link onMouseEnter={competitionsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/competitions'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >Competitions</div>
+                        </Link>
+
+                        <Link onMouseEnter={litfestHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/litfest'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >LitFest</div>
+                        </Link>
+
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >Social Cause</div>
+                        </Link>
+
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/sponsors'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >Sponsors</div>
+                        </Link>
+
+                        <Link onMouseEnter={teamHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/team'>
+                            <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
+                            <div className='event-name' >Team</div>
+                        </Link>
+
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Schedule</Link>
+
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Contact us</Link>
                     </div>
                 </div>
 
@@ -77,9 +141,9 @@ function Menu(props) {
                 {/* card and buttons div */}
                 <div className='w-1/2 sm:w-3/4 lg:w-1/2 flex flex-col'>
                     {/* card div */}
-                    <div className='hidden sm:flex justify-center'>
-                        <Link onClick={toggleMenu} to={hoveredTitle.route}>
-                            <img className='h-52 lg:h-64' alt='card' src={hoveredTitle.card} />
+                    <div className='hidden sm:flex justify-center h-[50vh] my-5'>
+                        <Link className='h-full' onClick={toggleMenu} to={hoveredTitle.route}>
+                            <div className='h-52 lg:h-64'><img className='h-full' alt='card' src={hoveredTitle.card} /></div>
 
                             <div className='flex justify-evenly text-golden text-xl my-6'>
                                 {hoveredTitle.subtitles.map((title, ind) => {
@@ -93,11 +157,17 @@ function Menu(props) {
 
                     {/* buttons div */}
                     <div className='font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between'>
-                        <a className='bg-red text-golden py-4 px-8 rounded-md my-4'>Merch</a>
-                        <a className='bg-green py-2.5 px-2.5 rounded-md flex items-center my-4' href='https://ca.elan.org.in' target='_blank'>
-                            <img src={caPortalIcon} className='h-8 pr-2.5' alt='icon' />
-                            <div>CA Portal</div>
-                        </a>
+                        <button className='bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4'>
+                            <a >Merch</a>
+                        </button>
+
+                        <button className='bg-green py-2.5 px-2.5 rounded-md my-4'>
+                            <a className='flex items-center' href='https://ca.elan.org.in' target='_blank'>
+                                <img src={caPortalIcon} className='h-8 pr-2.5' alt='icon' />
+                                <div>CA Portal</div>
+                            </a>
+                        </button>
+
                         <Link className='flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative' style={{ borderRadius: '40px' }} to='/' onClick={props.toggleMenu}>
                             <img src={valenrowLogo} className='h-24 absolute -top-2' alt='icon' />
                             <div className='absolute left-12 text-sm'>Explore Valenrow</div>
@@ -106,7 +176,7 @@ function Menu(props) {
                 </div>
             </div>
 
-            {/* last div */}
+            {/* last div for desktop */}
             <div className=''>
                 <div className='hidden sm:flex justify-around text-lg w-1/3 sm:w-5/12'>
                     <Link className='p-8' onClick={toggleMenu} to='/'>Schedule</Link>
