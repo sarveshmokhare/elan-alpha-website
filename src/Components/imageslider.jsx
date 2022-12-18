@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../styles/slider.css";
 
 
 export default function Slider({imagesList}){

@@ -13,12 +13,14 @@ const navoptions=['Pronites','Workshops','Informals']
 
 function Navigate(){
   const [value,setValue]=useState(0)
+  const [width, setWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return(
     <div>
       <div id="options" className='flex justify-evenly pb-10'>
         {navoptions.map((nav_item,index)=>(
-          <button onClick={() => setValue(index)} className={"pronites_btn rounded text-2xl leading-loose px-3 m-1 " + (value == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
+          <button onClick={() => setValue(index)} className={"pronites_btn rounded text-sm vvs:text-xl vs:text-2xl leading-normal p-1 text-lg vs:px-3 vs:m-1 flex-wrap " + (value == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
         ))}
 
       </div>
@@ -26,13 +28,21 @@ function Navigate(){
       <div id="content">
         {eventsdata.map((item,index)=>(
           <div className={"sub_content pronites " + (value == index ? "block" : "hidden")}>
-            <div className='sub_heading font-cinzel text-6xl text-golden font-bold' >
+            <div className='sub_heading font-cinzel text-4xl vs:text-6xl text-golden font-bold' >
               {item.name}
             </div>
             <div className=''>
-              <EventSlider imagesList={item.img} />
+              <EventSlider imagesList={item.img} size={width>=850?4:2} />
             </div>
             <div className='text-golden text-xl'>{item.description}</div>
+            <ul className='mt-5'>
+              {item.examples.map((examples_item)=>(
+               <li>
+                  <div className='text-golden bold-normal text-lg list-disc'>{examples_item.name}</div>
+                  <div className='text-golden ml-5 mb-5'>{examples_item.description}</div>
+               </li>
+              ))}
+            </ul>
           </div>
         ))}
         
@@ -47,9 +57,8 @@ function Events() {
 
 
   return (
-    <div id={context.theme} className="bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-10 bg-[url('./assets/designs/events_mobile_
-    1.svg'),url('./assets/designs/events_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
-      <h1 className='heading font-berkshire text-8xl text-golden pt-16 lg:text-[12rem]'>
+    <div id={context.theme} className=" overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
+      <h1 className='heading font-berkshire text-7xl vs:text-8xl text-golden pt-16 lg:text-[10rem]'>
         Events
       </h1>
       {<Navigate/>}

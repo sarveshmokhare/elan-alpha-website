@@ -10,7 +10,7 @@ import workshops2 from "../../assets/events/workshop_2.jpg";
 import workshops3 from "../../assets/events/workshop_3.jpg";
 
 export const eventsdata=[
-  {name:'Prontes',
+  {name:'Pronites',
     description:'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
     img:[pronites1,pronites2,pronites3,pronites4,pronites5],
     examples: [{

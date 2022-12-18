@@ -2,12 +2,12 @@ import { useState } from "react"
 import "../../styles/slider.css";
 
 
-export default function EventsSlider({ imagesList, size }) {
+export default function CompetitionsSlider({ imagesList, size }) {
 
   const [HoverValue, setHoverValue] = useState(false)
   const length = imagesList.length
   var style, itemstyle, insidestyle, repetition;
-  const num=Math.ceil(size * 2 / imagesList.length)
+  const num = Math.ceil(size * 2 / imagesList.length)
   itemstyle = {
     margin: '5px',
     width: (100 / length).toString() + '%',
@@ -23,8 +23,8 @@ export default function EventsSlider({ imagesList, size }) {
     }
 
     style = {
-      width: (length * num *100 / size).toString() + '%',
-      animation: HoverValue ? "bannermove " + (imagesList.length * 5).toString() + "s linear infinite paused" : "bannermove " + (imagesList.length * 5).toString() + "s linear infinite",
+      width: (length * num * 100 / size).toString() + '%',
+      animation: HoverValue ? "bannermove " + (length * 5).toString() + "s linear infinite paused" : "bannermove " + (imagesList.length * 5).toString() + "s linear infinite",
       display: 'flex'
     }
   }
@@ -34,7 +34,7 @@ export default function EventsSlider({ imagesList, size }) {
       width: '50%',
       display: 'flex'
     }
-    
+
     style = {
       width: (length * 200 / size).toString() + '%',
       animation: HoverValue ? "bannermove " + (length * 5).toString() + "s linear infinite paused" : "bannermove " + (length * 5).toString() + "s linear infinite",
