@@ -6,9 +6,13 @@ import "../styles/sponsors.css";
 import Hero from "../assets/SponsorImages/Sponsor2021/Static Perimeter Board_15 x 3ft-01.png";
 import Honeywell from "../assets/SponsorImages/Sponsor2021/Honeywell-Logo.png";
 import Nisarga from "../assets/SponsorImages/Sponsor2021/Nisarga Logo.png";
-import { Sponsor2022 , Sponsor2020, Sponsor2021 } from "../Components/SponsorData";
-// 2020 sponsors 
-import LandT from "../assets/SponsorImages/Sponsor2020/L&T.png"
+import {
+  Sponsor2022,
+  Sponsor2020,
+  Sponsor2021,
+} from "../Components/SponsorData";
+// 2020 sponsors
+import LandT from "../assets/SponsorImages/Sponsor2020/L&T.png";
 // background images
 import BG1 from "../assets/SponsorBackground/2 576.svg";
 import BG2 from "../assets/SponsorBackground/5 1.svg";
@@ -21,11 +25,9 @@ function Sponsors() {
   const context = useContext(ThemeContext);
 
   const [year, setyear] = useState("2022");
-  const [isActive1,setIsActive1] = useState(true);
-  const [isActive2,setIsActive2] = useState(false);
-  const [isActive3,setIsActive3] = useState(false);
-
-  
+  const [isActive1, setIsActive1] = useState(true);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
 
   return (
     <div className="bg-[#080f24] flex flex-col">
@@ -34,8 +36,58 @@ function Sponsors() {
           Sponsors
         </h1>
       </div>
+      <div style={{ zIndex: "1" }}>
+        <div>
+          <h1 className="heading1">TITLE SPONSOR 2021</h1>
+          <img
+            src={Hero}
+            className="border-solid border-2 border-[#FED395] m-[auto] w-[50vw]"
+          />
+          <img src={BG1} className="BG top-[20%]" />
+          <img src={BG2} className="BG right-0 top-[22%]" />
+          <img src={BG3} className="BG top-[60%]" />
+          <img src={BG4} className="BG top-[58%] right-0" />
+          <img src={BG5} className="BG top-[175rem]" />
+          <img src={BG6} className="BG top-[180rem] right-0" />
+          <h3 className="heading1">CO-SPONSOR</h3>
+          <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
+            <img
+              src={Nisarga}
+              className="border-solid border-2 border-[#FED395] mb-[45px]"
+            />
+            <img
+              src={Honeywell}
+              // style={{
+              //   width: "30vw",
+              //   height: "150px",
+              //   margin: "auto",
+              //   border: "2px solid #FED395 ",
+              // }}
+              className="border-solid border-2 border-[#FED395] my-[20px]"
+            />
+          </div>
+          <h4 className="heading1">SPONSORS</h4>
+          <div className="SponCards">
+            {Sponsor2021.map((item) => (
+              <SponsorCard
+                style={{
+                  width: "35vw",
+                }}
+                Role={item.Role ? item.Role : "Partner"}
+                Description={item.Description}
+                Image={item.Image}
+                Website={item.Website}
+                Facebook={item.Facebook}
+                Instagram={item.Instagram}
+                Twitter={item.Twitter}
+                Linkedin={item.Linkedin}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
-      <div className="button">
+      {/* <div className="button">
         <button
           onClick={() => {
             setyear("2022");
@@ -176,23 +228,7 @@ function Sponsors() {
             src={BG6}
               className="BG top-[185rem] right-0"
             />
-            {/* <h3 className="heading1">CO-SPONSOR</h3>  */}
-            {/* <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
-              <img
-                src={Nisarga}
-                className="border-solid border-2 border-[#FED395] my-[45px]"
-              />
-              <img
-                src={Honeywell}
-                // style={{
-                //   width: "30vw",
-                //   height: "150px",
-                //   margin: "auto",
-                //   border: "2px solid #FED395 ",
-                // }}
-                className="border-solid border-2 border-[#FED395] my-[20px]"
-              />
-            </div> */}
+            
             <h4 className="heading1">SPONSORS</h4>
             <div className="SponCards">
               {Sponsor2020.map((item) => (
@@ -213,7 +249,7 @@ function Sponsors() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
