@@ -285,7 +285,7 @@ function Teams() {
         <div>
           <h1 className="heading1">Elan and ηVision Team 2023</h1>
           {/* <h3 className="text-left text-white text-lg hidden sm:block">Overall Coordinator</h3> */}
-          <div className=" sm:hidden lg:block ">
+          <div className=" hidden lg:block ">
             <div className="flex flex-wrap flex-row">
               <div className="index m-4 h-[55vh] w-[30%] pl-8 py-8 relative flex flex-col">
                 <button onClick={() =>OC.current.scrollIntoView()} className={isClass1 ? "button3 active3" : "button3"}>
