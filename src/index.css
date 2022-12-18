@@ -4,3 +4,9 @@ body {
     background-color: #080F24;
     scroll-behavior: smooth;
 }
+
+@media(max-width: 900px) {
+    #root {
+        overflow-x: hidden;
+    }
+}

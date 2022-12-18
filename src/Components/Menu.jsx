@@ -31,12 +31,12 @@ function Menu(props) {
     const eventsData = {
         route: '/events',
         card: eventsCard,
-        subtitles: ['Pronites', 'Infi', 'Workshops'],
+        subtitles: ['Pronites', 'Workshops', 'Informals', 'Biggies'],
     }
     const competitionsData = {
         route: '/competitions',
         card: competitionsCard,
-        subtitles: ['Culti', 'Techy'],
+        subtitles: ['Techy', 'Culti'],
     }
     const litfestData = {
         route: '/litfest',
@@ -83,10 +83,16 @@ function Menu(props) {
         gsap.to(e.target.querySelector('.ring-icon'), { height: 0, duration: 0.3 })
     }
 
+    function linksClickHandler(){
+        toggleMenu();
+
+        linksLeaveHandler();
+    }
+
     return (
         <div ref={menuDiv} className='h-0 w-screen overflow-y-scroll bg-black fixed z-50 text-white'>
             {/* menu and close wala div */}
-            <div className='flex justify-between px-10 sm:px-5 py-5 text-lg'>
+            <div className='flex justify-between px-4 sm:px-5 py-3.5 text-lg'>
                 <Link className='flex items-center' to='/' onClick={toggleMenu}>
                     <div className='h-4 pr-2 sm:block'>
                         <img className='h-full' src={menuRing} alt='icon' />
@@ -101,39 +107,39 @@ function Menu(props) {
                 {/* links div */}
                 <div className='flex flex-col w-1/3 lg:w-1/5'>
                     <div className='flex flex-col'>
-                        <Link onMouseEnter={eventsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/events'>
+                        <Link onMouseEnter={eventsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/events'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >Events</div>
                         </Link>
 
-                        <Link onMouseEnter={competitionsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/competitions'>
+                        <Link onMouseEnter={competitionsHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/competitions'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >Competitions</div>
                         </Link>
 
-                        <Link onMouseEnter={litfestHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/litfest'>
+                        <Link onMouseEnter={litfestHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/litfest'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >LitFest</div>
                         </Link>
 
-                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/'>
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >Social Cause</div>
                         </Link>
 
-                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/sponsors'>
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/sponsors'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >Sponsors</div>
                         </Link>
 
-                        <Link onMouseEnter={teamHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={toggleMenu} to='/team'>
+                        <Link onMouseEnter={teamHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 flex items-center' onClick={linksClickHandler} to='/team'>
                             <div className='ring-icon h-0'><img className='h-full' src={menuRing}></img></div>
                             <div className='event-name' >Team</div>
                         </Link>
 
-                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Schedule</Link>
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={linksClickHandler} to='/'>Schedule</Link>
 
-                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={toggleMenu} to='/'>Contact us</Link>
+                        <Link onMouseEnter={linksHoverHandler} onMouseLeave={linksLeaveHandler} className='py-4 sm:hidden' onClick={linksClickHandler} to='/'>Contact us</Link>
                     </div>
                 </div>
 
