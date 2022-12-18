@@ -30,15 +30,15 @@ function Sponsors() {
   const [isActive3, setIsActive3] = useState(false);
 
   return (
-    <div className="bg-[#080f24] flex flex-col">
-      <div>
-        <h1 className=" main-heading text-black-700 text-berkshire">
+    <div className="bg-[#080f24] flex flex-col sponsorDiv">
+      <div className="relative bg-[#fed395] md:h-[7.5rem] sm:h-[3rem]">
+        <h1 className=" main-heading ">
           Sponsors
         </h1>
       </div>
       <div style={{ zIndex: "1" }}>
         <div>
-          <h1 className="heading1">TITLE SPONSOR 2021</h1>
+          <h1 className="heading1">TITLE SPONSOR</h1>
           <img
             src={Hero}
             className="border-solid border-2 border-[#FED395] m-[auto] w-[50vw]"
@@ -53,7 +53,7 @@ function Sponsors() {
           <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
             <img
               src={Nisarga}
-              className="border-solid border-2 border-[#FED395] mb-[45px]"
+              className="border-solid border-2 border-[#FED395] md:my-[40px] sm:mb-[25px]"
             />
             <img
               src={Honeywell}

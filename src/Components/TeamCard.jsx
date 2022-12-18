@@ -102,7 +102,7 @@ function CoordCard({ Name, Image, Role, Phone }) {
         />
         {/* <img className="absolute z-0"  src={bg3}/> */}
         <div className="box overflow-hidden justify-center mx-auto relative  ">
-          <LazyLoadImage
+          <img
             src={Image}
             className="object-cover w-[100%] h-[100%]"
             alt="Image"
