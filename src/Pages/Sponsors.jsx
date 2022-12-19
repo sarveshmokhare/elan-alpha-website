@@ -30,7 +30,7 @@ function Sponsors() {
   const [isActive3, setIsActive3] = useState(false);
 
   return (
-    <div className="bg-[#080f24] flex flex-col sponsorDiv">
+    <div className="mt-[76px] lg:mt-0 bg-[#080f24] flex flex-col sponsorDiv">
       <div className="relative bg-[#fed395] md:h-[7.5rem] sm:h-[3rem]">
         <h1 className=" main-heading ">
           Sponsors

@@ -169,7 +169,7 @@ function Competitions() {
   const context = useContext(ThemeContext)
 
   return (
-    <div className={ " overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 relative"}>
+    <div className={ "mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 relative"}>
       <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl vs:text-9xl  z-10 relative text-golden'>Litfest</h1>
       <div className='relative z-5'>
         <Navigate />
