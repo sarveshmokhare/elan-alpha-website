@@ -17,7 +17,15 @@
   /* justify-content: ; */
 }
 .heading{
-  text-shadow: 0 0 10px #080F24;
+  /* text-shadow: 10px 10px 10px #080F24; */
+-webkit-text-stroke-width: -10px;
+  -webkit-text-stroke-color: black;
+  text-shadow:
+      5px 5px 5px #080F24,
+      -5px 5px 5px #080F24,
+      -5px -5px 5px #080F24,
+      5px -5px 5px #080F24;
+
 }
 
 .popup-overlay {

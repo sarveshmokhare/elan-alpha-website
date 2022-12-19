@@ -7,15 +7,15 @@ function Card({
   href,
 }) {
   return (
-    <Link to={href} className="hover:[&>div>img]:scale-105 transition-all">
-      <div className="lg:w-[29.188rem] lg:h-[18.313rem] w-[14.594rem] h-[9.156rem] bg-white relative">
+    <Link to={href}>
+      <div className="lg:w-[22rem] lg:h-[12rem] w-[14.594rem] h-[9.156rem] bg-white relative m-4 hover:scale-105 transition ease-out duration-75">
         <img
           src={imgUrl}
           alt=""
           className="absolute h-full w-full object-cover"
         />
         <div className="bottom-0 h-[100%] w-full absolute bg-gradient-to-t from-[rgba(4,0,15,0.9)] via-[rgba(11,4,33,0.35)] to-transparent"></div>
-        <h2 className="bottom-0 absolute p-7 text-5xl">{title}</h2>
+        <h2 className="bottom-0 absolute p-7 lg:text-4xl text-3xl">{title}</h2>
       </div>
     </Link>
   );

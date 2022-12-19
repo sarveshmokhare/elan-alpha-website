@@ -16,13 +16,13 @@ function Menu(props) {
 
   const menuDiv = useRef(null);
 
-  if (menuOpen === true) {
+  if (menuOpen) {
     const tl = gsap.timeline();
-    tl.to(menuDiv.current, { height: "100vh", ease: "power2.in" });
+    tl.to(menuDiv.current, { height: "100vh" });
     // tl.to('.event-name', { fontSize: '1.875rem', stagger: 0.15,  }, '<')
   } else {
     const tl = gsap.timeline();
-    tl.to(menuDiv.current, { height: 0, ease: "power3.out" });
+    tl.to(menuDiv.current, { height: 0 });
     // tl.to('.event-name', { fontSize: 0, })
   }
 
@@ -46,8 +46,8 @@ function Menu(props) {
     card: teamCard,
     subtitles: [],
   };
-
   const [hoveredTitle, setHoveredTitle] = useState(eventsData);
+
   function eventsHoverHandler(e) {
     hoveredTitle !== eventsData
       ? setHoveredTitle(eventsData)
@@ -107,7 +107,7 @@ function Menu(props) {
   return (
     <div
       ref={menuDiv}
-      className="w-screen overflow-y-hidden fixed top-0 z-50 text-white bg-black h-0"
+      className="h-0 w-screen overflow-y-scroll bg-black fixed top-0 z-50 text-white"
     >
       {/* menu and close wala div */}
       <div className="flex justify-between px-10 sm:px-5 py-5 text-lg">
@@ -123,7 +123,7 @@ function Menu(props) {
       </div>
 
       {/* main div */}
-      <div className="flex pl-6 bg-black sm:pr-8 items-center justify-around sm:justify-evenly text-2xl sm:text-3xl">
+      <div className="flex pl-6 sm:pr-8 items-center justify-around sm:justify-evenly text-2xl sm:text-3xl">
         {/* links div */}
         <div className="flex flex-col w-1/3 lg:w-1/5">
           <div className="flex flex-col">

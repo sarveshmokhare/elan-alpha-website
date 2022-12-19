@@ -9,16 +9,14 @@ import bg3 from "../assets/Team/CardBG/BG3.svg";
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
   useEffect(() => {
-    AOS.init({
-      disable: window.innerWidth > 900,
-    });
+    AOS.init();
     AOS.refresh();
   }, []);
   return (
     <>
       <div
-        data-aos="fade-up"
-        data-aos-duration="600"
+        data-aos="zoom-in-down"
+        data-aos-duration="1000"
         className="card bg-[#E3AA57] py-4 px-2 rounded-tl-[30px] rounded-br-[30px]"
       >
         <img
@@ -79,17 +77,17 @@ function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
 }
 
 function CoordCard({ Name, Image, Role, Phone }) {
-  // useEffect(() => {
-  //   AOS.init({
-  //     disable:window.innerWidth>900
-  //   });
-  //   AOS.refresh();
-  // }, []);
+  useEffect(() => {
+    AOS.init(
+      // {disable:window.innerWidth <1000  } 
+    );
+    AOS.refresh();
+  }, []);
   return (
     <>
       <div
-        // data-aos="fade-up"
-        // data-aos-duration="600"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
         className="card bg-[#0D1838] py-4 px-2 rounded-tl-[30px] rounded-br-[30px]"
       >
         <img
@@ -124,9 +122,16 @@ function CoordCard({ Name, Image, Role, Phone }) {
 }
 
 function OCCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
-      <div className="card bg-[#AD002A] py-4 px-2 rounded-tl-[30px] rounded-br-[30px]">
+      <div
+      data-aos="zoom-in"
+        data-aos-duration="1000"
+       className="card bg-[#AD002A] py-4 px-2 rounded-tl-[30px] rounded-br-[30px]">
         <img
           className="absolute h-[170px] mt-[-16px] ml-[-8px] z-0 rounded-tl-[30px]"
           src={bg1}

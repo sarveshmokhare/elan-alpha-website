@@ -21,3 +21,13 @@
 
 /* mobile */
 @media (max-width: 480px) {}
+
+.scroll-div::-webkit-scrollbar {
+  width: 0 !important
+}
+.scroll-div {
+  overflow: -moz-scrollbars-none;
+}
+.scroll-div {
+  -ms-overflow-style: none;
+}

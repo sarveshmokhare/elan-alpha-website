@@ -2,7 +2,7 @@ import { useState } from "react"
 import "../../styles/slider.css";
 
 
-export default function EventsSlider({ imagesList, size }) {
+export default function EventsSlider({ imagesList, size,imgheight }) {
 
   const [HoverValue, setHoverValue] = useState(false)
   const length = imagesList.length
@@ -11,7 +11,8 @@ export default function EventsSlider({ imagesList, size }) {
   itemstyle = {
     margin: '5px',
     width: (100 / length).toString() + '%',
-    height: (100 / size * 3 / 5).toString() + 'vw',
+    height: (100 / size * imgheight).toString() + 'vw',
+    objectFit:'cover'
   }
 
   if (length < 2 * size) {
@@ -23,7 +24,7 @@ export default function EventsSlider({ imagesList, size }) {
     }
 
     style = {
-      width: (length * num *100 / size).toString() + '%',
+      width: (length * num *100 / size).toString() + 'vw',
       animation: HoverValue ? "bannermove " + (imagesList.length * 5).toString() + "s linear infinite paused" : "bannermove " + (imagesList.length * 5).toString() + "s linear infinite",
       display: 'flex'
     }
@@ -36,7 +37,7 @@ export default function EventsSlider({ imagesList, size }) {
     }
     
     style = {
-      width: (length * 200 / size).toString() + '%',
+      width: (length * 200 / size).toString() + 'vw',
       animation: HoverValue ? "bannermove " + (length * 5).toString() + "s linear infinite paused" : "bannermove " + (length * 5).toString() + "s linear infinite",
       display: 'flex'
     }
