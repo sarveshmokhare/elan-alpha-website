@@ -10,24 +10,7 @@ import workshops2 from "../../assets/events/workshop_2.jpg";
 import workshops3 from "../../assets/events/workshop_3.jpg";
 
 export const eventsdata=[
-  {name:'Pronites',
-    description:'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
-    img:[pronites1,pronites2,pronites3,pronites4,pronites5],
-    examples: [{
-      name: 'Sunburn - lost stories',
-      description:'Lost stories is an Indian DJ/ producer  and are best known for their amazing tracks, which have an amazing blend of Indian folk and electronic music.'},
-      {name:'Navjot Ahuja'},
-      {name:'Alchemy'},
-      {name:'The Touchdown'},
-      {name:'Zakir khan',
-      description:'With about 7.13 million subscribers on youtube, Zakir khan is one of India’s biggest stand - up comedians who has performed to sold - out audiences all over the world.'},
-      {name:'Darshan Raval',
-      description:'The Young and Emerging singing sensation, Darshan Raval is an Indian singer, songwriter, composer, and actor who sings songs mostly in Hindi and Gujarati.'},
-      {name:'The Yellow Diary'},
-      {name:'The Rave Republic',
-      description:'Rave Republic is a Singaporean DJ duo best known for their pop - EDM crossover productions signed to Warner Music Singapore.'},
-      {name:'When Chai Met Toast'}]
-},
+  
   {name:'Workshops',
     description: 'Workshops are an essential part of our fest. They are intended for hands-on experiential learning. Students will learn and discover many new things that cannot be taught theoretically. Students learn a lot and gain new skills that are needed in today\'s industry.Our workshops are designed and planned in such a way that they improve students\' critical thinking skills.',
     img:[workshops1,workshops2,workshops3],
@@ -41,21 +24,77 @@ export const eventsdata=[
     description:'The primary goal of this workshop is to introduce the fundamental principles underlying the creation of a website.Its training consists of step - by - step learning of website creation and design.'}]
 
 },
+  {
+    name: 'Pronites',
+    description:'Stay tuned for new updates' 
+    // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
+    ,img: [pronites1, pronites2, pronites3, pronites4, pronites5],
+    examples: [
+    //   {
+    //   name: 'Sunburn - lost stories',
+    //   description: 'Lost stories is an Indian DJ/ producer  and are best known for their amazing tracks, which have an amazing blend of Indian folk and electronic music.'
+    // },
+    // { name: 'Navjot Ahuja' },
+    // { name: 'Alchemy' },
+    // { name: 'The Touchdown' },
+    // {
+    //   name: 'Zakir khan',
+    //   description: 'With about 7.13 million subscribers on youtube, Zakir khan is one of India’s biggest stand - up comedians who has performed to sold - out audiences all over the world.'
+    // },
+    // {
+    //   name: 'Darshan Raval',
+    //   description: 'The Young and Emerging singing sensation, Darshan Raval is an Indian singer, songwriter, composer, and actor who sings songs mostly in Hindi and Gujarati.'
+    // },
+    // { name: 'The Yellow Diary' },
+    // {
+    //   name: 'The Rave Republic',
+    //   description: 'Rave Republic is a Singaporean DJ duo best known for their pop - EDM crossover productions signed to Warner Music Singapore.'
+    // },
+    // { name: 'When Chai Met Toast' }
+  ]
+  },
   {name:'Informals',
-    description: 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.',
-    img:[informals1,informals2],
-    examples:[{name:'PUBG'},
-        {name: 'DOTA'},
-        {name:'COD : call of duty'},
-        {name:'FIFA'},
-        {name:'CS : GO'},
-        {name:'VALORANT'},
-        {name:'TUG OF WAR'},
-        {name:'SPIN THE WHEEL'},
-        {name:'RED LIGHT GREEN LGHT'},
-        {name:'DODGE BALL'},
-        {name:'TWISTER'},
-        {name:'OFFLINE EVENTS'}]
+    description: 'Stay tuned for new updates'
+    // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
+    ,img:[informals1,informals2],
+    examples:[
+      // {name:'PUBG'},
+      //   {name: 'DOTA'},
+      //   {name:'COD : call of duty'},
+      //   {name:'FIFA'},
+      //   {name:'CS : GO'},
+      //   {name:'VALORANT'},
+      //   {name:'TUG OF WAR'},
+      //   {name:'SPIN THE WHEEL'},
+      //   {name:'RED LIGHT GREEN LGHT'},
+      //   {name:'DODGE BALL'},
+      //   {name:'TWISTER'},
+      //   {name:'OFFLINE EVENTS'}
+      ]
 
 },
+  {
+    name: 'Biggies',
+    description: 'Stay tuned for new updates'
+    // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
+    ,
+    img: [
+      // informals1, informals2;\
+    ],
+    examples: [
+      // {name:'PUBG'},
+      //   {name: 'DOTA'},
+      //   {name:'COD : call of duty'},
+      //   {name:'FIFA'},
+      //   {name:'CS : GO'},
+      //   {name:'VALORANT'},
+      //   {name:'TUG OF WAR'},
+      //   {name:'SPIN THE WHEEL'},
+      //   {name:'RED LIGHT GREEN LGHT'},
+      //   {name:'DODGE BALL'},
+      //   {name:'TWISTER'},
+      //   {name:'OFFLINE EVENTS'}
+    ]
+
+  },
 ]

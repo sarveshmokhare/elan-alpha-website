@@ -46,7 +46,7 @@ function ShowDetails({ item }) {
             <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-7 hover:cursor-pointer' onClick={close} />
             <div className='flex flex-row  justify-evenly mb-5 flex-wrap'>
               {popupnav.map((item, index) => (
-                <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-black bg-golden' : 'text-golden bg-blue ')}>{item}</button>
+                <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-blue bg-golden' : 'text-golden bg-blue ')}>{item}</button>
               ))}
             </div>
             <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
@@ -115,7 +115,7 @@ function Hii({ data, sliderValue }) {
       <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/3 "}>
         <div className='m-2 lg:bg-blue lg:rounded-tl-2xl rounded-br-2xl overflow-hidden'>
           <img src={item.img} className=' object-cover m-auto lg:h-[20vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
-          <div className='font-cinzel text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
+          <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
 
 
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.details}
@@ -134,7 +134,7 @@ function Hii({ data, sliderValue }) {
 }
 
 function Navigate() {
-  const [Navigatevalue, setNavigateValue] = useState(1)
+  const [Navigatevalue, setNavigateValue] = useState(0)
   const [sliderValue, setSliderValue] = useState(1)
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -167,8 +167,8 @@ function Competitions() {
   const context = useContext(ThemeContext)
 
   return (
-    <div className={context.theme + " overflow-hidden bg-black bg-no-repeat p-5 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  bg-[length:300px,10%] md:bg-[length:400px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
-      <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-16 md:pt-28 relative z-10 md:text-9xl'>
+    <div className={context.theme + " overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
+      <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl'>
         Competitions
       </div>
       {<Navigate />}

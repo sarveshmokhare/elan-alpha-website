@@ -28,7 +28,7 @@ function Litfest() {
   return (
     <div className='relative overflow-hidden'>
       <div className='p-5  pb-40 xs:m-10 md:pb-30 text-golden overflow-visible z-10'>
-        <h1 className='font-berkshire text-7xl py-14 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
+        <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
         <div className='relative z-10'>
         <LitfestSlider imagesList={sliderimages} size={width >= 800 ? 5 : 3} />
         </div>
@@ -41,9 +41,9 @@ function Litfest() {
       </div>
         {/* bg images */}
         
-      <div className='block lg:hidden absolute right-0 top-[0] h-[100px] xs:h-[200px] '><img className='h-full' src={vase}></img></div>
+      <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px] '><img className='h-full' src={vase}></img></div>
       <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-      <div className='absolute right-0 top-[30px] h-[35vh] hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+      <div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
       <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
       </div>
       
