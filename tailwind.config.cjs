@@ -32,7 +32,10 @@ module.exports = {
         green: "#0B8661",
         yellow: "#FFB345",
         blue: "#0D1838",
-        white: "#FFFFFF",
+        darkAsh: "#151515",
+        ash: "#9B9B9B",
+        "v-green": "#173400",
+        lightGreen: "#74AA00",
       },
       fontFamily: {
         berkshire: ["Berkshire Swash", "cursive"],
@@ -41,6 +44,14 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    "bg-darkAsh",
+    "text-ash",
+    "text-lightGreen",
+    "bg-v-green",
+    "left-0",
+    "right-0",
+  ],
   darkMode: "class",
   plugins: [],
 };

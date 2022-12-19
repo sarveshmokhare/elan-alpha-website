@@ -739,7 +739,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[0]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[0]} fill="#FED395">
@@ -754,7 +754,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[1]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[1]} fill="#FED395">
@@ -769,7 +769,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[2]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[2]} fill="#FED395">
@@ -784,7 +784,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[3]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[3]} fill="#FED395">
@@ -799,7 +799,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[4]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[4]} fill="#FED395">
@@ -814,7 +814,7 @@ function HomePage() {
                   cx={yrsProps.cx}
                   cy={yrsProps.cys[5]}
                   r={yrsProps.r}
-                  fill="white"
+                  fill="#ffffff4a"
                   stroke="#FED395"
                 />
                 <text x={yrsProps.yrX} y={yrsProps.yrYs[5]} fill="#FED395">
