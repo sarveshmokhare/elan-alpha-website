@@ -27,7 +27,7 @@ function Footer() {
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.instagram.com/elan_nvision.iith/' target="_blank"><BsInstagram /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.youtube.com/user/ElanIITHyderabad' target="_blank"><BsYoutube /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.linkedin.com/company/elan-nvision-iith/' target="_blank"><BsLinkedin /></a>
-                            <a className='px-3 md:px-4 lg:px-4.5' href='https://www.facebook.com/elan.iithyderabad' target="_blank"><BsFacebook /></a>
+                            <a className='px-3 md:px-4 lg:px-4.5' href='https://www.facebook.com/elannvision.iithyderabad' target="_blank"><BsFacebook /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://twitter.com/elan_nvision' target="_blank"><BsTwitter /></a>
                         </div>
                     </div>

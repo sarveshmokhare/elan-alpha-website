@@ -71,7 +71,14 @@ import moon from '../assets/moon.svg'
 import btmLine from '../assets/bottom_line.svg'
 import ringMoon from '../assets/ring_moon.svg'
 import inviteTextMob from '../assets/invite_text_mobile.svg'
-
+import audience from '../assets/audience.svg'
+import hat from '../assets/hat.png'
+import calender from '../assets/calender.png'
+import insta from '../assets/insta.png'
+import likes from '../assets/likes.png'
+import threePeeps from '../assets/three_peeps.png'
+import tweets from '../assets/tweets.svg'
+import views from '../assets/views.svg'
 
 function HomePage() {
   const timelineImgs = [timeline2k171, timeline2k172, timeline2k173, timeline2k174, timeline2k181, timeline2k182, timeline2k183, timeline2k184, timeline2k191, timeline2k192, timeline2k193, timeline2k194, timeline2k201, timeline2k202, timeline2k203, timeline2k204, timeline2k211, timeline2k212, timeline2k213, timeline2k214, timeline2k221, timeline2k222, timeline2k223, timeline2k224];
@@ -98,96 +105,96 @@ function HomePage() {
   const sec6Ref = useRef(null)
 
   useEffect(() => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+
+
 
     const ctx = gsap.context(() => {
 
       const mm = gsap.matchMedia();
 
       // desktop opening animation
-      mm.add('(min-width: 1024px)', () => {
-        // master timeline
-        const masterTl = gsap.timeline({ onStart: () => document.body.style.overflowY = 'hidden', onComplete: () => document.body.style.overflowY = 'scroll', });
+      // mm.add('(min-width: 1024px)', () => {
+      //   // master timeline
+      //   const masterTl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
 
-        // constant rotation animation
-        const rotationTl = gsap.timeline({ defaults: { rotation: 360, repeat: Infinity, repeatDelay: 0, ease: 'none' } });
-        rotationTl.to('.moon3', { duration: 4 })
-        rotationTl.to('.moon2', { duration: 2 }, '-=3')
-        rotationTl.to('.moon4', { duration: 2 }, '-=2')
+      //   // constant rotation animation
+      //   const rotationTl = gsap.timeline({ defaults: { rotation: 360, repeat: Infinity, repeatDelay: 0, ease: 'none' } });
+      //   rotationTl.to('.moon3', { duration: 4 })
+      //   rotationTl.to('.moon2', { duration: 2 }, '-=3')
+      //   rotationTl.to('.moon4', { duration: 2 }, '-=2')
 
-        // moons moving to right timeline
-        function moonsTl() {
-          const movementTl = gsap.timeline({ default: { ease: 'power3.out', }, autoRemoveChildren: true, delay: 2, onComplete: () => rotationTl.pause() });
+      //   // moons moving to right timeline
+      //   function moonsTl() {
+      //     const movementTl = gsap.timeline({ default: { ease: 'power3.out', }, autoRemoveChildren: true, delay: 2, onComplete: () => rotationTl.pause() });
 
-          movementTl.to('.moon1', {
-            right: '-7%',
-            duration: 1.75,
-          })
-          movementTl.to('.moon5', {
-            right: '-7%',
-            duration: 2.25,
-          }, '-=1.5')
-          movementTl.to('.moon2', {
-            right: '-7%',
-            duration: 2.25,
-          }, '-=2')
-          movementTl.to('.moon4', {
-            right: '-7%',
-            duration: 2.25,
-          }, '-=2.5')
-          movementTl.to('.moon3', {
-            right: '-10%',
-            duration: 1.25,
-            delay: 0.2,
-          }, '-=1.75')
-          movementTl.timeScale(1.8)
+      //     movementTl.to('.moon1', {
+      //       right: '-7%',
+      //       duration: 1.75,
+      //     })
+      //     movementTl.to('.moon5', {
+      //       right: '-7%',
+      //       duration: 2.25,
+      //     }, '-=1.5')
+      //     movementTl.to('.moon2', {
+      //       right: '-7%',
+      //       duration: 2.25,
+      //     }, '-=2')
+      //     movementTl.to('.moon4', {
+      //       right: '-7%',
+      //       duration: 2.25,
+      //     }, '-=2.5')
+      //     movementTl.to('.moon3', {
+      //       right: '-10%',
+      //       duration: 1.25,
+      //       delay: 0.2,
+      //     }, '-=1.75')
+      //     movementTl.timeScale(1.8)
 
-          return movementTl;
-        }
-
-
-        function logoTl() {
-          const tl = gsap.timeline({ defaults: {} });
-
-          tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
-          tl.to('.elan-logo', { height: '13vh', top: '34%', duration: 1, }, '<')
-          tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
-          tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
-          tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
-          tl.to('.invite-text', { opacity: 0, })
-          tl.to('.valenrow-logo', { opacity: 1, duration: 1.5, ease: 'power2.in'},)
-          tl.to('.buttons>*', { opacity: 1, stagger: 0.5 })
-            .to(section1.current, {
-              background: 'rgb(8, 15, 36, 0.1)',
-              duration: 6,
-              ease: 'power2.inOut'
-            })
-
-          return tl;
-        }
-
-        masterTl.add(moonsTl());
-        masterTl.add(logoTl())
-      })
-
-      //mobile opening animation
-      mm.add('(max-width: 550px)', () => {
-        const tl = gsap.timeline({ onStart: () => document.body.style.overflowY = 'hidden', onComplete: () => document.body.style.overflowY = 'scroll', });
-
-        tl.to('.mob-top-decor', {opacity: 0, duration: 1.5, ease: 'power2.in'})
-        tl.to('.mob-bottom-decor', {opacity: 0, left: '-12%', duration: 1.5, ease: 'power2.in'})
+      //     return movementTl;
+      //   }
 
 
-        tl.to('.mob-invite-text', {opacity: 0, })
-        tl.fromTo('.valenrow-logo', {top: '28%'},{opacity: 1, ease: 'power2.in', duration: 1.5})
-        tl.to('.elan-logo', {top: '10%', height: '8vh', duration: 1.5, delay: 0.8})
-        tl.to('.valenrow-logo', {top: '12%', duration: 1.5, }, '<')
-        tl.from('.moon-ring', { bottom: '40%', scale: 10, opacity: 0.25, right: '25%',rotation: 150, duration: 3, ease: 'power3.out', }, '<')
-        tl.to(section1.current, {height: '80vh', ease: 'power2.out', duration: 1.5}, '<')
-        tl.to('.buttons>*', {opacity: 1, stagger: 0.5}, '<+0.9')
-        tl.from('.moon', {rotation: 18, height: '8vh', left: '3%', duration: 1.4, ease: 'power2.out'}, )
-      })
+      //   function logoTl() {
+      //     const tl = gsap.timeline({ defaults: {} });
+
+      //     tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
+      //     tl.to('.elan-logo', { height: '13vh', top: '34%', duration: 1, }, '<')
+      //     tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
+      //     tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
+      //     tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
+      //     tl.to('.invite-text', { opacity: 0, })
+      //     tl.to('.valenrow-logo', { opacity: 1, duration: 1.5, ease: 'power2.in'},)
+      //     tl.to('.buttons>*', { opacity: 1, stagger: 0.5 })
+      //       .to(section1.current, {
+      //         background: 'rgb(8, 15, 36, 0.1)',
+      //         duration: 6,
+      //         ease: 'power2.inOut'
+      //       })
+
+      //     return tl;
+      //   }
+
+      //   masterTl.add(moonsTl());
+      //   masterTl.add(logoTl())
+      // })
+
+      // //mobile opening animation
+      // mm.add('(max-width: 550px)', () => {
+      //   const tl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
+
+      //   tl.to('.mob-top-decor', {opacity: 0, duration: 1.5, ease: 'power2.in'})
+      //   tl.to('.mob-bottom-decor', {opacity: 0, left: '-12%', duration: 1.5, ease: 'power2.in'})
+
+
+      //   tl.to('.mob-invite-text', {opacity: 0, })
+      //   tl.fromTo('.valenrow-logo', {top: '28%'},{opacity: 1, ease: 'power2.in', duration: 1.5})
+      //   tl.to('.elan-logo', {top: '10%', height: '8vh', duration: 1.5, delay: 0.8})
+      //   tl.to('.valenrow-logo', {top: '12%', duration: 1.5, }, '<')
+      //   tl.from('.moon-ring', { bottom: '40%', scale: 10, opacity: 0.25, right: '25%',rotation: 150, duration: 3, ease: 'power3.out', }, '<')
+      //   tl.to(section1.current, {height: '80vh', ease: 'power2.out', duration: 1.5}, '<')
+      //   tl.to('.buttons>*', {opacity: 1, stagger: 0.5}, '<+0.9')
+      //   tl.from('.moon', {rotation: 18, height: '8vh', left: '3%', duration: 1.4, ease: 'power2.out'}, )
+      // })
 
 
 
@@ -205,7 +212,7 @@ function HomePage() {
             trigger: '.timeline-div',
             // markers: true,
             start: isDesktop ? 'center center' : 'center center',
-            end: isDesktop ? 'bottom+=60%' : 'bottom+=5000px',
+            end: isDesktop ? 'bottom+=60%' : 'bottom+=1000px',
             scrub: true,
             pin: '.giant-div',
           },
@@ -220,7 +227,15 @@ function HomePage() {
     return () => { ctx.revert() }; // cleanup!
   }, []);
 
-  const [highlightedCircleYPos, sethighlightedCircleYPos] = useState(20)
+  const yrsProps = {
+    r: '7px',
+    cx: 29,
+    cys: [10, 60, 110, 160, 210, 260],
+    yrYs: [18, 70, 120, 170, 220, 267],
+    yrX: 55,
+  }
+
+  const [highlightedCircleYPos, sethighlightedCircleYPos] = useState(yrsProps.cys[0])
 
   // set scrollable div's scroll position in sync with the highlighted circle
   // doing two things in here: 1. on clicking a point, highlighted circle moves to that point
@@ -307,7 +322,7 @@ function HomePage() {
           </div>
 
           {/* desktop invite text */}
-          <div className='hidden lg:flex invite-text h-[7vh] md:h-[17vh] lg:h-[22vh] absolute right-0 left-0 justify-center top-[37%]'>
+          <div className='hidden lg:flex invite-text w-[60vw] absolute m-auto right-0 left-0 justify-center top-[37%]'>
             <img className='h-full' alt='elan_text' src={inviteText} ></img>
           </div>
           {/* mobile invite text */}
@@ -365,7 +380,7 @@ function HomePage() {
         <div className='text-golden py-8 lg:pt-20 border-y-2 border-golden relative'>
           <div className='flex justify-evenly sm:justify-around sm:px-20'>
             <img className='w-[12vw]' alt='graphic' src={aboutLeft} />
-            <h1 className='text-3xl md:text-5xl lg:text-6xl font-cinzel font-bold z-10'>About Us</h1>
+            <h1 className='text-4xl md:text-5xl lg:text-6xl font-cinzel font-bold z-10'>About Us</h1>
             <img className='w-[12vw]' alt='graphic' src={aboutRight} />
           </div>
 
@@ -399,38 +414,38 @@ function HomePage() {
           {/* background imgs */}
           <div className='absolute h-[40%] top-0 right-0' ><img className='h-full relative' src={timelineJug}></img></div>
           <div className='absolute h-[75%] left-0 -bottom-[40%]' ><img className='h-full' src={timelineBtm}></img></div>
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative z-20'>Timeline</h1>
+          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative z-20'>Timeline</h1>
 
-          <div ref={timelineRef} className='timeline-div flex pt-11 items-center justify-evenly relative z-20'>
+          <div ref={timelineRef} className='timeline-div flex pt-11 items-center justify-evenly relative z-20 text-2xl'>
             <div className=''>
-              <svg width="100" height="250">
-                <line x1={29} y1={20} x2={29} y2={220} stroke='#FED395' strokeWidth={1} />
+              <svg width="120" height="300">
+                <line x1={yrsProps.cx} y1={yrsProps.cys[0]} x2={yrsProps.cx} y2={yrsProps.cys[yrsProps.cys.length - 1]} stroke='#FED395' strokeWidth={1} />
+
                 {/* circles and corresponding years  */}
-                <circle className='cursor-pointer' ref={pt1Ref} pointnum={1} onClick={ptClickHandler} cx={29} cy={20} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={25} fill='#FED395'>2017</text>
+                <circle className='cursor-pointer' ref={pt1Ref} pointnum={1} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[0]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[0]} fill='#FED395'>2017</text>
 
-                <circle className='cursor-pointer' ref={pt2Ref} pointnum={2} onClick={ptClickHandler} cx={29} cy={60} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={65} fill='#FED395'>2018</text>
+                <circle className='cursor-pointer' ref={pt2Ref} pointnum={2} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[1]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[1]} fill='#FED395'>2018</text>
 
-                <circle className='cursor-pointer' ref={pt3Ref} pointnum={3} onClick={ptClickHandler} cx={29} cy={100} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={105} fill='#FED395'>2019</text>
+                <circle className='cursor-pointer' ref={pt3Ref} pointnum={3} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[2]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[2]} fill='#FED395'>2019</text>
 
-                <circle className='cursor-pointer' ref={pt4Ref} pointnum={4} onClick={ptClickHandler} cx={29} cy={140} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={145} fill='#FED395'>2020</text>
+                <circle className='cursor-pointer' ref={pt4Ref} pointnum={4} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[3]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[3]} fill='#FED395'>2020</text>
 
-                <circle className='cursor-pointer' ref={pt5Ref} pointnum={5} onClick={ptClickHandler} cx={29} cy={180} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={185} fill='#FED395'>2021</text>
+                <circle className='cursor-pointer' ref={pt5Ref} pointnum={5} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[4]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[4]} fill='#FED395'>2021</text>
 
-                <circle className='cursor-pointer' ref={pt6Ref} pointnum={6} onClick={ptClickHandler} cx={29} cy={220} r='0.8vh' fill='white' stroke='#FED395' />
-                <text x={55} y={225} fill='#FED395'>2022</text>
+                <circle className='cursor-pointer' ref={pt6Ref} pointnum={6} onClick={ptClickHandler} cx={yrsProps.cx} cy={yrsProps.cys[5]} r={yrsProps.r} fill='white' stroke='#FED395' />
+                <text x={yrsProps.yrX} y={yrsProps.yrYs[5]} fill='#FED395'>2022</text>
 
                 {/* highlighted circle */}
-                <circle ref={highlightedCircleRef} cx={29} cy={highlightedCircleYPos} r='0.8vh' fill='#FED395' />
+                <circle ref={highlightedCircleRef} cx={yrsProps.cx} cy={highlightedCircleYPos} r={yrsProps.r} fill='#FED395' />
               </svg>
             </div>
 
-            <div onScroll={scrollHandler} ref={scrollDivRef} className='scroll-div bg-white h-[40vh] lg:h-[60vh] w-[50vw] lg:w-[40vw] overflow-y-auto relative flex flex-wrap justify-center'>
-
+            <div onScroll={scrollHandler} ref={scrollDivRef} className='scroll-div bg- h-[40vh] lg:h-[60vh] w-[50vw] lg:w-[40vw] overflow-y-auto relative flex flex-wrap justify-center'>
               {timelineImgs.map((img, ind) => {
                 let currRef;
                 switch (ind / 4) {
@@ -459,21 +474,6 @@ function HomePage() {
                   </div>
                 )
               })}
-
-              {/* <div ref={firstImgRef} className='p-3 flex justify-center h-1/2 w-1/2'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
-
-              <div ref={secondImgRef} className='p-3 flex justify-center h-1/2 w-1/2'><img className='h-full' src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg' /></div>
-
-              <div ref={thirdImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg' /></div>
-
-              <div ref={fourthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg' /></div>
-
-              <div ref={fifthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg' /></div>
-
-              <div ref={sixthImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://wallup.net/wp-content/uploads/2016/01/288160-space-universe-stars-Milky_Way.jpg' /></div>
-
-              <div ref={firstImgRef} className='p-3 flex justify-center  h-1/2 w-1/2'><img className='h-full' src='https://bd.gaadicdn.com/processedimages/royal-enfield/classic350/source/classic350612f277880878.jpg' /></div>
-         */}
             </div>
           </div>
         </div>
@@ -483,7 +483,7 @@ function HomePage() {
           {/* bg images */}
           <div className='absolute h-[55%] right-0 bottom-[10%]' ><img className='h-full' src={exploreBg}></img></div>
 
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Explore</h1>
+          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative'>Explore</h1>
 
         </div>
 
@@ -493,16 +493,52 @@ function HomePage() {
           <div className='absolute h-[85%] left-0 top-[10%]' ><img className='h-full' src={galleryBg}></img></div>
           <div className='absolute h-[70%] right-0 -bottom-[20%]' ><img className='h-full' src={galleryBtmBg}></img></div>
 
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Gallery</h1>
+          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative'>Gallery</h1>
 
         </div>
 
         {/* Stats */}
-        <div className='text-golden py-10 lg:px-16 box-content relative h-[30vh] lg:h-[70vh]'>
-          {/* bg images */}
-          <div className='absolute h-[85%] left-0 top-[5%]' ><img className='h-full' src={statsBg}></img></div>
+        <div className='text-golden py-10 lg:px-16 box-content relative'>
+          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative z-10'>Stats</h1>
 
-          <h1 className='font-berkshire text-5xl lg:text-8xl px-10 lg:px-0 relative'>Stats</h1>
+          <div className='flex flex-wrap w-full justify-around px-8 py-5 pt-14 z-10 relative'>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={audience}></img></div>
+                <p>60+ events</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={hat}></img></div>
+                <p>400+ colleges</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={calender}></img></div>
+                <p>3 days</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4 mx-2'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={threePeeps}></img></div>
+                <p>10k+ audience</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4 mx-2'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={insta}></img></div>
+                <p>3.7k+ followers</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={likes}></img></div>
+                <p>42k+ likes</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={views}></img></div>
+                <p>82k+ views</p>
+              </div>
+              <div className='flex flex-col items-center justify-center my-4'>
+                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={tweets}></img></div>
+                <p>1.1k+ followers</p>
+              </div>
+          </div>
+
+          {/* bg images */}
+          <div className='absolute h-[60%] left-0 top-[-10%] lg:top-0' ><img className='h-full' src={statsBg}></img></div>
+
 
         </div>
       </div>

@@ -147,7 +147,7 @@ function Menu(props) {
                 {/* card and buttons div */}
                 <div className='w-1/2 sm:w-3/4 lg:w-1/2 flex flex-col'>
                     {/* card div */}
-                    <div className='hidden sm:flex justify-center h-[50vh] my-5'>
+                    <div className='hidden sm:flex justify-center h-[50vh] my-5  hover:scale-105 transition ease-out'>
                         <Link className='h-full' onClick={toggleMenu} to={hoveredTitle.route}>
                             <div className='h-52 lg:h-64'><img className='h-full' alt='card' src={hoveredTitle.card} /></div>
 
@@ -163,18 +163,18 @@ function Menu(props) {
 
                     {/* buttons div */}
                     <div className='font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between'>
-                        <button className='bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4'>
+                        <button className='bg-[#AD002A] hover:bg-[#c20938] text-golden py-4 px-8 rounded-md my-4'>
                             <a >Merch</a>
                         </button>
 
-                        <button className='bg-green py-2.5 px-2.5 rounded-md my-4'>
+                        <button className='bg-green hover:bg-[#0fa074] py-2.5 px-2.5 rounded-md my-4'>
                             <a className='flex items-center' href='https://ca.elan.org.in' target='_blank'>
                                 <img src={caPortalIcon} className='h-8 pr-2.5' alt='icon' />
                                 <div>CA Portal</div>
                             </a>
                         </button>
 
-                        <Link className='flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative' style={{ borderRadius: '40px' }} to='/' onClick={props.toggleMenu}>
+                        <Link className='flex items-center text-center bg-yellow hover:bg-[#fbbb61] py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative' style={{ borderRadius: '40px' }} to='/' onClick={props.toggleMenu}>
                             <img src={valenrowLogo} className='h-24 absolute -top-2' alt='icon' />
                             <div className='absolute left-12 text-sm'>Explore Valenrow</div>
                         </Link>

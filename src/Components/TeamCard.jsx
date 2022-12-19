@@ -10,7 +10,7 @@ import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
   useEffect(() => {
     AOS.init({
-      disable:window.innerWidth>900
+      disable: window.innerWidth > 900,
     });
     AOS.refresh();
   }, []);
@@ -38,7 +38,7 @@ function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
           />
         </div>
 
-        <div className=" ml-2 text-left font-cinzel font-[700] text-xl mt-4 text-[#0D1838] font-bold ">
+        <div className=" ml-2 text-left font-cinzel text-xl mt-4 text-[#0D1838] font-bold ">
           {Name}
         </div>
         <div className=" ml-2 text-left font-[700] text-lg  text-[#5F3800]">
@@ -102,7 +102,7 @@ function CoordCard({ Name, Image, Role, Phone }) {
         />
         {/* <img className="absolute z-0"  src={bg3}/> */}
         <div className="box overflow-hidden justify-center mx-auto relative  ">
-          <LazyLoadImage
+          <img
             src={Image}
             className="object-cover w-[100%] h-[100%]"
             alt="Image"

@@ -26,7 +26,7 @@ function Litfest() {
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => setWidth(window.innerWidth));
   return (
-    <div className='relative overflow-hidden'>
+    <div className='mt-[76px] lg:mt-0 relative overflow-hidden'>
       <div className='p-5  pb-40 xs:m-10 md:pb-30 text-golden overflow-visible z-10'>
         <h1 className='font-berkshire text-7xl py-14 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
         <div className='relative z-10'>

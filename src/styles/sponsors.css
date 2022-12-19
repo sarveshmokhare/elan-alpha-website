@@ -130,8 +130,8 @@
   left: 80%;
 }
 /* sponsor css */
-* {
-  /* overflow-x:hidden; */
+.sponsorDiv{
+  overflow-x:hidden;
 }
 
 /* dark and light s theme  */
@@ -142,26 +142,32 @@
 } */
 
 .main-heading {
-  /* position: relative; */
+  position: relative;
   display: block;
   left: 0%;
-  top: 13.5%;
+  top: 17%;
   /* bottom: 79%; */
-  width: auto;
+  /* width: auto; */
   padding-left: 5.56%;
 
-  background: #fed395;
+  /* background: #fed395;  */
 
   font-family: "Berkshire Swash";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 8rem;
   line-height: 60px;
   /* identical to box height */
 
   color: #080f24;
 
   /* border: 5px solid #FED395; */
+}
+@media (max-width:480px) {
+  .main-heading{
+    font-size: 4rem;
+  }
+  
 }
 .button {
   display: flex;
@@ -191,13 +197,18 @@
   font-family: "Cinzel";
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2.5rem;
   line-height: 38px;
   /* identical to box height */
   text-align: center;
   padding: 1rem;
 
   color: #fed395;
+}
+@media (max-width:480px) {
+  .heading1{
+    font-size: 2rem;
+  }
 }
 .SponCards {
   margin: 10px;
