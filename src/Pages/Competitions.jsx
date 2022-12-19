@@ -14,7 +14,7 @@ import CompetitionsSlider from '../Components/competitions/competitionsSlider'
 
 const image = [appdev, arduino]
 
-const navbuttons=['Techy','Culti']
+const navbuttons = ['Techy', 'Culti']
 
 const style = {
   textshadow: '5px 5px'
@@ -80,7 +80,7 @@ function ShowDetails({ item }) {
               </ul>
 
               <ul className={(popupNavValue == 4 ? ' block' : ' hidden')}>
-                {item.judging.map((judging_item)=>(
+                {item.judging.map((judging_item) => (
                   <li className='text-golden text-xl mt-3'>{judging_item}</li>
                 ))}
               </ul>
@@ -89,7 +89,7 @@ function ShowDetails({ item }) {
                   <li className='text-golden text-xl mt-5'>{prizes_item}</li>
                 ))}
               </ul>
-              <ul className={'list-disc text-golden'+(popupNavValue == 6 ? ' block' : ' hidden')}>
+              <ul className={'list-disc text-golden' + (popupNavValue == 6 ? ' block' : ' hidden')}>
                 {item.contact.map((contact_item) => (
                   <li className='text-golden text-xl flex mt-5'>
                     <div className='w-1/2'>{contact_item.name}</div>
@@ -122,7 +122,7 @@ function Hii({ data, sliderValue }) {
           </div>
           <div className='flex justify-evenly py-5'>
             <button className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose">Register Now</button>
-            <ShowDetails item={item}/>
+            <ShowDetails item={item} />
 
           </div>
         </div>
@@ -142,13 +142,13 @@ function Navigate() {
   return (
     <div className='z-0'>
       <div className='flex lg:justify-center justify-evenly pb-10'>
-        {navbuttons.map((nav_item,index)=>(
+        {navbuttons.map((nav_item, index) => (
           <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
         ))}
       </div>
 
       <div className='lg:hidden'>
-        <CompetitionsSlider imagesList={Navigatevalue == 1 ? cultidata.map((item) => item.img) : techydata.map((item) => item.img)} size={width>=500?3:2}/>
+        <CompetitionsSlider imagesList={Navigatevalue == 1 ? cultidata.map((item) => item.img) : techydata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
       </div>
       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
       <input type="range" min={0} max={Navigatevalue == 1 ? 10 : 12} defaultValue={0} id="slider" onChange={(e) => {
@@ -164,7 +164,6 @@ function Navigate() {
 }
 
 function Competitions() {
-  const context = useContext(ThemeContext)
 
   return (
     <div className={context.theme + " overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>

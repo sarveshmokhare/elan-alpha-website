@@ -72,7 +72,7 @@ import Geetha from "../assets/Team/2023/Coords/Workshops_GEETHA BHAVANA.jpg";
 import { team2021, team2022 } from "../Components/TeamData";
 function Teams() {
   const [year, setyear] = useState("2023");
-  const [current, setIsCurrent] = useState("Heads");
+  const [current, setIsCurrent] = useState(true);
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
@@ -103,10 +103,10 @@ function Teams() {
   const Hospitality = useRef(null);
   const Production = useRef(null);
 
-  const handleScroll = (event) => {
-    console.log("scrollTop:", event.currentTarget.scrollTop);
-    var y = event.currentTarget.scrollTop;
-    if (y >= 0 && y < 354.399) {
+  function handleScroll(y) {
+    // console.log("scrollTop:", event.currentTarget.scrollTop);
+    // var y = event.currentTarget.scrollTop;
+    if (y === 0) {
       setIsClass1(true);
       setIsClass2(false);
       setIsClass3(false);
@@ -118,7 +118,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 354.399 && y < 1521) {
+    } else if (y === 1) {
       setIsClass1(false);
       setIsClass2(true);
       setIsClass3(false);
@@ -130,7 +130,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 1521 && y < 1863.1) {
+    } else if (y === 2) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(true);
@@ -142,7 +142,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 1863.1 && y < 2650.5) {
+    } else if (y === 3) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -154,7 +154,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 2650.5 && y < 4155.2) {
+    } else if (y === 4) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -166,7 +166,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 4155.2 && y < 4872) {
+    } else if (y === 5) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -178,7 +178,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 4872 && y < 6713) {
+    } else if (y === 6) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -190,7 +190,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 6713 && y < 8292) {
+    } else if (y === 7) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -202,7 +202,7 @@ function Teams() {
       setIsClass9(false);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 8292 && y < 9456) {
+    } else if (y === 8) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -214,7 +214,7 @@ function Teams() {
       setIsClass9(true);
       setIsClass10(false);
       setIsClass11(false);
-    } else if (y >= 9456 && y < 10618) {
+    } else if (y === 9) {
       setIsClass1(false);
       setIsClass2(false);
       setIsClass3(false);
@@ -239,7 +239,7 @@ function Teams() {
       setIsClass10(false);
       setIsClass11(true);
     }
-  };
+  }
 
   return (
     <div className="bg-[#080f24] flex flex-col team">
@@ -281,489 +281,579 @@ function Teams() {
         </button>
       </div>
 
-      {year === "2023" ? (
+      {(year === "2023") && (
         <div>
           <h1 className="heading1">Elan and ηVision Team 2023</h1>
           {/* <h3 className="text-left text-white text-lg hidden sm:block">Overall Coordinator</h3> */}
           <div className=" hidden lg:block ">
             <div className="flex flex-wrap flex-row">
               <div className="index m-4 h-[55vh] w-[30%] pl-8 py-8 relative flex flex-col">
-                <button onClick={() =>OC.current.scrollIntoView()} className={isClass1 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(0)}
+                  className={isClass1 ? "button3 active3" : "button3"}
+                >
                   Overall Coordinator
                 </button>
-                <button onClick={() =>PR.current.scrollIntoView()} className={isClass2 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(1)}
+                  className={isClass2 ? "button3 active3" : "button3"}
+                >
                   Public Relations
                 </button>
-                <button onClick={() =>Web.current.scrollIntoView()} className={isClass3 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(2)}
+                  className={isClass3 ? "button3 active3" : "button3"}
+                >
                   DevOps
                 </button>
-                <button onClick={() =>Publicity.current.scrollIntoView()} className={isClass4 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(3)}
+                  className={isClass4 ? "button3 active3" : "button3"}
+                >
                   Publicity
                 </button>
 
-                <button onClick={() =>Sponsorship.current.scrollIntoView()} className={isClass5 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(4)}
+                  className={isClass5 ? "button3 active3" : "button3"}
+                >
                   Sponsorship
                 </button>
-                <button onClick={() =>Finance.current.scrollIntoView()} className={isClass6 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(5)}
+                  className={isClass6 ? "button3 active3" : "button3"}
+                >
                   Finance & Infra
                 </button>
-                <button onClick={() =>Creatives.current.scrollIntoView()} className={isClass7 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(6)}
+                  className={isClass7 ? "button3 active3" : "button3"}
+                >
                   Creatives & Multimedia
                 </button>
-                <button onClick={() =>Culti.current.scrollIntoView()} className={isClass8 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(7)}
+                  className={isClass8 ? "button3 active3" : "button3"}
+                >
                   Culti & Biggies, Social Cause, EML & Litr
                 </button>
-                <button onClick={() =>Techy.current.scrollIntoView()} className={isClass9 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(8)}
+                  className={isClass9 ? "button3 active3" : "button3"}
+                >
                   Techy & Workshop
                 </button>
-                <button onClick={() =>Hospitality.current.scrollIntoView()} className={isClass10 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(9)}
+                  className={isClass10 ? "button3 active3" : "button3"}
+                >
                   Hospitality & Transport
                 </button>
-                <button onClick={() =>Production.current.scrollIntoView()} className={isClass11 ? "button3 active3" : "button3"}>
+                <button
+                  onClick={() => handleScroll(10)}
+                  className={isClass11 ? "button3 active3" : "button3"}
+                >
                   Pronites,Production & Security
                 </button>
               </div>
               <div
-                onScroll={handleScroll}
-                className="index-content w-[60%] m-4 h-[80vh] justify-center overflow-y-auto scroll-smooth relative"
+                // onScroll={handleScroll}
+                className="index-content w-[60%] m-4 justify-center  scroll-smooth relative"
               >
                 <div className="flex flex-col items-center ">
-                  <div ref={OC}>
-                    <OCCard
-                      Name="Swapnish Sahare"
-                      Image={OC2023}
-                      Phone="+91 7030753158"
-                      Instagram="https://www.instagram.com/swapnish.ss"
-                    />
-                  </div>
-                  <div ref={PR}>
-                  <HeadCard
-                    Name="K N Vardhan"
-                    Image={KNV}
-                    Role="Public Relations, Informals & Web Head"
-                    Phone="+91 96527 93113"
-                    Instagram="https://www.instagram.com/kn_vardhan"
-                    Linkedin="https://www.linkedin.com/in/kethari-narasimha-vardhan/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="H Sai Ashutosh"
-                      Role="Public Relations Coordinator"
-                      Image={Ashutosh}
-                      Phone="+91 6301180305"
-                    />
-                    <CoordCard
-                      Name="Diva Jaiwar"
-                      Role="Public Relations Coordinator"
-                      Image={Diva}
-                      Phone="+91 8319556225"
-                    />
-                    <CoordCard
-                      Name="Seeram Lakshmi Sreya"
-                      Role="Public Relations Coordinator"
-                      Image={Sreya}
-                      Phone="+91 9391322582"
-                    />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Rishika Devarakonda"
-                      Role="Informals Coordinator"
-                      Image={Rishika}
-                      Phone="+91 9160066672"
-                    />
-                    <CoordCard
-                      Name="Sumedh Kashikar"
-                      Role="Infromals Coordinator"
-                      Image={Sumedh}
-                      Phone="+91 7601041880"
-                    />
-                  </div>
-                  <div ref={Web} className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Sarvesh Mokhare"
-                      Role="DevOps Coordinator"
-                      Image={Sarvesh}
-                      Phone="+91 9156833197"
-                    />
-                    <CoordCard
-                      Name="Himanshu Gupta"
-                      Role="DevOps Coordinator"
-                      Image={HimanshuGupta}
-                      Phone="+91 8009800905"
-                    />
-                    <CoordCard
-                      Name="Abhishek Ghosh"
-                      Role="DevOps Coordinator"
-                      Image={Abhishek}
-                      Phone="+91 8009825702"
-                    />
-                  </div>
-                  <div ref={Publicity}>
-                  <HeadCard
-                    Name="Sree Keerthan Reddy"
-                    Image={Keerthan}
-                    Role="Publicity Head"
-                    Phone="+91 7981520032"
-                    Instagram="https://www.instagram.com/keerthan26_22"
-                    Linkedin="https://www.linkedin.com/in/sree-keerthan-reddy-peram-a562bb201/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Aryan Sharan Reddy"
-                      Role="Publicity Coordinator"
-                      Image={Aryan}
-                      Phone="+91 8374064960"
-                    />
-                    <CoordCard
-                      Name="Hemang Nimma"
-                      Role="Publicity Coordinator"
-                      Image={Hemang}
-                      Phone="+91 9731918202"
-                    />
-                    <CoordCard
-                      Name="Sahasra Todupunuri"
-                      Role="Publicity Coordinator"
-                      Image={Sahasra}
-                      Phone="+91 7842742788"
-                    />
-                  </div>
-                  <div ref={Sponsorship}>
-                  <HeadCard
-                    Name="Devang Sardal"
-                    Image={Devang}
-                    Role="Sponsorship Head"
-                    Phone="+91 9136093007"
-                    Instagram="https://www.instagram.com/devang_s_3007"
-                    Linkedin="https://www.linkedin.com/in/devang-sardal-456601222/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Rani K Raman"
-                      Role="Sponsorship Coordinator"
-                      Image={Rani}
-                      Phone="+91 7292888540"
-                    />
-                    <CoordCard
-                      Name="Ananya Varshney"
-                      Role="Sponsorship Coordinator"
-                      Image={Ananya}
-                      Phone="+91 8088577412"
-                    />
-                    <CoordCard
-                      Name="Mayuri Chourasia"
-                      Role="Sponsorship Coordinator"
-                      Image={Mayuri}
-                      Phone="+91 9136542860"
-                    />
-                    <CoordCard
-                      Name="Himanshu Jindal"
-                      Role="Sponsorship Coordinator"
-                      Image={Himanshu}
-                      Phone="+91 8777875738"
-                    />
-                    <CoordCard
-                      Name="Pradeep Mundlik"
-                      Role="Sponsorship Coordinator"
-                      Image={Pradeep}
-                      Phone="+91 7040146995"
-                    />
-                    <CoordCard
-                      Name="Ravulapelly Rishi Kumar"
-                      Role="Sponsorship Coordinator"
-                      Image={Rishi}
-                      Phone="+91 9908106184"
-                    />
-                    <CoordCard
-                      Name="Yash Ramteke"
-                      Role="Sponsorship Coordinator"
-                      Image={Yash}
-                      Phone="+91 9696333035"
-                    />
-                  </div>
-                  <div ref={Finance}>
-                  <HeadCard
-                    Name="Aditya Nimbal"
-                    Image={Aditya}
-                    Role="Finance & Infra Head"
-                    Phone="+91 9818664119"
-                    Instagram="https://www.instagram.com/adityanimbal_2002"
-                    Linkedin="https://www.linkedin.com/in/aditya-nimbal-29b601222/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Harthik Kancham"
-                      Role="Finance Coordinator"
-                      Image={Harthik}
-                      Phone="+91 9154641925"
-                    />
-                    <CoordCard
-                      Name="Asit Desai"
-                      Role="Infra Coordinator"
-                      Image={Asit}
-                      Phone="+91 9405467723"
-                    />
-                    <CoordCard
-                      Name="Amandeep Saha"
-                      Role="Infra Coordinator"
-                      Image={Amandeep}
-                      Phone="+91 7328098261"
-                    />
-                  </div>
-                  <div ref={Creatives} className="flex flex-wrap flex-row justify-center">
-                    <HeadCard
-                      Name="Ishani Churi"
-                      Image={Ishani}
-                      Role="Creatives & Multimedia Head"
-                      Phone="+91 9152233084"
-                      Instagram="https://www.instagram.com/ishanichuri"
-                    />
-                    <HeadCard
-                      Name="Prasanath Tata"
-                      Image={Prasanth}
-                      Role="Creatives & Multimedia Head"
-                      Phone="+91 9000180912"
-                      Instagram="https://www.instagram.com/prashtata"
-                      Linkedin="https://www.linkedin.com/in/prasanth-tata-a35b0b204/"
-                    />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Aayush Prabhu"
-                      Role="Creatives Coordinator"
-                      Image={Aayush}
-                      Phone="+91 9022542752"
-                    />
-                    <CoordCard
-                      Name="Boda Premchand"
-                      Role="Creatives Coordinator"
-                      Image={Prem}
-                      Phone="+91 7013640047"
-                    />
-                    <CoordCard
-                      Name="Harshwardhan Kupekar"
-                      Role="Creatives Coordinator"
-                      Image={Harsh}
-                      Phone="+91 9307696254"
-                    />
-                    <CoordCard
-                      Name="Siddarth Saha"
-                      Role="Creatives Coordinator"
-                      Image={Siddarth}
-                      Phone="+91 9810552384"
-                    />
-                    <CoordCard
-                      Name="Siri Shankarathota"
-                      Role="Creatives Coordinator"
-                      Image={Siri}
-                      Phone="+91 7760087535"
-                    />
-                    <CoordCard
-                      Name="Sudhesh Venkatachalaam"
-                      Role="Creatives Coordinator"
-                      Image={Sudhesh}
-                      Phone="+91 9003941032"
-                    />
-                    <CoordCard
-                      Name="Surabhi Moorthy"
-                      Role="Creatives Coordinator"
-                      Image={Surabhi}
-                    />
-                  </div>
-                  <div className="flex flex-row flex-wrap justify-center">
-                    <CoordCard
-                      Name="Anand Sharma"
-                      Role="Multimedia Coordinator"
-                      Image={Anand}
-                      Phone="+91 9111280778"
-                    />
-                    <CoordCard
-                      Name="Kuntal Suman"
-                      Role="Multimedia Coordinator"
-                      Image={Kuntal}
-                      Phone="+91 8578001808"
-                    />
-                    <CoordCard
-                      Name="Omkaradithya Pujari"
-                      Role="Multimedia Coordinator"
-                      Image={Omi}
-                      Phone="+91 9483299738"
-                    />
-                  </div>
-                  <div ref={Culti}>
-                  <HeadCard
-                    Name="Mekala Deekshitha Reddy"
-                    Image={Deekshita}
-                    Role="Culti & Biggies Head"
-                    Phone="+91 7330784699"
-                    Instagram="https://www.instagram.com/_deekshitha_5"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Srijan Shahi"
-                      Role="Culti & Biggies Coordinator"
-                      Image={Srijan}
-                      Phone="+91 7023425801"
-                    />
-                    <CoordCard
-                      Name="Anushka Garg "
-                      Role="Culti & Biggies Coordinator"
-                      Image={Anushka}
-                      Phone="+91 8602932029"
-                    />
-                    <CoordCard
-                      Name="Kaustubh Gupta"
-                      Role="Culti & Biggies Coordinator"
-                      Image={Kaustubh}
-                      Phone="+91 8982255359"
-                    />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Yoshita Kondapalli"
-                      Role="Social Cause Coordinator"
-                      Image={Yoshita}
-                      Phone="+91 6281164252"
-                    />
-                    <CoordCard
-                      Name="Shreyas Wankhede"
-                      Role="EML Coordinator"
-                      Image={Shreyas}
-                      Phone="+91 8657452003"
-                    />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Beaula Mahima V"
-                      Role="Litr Coordinator"
-                      Image={Mahima}
-                      Phone="+91 9003124379"
-                    />
-                    <CoordCard
-                      Name="Gnana Sathwik Sai"
-                      Role="Litr Coordinator"
-                      Image={Sathwik}
-                      Phone="+91 6361705847"
-                    />
-                  </div>
-                  <div  ref={Techy}>
-                  <HeadCard
-                    Name="Varunaditya Singhal"
-                    Image={VarunAditya}
-                    Role="Techy and Workshops Head"
-                    Phone="+91 7015715920"
-                    Instagram="https://www.instagram.com/varunaditya.singhal"
-                    Linkedin="https://www.linkedin.com/in/varunaditya-singhal-3a2389182/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Aditya Sridhar"
-                      Role="Techy Coordinator"
-                      Image={AdityaSridhar}
-                      Phone="+91 9840527743"
-                    />
-                    <CoordCard
-                      Name="Dhanushika S"
-                      Role="Techy Coordinator"
-                      Image={Dhanushika}
-                      Phone="+91 6381950947"
-                    />
-                    <CoordCard
-                      Name="Aman Jagtap"
-                      Role="Techy Coordinator"
-                      Image={Aman}
-                      Phone="+91 7235915379"
-                    />
-                    <CoordCard
-                      Name="K Sai Geetha Bhavana"
-                      Role="Workshops Coordinator"
-                      Image={Geetha}
-                      Phone="+91 7396433871"
-                    />
-                    <CoordCard
-                      Name="Manoj Kumar Reddy"
-                      Role="Worshops Coordinator"
-                      Image={Manoj}
-                      Phone="+91 7569421250"
-                    />
-                  </div>
-                  <div ref={Hospitality}>
-                  <HeadCard
-                    Name="Madhumita Katam"
-                    Image={Madhumita}
-                    Role="Hospitality & Transport Head"
-                    Phone="+91 8309567379"
-                    Instagram="https://www.instagram.com/madhumitha_katam"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Palthi Bhargav"
-                      Role="Hospitality Coordinator"
-                      Image={Palthi}
-                      Phone="+91 9959912411"
-                    />
-                    <CoordCard
-                      Name="Mehul Srivastava"
-                      Role="Hospitslity Coordinator"
-                      Image={Mehul}
-                      Phone="+91 6395263137"
-                    />
-                    <CoordCard
-                      Name="Rishita Mudunuri"
-                      Role="Hospitality Coordinator"
-                      Image={Rishitha}
-                      Phone="+91 6300320166"
-                    />
-                    <CoordCard
-                      Name="Varshini Jonnala"
-                      Role="Hospitality Coordinator"
-                      Image={Varshini}
-                      Phone="+91 9938014729"
-                    />
-                    <CoordCard
-                      Name="Ch Vara Prasad"
-                      Role="Transport Coordinator"
-                      Image={VaraPrasad}
-                      Phone="+91 6305712585"
-                    />
-                  </div>
-                  <div ref={Production}>
-                  <HeadCard
-                    Name="Utkarsh Srivastava"
-                    Image={Utkarsh}
-                    Role="Pronites & Security Head"
-                    Phone="+91 6390537854"
-                    Instagram="https://www.instagram.com/_utkarshsrivastava"
-                    Linkedin="https://www.linkedin.com/in/utksriv/"
-                  />
-                  </div>
-                  <div className="flex flex-wrap flex-row justify-center">
-                    <CoordCard
-                      Name="Sneha Malik"
-                      Role="Pronites Coordinator"
-                      Image={Sneha}
-                      Phone="+91 8197270409"
-                    />
-                    <CoordCard
-                      Name="Gaurang Dahad"
-                      Role="Production Coordinator"
-                      Image={Gaurang}
-                      Phone="+91 7741940670"
-                    />
-                    <CoordCard
-                      Name="Arnav Goyanka"
-                      Role="Security Coordinator"
-                      Image={Arnav}
-                      Phone="+91 6262666778"
-                    />
-                  </div>
+                  {isClass1 && (
+                    <div ref={OC}>
+                      <OCCard
+                      Role="Overall Coordinator"
+                        Name="Swapnish Sahare"
+                        Image={OC2023}
+                        Phone="+91 7030753158"
+                        Instagram="https://www.instagram.com/swapnish.ss"
+                      />
+                    </div>
+                  )}
+                  {isClass2 && (
+                    <>
+                      <div ref={PR}>
+                        <HeadCard
+                          Name="K N Vardhan"
+                          Image={KNV}
+                          Role="Public Relations, Informals & Web Head"
+                          Phone="+91 96527 93113"
+                          Instagram="https://www.instagram.com/kn_vardhan"
+                          Linkedin="https://www.linkedin.com/in/kethari-narasimha-vardhan/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="H Sai Ashutosh"
+                          Role="Public Relations Coordinator"
+                          Image={Ashutosh}
+                          Phone="+91 6301180305"
+                        />
+                        <CoordCard
+                          Name="Diva Jaiwar"
+                          Role="Public Relations Coordinator"
+                          Image={Diva}
+                          Phone="+91 8319556225"
+                        />
+                        <CoordCard
+                          Name="Seeram Lakshmi Sreya"
+                          Role="Public Relations Coordinator"
+                          Image={Sreya}
+                          Phone="+91 9391322582"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Rishika Devarakonda"
+                          Role="Informals Coordinator"
+                          Image={Rishika}
+                          Phone="+91 9160066672"
+                        />
+                        <CoordCard
+                          Name="Sumedh Kashikar"
+                          Role="Infromals Coordinator"
+                          Image={Sumedh}
+                          Phone="+91 7601041880"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass3 && (
+                    <>
+                      <HeadCard
+                        Name="K N Vardhan"
+                        Image={KNV}
+                        Role="Public Relations, Informals & Web Head"
+                        Phone="+91 96527 93113"
+                        Instagram="https://www.instagram.com/kn_vardhan"
+                        Linkedin="https://www.linkedin.com/in/kethari-narasimha-vardhan/"
+                      />
+                      <div
+                        ref={Web}
+                        className="flex flex-wrap flex-row justify-center"
+                      >
+                        <CoordCard
+                          Name="Sarvesh Mokhare"
+                          Role="DevOps Coordinator"
+                          Image={Sarvesh}
+                          Phone="+91 9156833197"
+                        />
+                        <CoordCard
+                          Name="Himanshu Gupta"
+                          Role="DevOps Coordinator"
+                          Image={HimanshuGupta}
+                          Phone="+91 8009800905"
+                        />
+                        <CoordCard
+                          Name="Abhishek Ghosh"
+                          Role="DevOps Coordinator"
+                          Image={Abhishek}
+                          Phone="+91 8009825702"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass4 && (
+                    <>
+                      <div ref={Publicity}>
+                        <HeadCard
+                          Name="Sree Keerthan Reddy"
+                          Image={Keerthan}
+                          Role="Publicity Head"
+                          Phone="+91 7981520032"
+                          Instagram="https://www.instagram.com/keerthan26_22"
+                          Linkedin="https://www.linkedin.com/in/sree-keerthan-reddy-peram-a562bb201/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Aryan Sharan Reddy"
+                          Role="Publicity Coordinator"
+                          Image={Aryan}
+                          Phone="+91 8374064960"
+                        />
+                        <CoordCard
+                          Name="Hemang Nimma"
+                          Role="Publicity Coordinator"
+                          Image={Hemang}
+                          Phone="+91 9731918202"
+                        />
+                        <CoordCard
+                          Name="Sahasra Todupunuri"
+                          Role="Publicity Coordinator"
+                          Image={Sahasra}
+                          Phone="+91 7842742788"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass5 && (
+                    <>
+                      <div ref={Sponsorship}>
+                        <HeadCard
+                          Name="Devang Sardal"
+                          Image={Devang}
+                          Role="Sponsorship Head"
+                          Phone="+91 9136093007"
+                          Instagram="https://www.instagram.com/devang_s_3007"
+                          Linkedin="https://www.linkedin.com/in/devang-sardal-456601222/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Rani K Raman"
+                          Role="Sponsorship Coordinator"
+                          Image={Rani}
+                          Phone="+91 7292888540"
+                        />
+                        <CoordCard
+                          Name="Ananya Varshney"
+                          Role="Sponsorship Coordinator"
+                          Image={Ananya}
+                          Phone="+91 8088577412"
+                        />
+                        <CoordCard
+                          Name="Mayuri Chourasia"
+                          Role="Sponsorship Coordinator"
+                          Image={Mayuri}
+                          Phone="+91 9136542860"
+                        />
+                        <CoordCard
+                          Name="Himanshu Jindal"
+                          Role="Sponsorship Coordinator"
+                          Image={Himanshu}
+                          Phone="+91 8777875738"
+                        />
+                        <CoordCard
+                          Name="Pradeep Mundlik"
+                          Role="Sponsorship Coordinator"
+                          Image={Pradeep}
+                          Phone="+91 7040146995"
+                        />
+                        <CoordCard
+                          Name="Ravulapelly Rishi Kumar"
+                          Role="Sponsorship Coordinator"
+                          Image={Rishi}
+                          Phone="+91 9908106184"
+                        />
+                        <CoordCard
+                          Name="Yash Ramteke"
+                          Role="Sponsorship Coordinator"
+                          Image={Yash}
+                          Phone="+91 9696333035"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass6 && (
+                    <>
+                      <div ref={Finance}>
+                        <HeadCard
+                          Name="Aditya Nimbal"
+                          Image={Aditya}
+                          Role="Finance & Infra Head"
+                          Phone="+91 9818664119"
+                          Instagram="https://www.instagram.com/adityanimbal_2002"
+                          Linkedin="https://www.linkedin.com/in/aditya-nimbal-29b601222/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Harthik Kancham"
+                          Role="Finance Coordinator"
+                          Image={Harthik}
+                          Phone="+91 9154641925"
+                        />
+                        <CoordCard
+                          Name="Asit Desai"
+                          Role="Infra Coordinator"
+                          Image={Asit}
+                          Phone="+91 9405467723"
+                        />
+                        <CoordCard
+                          Name="Amandeep Saha"
+                          Role="Infra Coordinator"
+                          Image={Amandeep}
+                          Phone="+91 7328098261"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass7 && (
+                    <>
+                      <div
+                        ref={Creatives}
+                        className="flex flex-wrap flex-row justify-center"
+                      >
+                        <HeadCard
+                          Name="Ishani Churi"
+                          Image={Ishani}
+                          Role="Creatives & Multimedia Head"
+                          Phone="+91 9152233084"
+                          Instagram="https://www.instagram.com/ishanichuri"
+                        />
+                        <HeadCard
+                          Name="Prasanath Tata"
+                          Image={Prasanth}
+                          Role="Creatives & Multimedia Head"
+                          Phone="+91 9000180912"
+                          Instagram="https://www.instagram.com/prashtata"
+                          Linkedin="https://www.linkedin.com/in/prasanth-tata-a35b0b204/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Aayush Prabhu"
+                          Role="Creatives Coordinator"
+                          Image={Aayush}
+                          Phone="+91 9022542752"
+                        />
+                        <CoordCard
+                          Name="Boda Premchand"
+                          Role="Creatives Coordinator"
+                          Image={Prem}
+                          Phone="+91 7013640047"
+                        />
+                        <CoordCard
+                          Name="Harshwardhan Kupekar"
+                          Role="Creatives Coordinator"
+                          Image={Harsh}
+                          Phone="+91 9307696254"
+                        />
+                        <CoordCard
+                          Name="Siddarth Saha"
+                          Role="Creatives Coordinator"
+                          Image={Siddarth}
+                          Phone="+91 9810552384"
+                        />
+                        <CoordCard
+                          Name="Siri Shankarathota"
+                          Role="Creatives Coordinator"
+                          Image={Siri}
+                          Phone="+91 7760087535"
+                        />
+                        <CoordCard
+                          Name="Sudhesh Venkatachalaam"
+                          Role="Creatives Coordinator"
+                          Image={Sudhesh}
+                          Phone="+91 9003941032"
+                        />
+                        <CoordCard
+                          Name="Surabhi Moorthy"
+                          Role="Creatives Coordinator"
+                          Image={Surabhi}
+                        />
+                      </div>
+                      <div className="flex flex-row flex-wrap justify-center">
+                        <CoordCard
+                          Name="Anand Sharma"
+                          Role="Multimedia Coordinator"
+                          Image={Anand}
+                          Phone="+91 9111280778"
+                        />
+                        <CoordCard
+                          Name="Kuntal Suman"
+                          Role="Multimedia Coordinator"
+                          Image={Kuntal}
+                          Phone="+91 8578001808"
+                        />
+                        <CoordCard
+                          Name="Omkaradithya Pujari"
+                          Role="Multimedia Coordinator"
+                          Image={Omi}
+                          Phone="+91 9483299738"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass8 && (
+                    <>
+                      <div ref={Culti}>
+                        <HeadCard
+                          Name="Mekala Deekshitha Reddy"
+                          Image={Deekshita}
+                          Role="Culti & Biggies Head"
+                          Phone="+91 7330784699"
+                          Instagram="https://www.instagram.com/_deekshitha_5"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Srijan Shahi"
+                          Role="Culti & Biggies Coordinator"
+                          Image={Srijan}
+                          Phone="+91 7023425801"
+                        />
+                        <CoordCard
+                          Name="Anushka Garg "
+                          Role="Culti & Biggies Coordinator"
+                          Image={Anushka}
+                          Phone="+91 8602932029"
+                        />
+                        <CoordCard
+                          Name="Kaustubh Gupta"
+                          Role="Culti & Biggies Coordinator"
+                          Image={Kaustubh}
+                          Phone="+91 8982255359"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Yoshita Kondapalli"
+                          Role="Social Cause Coordinator"
+                          Image={Yoshita}
+                          Phone="+91 6281164252"
+                        />
+                        <CoordCard
+                          Name="Shreyas Wankhede"
+                          Role="EML Coordinator"
+                          Image={Shreyas}
+                          Phone="+91 8657452003"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Beaula Mahima V"
+                          Role="Litr Coordinator"
+                          Image={Mahima}
+                          Phone="+91 9003124379"
+                        />
+                        <CoordCard
+                          Name="Gnana Sathwik Sai"
+                          Role="Litr Coordinator"
+                          Image={Sathwik}
+                          Phone="+91 6361705847"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass9 && (
+                    <>
+                      <div ref={Techy}>
+                        <HeadCard
+                          Name="Varunaditya Singhal"
+                          Image={VarunAditya}
+                          Role="Techy and Workshops Head"
+                          Phone="+91 7015715920"
+                          Instagram="https://www.instagram.com/varunaditya.singhal"
+                          Linkedin="https://www.linkedin.com/in/varunaditya-singhal-3a2389182/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Aditya Sridhar"
+                          Role="Techy Coordinator"
+                          Image={AdityaSridhar}
+                          Phone="+91 9840527743"
+                        />
+                        <CoordCard
+                          Name="Dhanushika S"
+                          Role="Techy Coordinator"
+                          Image={Dhanushika}
+                          Phone="+91 6381950947"
+                        />
+                        <CoordCard
+                          Name="Aman Jagtap"
+                          Role="Techy Coordinator"
+                          Image={Aman}
+                          Phone="+91 7235915379"
+                        />
+                        <CoordCard
+                          Name="K Sai Geetha Bhavana"
+                          Role="Workshops Coordinator"
+                          Image={Geetha}
+                          Phone="+91 7396433871"
+                        />
+                        <CoordCard
+                          Name="Manoj Kumar Reddy"
+                          Role="Worshops Coordinator"
+                          Image={Manoj}
+                          Phone="+91 7569421250"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass10 && (
+                    <>
+                      <div ref={Hospitality}>
+                        <HeadCard
+                          Name="Madhumita Katam"
+                          Image={Madhumita}
+                          Role="Hospitality & Transport Head"
+                          Phone="+91 8309567379"
+                          Instagram="https://www.instagram.com/madhumitha_katam"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Palthi Bhargav"
+                          Role="Hospitality Coordinator"
+                          Image={Palthi}
+                          Phone="+91 9959912411"
+                        />
+                        <CoordCard
+                          Name="Mehul Srivastava"
+                          Role="Hospitslity Coordinator"
+                          Image={Mehul}
+                          Phone="+91 6395263137"
+                        />
+                        <CoordCard
+                          Name="Rishita Mudunuri"
+                          Role="Hospitality Coordinator"
+                          Image={Rishitha}
+                          Phone="+91 6300320166"
+                        />
+                        <CoordCard
+                          Name="Varshini Jonnala"
+                          Role="Hospitality Coordinator"
+                          Image={Varshini}
+                          Phone="+91 9938014729"
+                        />
+                        <CoordCard
+                          Name="Ch Vara Prasad"
+                          Role="Transport Coordinator"
+                          Image={VaraPrasad}
+                          Phone="+91 6305712585"
+                        />
+                      </div>
+                    </>
+                  )}
+                  {isClass11 && (
+                    <>
+                      <div ref={Production}>
+                        <HeadCard
+                          Name="Utkarsh Srivastava"
+                          Image={Utkarsh}
+                          Role="Pronites & Security Head"
+                          Phone="+91 6390537854"
+                          Instagram="https://www.instagram.com/_utkarshsrivastava"
+                          Linkedin="https://www.linkedin.com/in/utksriv/"
+                        />
+                      </div>
+                      <div className="flex flex-wrap flex-row justify-center">
+                        <CoordCard
+                          Name="Sneha Malik"
+                          Role="Pronites Coordinator"
+                          Image={Sneha}
+                          Phone="+91 8197270409"
+                        />
+                        <CoordCard
+                          Name="Gaurang Dahad"
+                          Role="Production Coordinator"
+                          Image={Gaurang}
+                          Phone="+91 7741940670"
+                        />
+                        <CoordCard
+                          Name="Arnav Goyanka"
+                          Role="Security Coordinator"
+                          Image={Arnav}
+                          Phone="+91 6262666778"
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -772,7 +862,7 @@ function Teams() {
             <div className="button">
               <button
                 onClick={() => {
-                  setIsCurrent("Heads");
+                  setIsCurrent(true);
                   setIsActive4(true);
                   setIsActive5(false);
                 }}
@@ -786,7 +876,7 @@ function Teams() {
               </button>
               <button
                 onClick={() => {
-                  setIsCurrent("Coordinators");
+                  setIsCurrent(false);
                   setIsActive4(false);
                   setIsActive5(true);
                 }}
@@ -799,10 +889,11 @@ function Teams() {
                 <h3 className="px-8 py-2">Coordinators</h3>
               </button>
             </div>
-            {current === "Heads" ? (
+            {current && (
               <>
                 <div className="flex flex-row justify-center m-4">
                   <OCCard
+                  Role="Overall Coordinator"
                     Name="Swapnish Sahare"
                     Image={OC2023}
                     Phone="+91 7030753158"
@@ -889,7 +980,8 @@ function Teams() {
                   />
                 </div>
               </>
-            ) : (
+            )}
+            {!current && (
               <>
                 <div className="flex flex-wrap flex-row  justify-center">
                   <CoordCard
@@ -1202,7 +1294,8 @@ function Teams() {
             )}
           </div>
         </div>
-      ) : year === "2022" ? (
+      )}
+      {(year === "2022") && (
         <div>
           <h1 className="heading1">Elan and ηVision Team 2022</h1>
           <div className="flex flex-row justify-center m-4">
@@ -1218,23 +1311,29 @@ function Teams() {
             ))}
           </div>
         </div>
-      ) : (
-        <div>
-          <h1 className="heading1">Elan and ηVision Team 2021</h1>
-          <div className="flex flex-row justify-center m-4">
-            <OCCard
-              Image={OC2021}
-              Name="Stavan Christian"
-              Role="Overall Coordinator"
-            />
-          </div>
-          <div className="flex flex-wrap justify-center m-8 ">
-            {team2021.map((item) => (
-              <HeadCard Image={item.Image} Name={item.Name} Role={item.Role} />
-            ))}
-          </div>
-        </div>
       )}
+      {(year ===
+        "2021") && (
+          <div>
+            <h1 className="heading1">Elan and ηVision Team 2021</h1>
+            <div className="flex flex-row justify-center m-4">
+              <OCCard
+                Image={OC2021}
+                Name="Stavan Christian"
+                Role="Overall Coordinator"
+              />
+            </div>
+            <div className="flex flex-wrap justify-center m-8 ">
+              {team2021.map((item) => (
+                <HeadCard
+                  Image={item.Image}
+                  Name={item.Name}
+                  Role={item.Role}
+                />
+              ))}
+            </div>
+          </div>
+        )}
     </div>
   );
 }

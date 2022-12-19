@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { BsInstagram, BsYoutube, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-import ThemeContext from '../Contexts/ThemeContext'
 import logo from '../assets/logo_white.png'
 import mail_icon from '../assets/mail_icon.svg'
 
@@ -17,25 +16,25 @@ function Footer() {
     }
 
     return (
-        <div>
-            <div className='w-full bg-red py-18 text-white relative'>
-                <div className='flex flex-col lg:flex-row lg:justify-between items-center pt-8 pb-3 lg:pb-8 lg:px-20'>
+        <footer>
+            <div className='w-full bg-red text-white relative'>
+                <div className='flex flex-col lg:flex-row lg:justify-between items-center pt-5 pb-3 lg:pb-8 lg:px-20'>
                     <div className='flex flex-col w-full lg:w-[40vw] items-center lg:py-20'>
                         {/* elan logo */}
-                        <div onClick={scrollTop}><Link to='/'><img src={logo} className='h-[14.5vh] lg:mb-10'></img></Link></div>
+                        <div onClick={scrollTop}><Link to='/'><img src={logo} className='h-[11.5vh] lg:mb-10'></img></Link></div>
                         {/* social media icons */}
-                        <div className='flex w-4/5 lg:w-2/3 justify-center text-golden my-6 lg:mb-10 text-4xl lg:text-[2.5rem]'>
+                        <div className='flex lg:w-2/3 justify-center text-golden my-5 lg:mb-10 text-4xl lg:text-[2.5rem]'>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.instagram.com/elan_nvision.iith/' target="_blank"><BsInstagram /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.youtube.com/user/ElanIITHyderabad' target="_blank"><BsYoutube /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://www.linkedin.com/company/elan-nvision-iith/' target="_blank"><BsLinkedin /></a>
-                            <a className='px-3 md:px-4 lg:px-4.5' href='https://www.facebook.com/elan.iithyderabad' target="_blank"><BsFacebook /></a>
+                            <a className='px-3 md:px-4 lg:px-4.5' href='https://www.facebook.com/elannvision.iithyderabad' target="_blank"><BsFacebook /></a>
                             <a className='px-3 md:px-4 lg:px-4.5' href='https://twitter.com/elan_nvision' target="_blank"><BsTwitter /></a>
                         </div>
                     </div>
 
                     {/* contact us */}
                     <div className='flex items-start flex-col lg:pr-[10%]'>
-                        <div className='pt-5 pb-3 lg:py-5 text-golden text-4xl lg:text-5xl font-berkshire'><h1>Contact Us</h1></div>
+                        <div className='pb-3 lg:py-5 text-golden text-4xl lg:text-5xl font-berkshire'><h1>Contact Us</h1></div>
                         <div className='flex flex-col items-center lg:items-start pb-1.5 lg:pb-8'>
                             <h2 className='text-xl lg:text-xl'>Swapnish Sahare</h2>
                             <h3 className='text-golden text-base lg:text-md'>Overall Coordinator</h3>
@@ -72,7 +71,7 @@ function Footer() {
                     <div><h5 className='text-xs opacity-80 pt-2 '>Elan and ηVision 2023. All Rights Reserved.</h5></div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

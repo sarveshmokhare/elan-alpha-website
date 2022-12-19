@@ -41,7 +41,7 @@ function Sponsors() {
           <h1 className="heading1">TITLE SPONSOR</h1>
           <img
             src={Hero}
-            className="border-solid border-2 border-[#FED395] m-[auto] w-[50vw]"
+            className=" m-[auto] w-[50vw] bg-[#fff]"
           />
           <img src={BG1} className="BG top-[20%]" />
           <img src={BG2} className="BG right-0 top-[22%]" />
@@ -53,7 +53,7 @@ function Sponsors() {
           <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
             <img
               src={Nisarga}
-              className="border-solid border-2 border-[#FED395] md:my-[40px] sm:mb-[25px]"
+              className=" md:my-[40px] sm:mb-[25px]"
             />
             <img
               src={Honeywell}
@@ -63,16 +63,17 @@ function Sponsors() {
               //   margin: "auto",
               //   border: "2px solid #FED395 ",
               // }}
-              className="border-solid border-2 border-[#FED395] my-[20px]"
+              className=" my-[20px]"
             />
           </div>
           <h4 className="heading1">SPONSORS</h4>
           <div className="SponCards">
-            {Sponsor2021.map((item) => (
+            {Sponsor2021.map((item,index) => (
               <SponsorCard
-                style={{
-                  width: "35vw",
-                }}
+                className={(index === 24) ? "bg-[#fff]" : ""}
+                // style={{
+                //   width: "35vw",
+                // }}
                 Role={item.Role ? item.Role : "Partner"}
                 Description={item.Description}
                 Image={item.Image}
