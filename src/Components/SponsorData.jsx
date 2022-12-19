@@ -11,7 +11,7 @@ import DLink from "../assets/SponsorImages/Sponsor2021/dlink.png";
 import Fashion from "../assets/SponsorImages/Sponsor2021/Fashion Herald(tbe).png.crdownload.png";
 import HoverRobotix from "../assets/SponsorImages/Sponsor2021/HOVER-ROBTIX.png";
 import IndOil from "../assets/SponsorImages/Sponsor2021/ind oil.png";
-import IndiNoir from "../assets/SponsorImages/Sponsor2021/Indinoir(webp).webp";
+import IndiNoir from "../assets/SponsorImages/Sponsor2021/Indinoir(webp).jpg";
 import Intern360 from "../assets/SponsorImages/Sponsor2021/INTERN-360.png";
 import KLA from "../assets/SponsorImages/Sponsor2021/kla.png";
 import LIC from "../assets/SponsorImages/Sponsor2021/lic-logo.png";
