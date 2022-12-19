@@ -7,7 +7,7 @@ function Card({
   href,
 }) {
   return (
-    <Link to={href}>
+    <Link to={href} className="hover:[&>div>img]:scale-105 transition-all">
       <div className="lg:w-[29.188rem] lg:h-[18.313rem] w-[14.594rem] h-[9.156rem] bg-white relative">
         <img
           src={imgUrl}
