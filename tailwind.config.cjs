@@ -33,7 +33,8 @@ module.exports = {
         'black': '#080F24',
         'green': '#0B8661',
         'yellow': '#FFB345',
-        'blue':'#0D1838'
+        'blue':'#0D1838',
+        'white':'#FFFFFF'
       },
       fontFamily: {
         'berkshire': ['Berkshire Swash', 'cursive'],

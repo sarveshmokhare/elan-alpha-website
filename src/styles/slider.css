@@ -7,3 +7,13 @@
     transform: translateX(-50%);
   }
 }
+@keyframes bannermove2 {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+

@@ -1,54 +1,187 @@
-import React,{useState} from 'react'
-
-import line_terror from '../assets/litfest/2line_terror.png'
-import crossword from '../assets/litfest/crosswords.png'
-import flash from '../assets/litfest/flash_fiction.png'
-import haiku from '../assets/litfest/haiku.png'
-import inked from '../assets/litfest/Inked_Verses.jpg'
-import its2032 from '../assets/litfest/Its_2032.png'
-import shipwreck from '../assets/litfest/shipwreck.png'
-import meant from '../assets/litfest/thats_what_they_meant.png'
-import whatif from '../assets/litfest/what_if.png'
-import word_games from '../assets/litfest/word_games.png'
 
 
+// function Litfest() {
+
+//   return (
+//     <div className='relative overflow-hidden'>
+//       <div className=' overflow-visible z-10'>
+//         <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
+//         <div className='relative z-10'>
+//         </div>
+
+
+//       </div>
+//         {/* bg images */}
+        
+//       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px] '><img className='h-full' src={vase}></img></div>
+//       <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
+//       <div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+//       <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
+//       </div>
+      
+
+//   )
+// }
+
+// export default Litfest
+
+
+
+
+
+
+import React, { useContext, useState } from 'react'
+import ThemeContext from '../Contexts/ThemeContext'
+import arrow from '../assets/designs/competitions_arrow.svg'
+import cut_btn from '../assets/designs/competitions_cut_btn.svg'
+import Popup from 'reactjs-popup'
 import vase from '../assets/litfest_vase.svg'
 import mushroom from '../assets/litfest_mushroom.svg'
 import vase_lg from '../assets/litfest_vase_desktop.svg'
 import hands from '../assets/litfest_hands.svg'
 import LitfestSlider from '../Components/litfest/litfestslider'
+import { litfestdata } from '../Components/litfest/litfestdata'
+// import "reactjs-popup/dist/index.css";
+import "../styles/competitions.css";
 
-const sliderimages=[line_terror,crossword,flash,haiku,inked,its2032,shipwreck,meant,whatif,word_games]
 
 
+const style = {
+  textshadow: '5px 5px'
+}
+const popupnav = ['Intro', 'Rules', 'Date', 'Judging']
 
-function Litfest() {
-  const [width, setWidth] = useState(window.innerWidth);
-  window.addEventListener("resize", () => setWidth(window.innerWidth));
+function ShowDetails({ item }) {
+
+  const [popupNavValue, setpopupNavValue] = useState(1)
+
+
+  const contentStyle = {
+    position: "fixed",
+    zindex: '999',
+    top: "0",
+    right: "0",
+    // height: "100px",
+    backgroundColor: "red"
+  };
+  // bg - [position: left_top_ - 5rem_, _right_bottom_ - 4.5rem]
   return (
-    <div className='mt-[76px] lg:mt-0 relative overflow-hidden'>
-      <div className='p-5  pb-40 xs:m-10 md:pb-30 text-golden overflow-visible z-10'>
-        <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
-        <div className='relative z-10'>
-        <LitfestSlider imagesList={sliderimages} size={width >= 800 ? 5 : 3} />
-        </div>
-        <p className='pt-10 z-10 relative text-xl'>Take a break from the grind and witness amazing shows brought to you at home for free! Fun and Enjoyment has no end! Register for an exhilarating experience now!</p>
+    <div>
+      <Popup trigger={
+        <button className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose">Learn more</button>
+      } position="center center">
+        {close => (
+          <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("assets/designs/competitions_popup_2.svg"),url("assets/designs/competitions_popup_3.svg"),url("assets/designs/competitions_popup_4.svg"),url("assets/designs/competitions_popup_1.svg"),url("assets/designs/competitions_popup_5.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
+            <div className='text-4xl vvs:text-5xl text-golden font-cinzel mt-10 relative lg:text-6xl z-10 font-semibold mb-5'>{item.name}</div>
+            <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-6 hover:cursor-pointer' onClick={close} />
+            <div className='flex flex-row  justify-evenly mb-5 flex-wrap'>
+              {popupnav.map((item, index) => (
+                <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-blue bg-golden' : 'text-golden bg-blue ')}>{item}</button>
+              ))}
+            </div>
+            <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
+              <div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
+                <div className='text-xl mb-5  whitespace-pre-wrap'>{item.description}</div>
+                <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold'+(item.reglink!=''?'block':'hidden')} href={item.reglink}>Register</a>
+              </div>
+              <img src={item.img} className='w-full md:w-2/5 mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" />
+            </div>
 
-        <div className='flex justify-center z-10 relative mt-5'>
-          <button className="bg-golden text-black text-xl rounded-lg px-3 py-2 ">Learn More</button>
+            <div className='m-5'>
+              {popupnav.slice(1).map((item, index) => (
+                <div className={'font-berkshire text-golden text-3xl lg:text-5xl  bg-[url("assets/designs/competitions_popup_1.svg")] bg-no-repeat mb-5 ' + (popupNavValue == (index + 2) ? ' block' : 'hidden')}>{item}</div>
+              ))}
+
+
+              <ul className={(popupNavValue == 2 ? ' block ' : 'hidden ')+'list-disc'}>{item.rules.map((rules_item) => (
+                <li className='text-golden mt-5 lg:text-xl whitespace-pre-wrap'>{rules_item}</li>
+              ))}
+              </ul>
+
+              <div className={ 'text-golden text-2xl'+(popupNavValue == 3 ? ' block' : ' hidden')}>{item.date}</div>
+
+              <ul className={(popupNavValue == 4 ? ' block ' : ' hidden ')+'list-disc'}>
+                {item.judging.map((judging_item) => (
+                  <li className='text-golden text-xl mt-3 whitespace-pre-wrap'>{judging_item}</li>
+                ))}
+              </ul>
+
+            </div>
+          </div>
+        )}
+      </Popup>
+    </div>
+  )
+}
+
+function Hii({ data, sliderValue }) {
+
+
+
+  return (
+
+    data.map((item, index) => (
+      <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/3 "}>
+        <div className='m-2 lg:bg-blue lg:rounded-tl-2xl rounded-br-2xl overflow-hidden'>
+          <img src={item.img} className=' object-cover m-auto lg:h-[20vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
+          <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
+
+
+          <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.more}
+          </div>
+          <div className='flex justify-evenly py-5'>
+            <a className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose hover:cursor-pointer" href={item.reglink}>Register Now</a>
+            <ShowDetails item={item} />
+
+          </div>
         </div>
 
       </div>
-        {/* bg images */}
-        
-      <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px] '><img className='h-full' src={vase}></img></div>
-      <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-      <div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
-      <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
-      </div>
-      
+    ))
 
   )
 }
 
-export default Litfest
+function Navigate() {
+  const [sliderValue, setSliderValue] = useState(0)
+  const [width, setWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
+
+  return (
+    <div className='z-0'>
+      <div className='lg:hidden'>
+        <LitfestSlider imagesList={litfestdata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
+      </div>
+      <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
+      <input type="range" min={0} max={litfestdata.length-1} defaultValue={0} id="slider" value={sliderValue} onChange={(e) => {
+        setSliderValue(e.target.value)
+      }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
+
+
+      <div className={("flex flex-wrap justify-evenly relative z-10")}>
+        <Hii data={litfestdata} sliderValue={sliderValue} />
+      </div>
+    </div>
+  )
+}
+
+function Competitions() {
+  const context = useContext(ThemeContext)
+
+  return (
+    <div className={ " overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 relative"}>
+      <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl vs:text-9xl  z-10 relative text-golden'>Litfest</h1>
+      <div className='relative z-5'>
+        <Navigate />
+      </div>
+
+
+      <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px]'><img className='h-full' src={vase}></img></div>
+<div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
+<div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+<div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
+    </div>
+  )
+}
+
+export default Competitions
