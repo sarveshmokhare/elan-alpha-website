@@ -161,7 +161,7 @@ function Navigate() {
 
   return (
     <div className='z-0'>
-      <div className='flex lg:justify-center justify-evenly pb-10 mt-2'>
+      <div className='flex lg:justify-center justify-evenly pb-10'>
         {navbuttons.map((nav_item,index)=>(
           <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
         ))}
