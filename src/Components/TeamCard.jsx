@@ -9,13 +9,7 @@ import bg3 from "../assets/Team/CardBG/BG3.svg";
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
   useEffect(() => {
-<<<<<<< Updated upstream
-    AOS.init({
-      disable: window.innerWidth > 900,
-    });
-=======
     AOS.init();
->>>>>>> Stashed changes
     AOS.refresh();
   }, []);
   return (

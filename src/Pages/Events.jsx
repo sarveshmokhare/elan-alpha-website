@@ -57,7 +57,7 @@ function Events() {
 
 
   return (
-    <div id={context.theme} className=" overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
+    <div className=" overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
       <h1 className='heading font-berkshire text-7xl vs:text-8xl text-golden pt-16 lg:pt-0 lg:text-[10rem]'>
         Events
       </h1>
