@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect, useLayoutEffect } from 'react'
+import { Link } from 'react-router-dom'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
@@ -80,8 +81,69 @@ import threePeeps from '../assets/three_peeps.png'
 import tweets from '../assets/tweets.svg'
 import views from '../assets/views.svg'
 
+import ExploreSlider from '../Components/ExploreSlider'
+import GallerySlider from '../Components/GallerySlider'
+import galImg1 from '../assets/gallery/1.png'
+import galImg2 from '../assets/gallery/2.png'
+import galImg4 from '../assets/gallery/4.jpg'
+import galImg6 from '../assets/gallery/6.jpg'
+import galImg7 from '../assets/gallery/7.jpg'
+import galImg12 from '../assets/gallery/12.jpg'
+import galImg13 from '../assets/gallery/13.jpg'
+import galImg14 from '../assets/gallery/14.jpg'
+import galImg15 from '../assets/gallery/15.jpg'
+import galImg16 from '../assets/gallery/16.jpg'
+import galImg17 from '../assets/gallery/17.jpg'
+import galImg18 from '../assets/gallery/18.jpg'
+import galImg19 from '../assets/gallery/19.jpg'
+import galImg20 from '../assets/gallery/20.jpg'
+import galImg21 from '../assets/gallery/21.jpg'
+import galImg22 from '../assets/gallery/22.png'
+import galImg23 from '../assets/gallery/23.jpg'
+import explore1 from '../assets/explore_section/breakfree.webp'
+import explore2 from '../assets/explore_section/glitz.webp'
+import explore3 from '../assets/explore_section/pronites_1.jpg'
+import explore4 from '../assets/explore_section/deepn.webp'
+import explore5 from '../assets/explore_section/proshows.jpeg'
+import explore6 from '../assets/explore_section/shipwreck.png'
+import explore7 from '../assets/explore_section/campusidol.webp'
+
 function HomePage() {
   const timelineImgs = [timeline2k171, timeline2k172, timeline2k173, timeline2k174, timeline2k181, timeline2k182, timeline2k183, timeline2k184, timeline2k191, timeline2k192, timeline2k193, timeline2k194, timeline2k201, timeline2k202, timeline2k203, timeline2k204, timeline2k211, timeline2k212, timeline2k213, timeline2k214, timeline2k221, timeline2k222, timeline2k223, timeline2k224];
+
+  const gal1 = [galImg14, galImg15, galImg16, galImg17, galImg18, galImg19, galImg20, galImg21, galImg22, galImg23]
+  const gal2 = [galImg1, galImg2, galImg4, galImg6, galImg7, galImg12, galImg13]
+  // const exploreImgs = [explore1,explore2,explore3,explore4]
+  const exploreImgs = [{
+    title: 'Breakfree',
+    imgUrl: explore1,
+    href: '/competitions'
+  },{
+    title: 'Glitz & Glamour',
+    imgUrl: explore2,
+    href: '/competitions'
+  },{
+    title: 'Pronites',
+    imgUrl: explore3,
+    href: '/events'
+  },{
+    title: 'Deepn',
+    imgUrl: explore4,
+    href: '/competitions'
+  },{
+    title: 'Proshows',
+    imgUrl: explore5,
+    href: '/events'
+  },{
+    title: 'Shipwreck',
+    imgUrl: explore6,
+    href: '/litfest'
+  },{
+    title: 'Campus Idol',
+    imgUrl: explore7,
+    href: '/competitions'
+  },]
+
 
   const exploreBtnRef = useRef(null)
   const timelineRef = useRef(null)
@@ -113,89 +175,88 @@ function HomePage() {
       const mm = gsap.matchMedia();
 
       // desktop opening animation
-      // mm.add('(min-width: 1024px)', () => {
-      //   // master timeline
-      //   const masterTl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
+      mm.add('(min-width: 1024px)', () => {
+        // master timeline
+        const masterTl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
 
-      //   // constant rotation animation
-      //   const rotationTl = gsap.timeline({ defaults: { rotation: 360, repeat: Infinity, repeatDelay: 0, ease: 'none' } });
-      //   rotationTl.to('.moon3', { duration: 4 })
-      //   rotationTl.to('.moon2', { duration: 2 }, '-=3')
-      //   rotationTl.to('.moon4', { duration: 2 }, '-=2')
+        // constant rotation animation
+        const rotationTl = gsap.timeline({ defaults: { rotation: 360, repeat: Infinity, repeatDelay: 0, ease: 'none' } });
+        rotationTl.to('.moon3', { duration: 4 })
+        rotationTl.to('.moon2', { duration: 2 }, '-=3')
+        rotationTl.to('.moon4', { duration: 2 }, '-=2')
 
-      //   // moons moving to right timeline
-      //   function moonsTl() {
-      //     const movementTl = gsap.timeline({ default: { ease: 'power3.out', }, autoRemoveChildren: true, delay: 2, onComplete: () => rotationTl.pause() });
+        // moons moving to right timeline
+        function moonsTl() {
+          const movementTl = gsap.timeline({ default: { ease: 'power3.out', }, autoRemoveChildren: true, delay: 2, onComplete: () => rotationTl.pause() });
 
-      //     movementTl.to('.moon1', {
-      //       right: '-7%',
-      //       duration: 1.75,
-      //     })
-      //     movementTl.to('.moon5', {
-      //       right: '-7%',
-      //       duration: 2.25,
-      //     }, '-=1.5')
-      //     movementTl.to('.moon2', {
-      //       right: '-7%',
-      //       duration: 2.25,
-      //     }, '-=2')
-      //     movementTl.to('.moon4', {
-      //       right: '-7%',
-      //       duration: 2.25,
-      //     }, '-=2.5')
-      //     movementTl.to('.moon3', {
-      //       right: '-10%',
-      //       duration: 1.25,
-      //       delay: 0.2,
-      //     }, '-=1.75')
-      //     movementTl.timeScale(1.8)
+          movementTl.to('.moon1', {
+            right: '-7%',
+            duration: 1.75,
+          })
+          movementTl.to('.moon5', {
+            right: '-7%',
+            duration: 2.25,
+          }, '-=1.5')
+          movementTl.to('.moon2', {
+            right: '-7%',
+            duration: 2.25,
+          }, '-=2')
+          movementTl.to('.moon4', {
+            right: '-7%',
+            duration: 2.25,
+          }, '-=2.5')
+          movementTl.to('.moon3', {
+            right: '-10%',
+            duration: 1.25,
+            delay: 0.2,
+          }, '-=1.75')
+          movementTl.timeScale(1.8)
 
-      //     return movementTl;
-      //   }
-
-
-      //   function logoTl() {
-      //     const tl = gsap.timeline({ defaults: {} });
-
-      //     tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
-      //     tl.to('.elan-logo', { height: '13vh', top: '34%', duration: 1, }, '<')
-      //     tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
-      //     tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
-      //     tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
-      //     tl.to('.invite-text', { opacity: 0, })
-      //     tl.to('.valenrow-logo', { opacity: 1, duration: 1.5, ease: 'power2.in'},)
-      //     tl.to('.buttons>*', { opacity: 1, stagger: 0.5 })
-      //       .to(section1.current, {
-      //         background: 'rgb(8, 15, 36, 0.1)',
-      //         duration: 6,
-      //         ease: 'power2.inOut'
-      //       })
-
-      //     return tl;
-      //   }
-
-      //   masterTl.add(moonsTl());
-      //   masterTl.add(logoTl())
-      // })
-
-      // //mobile opening animation
-      // mm.add('(max-width: 550px)', () => {
-      //   const tl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
-
-      //   tl.to('.mob-top-decor', {opacity: 0, duration: 1.5, ease: 'power2.in'})
-      //   tl.to('.mob-bottom-decor', {opacity: 0, left: '-12%', duration: 1.5, ease: 'power2.in'})
+          return movementTl;
+        }
 
 
-      //   tl.to('.mob-invite-text', {opacity: 0, })
-      //   tl.fromTo('.valenrow-logo', {top: '28%'},{opacity: 1, ease: 'power2.in', duration: 1.5})
-      //   tl.to('.elan-logo', {top: '10%', height: '8vh', duration: 1.5, delay: 0.8})
-      //   tl.to('.valenrow-logo', {top: '12%', duration: 1.5, }, '<')
-      //   tl.from('.moon-ring', { bottom: '40%', scale: 10, opacity: 0.25, right: '25%',rotation: 150, duration: 3, ease: 'power3.out', }, '<')
-      //   tl.to(section1.current, {height: '80vh', ease: 'power2.out', duration: 1.5}, '<')
-      //   tl.to('.buttons>*', {opacity: 1, stagger: 0.5}, '<+0.9')
-      //   tl.from('.moon', {rotation: 18, height: '8vh', left: '3%', duration: 1.4, ease: 'power2.out'}, )
-      // })
+        function logoTl() {
+          const tl = gsap.timeline({ defaults: {} });
 
+          tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
+          tl.to('.elan-logo', { height: '13vh', top: '34%', duration: 1, }, '<')
+          tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
+          tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
+          tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
+          tl.to('.invite-text', { opacity: 0, })
+          tl.to('.valenrow-logo', { opacity: 1, duration: 1.5, ease: 'power2.in'},)
+          tl.to('.buttons>*', { opacity: 1, stagger: 0.5 })
+            .to(section1.current, {
+              background: 'rgb(8, 15, 36, 0.1)',
+              duration: 6,
+              ease: 'power2.inOut'
+            })
+
+          return tl;
+        }
+
+        masterTl.add(moonsTl());
+        masterTl.add(logoTl())
+      })
+
+      //mobile opening animation
+      mm.add('(max-width: 550px)', () => {
+        const tl = gsap.timeline({ onStart: () => {document.body.style.overflowY = 'hidden';document.body.scrollTop = 0;document.documentElement.scrollTop = 0;}, onComplete: () => document.body.style.overflowY = 'scroll', });
+
+        tl.to('.mob-top-decor', {opacity: 0, duration: 1.5, ease: 'power2.in'})
+        tl.to('.mob-bottom-decor', {opacity: 0, left: '-12%', duration: 1.5, ease: 'power2.in'})
+
+
+        tl.to('.mob-invite-text', {opacity: 0, })
+        tl.fromTo('.valenrow-logo', {top: '28%'},{opacity: 1, ease: 'power2.in', duration: 1.5})
+        tl.to('.elan-logo', {top: '10%', height: '8vh', duration: 1.5, delay: 0.8})
+        tl.to('.valenrow-logo', {top: '12%', duration: 1.5, }, '<')
+        tl.from('.moon-ring', { bottom: '40%', scale: 10, opacity: 0.25, right: '25%',rotation: 150, duration: 3, ease: 'power3.out', }, '<')
+        tl.to(section1.current, {height: '80vh', ease: 'power2.out', duration: 1.5}, '<')
+        tl.to('.buttons>*', {opacity: 1, stagger: 0.5}, '<+0.9')
+        tl.from('.moon', {rotation: 18, height: '8vh', left: '3%', duration: 1.4, ease: 'power2.out'}, )
+      })
 
 
       // scroll animation for timeline section
@@ -336,7 +397,7 @@ function HomePage() {
           {/* buttons div */}
           <div className='buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 bottom-[11%] lg:-right-[65%] lg:top-20'>
             <button className='opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]'>
-              <a href='/'><div>Merch</div></a>
+              <Link to='/'><div>Litfest</div></Link>
             </button>
 
             <button className='opacity-0 md:opacity-100 lg:opacity-0 bg-green px-1 rounded-lg my-4 w-[46vw] md:w-[38vw] lg:w-[15.5vw] h-[8vh] lg:h-[10vh]'>
@@ -479,22 +540,27 @@ function HomePage() {
         </div>
 
         {/* Explore */}
-        <div ref={exploreRef} className='text-golden py-10 lg:px-16 box-content h-[30vh] lg:h-[60vh] relative'>
-          {/* bg images */}
-          <div className='absolute h-[55%] right-0 bottom-[10%]' ><img className='h-full' src={exploreBg}></img></div>
-
+        <div ref={exploreRef} className='text-golden pt-10 lg:px-16 box-content relative'>
           <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative'>Explore</h1>
 
+
+          <ExploreSlider imagesList={exploreImgs} size={4}  />
+
+          {/* bg images */}
+          <div className='absolute h-[55%] right-0 bottom-[10%]' ><img className='h-full' src={exploreBg}></img></div>
         </div>
 
         {/* Gallery */}
-        <div className='text-golden py-10 lg:px-16 box-content relative h-[40vh] lg:h-[80vh]'>
+        <div className='text-golden py-10 lg:px-16 box-content relative'>
+          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative z-20'>Gallery</h1>
+
+          <GallerySlider imagesList={gal1} size={3} />
+
+          <GallerySlider imagesList={gal2} size={3} />
+
           {/* bg images */}
-          <div className='absolute h-[85%] left-0 top-[10%]' ><img className='h-full' src={galleryBg}></img></div>
+          <div className='absolute h-[85%] left-0 top-0' ><img className='h-full' src={galleryBg}></img></div>
           <div className='absolute h-[70%] right-0 -bottom-[20%]' ><img className='h-full' src={galleryBtmBg}></img></div>
-
-          <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative'>Gallery</h1>
-
         </div>
 
         {/* Stats */}
@@ -502,38 +568,38 @@ function HomePage() {
           <h1 className='font-berkshire text-6xl lg:text-8xl px-10 lg:px-0 relative z-10'>Stats</h1>
 
           <div className='flex flex-wrap w-full justify-around px-8 py-5 pt-14 z-10 relative'>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={audience}></img></div>
-                <p>60+ events</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={hat}></img></div>
-                <p>400+ colleges</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={calender}></img></div>
-                <p>3 days</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4 mx-2'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={threePeeps}></img></div>
-                <p>10k+ audience</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4 mx-2'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={insta}></img></div>
-                <p>3.7k+ followers</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={likes}></img></div>
-                <p>42k+ likes</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={views}></img></div>
-                <p>82k+ views</p>
-              </div>
-              <div className='flex flex-col items-center justify-center my-4'>
-                <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={tweets}></img></div>
-                <p>1.1k+ followers</p>
-              </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={audience}></img></div>
+              <p>60+ events</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={hat}></img></div>
+              <p>400+ colleges</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={calender}></img></div>
+              <p>3 days</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4 mx-2'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={threePeeps}></img></div>
+              <p>10k+ audience</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4 mx-2'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={insta}></img></div>
+              <p>3.7k+ followers</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={likes}></img></div>
+              <p>42k+ likes</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={views}></img></div>
+              <p>82k+ views</p>
+            </div>
+            <div className='flex flex-col items-center justify-center my-4'>
+              <div className='h-10 lg:h-16 mx-8 md:mx-20' ><img className='h-full' src={tweets}></img></div>
+              <p>1.1k+ followers</p>
+            </div>
           </div>
 
           {/* bg images */}

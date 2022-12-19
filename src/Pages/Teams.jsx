@@ -242,7 +242,7 @@ function Teams() {
   }
 
   return (
-    <div className="bg-[#080f24] flex flex-col team">
+    <div className="mt-[76px] lg:mt-0 bg-[#080f24] flex flex-col team">
       <h1 className="main-heading ">Team</h1>
 
       <div className="button">
