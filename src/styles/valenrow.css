@@ -1,0 +1,16 @@
+@media (min-aspect-ratio: 1/1){
+    .pillars{
+        height: 68vw;
+        bottom: 24vw;
+        right: 23vw;
+    }
+
+    .castle{
+        bottom: 38vw;
+        height: 40vw;
+        right: 36vw;
+    }
+    .valenrow{
+        position: relative;
+    }
+}

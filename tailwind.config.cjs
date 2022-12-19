@@ -12,6 +12,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
+      "tree-bkp": "600px",
     },
     extend: {
       keyframes: {
@@ -24,9 +25,6 @@ module.exports = {
           },
         },
       },
-      screens: {
-        "v-tree-relative": { raw: "(min-aspect-ratio:1/1)" },
-      },
       colors: {
         red: "#7D001E",
         golden: "#FED395",
@@ -34,10 +32,7 @@ module.exports = {
         green: "#0B8661",
         yellow: "#FFB345",
         blue: "#0D1838",
-        darkAsh: "#151515",
-        ash: "#9B9B9B",
-        "v-green": "#173400",
-        lightGreen: "#74AA00",
+        white: "#FFFFFF",
       },
       fontFamily: {
         berkshire: ["Berkshire Swash", "cursive"],
@@ -46,7 +41,6 @@ module.exports = {
       },
     },
   },
-  safelist: ["bg-darkAsh", "text-ash", "text-lightGreen", "bg-v-green"],
   darkMode: "class",
   plugins: [],
 };

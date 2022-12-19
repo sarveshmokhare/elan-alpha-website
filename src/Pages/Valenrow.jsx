@@ -1,6 +1,7 @@
 import React from "react";
 import MobileCard from "../Components/valenrow/MobileCard";
 import Ping from "../Components/valenrow/Ping";
+import "../styles/valenrow.css";
 
 const landingPageBg =
   "https://res.cloudinary.com/dwsverefw/image/upload/v1671448596/ecell/Valenrow/landing_page_bg_mwzh1i.jpg";
@@ -117,7 +118,7 @@ function Valenrow() {
         <img
           src={lorebg}
           alt="Valenrow"
-          className="object-cover h-full w-full absolute object-right-bottom md:object-right-bottom v-tree-relative:relative"
+          className="valenrow object-cover h-full w-full absolute object-right-bottom md:object-right-bottom v-tree-relative:relative"
         />
         <img
           src={leftBushes}
@@ -127,12 +128,12 @@ function Valenrow() {
         <img
           src={castle}
           alt=""
-          className="absolute h-[20rem] right-[21rem] bottom-[38%] v-tree-relative:bottom-[38vw] v-tree-relative:h-[40vw] v-tree-relative:right-[36vw] z-0"
+          className="castle absolute h-[20rem] right-[21rem] bottom-[38%] z-0"
         />
         <img
           src={pillars}
           alt="pillars"
-          className="z-[2] absolute h-[37rem] bottom-[24%] right-[13rem] v-tree-relative:h-[68vw] v-tree-relative:bottom-[24vw] v-tree-relative:right-[23vw]"
+          className="pillars z-[2] absolute h-[37rem] bottom-[24%] right-[13rem]"
         />
       </section>
       <section className="bg-white relative z-20">
