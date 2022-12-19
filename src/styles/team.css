@@ -1,0 +1,109 @@
+/* team card css  */
+
+.box {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.card {
+  overflow: hidden;
+  width: 210px;
+  height: 90%;
+  margin: 1rem 2.5rem;
+
+}
+
+
+
+
+/* team css  */
+.team .main-heading {
+  display: block;
+  background: #080f24;
+  color: #fed395;
+  font-family: "Berkshire Swash";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8rem; 
+  line-height: 119px;
+}
+@media (max-width:480px) {
+  .team .main-heading{
+    font-size: 5rem;
+  }
+  
+}
+
+.team .button {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+}
+
+.team .years {
+  font-family: "Century Schoolbook";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #fed395;
+}
+
+.team .years.active {
+  font-weight: 900;
+  font-size: 25px;
+}
+.team .heading1 {
+  font-family: "Berkshire Swash";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px; 
+  line-height: 45px;
+  text-align: center;
+
+  color: #fff;
+}
+@media (max-width:480px) {
+  .team .heading1{
+    color: #fed395;
+  }
+  
+}
+.team .button2{
+    font-family: 'Century Schoolbook';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+color: #E3AA57;
+background: #0D1838;
+}
+.team .button2.active2{
+    
+    color: #0D1838;
+    background: #E3AA57;
+}
+.team .button3{
+  text-align: left;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.team .button3.active3{
+  color: #FED395;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.team .button3:hover{
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: opacity 0.5s ease-in-out;
+  -o-transition:opacity 0.5s ease-in-out ;
+}
