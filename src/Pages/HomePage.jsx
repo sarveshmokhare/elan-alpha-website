@@ -220,7 +220,7 @@ function HomePage() {
           const tl = gsap.timeline({ defaults: {} });
 
           tl.to('.invite-text', { top: '55%', height: '18vh', duration: 1 })
-          tl.to('.elan-logo', { height: '13vh', top: '34%', duration: 1, }, '<')
+          tl.to('.elan-logo', { height: '13vh', top: '26%', duration: 1, }, '<')
           tl.to('.left-decor', { height: '65vh', top: '4%' }, '<')
           tl.to('.top-line', { right: '-100%', duration: 2 }, '<')
           tl.fromTo(document.querySelector('header'), { opacity: 0 }, { opacity: 1, duration: 1 }, '<')
@@ -249,8 +249,8 @@ function HomePage() {
 
 
         tl.to('.mob-invite-text', {opacity: 0, })
-        tl.fromTo('.valenrow-logo', {top: '28%'},{opacity: 1, ease: 'power2.in', duration: 1.5})
-        tl.to('.elan-logo', {top: '10%', height: '8vh', duration: 1.5, delay: 0.8})
+        tl.fromTo('.valenrow-logo', {top: '19%'}, {opacity: 1, ease: 'power2.in', duration: 1.5})
+        tl.to('.elan-logo', {top: '14%', height: '8vh', duration: 1.5, delay: 0.8})
         tl.to('.valenrow-logo', {top: '12%', duration: 1.5, }, '<')
         tl.from('.moon-ring', { bottom: '40%', scale: 10, opacity: 0.25, right: '25%',rotation: 150, duration: 3, ease: 'power3.out', }, '<')
         tl.to(section1.current, {height: '80vh', ease: 'power2.out', duration: 1.5}, '<')
@@ -390,12 +390,12 @@ function HomePage() {
           <div className='mob-invite-text lg:hidden absolute top-[32%] h-[17vh] left-0 right-0 flex justify-center '><img className='h-full' src={inviteTextMob}></img></div>
 
           {/* valenrow logo */}
-          <div className='valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[30vh] lg:h-[70vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center lg:top-[22%]'>
+          <div className='valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[38vh] lg:h-[85vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center lg:top-[14%]'>
             <img className='h-full' alt='valenrow_logo' src={valenrowLogo} />
           </div>
 
           {/* buttons div */}
-          <div className='buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 bottom-[11%] lg:-right-[65%] lg:top-20'>
+          <div className='buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 bottom-[9%] lg:-right-[65%] lg:top-20'>
             <button className='opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]'>
               <Link to='/'><div>Litfest</div></Link>
             </button>
