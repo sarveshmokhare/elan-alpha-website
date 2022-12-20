@@ -460,7 +460,7 @@ function HomePage() {
         );
         tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
         tl.to(".moon", {
-          rotation: 18,
+          // rotation: 18,
           height: "5vh",
           left: "8%",
           duration: 1.4,
@@ -472,7 +472,7 @@ function HomePage() {
       const mm2 = gsap.matchMedia();
 
       mm2.add("(min-width: 1025px)",() => {
-        
+
           gsap.to(".scroll-div", {
             scrollTrigger: {
               trigger: ".timeline-div",
