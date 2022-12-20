@@ -285,14 +285,14 @@ function Teams() {
         <div>
           <h1 className="heading1">Elan and ηVision Team 2023</h1>
           {/* <h3 className="text-left text-white text-lg hidden sm:block">Overall Coordinator</h3> */}
-          <div className=" hidden lg:block ">
+          <div className=" hidden ">
             <div className="flex flex-wrap flex-row">
               <div className="index m-4 h-[55vh] w-[30%] pl-8 py-8 relative flex flex-col">
                 <button
                   onClick={() => handleScroll(0)}
                   className={isClass1 ? "button3 active3" : "button3"}
                 >
-                  Overall Coordinator
+                  Overall Head
                 </button>
                 <button
                   onClick={() => handleScroll(1)}
@@ -358,13 +358,13 @@ function Teams() {
               </div>
               <div
                 // onScroll={handleScroll}
-                className="index-content w-[60%] m-4 justify-center  scroll-smooth relative"
+                className="index-content w-[60%] h-[65vh] m-4 justify-center overflow-y-auto   scroll-smooth relative"
               >
                 <div className="flex flex-col items-center ">
                   {isClass1 && (
                     <div ref={OC}>
                       <OCCard
-                      Role="Overall Coordinator"
+                      Role="Overall Head"
                         Name="Swapnish Sahare"
                         Image={OC2023}
                         Phone="+91 7030753158"
@@ -858,7 +858,7 @@ function Teams() {
               </div>
             </div>
           </div>
-          <div className="lg:hidden sm:block">
+          <div className="block">
             <div className="button">
               <button
                 onClick={() => {
@@ -893,14 +893,14 @@ function Teams() {
               <>
                 <div className="flex flex-row justify-center m-4">
                   <OCCard
-                  Role="Overall Coordinator"
+                  Role="Overall Head"
                     Name="Swapnish Sahare"
                     Image={OC2023}
                     Phone="+91 7030753158"
                     Instagram="https://www.instagram.com/swapnish.ss"
                   />
                 </div>
-                <div className="flex flex-wrap flex-row justify-center m-4">
+                <div className="flex flex-wrap flex-row justify-center m-8">
                   <HeadCard
                     Name="K N Vardhan"
                     Image={KNV}
@@ -983,7 +983,7 @@ function Teams() {
             )}
             {!current && (
               <>
-                <div className="flex flex-wrap flex-row  justify-center">
+                <div className="flex flex-wrap flex-row  justify-center m-8">
                   <CoordCard
                     Name="Sarvesh Mokhare"
                     Role="DevOps Coordinator"
@@ -1302,7 +1302,7 @@ function Teams() {
             <OCCard
               Image={OC2022}
               Name="Krati Arela"
-              Role="Overall Coordinator"
+              Role="Overall Head"
             />
           </div>
           <div className="flex flex-wrap justify-center m-8">
@@ -1320,7 +1320,7 @@ function Teams() {
               <OCCard
                 Image={OC2021}
                 Name="Stavan Christian"
-                Role="Overall Coordinator"
+                Role="Overall Head"
               />
             </div>
             <div className="flex flex-wrap justify-center m-8 ">
