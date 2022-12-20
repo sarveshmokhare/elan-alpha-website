@@ -175,7 +175,7 @@ function Litfest() {
 
       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px]'><img className='h-full' src={vase}></img></div>
 <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-<div className='absolute right-0 top-[30px] h-[30vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+<div className='absolute right-0 top-[30px] h-[20vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
 <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
     </div>
   )
