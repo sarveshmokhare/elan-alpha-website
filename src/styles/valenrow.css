@@ -1,0 +1,45 @@
+@media (min-aspect-ratio: 1/1){
+    .pillars{
+        height: 68vw;
+        bottom: 24vw;
+        right: 23vw;
+    }
+
+    .castle{
+        bottom: 38vw;
+        height: 40vw;
+        right: 36vw;
+    }
+    .valenrow{
+        position: relative;
+    }
+}
+
+.clip-0, .clip-2{
+    clip-path: polygon(100% 0, 0 1%, 15% 50%, 0 100%, 100% 100%);
+}
+.clip-1, .clip-3{
+    display: none;
+}
+.coven-0, .coven-2{
+    background-color: white !important;
+}
+
+.coven-1, .coven-3{
+    border-radius: 0 250px 0 250px;
+    transform: translateX(-10%);
+}
+
+.coven-1>*, .coven-3>*{
+    transform: translateX(25%);
+}
+
+.coven-1 img, .coven-3 img{
+    transform: translateX(40%) translateY(-10%);
+}
+
+i{
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+}
