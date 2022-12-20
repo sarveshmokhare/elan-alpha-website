@@ -59,7 +59,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="fixed lg:sticky w-full top-0 z-40">
+    <header className="fixed lg:sticky w-full top-0 z-40 opacity-0">
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
       <div className="header-div backdrop-blur-sm bg-black w-full h-20 border-b border-golden flex items-center justify-between px-4 text-white">

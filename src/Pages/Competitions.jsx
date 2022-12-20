@@ -1,4 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import gsap from 'gsap'
 import ThemeContext from '../Contexts/ThemeContext'
 import arrow from '../assets/designs/competitions_arrow.svg'
 import cut_btn from '../assets/designs/competitions_cut_btn.svg'
@@ -16,7 +17,7 @@ const navbuttons = ['Techy', 'Culti']
 // }
 const popupnav = ['Intro', 'Rules', 'Timeline', 'Judging', 'Prizes', 'Contact']
 
-function ShowDetails({ item ,type}) {
+function ShowDetails({ item, type }) {
 
   const [popupNavValue, setpopupNavValue] = useState(1)
 
@@ -37,7 +38,7 @@ function ShowDetails({ item ,type}) {
         {close => (
           <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("assets/designs/competitions_popup_2.svg"),url("assets/designs/competitions_popup_3.svg"),url("assets/designs/competitions_popup_4.svg"),url("assets/designs/competitions_popup_1.svg"),url("assets/designs/competitions_popup_5.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
             <div className='text-4xl vvs:text-5xl text-golden font-cinzel mt-10 relative lg:text-6xl z-10 font-semibold'>{item.name}</div>
-            <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-6 hover:cursor-pointer' onClick={close}/>
+            <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-6 hover:cursor-pointer' onClick={close} />
             <div className='flex flex-row  justify-evenly mb-5 flex-wrap'>
               {popupnav.map((nav_item, index) => (
                 <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-blue bg-golden' : 'text-golden bg-blue ')}>{nav_item}</button>
@@ -64,7 +65,7 @@ function ShowDetails({ item ,type}) {
 
               <div className={(popupNavValue == 3 ? ' block' : 'hidden')}>
 
-                <ul className={type==1?'block':'hidden'}>
+                <ul className={type == 1 ? 'block' : 'hidden'}>
                   <li className='flex flex-col sm:flex-row'>
                     <div className='text-golden text-2xl  w-full sm:w-1/2'>Submission deadline:</div>
                     <div className='text-golden text-lg vvs:text-xl font-berkshire w-full sm:w-1/2 text-right sm:text-left'>{item.timeline.submission}</div>
@@ -92,11 +93,11 @@ function ShowDetails({ item ,type}) {
               </div>
 
               <ul className={(popupNavValue == 4 ? ' block' : ' hidden') + ' list-disc'}>
-                {item.judging.map((judging_item)=>(
+                {item.judging.map((judging_item) => (
                   <li className='text-golden text-xl mt-3 whitespace-pre-wrap'>{judging_item}</li>
                 ))}
               </ul>
-              <ul className={(popupNavValue == 5 ? ' block' : ' hidden')+' list-disc'}>
+              <ul className={(popupNavValue == 5 ? ' block' : ' hidden') + ' list-disc'}>
                 {item.prizes.map((prizes_item) => (
                   <li className='text-golden text-xl mt-5  whitespace-pre-wrap'>{prizes_item}</li>
                 ))}
@@ -117,7 +118,7 @@ function ShowDetails({ item ,type}) {
   )
 }
 
-function Hii({ data, sliderValue,type }) {
+function Hii({ data, sliderValue, type }) {
 
 
 
@@ -134,7 +135,7 @@ function Hii({ data, sliderValue,type }) {
           </div>
           <div className='flex justify-evenly py-5'>
             <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button>
-            <ShowDetails item={item} type={type}/>
+            <ShowDetails item={item} type={type} />
 
           </div>
         </div>
@@ -203,7 +204,7 @@ function Navigate() {
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
-  const imagesList = (Navigatevalue==1?cultidata:techydata).map((item) => item.img)
+  const imagesList = (Navigatevalue == 1 ? cultidata : techydata).map((item) => item.img)
   const last = Navigatevalue == 1 ? 10 : 12
 
   const itemstyle = {
@@ -233,10 +234,10 @@ function Navigate() {
   return (
     <div className='z-0'>
       <div className='flex lg:justify-center justify-evenly pb-10'>
-         {navbuttons.map((nav_item,index)=>(
-           <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
-         ))}
-       </div>
+        {navbuttons.map((nav_item, index) => (
+          <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
+        ))}
+      </div>
       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
         <div className='w-[700%] flex relative px-[35vw]' id='hii'>
           {imagesList.map((item, index) => (
@@ -262,15 +263,27 @@ function Navigate() {
 }
 
 function Competitions() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   const context = useContext(ThemeContext)
 
   return (
     <div className={"mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
-       <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl mb-2'>
-         Competitions
-       </div>
-       {<Navigate />}
-     </div>
+      <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl mb-2'>
+        Competitions
+      </div>
+      {<Navigate />}
+    </div>
   )
 }
 

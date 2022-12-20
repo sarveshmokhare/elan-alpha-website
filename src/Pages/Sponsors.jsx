@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import gsap from "gsap";
 import SponsorCard from "../Components/SponsorCard";
 import ThemeContext from "../Contexts/ThemeContext";
 import "../styles/sponsors.css";
@@ -22,6 +23,18 @@ import BG5 from "../assets/SponsorBackground/2 578.svg";
 import BG6 from "../assets/SponsorBackground/5 3.svg";
 
 function Sponsors() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   const context = useContext(ThemeContext);
 
   const [year, setyear] = useState("2022");

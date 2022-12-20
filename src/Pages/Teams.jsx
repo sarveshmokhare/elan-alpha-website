@@ -1,4 +1,5 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
+import gsap from "gsap";
 import { HeadCard, CoordCard, OCCard } from "../Components/TeamCard";
 import "../styles/team.css";
 import OC2021 from "../assets/Team/2021/Overall_head.jpeg";
@@ -71,6 +72,18 @@ import Geetha from "../assets/Team/2023/Coords/Workshops_GEETHA BHAVANA.jpg";
 
 import { team2021, team2022 } from "../Components/TeamData";
 function Teams() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+  
   const [year, setyear] = useState("2023");
   const [current, setIsCurrent] = useState(true);
   const [isActive1, setIsActive1] = useState(true);

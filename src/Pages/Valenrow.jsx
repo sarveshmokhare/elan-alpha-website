@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import gsap from "gsap";
 import MobileCard from "../Components/valenrow/MobileCard";
 import Ping from "../Components/valenrow/Ping";
 
@@ -9,6 +10,18 @@ import Map from "../Components/valenrow/Map";
 import "../styles/valenrow.css";
 
 function Valenrow() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   console.log("hey");
   return (
     <div className="bg-white box-border lg:pb-24">

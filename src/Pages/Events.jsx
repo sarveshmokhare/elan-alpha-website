@@ -1,4 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
+import gsap from "gsap";
 import ThemeContext from "../Contexts/ThemeContext";
 import { eventsdata } from "../Components/events/eventsdata";
 // import '../styles/events.css'
@@ -144,6 +145,18 @@ function Navigate() {
 }
 
 function Events() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   const context = useContext(ThemeContext);
 
   return (

@@ -268,9 +268,13 @@ function HomePage() {
           gsap.set(".elan-logo", { height: "13vh", top: "26%", });
           gsap.set(".left-decor", { height: "65vh", top: "4%" });
           gsap.set(".top-line", { right: "-100%", });
+          gsap.set(
+            document.querySelector("header"),
+            { opacity: 1, }
+          );
           gsap.set(".valenrow-logo", { opacity: 1, });
-          gsap.to(".buttons>*", { opacity: 1, })
-          gsap.to(section1.current,
+          gsap.set(".buttons>*", { opacity: 1, })
+          gsap.set(section1.current,
             {
               background: "rgb(8, 15, 36, 0.1)",
             }
@@ -335,9 +339,8 @@ function HomePage() {
           tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
           tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
           tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
-          tl.fromTo(
+          tl.to(
             document.querySelector("header"),
-            { opacity: 0 },
             { opacity: 1, duration: 1 },
             "<"
           );
@@ -392,7 +395,7 @@ function HomePage() {
           gsap.set(".mob-invite-text", { opacity: 0 });
           gsap.set(
             ".valenrow-logo",
-            { opacity: 1, top: '14%'}
+            { opacity: 1, top: '14%' }
           );
           gsap.set(".elan-logo", {
             top: "14%",
@@ -401,16 +404,17 @@ function HomePage() {
           gsap.set(".valenrow-logo", { top: "12%" });
           gsap.set(
             section1.current,
-            { height: "80vh"}
+            { height: "80vh" }
           );
-          gsap.set(".buttons>*", { opacity: 1,});
-          gsap.set('.moon-ring', {bottom: '4%', scale: 1.2, right: '8%', opacity: 1, })
+          gsap.set(".buttons>*", { opacity: 1, });
+          gsap.set('.moon-ring', { bottom: '4%', scale: 1.2, right: '8%', opacity: 1, })
           gsap.set('.moon', {
             bottom: '4%',
             height: '5vh',
             left: '8%',
           })
         }
+        gsap.set(document.querySelector('header'), {opacity: 1})
 
         tl.to(".mob-top-decor", {
           opacity: 0,
@@ -1021,56 +1025,61 @@ function HomePage() {
             Stats
           </h1>
 
-          <div className="flex flex-wrap w-full justify-around px-8 py-5 pt-14 z-10 relative">
+          <div className="flex flex-wrap w-full justify-around px-10 pt-14 lg:pb-5 z-10 relative">
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={audience}></img>
               </div>
               <p>60+ events</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={hat}></img>
               </div>
               <p>400+ colleges</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={calender}></img>
               </div>
               <p>3 days</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4 mx-2">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={threePeeps}></img>
               </div>
               <p>10k+ audience</p>
             </div>
+          </div>
+
+          <div className="flex flex-wrap w-full justify-around px-10 pb-5 z-10 relative"> 
             <div className="flex flex-col items-center justify-center my-4 mx-2">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={insta}></img>
               </div>
               <p>3.7k+ followers</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={likes}></img>
               </div>
               <p>42k+ likes</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={views}></img>
               </div>
               <p>82k+ views</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
-              <div className="h-10 lg:h-16 mx-8 md:mx-20">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={tweets}></img>
               </div>
               <p>1.1k+ followers</p>
             </div>
+
           </div>
+
 
           {/* bg images */}
           <div className="absolute h-[60%] left-0 top-[-10%] lg:top-0">

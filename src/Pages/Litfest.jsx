@@ -1,6 +1,7 @@
 
 
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
+import gsap from 'gsap'
 import ThemeContext from '../Contexts/ThemeContext'
 import arrow from '../assets/designs/competitions_arrow.svg'
 import cut_btn from '../assets/designs/competitions_cut_btn.svg'
@@ -43,7 +44,7 @@ function ShowDetails({ item }) {
             <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
               <div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
                 <div className='text-xl mb-5  whitespace-pre-wrap'>{item.description}</div>
-                <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold ' + (!item.reglink ?' hidden':' inline')} href={item.reglink}>Register</a>
+                <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold ' + (!item.reglink ? ' hidden' : ' inline')} href={item.reglink}>Register</a>
               </div>
               <img src={item.img} className='w-full md:w-2/5 mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" />
             </div>
@@ -54,14 +55,14 @@ function ShowDetails({ item }) {
               ))}
 
 
-              <ul className={(popupNavValue == 2 ? ' block ' : 'hidden ')+'list-disc'}>{item.rules.map((rules_item) => (
+              <ul className={(popupNavValue == 2 ? ' block ' : 'hidden ') + 'list-disc'}>{item.rules.map((rules_item) => (
                 <li className='text-golden mt-5 lg:text-xl whitespace-pre-wrap'>{rules_item}</li>
               ))}
               </ul>
 
-              <div className={ 'text-golden text-2xl'+(popupNavValue == 3 ? ' block' : ' hidden')}>{item.date}</div>
+              <div className={'text-golden text-2xl' + (popupNavValue == 3 ? ' block' : ' hidden')}>{item.date}</div>
 
-              <ul className={(popupNavValue == 4 ? ' block ' : ' hidden ')+'list-disc'}>
+              <ul className={(popupNavValue == 4 ? ' block ' : ' hidden ') + 'list-disc'}>
                 {item.judging.map((judging_item) => (
                   <li className='text-golden text-xl mt-3 whitespace-pre-wrap'>{judging_item}</li>
                 ))}
@@ -91,7 +92,7 @@ function Hii({ data, sliderValue }) {
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.more}
           </div>
           <div className='flex justify-evenly py-5'>
-            <a className={"bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose "+(item.reglink?' inline':' hidden')} href={item.reglink}>Register Now</a>
+            <a className={"bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose " + (item.reglink ? ' inline' : ' hidden')} href={item.reglink}>Register Now</a>
             <ShowDetails item={item} />
 
           </div>
@@ -109,7 +110,7 @@ function Navigate() {
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   const imagesList = litfestdata.map((item) => item.img)
-  const last = litfestdata.length-1
+  const last = litfestdata.length - 1
 
   const itemstyle = {
     position: 'relative',
@@ -150,7 +151,7 @@ function Navigate() {
         <LitfestSlider imagesList={litfestdata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
       </div> */}
       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
-      <input type="range" min={0} max={litfestdata.length-1} defaultValue={0} id="slider" value={sliderValue} onChange={(e) => {
+      <input type="range" min={0} max={litfestdata.length - 1} defaultValue={0} id="slider" value={sliderValue} onChange={(e) => {
         setSliderValue(e.target.value)
       }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
 
@@ -163,10 +164,22 @@ function Navigate() {
 }
 
 function Litfest() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   const context = useContext(ThemeContext)
 
   return (
-    <div className={ "mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 relative"}>
+    <div className={"mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 relative"}>
       <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl vs:text-9xl  z-10 relative text-golden'>Litfest</h1>
       <div className='relative z-5'>
         <Navigate />
@@ -174,9 +187,9 @@ function Litfest() {
 
 
       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px]'><img className='h-full' src={vase}></img></div>
-<div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-<div className='absolute right-0 top-[30px] h-[20vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
-<div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
+      <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
+      <div className='absolute right-0 top-[30px] h-[20vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+      <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
     </div>
   )
 }

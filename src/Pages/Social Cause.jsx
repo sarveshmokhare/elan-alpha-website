@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import gsap from "gsap";
 import "../styles/SocialCause.css";
 import { useState, Component } from "react";
 import { Carousel } from "react-responsive-carousel";
@@ -7,6 +8,18 @@ import SC1 from "../assets/Social Cause Images/social_cause1.jpeg";
 import SC2 from "../assets/Social Cause Images/social_cause2.jpeg";
 import SC3 from "../assets/Social Cause Images/social_cause3.jpeg";
 function SocialCause() {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+    })
+    gsap.set(
+      document.querySelector("header"),
+      { opacity: 1, }
+    );
+
+    return () => { ctx.revert(); }
+  }, [])
+
   const [year, setIsYear] = useState(true);
 
   return (
