@@ -414,7 +414,7 @@ function HomePage() {
             left: '8%',
           })
         }
-        gsap.set(document.querySelector('header'), {opacity: 1})
+        gsap.set(document.querySelector('header'), { opacity: 1 })
 
         tl.to(".mob-top-decor", {
           opacity: 0,
@@ -471,20 +471,14 @@ function HomePage() {
       // scroll animation for timeline section
       const mm2 = gsap.matchMedia();
 
-      mm2.add(
-        {
-          isMobile: "(max-width: 1024px)",
-          isDesktop: "(min-width: 1025px)",
-        },
-        (context) => {
-          const { isMobile, isDesktop } = context.conditions;
-
+      mm2.add("(min-width: 1025px)",() => {
+        
           gsap.to(".scroll-div", {
             scrollTrigger: {
               trigger: ".timeline-div",
               // markers: true,
-              start: isDesktop ? "center center" : "center center",
-              end: isDesktop ? "bottom+=60%" : "bottom+=1000px",
+              start: "center center",
+              end: "bottom+=60%",
               scrub: true,
               pin: ".giant-div",
             },
@@ -1052,7 +1046,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="flex flex-wrap w-full justify-around px-10 pb-5 z-10 relative"> 
+          <div className="flex flex-wrap w-full justify-around px-10 pb-5 z-10 relative">
             <div className="flex flex-col items-center justify-center my-4 mx-2">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={insta}></img>
