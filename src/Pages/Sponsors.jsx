@@ -32,12 +32,14 @@ function Sponsors() {
   return (
     <div className="mt-[76px] lg:mt-0 bg-[#080f24] flex flex-col sponsorDiv">
       <div className="relative bg-[#fed395] md:h-[7.5rem] sm:h-[3rem]">
+      
         <h1 className=" main-heading ">
           Sponsors
         </h1>
       </div>
       <div style={{ zIndex: "1" }}>
         <div>
+        <h1 className="text-center text-[#fed395] text-[1.75rem] font-bold mt-4">2022</h1>
           <h1 className="heading1">TITLE SPONSOR</h1>
           <img
             src={Hero}
@@ -47,9 +49,9 @@ function Sponsors() {
           <img src={BG2} className="BG right-0 top-[22%]" />
           <img src={BG3} className="BG top-[60%]" />
           <img src={BG4} className="BG top-[58%] right-0" />
-          <img src={BG5} className="BG top-[175rem]" />
-          <img src={BG6} className="BG top-[180rem] right-0" />
-          <h3 className="heading1">CO-SPONSOR</h3>
+          <img src={BG5} className="BG top-[172rem]" />
+          <img src={BG6} className="BG top-[175rem] right-0" />
+          <h3 className="heading1">CO-TITLE SPONSOR</h3>
           <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
             <img
               src={Nisarga}
