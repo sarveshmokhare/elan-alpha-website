@@ -29,7 +29,7 @@ function ShowDetails({ item }) {
   return (
     <div>
       <Popup trigger={
-        <button className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose">Learn more</button>
+        <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Learn more</button>
       } position="center center">
         {close => (
           <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("assets/designs/competitions_popup_2.svg"),url("assets/designs/competitions_popup_3.svg"),url("assets/designs/competitions_popup_4.svg"),url("assets/designs/competitions_popup_1.svg"),url("assets/designs/competitions_popup_5.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
@@ -82,16 +82,16 @@ function Hii({ data, sliderValue }) {
   return (
 
     data.map((item, index) => (
-      <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/3 "}>
+      <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/4 "}>
         <div className='m-2 lg:bg-blue lg:rounded-tl-2xl rounded-br-2xl overflow-hidden'>
-          <img src={item.img} className=' object-cover m-auto lg:h-[20vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
+          <img src={item.img} className=' object-cover m-auto lg:h-[15vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
           <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
 
 
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.more}
           </div>
           <div className='flex justify-evenly py-5'>
-            <a className={"bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose hover:cursor-pointer "+(item.reglink?' inline':' hidden')} href={item.reglink}>Register Now</a>
+            <a className={"bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose "+(item.reglink?' inline':' hidden')} href={item.reglink}>Register Now</a>
             <ShowDetails item={item} />
 
           </div>
@@ -175,7 +175,7 @@ function Litfest() {
 
       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px]'><img className='h-full' src={vase}></img></div>
 <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-<div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
+<div className='absolute right-0 top-[30px] h-[30vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
 <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
     </div>
   )
