@@ -249,7 +249,7 @@ function Menu(props) {
           </div>
 
           {/* buttons div */}
-          <div className="font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between">
+          <div className="font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between" onClick={toggleMenu}>
             <Link to='/litfest' className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4">
               <a>Litfest</a>
             </Link>
@@ -265,19 +265,23 @@ function Menu(props) {
               </a>
             </button>
 
-            <Link
-              className="flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative"
-              style={{ borderRadius: "40px" }}
-              to="/valenrow"
-              onClick={props.toggleMenu}
-            >
-              <img
-                src={valenrowLogo}
-                className="h-24 absolute -top-2"
-                alt="icon"
-              />
-              <div className="absolute left-12 text-sm">Explore Valenrow</div>
-            </Link>
+            <div onClick={toggleMenu}>
+              <Link
+                className="flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative"
+                style={{ borderRadius: "40px" }}
+                to="/valenrow"
+                onClick={toggleMenu}
+              >
+                <img
+                  src={valenrowLogo}
+                  className="h-24 absolute -top-2"
+                  alt="icon"
+                  onClick={toggleMenu}
+                />
+                <div className="absolute left-12 text-sm">Explore Valenrow</div>
+              </Link>
+            </div>
+
           </div>
         </div>
       </div>

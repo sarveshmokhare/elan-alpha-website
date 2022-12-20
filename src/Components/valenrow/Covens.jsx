@@ -101,38 +101,38 @@ function DesktopCard({
 
 function Covens({ MobileCard }) {
   const covensRef = useRef();
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl1 = gsap.timeline();
-      tl1.from(".coven-0 > .clip-0", {
-        x: "90%",
-        autoAlpha: 1,
-        duration: 1.8,
-        ease: "power4.out",
-      });
-      tl1.from(
-        ".coven-0  .titles>*",
-        {
-          autoAlpha: 0,
-          stagger: 0.3,
-          y: "5px",
-          duration: 1.4,
-          ease: "power4.inOut",
-        },
-        ">-2"
-      );
+  // useLayoutEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     const tl1 = gsap.timeline();
+  //     tl1.from(".coven-0 > .clip-0", {
+  //       x: "90%",
+  //       autoAlpha: 1,
+  //       duration: 1.8,
+  //       ease: "power4.out",
+  //     });
+  //     tl1.from(
+  //       ".coven-0  .titles>*",
+  //       {
+  //         autoAlpha: 0,
+  //         stagger: 0.3,
+  //         y: "5px",
+  //         duration: 1.4,
+  //         ease: "power4.inOut",
+  //       },
+  //       ">-2"
+  //     );
 
-      ScrollTrigger.create({
-        trigger: ".coven-0",
-        animation: tl1,
-        start: "top 68%",
-      });
-    }, covensRef);
+  //     ScrollTrigger.create({
+  //       trigger: ".coven-0",
+  //       animation: tl1,
+  //       start: "top 68%",
+  //     });
+  //   }, covensRef);
 
-    return () => {
-      ctx.revert();
-    };
-  }, []);
+  //   return () => {
+  //     ctx.revert();
+  //   };
+  // }, []);
 
   return (
     <section className="bg-white" ref={covensRef}>
