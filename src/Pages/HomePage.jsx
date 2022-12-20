@@ -222,179 +222,179 @@ function HomePage() {
       const mm = gsap.matchMedia();
 
       // desktop opening animation
-      // mm.add("(min-width: 1024px)", () => {
-      //   // master timeline
-      //   const masterTl = gsap.timeline({
-      //     onStart: () => {
-      //       document.body.style.overflowY = "hidden";
-      //       document.body.scrollTop = 0;
-      //       document.documentElement.scrollTop = 0;
-      //     },
-      //     onComplete: () => (document.body.style.overflowY = "scroll"),
-      //   });
+      mm.add("(min-width: 1024px)", () => {
+        // master timeline
+        const masterTl = gsap.timeline({
+          onStart: () => {
+            document.body.style.overflowY = "hidden";
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          },
+          onComplete: () => (document.body.style.overflowY = "scroll"),
+        });
 
-      //   // constant rotation animation
-      //   const rotationTl = gsap.timeline({
-      //     defaults: {
-      //       rotation: 360,
-      //       repeat: Infinity,
-      //       repeatDelay: 0,
-      //       ease: "none",
-      //     },
-      //   });
-      //   rotationTl.to(".moon3", { duration: 4 });
-      //   rotationTl.to(".moon2", { duration: 2 }, "-=3");
-      //   rotationTl.to(".moon4", { duration: 2 }, "-=2");
+        // constant rotation animation
+        const rotationTl = gsap.timeline({
+          defaults: {
+            rotation: 360,
+            repeat: Infinity,
+            repeatDelay: 0,
+            ease: "none",
+          },
+        });
+        rotationTl.to(".moon3", { duration: 4 });
+        rotationTl.to(".moon2", { duration: 2 }, "-=3");
+        rotationTl.to(".moon4", { duration: 2 }, "-=2");
 
-      //   // moons moving to right timeline
-      //   function moonsTl() {
-      //     const movementTl = gsap.timeline({
-      //       default: { ease: "power3.out" },
-      //       autoRemoveChildren: true,
-      //       delay: 2,
-      //       onComplete: () => rotationTl.pause(),
-      //     });
+        // moons moving to right timeline
+        function moonsTl() {
+          const movementTl = gsap.timeline({
+            default: { ease: "power3.out" },
+            autoRemoveChildren: true,
+            delay: 2,
+            onComplete: () => rotationTl.pause(),
+          });
 
-      //     movementTl.to(".moon1", {
-      //       right: "-7%",
-      //       duration: 1.75,
-      //     });
-      //     movementTl.to(
-      //       ".moon5",
-      //       {
-      //         right: "-7%",
-      //         duration: 2.25,
-      //       },
-      //       "-=1.5"
-      //     );
-      //     movementTl.to(
-      //       ".moon2",
-      //       {
-      //         right: "-7%",
-      //         duration: 2.25,
-      //       },
-      //       "-=2"
-      //     );
-      //     movementTl.to(
-      //       ".moon4",
-      //       {
-      //         right: "-7%",
-      //         duration: 2.25,
-      //       },
-      //       "-=2.5"
-      //     );
-      //     movementTl.to(
-      //       ".moon3",
-      //       {
-      //         right: "-10%",
-      //         duration: 1.25,
-      //         delay: 0.2,
-      //       },
-      //       "-=1.75"
-      //     );
-      //     movementTl.timeScale(1.8);
+          movementTl.to(".moon1", {
+            right: "-7%",
+            duration: 1.75,
+          });
+          movementTl.to(
+            ".moon5",
+            {
+              right: "-7%",
+              duration: 2.25,
+            },
+            "-=1.5"
+          );
+          movementTl.to(
+            ".moon2",
+            {
+              right: "-7%",
+              duration: 2.25,
+            },
+            "-=2"
+          );
+          movementTl.to(
+            ".moon4",
+            {
+              right: "-7%",
+              duration: 2.25,
+            },
+            "-=2.5"
+          );
+          movementTl.to(
+            ".moon3",
+            {
+              right: "-10%",
+              duration: 1.25,
+              delay: 0.2,
+            },
+            "-=1.75"
+          );
+          movementTl.timeScale(1.8);
 
-      //     return movementTl;
-      //   }
+          return movementTl;
+        }
 
-      //   function logoTl() {
-      //     const tl = gsap.timeline({ defaults: {} });
+        function logoTl() {
+          const tl = gsap.timeline({ defaults: {} });
 
-      //     tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
-      //     tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
-      //     tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
-      //     tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
-      //     tl.fromTo(
-      //       document.querySelector("header"),
-      //       { opacity: 0 },
-      //       { opacity: 1, duration: 1 },
-      //       "<"
-      //     );
-      //     tl.to(".invite-text", { opacity: 0 });
-      //     tl.to(".valenrow-logo", {
-      //       opacity: 1,
-      //       duration: 1.5,
-      //       ease: "power2.in",
-      //     });
-      //     tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
-      //       section1.current,
-      //       {
-      //         background: "rgb(8, 15, 36, 0.1)",
-      //         duration: 6,
-      //         ease: "power2.inOut",
-      //       }
-      //     );
+          tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
+          tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
+          tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
+          tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
+          tl.fromTo(
+            document.querySelector("header"),
+            { opacity: 0 },
+            { opacity: 1, duration: 1 },
+            "<"
+          );
+          tl.to(".invite-text", { opacity: 0 });
+          tl.to(".valenrow-logo", {
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.in",
+          });
+          tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
+            section1.current,
+            {
+              background: "rgb(8, 15, 36, 0.1)",
+              duration: 6,
+              ease: "power2.inOut",
+            }
+          );
 
-      //     return tl;
-      //   }
+          return tl;
+        }
 
-      //   masterTl.add(moonsTl());
-      //   masterTl.add(logoTl());
-      // });
+        masterTl.add(moonsTl());
+        masterTl.add(logoTl());
+      });
 
-      // //mobile opening animation
-      // mm.add("(max-width: 550px)", () => {
-      //   const tl = gsap.timeline({
-      //     onStart: () => {
-      //       document.body.style.overflowY = "hidden";
-      //       document.body.scrollTop = 0;
-      //       document.documentElement.scrollTop = 0;
-      //     },
-      //     onComplete: () => (document.body.style.overflowY = "scroll"),
-      //   });
+      //mobile opening animation
+      mm.add("(max-width: 550px)", () => {
+        const tl = gsap.timeline({
+          onStart: () => {
+            document.body.style.overflowY = "hidden";
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          },
+          onComplete: () => (document.body.style.overflowY = "scroll"),
+        });
 
-      //   tl.to(".mob-top-decor", {
-      //     opacity: 0,
-      //     duration: 1.5,
-      //     ease: "power2.in",
-      //   });
-      //   tl.to(".mob-bottom-decor", {
-      //     opacity: 0,
-      //     left: "-12%",
-      //     duration: 1.5,
-      //     ease: "power2.in",
-      //   });
+        tl.to(".mob-top-decor", {
+          opacity: 0,
+          duration: 1.5,
+          ease: "power2.in",
+        });
+        tl.to(".mob-bottom-decor", {
+          opacity: 0,
+          left: "-12%",
+          duration: 1.5,
+          ease: "power2.in",
+        });
 
-      //   tl.to(".mob-invite-text", { opacity: 0 });
-      //   tl.fromTo(
-      //     ".valenrow-logo",
-      //     { top: "19%" },
-      //     { opacity: 1, ease: "power2.in", duration: 1.5 }
-      //   );
-      //   tl.to(".elan-logo", {
-      //     top: "14%",
-      //     height: "8vh",
-      //     duration: 1.5,
-      //     delay: 0.8,
-      //   });
-      //   tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
-      //   tl.from(
-      //     ".moon-ring",
-      //     {
-      //       bottom: "40%",
-      //       scale: 10,
-      //       opacity: 0.25,
-      //       right: "25%",
-      //       rotation: 150,
-      //       duration: 3,
-      //       ease: "power3.out",
-      //     },
-      //     "<"
-      //   );
-      //   tl.to(
-      //     section1.current,
-      //     { height: "80vh", ease: "power2.out", duration: 1.5 },
-      //     "<"
-      //   );
-      //   tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
-      //   tl.from(".moon", {
-      //     rotation: 18,
-      //     height: "8vh",
-      //     left: "3%",
-      //     duration: 1.4,
-      //     ease: "power2.out",
-      //   });
-      // });
+        tl.to(".mob-invite-text", { opacity: 0 });
+        tl.fromTo(
+          ".valenrow-logo",
+          { top: "19%" },
+          { opacity: 1, ease: "power2.in", duration: 1.5 }
+        );
+        tl.to(".elan-logo", {
+          top: "14%",
+          height: "8vh",
+          duration: 1.5,
+          delay: 0.8,
+        });
+        tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
+        tl.from(
+          ".moon-ring",
+          {
+            bottom: "40%",
+            scale: 10,
+            opacity: 0.25,
+            right: "25%",
+            rotation: 150,
+            duration: 3,
+            ease: "power3.out",
+          },
+          "<"
+        );
+        tl.to(
+          section1.current,
+          { height: "80vh", ease: "power2.out", duration: 1.5 },
+          "<"
+        );
+        tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
+        tl.from(".moon", {
+          rotation: 18,
+          height: "8vh",
+          left: "3%",
+          duration: 1.4,
+          ease: "power2.out",
+        });
+      });
 
       // scroll animation for timeline section
       const mm2 = gsap.matchMedia();
@@ -570,7 +570,7 @@ function HomePage() {
           {/* buttons div */}
           <div className="buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 bottom-[9%] lg:-right-[65%] lg:top-20">
             <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
-              <Link to="/">
+              <Link to="/litfest">
                 <div>Litfest</div>
               </Link>
             </button>
@@ -586,7 +586,7 @@ function HomePage() {
               </a>
             </button>
 
-            <button className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative">
+            <Link className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative" to='/valenrow'>
               <div className="absolute top-[-25%] lg:top-[-38%] left-[8%] lg:left-[8%] h-[150%] lg:h-[170%] pt-3 md:pt-4 lg:pt-3">
                 <img src={valenrowIcon} className="h-full" alt="icon" />
               </div>
@@ -597,7 +597,7 @@ function HomePage() {
               >
                 Explore Valenrow
               </div>
-            </button>
+            </Link>
           </div>
 
           {/* mobile graphics */}

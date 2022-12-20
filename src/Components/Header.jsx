@@ -62,7 +62,7 @@ function Header() {
     <header className="fixed lg:sticky w-full top-0 z-40">
       <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
-      <div className="header-div backdrop-blur-sm bg-black w-full h-[9vh] lg:h-[11.5vh] border-b border-golden flex items-center justify-between px-4 text-white">
+      <div className="header-div backdrop-blur-sm bg-black w-full h-20 border-b border-golden flex items-center justify-between px-4 text-white">
         <Link className="h-[100%] flex items-center" to="/">
           <div className="h-[68%]">
             <img src={logo} alt="logo" className="h-full" />

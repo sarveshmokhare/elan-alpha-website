@@ -110,7 +110,7 @@ function Menu(props) {
       className="h-0 w-screen overflow-y-scroll bg-black fixed top-0 z-50 text-white"
     >
       {/* menu and close wala div */}
-      <div className="flex justify-between px-10 sm:px-5 py-5 text-lg">
+      <div className="flex justify-between px-4 sm:px-5 py-5 text-lg">
         <Link className="flex items-center" to="/" onClick={toggleMenu}>
           <div className="h-4 pr-2 sm:block">
             <img className="h-full" src={menuRing} alt="icon" />
@@ -205,7 +205,7 @@ function Menu(props) {
               <div className="event-name">Team</div>
             </Link>
 
-            <Link
+            {/* <Link
               onMouseEnter={linksHoverHandler}
               onMouseLeave={linksLeaveHandler}
               className="py-4 sm:hidden"
@@ -213,9 +213,9 @@ function Menu(props) {
               to="/"
             >
               Schedule
-            </Link>
+            </Link> */}
 
-            <Link
+            {/* <Link
               onMouseEnter={linksHoverHandler}
               onMouseLeave={linksLeaveHandler}
               className="py-4 sm:hidden"
@@ -223,7 +223,7 @@ function Menu(props) {
               to="/"
             >
               Contact us
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -250,9 +250,9 @@ function Menu(props) {
 
           {/* buttons div */}
           <div className="font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between">
-            <button className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4">
-              <a>Merch</a>
-            </button>
+            <Link to='/litfest' className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4">
+              <a>Litfest</a>
+            </Link>
 
             <button className="bg-green py-2.5 px-2.5 rounded-md my-4">
               <a
@@ -268,7 +268,7 @@ function Menu(props) {
             <Link
               className="flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative"
               style={{ borderRadius: "40px" }}
-              to="/"
+              to="/valenrow"
               onClick={props.toggleMenu}
             >
               <img
@@ -285,12 +285,12 @@ function Menu(props) {
       {/* last div for desktop */}
       <div className="">
         <div className="hidden sm:flex justify-around text-lg w-1/3 sm:w-5/12">
-          <Link className="p-8" onClick={toggleMenu} to="/">
+          {/* <Link className="p-8" onClick={toggleMenu} to="/">
             Schedule
-          </Link>
-          <Link className="p-8" onClick={toggleMenu} to="/">
-            Contact us
-          </Link>
+          </Link> */}
+          {/* <Link className="p-8" onClick={toggleMenu} to="/">
+            Contact Us
+          </Link> */}
         </div>
 
         {/* buttons div */}
