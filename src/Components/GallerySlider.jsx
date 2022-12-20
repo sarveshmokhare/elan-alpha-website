@@ -48,7 +48,10 @@ export default function GallerySlider({ imagesList, size }) {
       {repetition.map(() => (
         <div style={insidestyle}>
           {imagesList.map((item) => (
-            <div style={itemstyle}><img src={item} alt="" className="h-full w-full" /></div>
+            <div style={itemstyle} className='relative lg:h-[26rem] lg:w-[16rem]'>
+              <img src={item} alt="" className="h-full w-full" />
+              <div className="bottom-0 h-[100%] w-full absolute bg-gradient-to-t from-[rgba(4,0,15,0.9)] via-[rgba(11,4,33,0.35)] to-transparent"></div>
+            </div>
           ))}
         </div>
       ))}

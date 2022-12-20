@@ -222,179 +222,179 @@ function HomePage() {
       const mm = gsap.matchMedia();
 
       // desktop opening animation
-      mm.add("(min-width: 1024px)", () => {
-        // master timeline
-        const masterTl = gsap.timeline({
-          onStart: () => {
-            document.body.style.overflowY = "hidden";
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          },
-          onComplete: () => (document.body.style.overflowY = "scroll"),
-        });
+      // mm.add("(min-width: 1024px)", () => {
+      //   // master timeline
+      //   const masterTl = gsap.timeline({
+      //     onStart: () => {
+      //       document.body.style.overflowY = "hidden";
+      //       document.body.scrollTop = 0;
+      //       document.documentElement.scrollTop = 0;
+      //     },
+      //     onComplete: () => (document.body.style.overflowY = "scroll"),
+      //   });
 
-        // constant rotation animation
-        const rotationTl = gsap.timeline({
-          defaults: {
-            rotation: 360,
-            repeat: Infinity,
-            repeatDelay: 0,
-            ease: "none",
-          },
-        });
-        rotationTl.to(".moon3", { duration: 4 });
-        rotationTl.to(".moon2", { duration: 2 }, "-=3");
-        rotationTl.to(".moon4", { duration: 2 }, "-=2");
+      //   // constant rotation animation
+      //   const rotationTl = gsap.timeline({
+      //     defaults: {
+      //       rotation: 360,
+      //       repeat: Infinity,
+      //       repeatDelay: 0,
+      //       ease: "none",
+      //     },
+      //   });
+      //   rotationTl.to(".moon3", { duration: 4 });
+      //   rotationTl.to(".moon2", { duration: 2 }, "-=3");
+      //   rotationTl.to(".moon4", { duration: 2 }, "-=2");
 
-        // moons moving to right timeline
-        function moonsTl() {
-          const movementTl = gsap.timeline({
-            default: { ease: "power3.out" },
-            autoRemoveChildren: true,
-            delay: 2,
-            onComplete: () => rotationTl.pause(),
-          });
+      //   // moons moving to right timeline
+      //   function moonsTl() {
+      //     const movementTl = gsap.timeline({
+      //       default: { ease: "power3.out" },
+      //       autoRemoveChildren: true,
+      //       delay: 2,
+      //       onComplete: () => rotationTl.pause(),
+      //     });
 
-          movementTl.to(".moon1", {
-            right: "-7%",
-            duration: 1.75,
-          });
-          movementTl.to(
-            ".moon5",
-            {
-              right: "-7%",
-              duration: 2.25,
-            },
-            "-=1.5"
-          );
-          movementTl.to(
-            ".moon2",
-            {
-              right: "-7%",
-              duration: 2.25,
-            },
-            "-=2"
-          );
-          movementTl.to(
-            ".moon4",
-            {
-              right: "-7%",
-              duration: 2.25,
-            },
-            "-=2.5"
-          );
-          movementTl.to(
-            ".moon3",
-            {
-              right: "-10%",
-              duration: 1.25,
-              delay: 0.2,
-            },
-            "-=1.75"
-          );
-          movementTl.timeScale(1.8);
+      //     movementTl.to(".moon1", {
+      //       right: "-7%",
+      //       duration: 1.75,
+      //     });
+      //     movementTl.to(
+      //       ".moon5",
+      //       {
+      //         right: "-7%",
+      //         duration: 2.25,
+      //       },
+      //       "-=1.5"
+      //     );
+      //     movementTl.to(
+      //       ".moon2",
+      //       {
+      //         right: "-7%",
+      //         duration: 2.25,
+      //       },
+      //       "-=2"
+      //     );
+      //     movementTl.to(
+      //       ".moon4",
+      //       {
+      //         right: "-7%",
+      //         duration: 2.25,
+      //       },
+      //       "-=2.5"
+      //     );
+      //     movementTl.to(
+      //       ".moon3",
+      //       {
+      //         right: "-10%",
+      //         duration: 1.25,
+      //         delay: 0.2,
+      //       },
+      //       "-=1.75"
+      //     );
+      //     movementTl.timeScale(1.8);
 
-          return movementTl;
-        }
+      //     return movementTl;
+      //   }
 
-        function logoTl() {
-          const tl = gsap.timeline({ defaults: {} });
+      //   function logoTl() {
+      //     const tl = gsap.timeline({ defaults: {} });
 
-          tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
-          tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
-          tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
-          tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
-          tl.fromTo(
-            document.querySelector("header"),
-            { opacity: 0 },
-            { opacity: 1, duration: 1 },
-            "<"
-          );
-          tl.to(".invite-text", { opacity: 0 });
-          tl.to(".valenrow-logo", {
-            opacity: 1,
-            duration: 1.5,
-            ease: "power2.in",
-          });
-          tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
-            section1.current,
-            {
-              background: "rgb(8, 15, 36, 0.1)",
-              duration: 6,
-              ease: "power2.inOut",
-            }
-          );
+      //     tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
+      //     tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
+      //     tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
+      //     tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
+      //     tl.fromTo(
+      //       document.querySelector("header"),
+      //       { opacity: 0 },
+      //       { opacity: 1, duration: 1 },
+      //       "<"
+      //     );
+      //     tl.to(".invite-text", { opacity: 0 });
+      //     tl.to(".valenrow-logo", {
+      //       opacity: 1,
+      //       duration: 1.5,
+      //       ease: "power2.in",
+      //     });
+      //     tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
+      //       section1.current,
+      //       {
+      //         background: "rgb(8, 15, 36, 0.1)",
+      //         duration: 6,
+      //         ease: "power2.inOut",
+      //       }
+      //     );
 
-          return tl;
-        }
+      //     return tl;
+      //   }
 
-        masterTl.add(moonsTl());
-        masterTl.add(logoTl());
-      });
+      //   masterTl.add(moonsTl());
+      //   masterTl.add(logoTl());
+      // });
 
-      //mobile opening animation
-      mm.add("(max-width: 550px)", () => {
-        const tl = gsap.timeline({
-          onStart: () => {
-            document.body.style.overflowY = "hidden";
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          },
-          onComplete: () => (document.body.style.overflowY = "scroll"),
-        });
+      // //mobile opening animation
+      // mm.add("(max-width: 550px)", () => {
+      //   const tl = gsap.timeline({
+      //     onStart: () => {
+      //       document.body.style.overflowY = "hidden";
+      //       document.body.scrollTop = 0;
+      //       document.documentElement.scrollTop = 0;
+      //     },
+      //     onComplete: () => (document.body.style.overflowY = "scroll"),
+      //   });
 
-        tl.to(".mob-top-decor", {
-          opacity: 0,
-          duration: 1.5,
-          ease: "power2.in",
-        });
-        tl.to(".mob-bottom-decor", {
-          opacity: 0,
-          left: "-12%",
-          duration: 1.5,
-          ease: "power2.in",
-        });
+      //   tl.to(".mob-top-decor", {
+      //     opacity: 0,
+      //     duration: 1.5,
+      //     ease: "power2.in",
+      //   });
+      //   tl.to(".mob-bottom-decor", {
+      //     opacity: 0,
+      //     left: "-12%",
+      //     duration: 1.5,
+      //     ease: "power2.in",
+      //   });
 
-        tl.to(".mob-invite-text", { opacity: 0 });
-        tl.fromTo(
-          ".valenrow-logo",
-          { top: "19%" },
-          { opacity: 1, ease: "power2.in", duration: 1.5 }
-        );
-        tl.to(".elan-logo", {
-          top: "14%",
-          height: "8vh",
-          duration: 1.5,
-          delay: 0.8,
-        });
-        tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
-        tl.from(
-          ".moon-ring",
-          {
-            bottom: "40%",
-            scale: 10,
-            opacity: 0.25,
-            right: "25%",
-            rotation: 150,
-            duration: 3,
-            ease: "power3.out",
-          },
-          "<"
-        );
-        tl.to(
-          section1.current,
-          { height: "80vh", ease: "power2.out", duration: 1.5 },
-          "<"
-        );
-        tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
-        tl.from(".moon", {
-          rotation: 18,
-          height: "8vh",
-          left: "3%",
-          duration: 1.4,
-          ease: "power2.out",
-        });
-      });
+      //   tl.to(".mob-invite-text", { opacity: 0 });
+      //   tl.fromTo(
+      //     ".valenrow-logo",
+      //     { top: "19%" },
+      //     { opacity: 1, ease: "power2.in", duration: 1.5 }
+      //   );
+      //   tl.to(".elan-logo", {
+      //     top: "14%",
+      //     height: "8vh",
+      //     duration: 1.5,
+      //     delay: 0.8,
+      //   });
+      //   tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
+      //   tl.from(
+      //     ".moon-ring",
+      //     {
+      //       bottom: "40%",
+      //       scale: 10,
+      //       opacity: 0.25,
+      //       right: "25%",
+      //       rotation: 150,
+      //       duration: 3,
+      //       ease: "power3.out",
+      //     },
+      //     "<"
+      //   );
+      //   tl.to(
+      //     section1.current,
+      //     { height: "80vh", ease: "power2.out", duration: 1.5 },
+      //     "<"
+      //   );
+      //   tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
+      //   tl.from(".moon", {
+      //     rotation: 18,
+      //     height: "8vh",
+      //     left: "3%",
+      //     duration: 1.4,
+      //     ease: "power2.out",
+      //   });
+      // });
 
       // scroll animation for timeline section
       const mm2 = gsap.matchMedia();
@@ -505,6 +505,9 @@ function HomePage() {
     else if (scrollTopVal > sec6Ref.current.offsetTop - removedHeight)
       sethighlightedCircleYPos(pt6Ref.current.cy.baseVal.value);
   }
+
+  const [width, setWidth] = useState(window.innerWidth);
+  window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return (
     <div className="mt-20 lg:mt-0">
@@ -723,12 +726,45 @@ function HomePage() {
               <svg width="120" height="300">
                 <line
                   x1={yrsProps.cx}
-                  y1={yrsProps.cys[0]}
+                  y1={yrsProps.cys[0] + 7}
                   x2={yrsProps.cx}
-                  y2={yrsProps.cys[yrsProps.cys.length - 1]}
+                  y2={yrsProps.cys[1] - 7}
                   stroke="#FED395"
                   strokeWidth={1}
                 />
+                <line
+                  x1={yrsProps.cx}
+                  y1={yrsProps.cys[1] + 7}
+                  x2={yrsProps.cx}
+                  y2={yrsProps.cys[2] - 7}
+                  stroke="#FED395"
+                  strokeWidth={1}
+                />
+                <line
+                  x1={yrsProps.cx}
+                  y1={yrsProps.cys[2] + 7}
+                  x2={yrsProps.cx}
+                  y2={yrsProps.cys[3] - 7}
+                  stroke="#FED395"
+                  strokeWidth={1}
+                />
+                <line
+                  x1={yrsProps.cx}
+                  y1={yrsProps.cys[3] + 7}
+                  x2={yrsProps.cx}
+                  y2={yrsProps.cys[4] - 7}
+                  stroke="#FED395"
+                  strokeWidth={1}
+                />
+                <line
+                  x1={yrsProps.cx}
+                  y1={yrsProps.cys[4] + 7}
+                  x2={yrsProps.cx}
+                  y2={yrsProps.cys[5] - 7}
+                  stroke="#FED395"
+                  strokeWidth={1}
+                />
+
 
                 {/* circles and corresponding years  */}
                 <circle
@@ -882,7 +918,7 @@ function HomePage() {
             Explore
           </h1>
 
-          <ExploreSlider imagesList={exploreImgs} size={4} />
+          <ExploreSlider imagesList={exploreImgs} size={width>= 500 ? 4 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[55%] right-0 bottom-[10%]">
@@ -896,9 +932,9 @@ function HomePage() {
             Gallery
           </h1>
 
-          <GallerySlider imagesList={gal1} size={3} />
+          <GallerySlider imagesList={gal1} size={width>= 500 ? 3 : 2} />
 
-          <GallerySlider imagesList={gal2} size={3} />
+          <GallerySlider imagesList={gal2} size={width>= 500 ? 3 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[85%] left-0 top-0">

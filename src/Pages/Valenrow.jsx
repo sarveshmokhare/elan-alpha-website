@@ -11,12 +11,12 @@ import "../styles/valenrow.css";
 function Valenrow() {
   console.log("hey");
   return (
-    <>
+    <div className="bg-white box-border lg:pb-24">
       <Landing></Landing>
       <Covens MobileCard={MobileCard} />
       <Lore />
       <Map Ping={Ping} />
-    </>
+    </div>
   );
 }
 
