@@ -12,11 +12,12 @@ import Footer from "./Components/Footer";
 import ScrollToTop from "./helpers/ScrollToTop";
 import Teams from "./Pages/Teams";
 import Valenrow from "./Pages/Valenrow";
+import AnimationState from "./Contexts/AnimationState";
 import SocialCause from "./Pages/Social Cause"
 
 function App() {
   return (
-    <ThemeState>
+    <AnimationState>
       <Router>
         <ScrollToTop>
           <Header />
@@ -33,7 +34,7 @@ function App() {
           <Footer />
         </ScrollToTop>
       </Router>
-    </ThemeState>
+    </AnimationState>
   );
 }
 

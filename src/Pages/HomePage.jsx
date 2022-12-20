@@ -1,11 +1,11 @@
-import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
+import React, { useRef, useState, useEffect, useLayoutEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-import ThemeContext from "../Contexts/ThemeContext";
+import AnimationContext from "../Contexts/AnimationContext";
 import elanLogo from "../assets/logo_white.png";
 import caPortalIcon from "../assets/ca_portal_icon.svg";
 import valenrowIcon from "../assets/valenrow_icon.svg";
@@ -217,6 +217,8 @@ function HomePage() {
   const sec5Ref = useRef(null);
   const sec6Ref = useRef(null);
 
+  const context = useContext(AnimationContext)
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       const mm = gsap.matchMedia();
@@ -224,14 +226,20 @@ function HomePage() {
       // desktop opening animation
       mm.add("(min-width: 1024px)", () => {
         // master timeline
+        function finishAnimation() {
+          document.body.style.overflowY = "scroll";
+          context.setAnimationComplete(true)
+        }
+
         const masterTl = gsap.timeline({
           onStart: () => {
             document.body.style.overflowY = "hidden";
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
           },
-          onComplete: () => (document.body.style.overflowY = "scroll"),
+          onComplete: finishAnimation,
         });
+
 
         // constant rotation animation
         const rotationTl = gsap.timeline({
@@ -245,6 +253,29 @@ function HomePage() {
         rotationTl.to(".moon3", { duration: 4 });
         rotationTl.to(".moon2", { duration: 2 }, "-=3");
         rotationTl.to(".moon4", { duration: 2 }, "-=2");
+
+        if (context.animationComplete) {
+          masterTl.pause();
+          rotationTl.pause();
+
+          gsap.set('.moon1', { right: '-7%' })
+          gsap.set('.moon2', { right: '-7%' })
+          gsap.set('.moon3', { right: '-10%' })
+          gsap.set('.moon4', { right: '-7%' })
+          gsap.set('.moon5', { right: '-7%' })
+
+          gsap.set('.invite-text', { top: "55%", height: "18vh", opacity: 0 })
+          gsap.set(".elan-logo", { height: "13vh", top: "26%", });
+          gsap.set(".left-decor", { height: "65vh", top: "4%" });
+          gsap.set(".top-line", { right: "-100%", });
+          gsap.set(".valenrow-logo", { opacity: 1, });
+          gsap.to(".buttons>*", { opacity: 1, })
+          gsap.to(section1.current,
+            {
+              background: "rgb(8, 15, 36, 0.1)",
+            }
+          );
+        }
 
         // moons moving to right timeline
         function moonsTl() {
@@ -332,6 +363,11 @@ function HomePage() {
         masterTl.add(logoTl());
       });
 
+      function finishAnimation() {
+        document.body.style.overflowY = "scroll";
+        context.setAnimationComplete(true)
+      }
+
       //mobile opening animation
       mm.add("(max-width: 550px)", () => {
         const tl = gsap.timeline({
@@ -340,8 +376,41 @@ function HomePage() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
           },
-          onComplete: () => (document.body.style.overflowY = "scroll"),
+          onComplete: finishAnimation,
         });
+
+        if (context.animationComplete) {
+          tl.pause();
+
+          gsap.set(".mob-top-decor", {
+            opacity: 0,
+          });
+          gsap.set(".mob-bottom-decor", {
+            opacity: 0,
+            left: "-12%",
+          });
+          gsap.set(".mob-invite-text", { opacity: 0 });
+          gsap.set(
+            ".valenrow-logo",
+            { opacity: 1, top: '14%'}
+          );
+          gsap.set(".elan-logo", {
+            top: "14%",
+            height: "8vh",
+          });
+          gsap.set(".valenrow-logo", { top: "12%" });
+          gsap.set(
+            section1.current,
+            { height: "80vh"}
+          );
+          gsap.set(".buttons>*", { opacity: 1,});
+          gsap.set('.moon-ring', {bottom: '4%', scale: 1.2, right: '8%', opacity: 1, })
+          gsap.set('.moon', {
+            bottom: '4%',
+            height: '5vh',
+            left: '8%',
+          })
+        }
 
         tl.to(".mob-top-decor", {
           opacity: 0,
@@ -356,9 +425,8 @@ function HomePage() {
         });
 
         tl.to(".mob-invite-text", { opacity: 0 });
-        tl.fromTo(
+        tl.to(
           ".valenrow-logo",
-          { top: "19%" },
           { opacity: 1, ease: "power2.in", duration: 1.5 }
         );
         tl.to(".elan-logo", {
@@ -368,14 +436,14 @@ function HomePage() {
           delay: 0.8,
         });
         tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
-        tl.from(
+        tl.to(
           ".moon-ring",
           {
-            bottom: "40%",
-            scale: 10,
-            opacity: 0.25,
-            right: "25%",
-            rotation: 150,
+            bottom: "4%",
+            scale: 1.2,
+            opacity: 1,
+            right: "8%",
+            rotation: 0,
             duration: 3,
             ease: "power3.out",
           },
@@ -387,10 +455,10 @@ function HomePage() {
           "<"
         );
         tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
-        tl.from(".moon", {
+        tl.to(".moon", {
           rotation: 18,
-          height: "8vh",
-          left: "3%",
+          height: "5vh",
+          left: "8%",
           duration: 1.4,
           ease: "power2.out",
         });
@@ -563,7 +631,7 @@ function HomePage() {
           </div>
 
           {/* valenrow logo */}
-          <div className="valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[38vh] lg:h-[85vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center lg:top-[14%]">
+          <div className="valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[38vh] lg:h-[85vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center top-[19%] lg:top-[14%]">
             <img className="h-full" alt="valenrow_logo" src={valenrowLogo} />
           </div>
 
@@ -607,7 +675,9 @@ function HomePage() {
           <div className="mob-bottom-decor lg:hidden absolute left-[5%] h-[24vh] bottom-[16%]">
             <img className="h-full" src={mobileDecorBottom}></img>
           </div>
-          <div className="moon lg:hidden absolute bottom-[4%] h-[5vh] left-[8%]">
+          {/* height: "8vh",
+          left: "3%", */}
+          <div className="moon lg:hidden absolute bottom-[4%] h-[8vh] left-[3%]">
             <img className="h-full" src={moon}></img>
           </div>
           <div className="lg:hidden absolute bottom-[6%] right-[0%] flex justify-center w-[100vw]">
@@ -615,7 +685,7 @@ function HomePage() {
           </div>
           {/*initial properties for ringMoon: bottom-[40%] scale-[10] opacity-[25%] right-[25%] */}
           {/*final properties for ringMoon: bottom-[4%] scale-[1.2] opacity-[100%] right-[8%] */}
-          <div className="moon-ring lg:hidden absolute bottom-[4%] scale-[1.2] md:scale-[1.5] opacity-[100%] right-[8%] md:right-[10%]">
+          <div className="moon-ring lg:hidden absolute bottom-[40%] scale-[10] md:scale-[1.5] opacity-[25%] right-[25%] md:right-[10%]">
             <img className="h-full" src={ringMoon}></img>
           </div>
           {/* <div className='sm:hidden flex items-center justify-center absolute bottom-[5%] left-0 right-0'>
@@ -918,7 +988,7 @@ function HomePage() {
             Explore
           </h1>
 
-          <ExploreSlider imagesList={exploreImgs} size={width>= 500 ? 4 : 2} />
+          <ExploreSlider imagesList={exploreImgs} size={width >= 500 ? 4 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[55%] right-0 bottom-[10%]">
@@ -932,9 +1002,9 @@ function HomePage() {
             Gallery
           </h1>
 
-          <GallerySlider imagesList={gal1} size={width>= 500 ? 3 : 2} />
+          <GallerySlider imagesList={gal1} size={width >= 500 ? 3 : 2} />
 
-          <GallerySlider imagesList={gal2} size={width>= 500 ? 3 : 2} />
+          <GallerySlider imagesList={gal2} size={width >= 500 ? 3 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[85%] left-0 top-0">
