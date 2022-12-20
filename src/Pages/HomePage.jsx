@@ -1,4 +1,10 @@
-import React, { useRef, useState, useEffect, useLayoutEffect, useContext } from "react";
+import React, {
+  useRef,
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useContext,
+} from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -217,7 +223,7 @@ function HomePage() {
   const sec5Ref = useRef(null);
   const sec6Ref = useRef(null);
 
-  const context = useContext(AnimationContext)
+  const context = useContext(AnimationContext);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -228,7 +234,7 @@ function HomePage() {
         // master timeline
         function finishAnimation() {
           document.body.style.overflowY = "scroll";
-          context.setAnimationComplete(true)
+          context.setAnimationComplete(true);
         }
 
         const masterTl = gsap.timeline({
@@ -239,7 +245,6 @@ function HomePage() {
           },
           onComplete: finishAnimation,
         });
-
 
         // constant rotation animation
         const rotationTl = gsap.timeline({
@@ -258,27 +263,22 @@ function HomePage() {
           masterTl.pause();
           rotationTl.pause();
 
-          gsap.set('.moon1', { right: '-7%' })
-          gsap.set('.moon2', { right: '-7%' })
-          gsap.set('.moon3', { right: '-10%' })
-          gsap.set('.moon4', { right: '-7%' })
-          gsap.set('.moon5', { right: '-7%' })
+          gsap.set(".moon1", { right: "-7%" });
+          gsap.set(".moon2", { right: "-7%" });
+          gsap.set(".moon3", { right: "-10%" });
+          gsap.set(".moon4", { right: "-7%" });
+          gsap.set(".moon5", { right: "-7%" });
 
-          gsap.set('.invite-text', { top: "55%", height: "18vh", opacity: 0 })
-          gsap.set(".elan-logo", { height: "13vh", top: "26%", });
+          gsap.set(".invite-text", { top: "55%", height: "18vh", opacity: 0 });
+          gsap.set(".elan-logo", { height: "13vh", top: "26%" });
           gsap.set(".left-decor", { height: "65vh", top: "4%" });
-          gsap.set(".top-line", { right: "-100%", });
-          gsap.set(
-            document.querySelector("header"),
-            { opacity: 1, }
-          );
-          gsap.set(".valenrow-logo", { opacity: 1, });
-          gsap.set(".buttons>*", { opacity: 1, })
-          gsap.set(section1.current,
-            {
-              background: "rgb(8, 15, 36, 0.1)",
-            }
-          );
+          gsap.set(".top-line", { right: "-100%" });
+          gsap.set(document.querySelector("header"), { opacity: 1 });
+          gsap.set(".valenrow-logo", { opacity: 1 });
+          gsap.set(".buttons>*", { opacity: 1 });
+          gsap.set(section1.current, {
+            background: "rgb(8, 15, 36, 0.1)",
+          });
         }
 
         // moons moving to right timeline
@@ -368,7 +368,7 @@ function HomePage() {
 
       function finishAnimation() {
         document.body.style.overflowY = "scroll";
-        context.setAnimationComplete(true)
+        context.setAnimationComplete(true);
       }
 
       //mobile opening animation
@@ -393,28 +393,27 @@ function HomePage() {
             left: "-12%",
           });
           gsap.set(".mob-invite-text", { opacity: 0 });
-          gsap.set(
-            ".valenrow-logo",
-            { opacity: 1, top: '14%' }
-          );
+          gsap.set(".valenrow-logo", { opacity: 1, top: "14%" });
           gsap.set(".elan-logo", {
             top: "14%",
             height: "8vh",
           });
           gsap.set(".valenrow-logo", { top: "12%" });
-          gsap.set(
-            section1.current,
-            { height: "80vh" }
-          );
-          gsap.set(".buttons>*", { opacity: 1, });
-          gsap.set('.moon-ring', { bottom: '4%', scale: 1.2, right: '8%', opacity: 1, })
-          gsap.set('.moon', {
-            bottom: '4%',
-            height: '5vh',
-            left: '8%',
-          })
+          gsap.set(section1.current, { height: "80vh" });
+          gsap.set(".buttons>*", { opacity: 1 });
+          gsap.set(".moon-ring", {
+            bottom: "4%",
+            scale: 1.2,
+            right: "8%",
+            opacity: 1,
+          });
+          gsap.set(".moon", {
+            bottom: "4%",
+            height: "5vh",
+            left: "8%",
+          });
         }
-        gsap.set(document.querySelector('header'), { opacity: 1 })
+        gsap.set(document.querySelector("header"), { opacity: 1 });
 
         tl.to(".mob-top-decor", {
           opacity: 0,
@@ -429,10 +428,11 @@ function HomePage() {
         });
 
         tl.to(".mob-invite-text", { opacity: 0 });
-        tl.to(
-          ".valenrow-logo",
-          { opacity: 1, ease: "power2.in", duration: 1.5 }
-        );
+        tl.to(".valenrow-logo", {
+          opacity: 1,
+          ease: "power2.in",
+          duration: 1.5,
+        });
         tl.to(".elan-logo", {
           top: "14%",
           height: "8vh",
@@ -471,21 +471,19 @@ function HomePage() {
       // scroll animation for timeline section
       const mm2 = gsap.matchMedia();
 
-      mm2.add("(min-width: 1025px)",() => {
-
-          gsap.to(".scroll-div", {
-            scrollTrigger: {
-              trigger: ".timeline-div",
-              // markers: true,
-              start: "center center",
-              end: "bottom+=60%",
-              scrub: true,
-              pin: ".giant-div",
-            },
-            scrollTo: "max",
-          });
-        }
-      );
+      mm2.add("(min-width: 1025px)", () => {
+        gsap.to(".scroll-div", {
+          scrollTrigger: {
+            trigger: ".timeline-div",
+            // markers: true,
+            start: "center center",
+            end: "bottom+=60%",
+            scrub: true,
+            pin: ".giant-div",
+          },
+          scrollTo: "max",
+        });
+      });
     });
 
     return () => {
@@ -583,6 +581,7 @@ function HomePage() {
           ref={section1}
           className="bg-black text-white font-cinzel font-bold h-[85vh] sm:h-[90vh] relative"
         >
+          <div className="absolute inset-0 bg-[#000000c7]"></div>
           {/* top decor line */}
           <div className="top-line hidden lg:block   absolute top-0 right-[7%] w-[68vw]">
             <img className="h-[40%]" alt="decor" src={topLine}></img>
@@ -652,13 +651,16 @@ function HomePage() {
               </a>
             </button>
 
-            <Link className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative" to='/valenrow'>
+            <Link
+              className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative"
+              to="/valenrow"
+            >
               <div className="absolute top-[-25%] lg:top-[-38%] left-[8%] lg:left-[8%] h-[150%] lg:h-[170%] pt-3 md:pt-4 lg:pt-3">
                 <img src={valenrowIcon} className="h-full" alt="icon" />
               </div>
 
               <div
-                className="absolute right-[2%] top-[12%] lg:top-[8%] w-[70%] text-[80%] lg:text-[65%]"
+                className="absolute right-[2%] top-[12%] lg:top-[8%] w-[70%] text-[80%] lg:text-[65%] text-black"
                 ref={exploreBtnRef}
               >
                 Explore Valenrow
@@ -832,7 +834,6 @@ function HomePage() {
                   stroke="#FED395"
                   strokeWidth={1}
                 />
-
 
                 {/* circles and corresponding years  */}
                 <circle
@@ -1071,9 +1072,7 @@ function HomePage() {
               </div>
               <p>1.1k+ followers</p>
             </div>
-
           </div>
-
 
           {/* bg images */}
           <div className="absolute h-[60%] left-0 top-[-10%] lg:top-0">
