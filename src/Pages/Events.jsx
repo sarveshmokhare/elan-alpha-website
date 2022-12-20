@@ -160,7 +160,7 @@ function Events() {
   const context = useContext(ThemeContext);
 
   return (
-    <div className="mt-[76px] lg:mt-0 pb-[8rem] overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-5 md:p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
+    <div className="mt-[76px] lg:mt-0 pb-[8rem] overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-5 md:p-10 bg-[url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554934/elan/assets/designs/events_mobile_1_yjpk7o.svg'),url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554926/elan/assets/designs/events_mobile_2_px1vvh.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554912/elan/assets/designs/competitions_desktop_1_iwencm.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
       <h1 className="heading font-berkshire text-7xl vs:text-8xl text-golden pt-16 lg:pt-0 lg:text-[10rem] relative z-10">
         Events
       </h1>

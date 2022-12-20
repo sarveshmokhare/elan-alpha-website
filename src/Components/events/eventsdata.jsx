@@ -1,15 +1,15 @@
-import pronites1 from "../../assets/events/pronites_1.jpg";
-import pronites2 from "../../assets/events/pronites_2.jpg";
-import pronites3 from "../../assets/events/pronites_3.webp";
-import pronites4 from "../../assets/events/pronites_4.jpg";
-import pronites5 from "../../assets/events/pronites_5.jpg";
-import informals1 from "../../assets/events/informals_1.jpeg";
-import informals2 from "../../assets/events/informals_2.jpeg";
-import workshops1 from "../../assets/events/workshop_ai.png";
-import workshops2 from "../../assets/events/workshop_blockc.png";
-import workshops3 from "../../assets/events/workshop_farming.png";
-import workshops4 from "../../assets/events/workshop_humanoid.png";
-import workshops5 from "../../assets/events/workshop_vr.png";
+const pronites1 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554921/elan/assets/events/pronites_1_vcxymp.jpg";
+const pronites2 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554922/elan/assets/events/pronites_2_hfzoao.jpg";
+const pronites3 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554924/elan/assets/events/pronites_3_m8wt6r.webp";
+const pronites4 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554944/elan/assets/events/pronites_4_wzwhhg.jpg";
+const pronites5 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554951/elan/assets/events/pronites_5_c6u2z2.jpg";
+const informals1 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554922/elan/assets/events/informals_1_dfwk8h.jpg";
+const informals2 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554920/elan/assets/events/informals_2_fufzho.jpg";
+const workshops1 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554939/elan/assets/events/workshop_ai_dfrrnn.png";
+const workshops2 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554934/elan/assets/events/workshop_blockc_fbfleq.png";
+const workshops3 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554944/elan/assets/events/workshop_farming_nlhdni.png";
+const workshops4 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554941/elan/assets/events/workshop_humanoid_f63isq.png";
+const workshops5 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554944/elan/assets/events/workshop_vr_cuvhyr.png";
 
 export const eventsdata=[
   

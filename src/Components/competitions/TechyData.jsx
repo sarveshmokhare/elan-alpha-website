@@ -1,15 +1,15 @@
-import pro from "../../assets/competitions/pq1.jpg";
-import webd from "../../assets/competitions/webdev.jpg";
-import shark from "../../assets/competitions/sharktank.jpeg";
-import hack from "../../assets/competitions/hackk.jpg";
-import mdd from "../../assets/competitions/mddd.jpg";
-import paperpe from "../../assets/competitions/paperpres.png";
-import arud from "../../assets/competitions/arduino.jpg";
-import enig from "../../assets/competitions/enigmaa.jpg";
-import app from "../../assets/competitions/appdev.jpg";
-import cad from "../../assets/competitions/cad1.png";
-import circut from "../../assets/competitions/circuit.jpg";
-import depp from "../../assets/competitions/deepn.jpg";
+const pro = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554765/elan/assets/competitions/pq1_b7grdz.jpg";
+const webd = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554766/elan/assets/competitions/webdev_yuflsp.jpg";
+const shark = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554764/elan/assets/competitions/sharktank_mjhw5w.jpg";
+const hack = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554743/elan/assets/competitions/hackk_efamgg.jpg";
+const mdd = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554752/elan/assets/competitions/mddd_wwvuiw.jpg";
+const paperpe = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554758/elan/assets/competitions/paperpres_t5u4v2.png";
+const arud = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554651/elan/assets/competitions/arduino_ijnxye.jpg";
+const enig = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554741/elan/assets/competitions/enigmaa_avruxs.jpg";
+const app = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554649/elan/assets/competitions/appdev_ugld9i.jpg";
+const cad = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554724/elan/assets/competitions/cad1_vxyige.png";
+const circut = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554733/elan/assets/competitions/circuit_tas40i.jpg";
+const depp = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554734/elan/assets/competitions/deepn_svsjfs.jpg";
 
 export const techydata = [
       

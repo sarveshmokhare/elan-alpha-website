@@ -1,14 +1,14 @@
-import Img from "../../assets/competitions/breakfree.jpg";
-import beattrippers from "../../assets/competitions/beattrippers.jpg";
-import campusidol from "../../assets/competitions/campusidol.jpg";
-import film from "../../assets/competitions/filmm.jpg";
-import standup from "../../assets/competitions/standup.jpg";
-import glitz from "../../assets/competitions/glitz.jpg";
-import artattack from "../../assets/competitions/artattack.jpg";
-import doddles from "../../assets/competitions/doodles.jpg";
-import nrytanjali from "../../assets/competitions/nryt.png";
-import Picelectic from "../../assets/competitions/pice.jpg";
-import Paint from "../../assets/competitions/paint.png";
+const  breakfree= "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554825/elan/assets/competitions/breakfree_c4ma9o.jpg";
+const beattrippers = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554847/elan/assets/competitions/beattrippers_ep6mpv.jpg";
+const campusidol = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554792/elan/assets/competitions/campusidol_linvrs.jpg";
+const film = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554741/elan/assets/competitions/filmm_k7jtu3.jpg";
+const standup = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554765/elan/assets/competitions/standup_gktkjv.jpg";
+const glitz = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554746/elan/assets/competitions/glitz_q0gysf.jpg";
+const artattack = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554653/elan/assets/competitions/artattack_wiaenn.jpg";
+const doddles = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554740/elan/assets/competitions/doodles_svpjel.jpg";
+const nrytanjali = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554780/elan/assets/competitions/nryt_k3heau.png";
+const Picelectic = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554759/elan/assets/competitions/pice_jvanor.jpg";
+const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/elan/assets/competitions/paint_gicqs6.png";
 
 
 export const cultidata = [
@@ -22,7 +22,7 @@ export const cultidata = [
     rules:
       ['Only 1 entry is allowed per participant.', 'All styles are accepted except classical.', 'The duration of the performance should be 2 - 3 mins.', 'The use of props is allowed.', 'The video cannot be edited or have any special effects added to it.', 'The song must be clearly audible in the video.Also the recording must be taken in good lighting and with clarity.', 'Songs containing vulgar or explicit lyrics will not be allowed.Contestants who perform in an obscene or vulgar manner will be disqualified from the competition.', 'Any illegal or unethical act related to the competition will lead to immediate disqualification.', 'The decision of the organizers and judges shall be final and binding.', 'The organizing team has the complete right to change the prize money if the participation is less than ten.'
       ],
-    img: Img,
+    img: breakfree,
     details:
       "Is dancing your passion? Does the zen of dance breathe life into your torrid day? This is where you can show off your moves to the masses and shine. It is one of the biggest and most glamorous events of the fest. Participants can perform any dance form (except classical).",
     judging: ['Choreography', 'Creativity', 'Energy', 'Difficulty of Execution', 'Attire', 'Music Mix'

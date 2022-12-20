@@ -1,8 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react'
 import gsap from 'gsap'
 import ThemeContext from '../Contexts/ThemeContext'
-import arrow from '../assets/designs/competitions_arrow.svg'
-import cut_btn from '../assets/designs/competitions_cut_btn.svg'
+const arrow= 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554771/elan/assets/designs/competitions_arrow_wkwpjg.svg'
+const cut_btn = 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554773/elan/assets/designs/competitions_cut_btn_ybw3n9.svg'
+const competitions_desktop_1 ='https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554912/elan/assets/designs/competitions_desktop_1_iwencm.svg'
+
 import { cultidata } from '../Components/competitions/Cultidata'
 import { techydata } from '../Components/competitions/TechyData'
 import Popup from 'reactjs-popup'
@@ -36,7 +38,7 @@ function ShowDetails({ item, type }) {
         <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Learn more</button>
       } position="center center">
         {close => (
-          <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("assets/designs/competitions_popup_2.svg"),url("assets/designs/competitions_popup_3.svg"),url("assets/designs/competitions_popup_4.svg"),url("assets/designs/competitions_popup_1.svg"),url("assets/designs/competitions_popup_5.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
+          <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554910/elan/assets/designs/competitions_popup_2_hnuc9j.svg"),url("https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554911/elan/assets/designs/competitions_popup_3_vxn8rk.svg"),url("https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554918/elan/assets/designs/competitions_popup_4_gjif8z.svg"),url("https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554865/elan/assets/designs/competitions_popup_1_d6iegp.svg"),url("https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554944/elan/assets/designs/competitions_popup_5_secscd.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
             <div className='text-4xl vvs:text-5xl text-golden font-cinzel mt-10 relative lg:text-6xl z-10 font-semibold'>{item.name}</div>
             <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-6 hover:cursor-pointer' onClick={close} />
             <div className='flex flex-row  justify-evenly mb-5 flex-wrap'>
@@ -278,7 +280,7 @@ function Competitions() {
   const context = useContext(ThemeContext)
 
   return (
-    <div className={"mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
+    <div className={"mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554903/elan/assets/designs/competitions_mobile_1_iaw4vf.svg'),url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554816/elan/assets/designs/competitions_mobile_2_yj9w4c.svg')] lg:bg-[url('https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554912/elan/assets/designs/competitions_desktop_1_iwencm.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
       <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl mb-2'>
         Competitions
       </div>
