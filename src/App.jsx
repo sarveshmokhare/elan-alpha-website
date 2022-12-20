@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import ScrollToTop from "./helpers/ScrollToTop";
 import Teams from "./Pages/Teams";
 import Valenrow from "./Pages/Valenrow";
+import SocialCause from "./Pages/Social Cause"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/litfest" element={<Litfest />} />
             <Route path="/team" element={<Teams />} />
             <Route path="/valenrow" element={<Valenrow />} />
+            <Route path="/socialCause" element={<SocialCause />} />
           </Routes>
           <Footer />
         </ScrollToTop>

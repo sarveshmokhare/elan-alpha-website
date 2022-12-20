@@ -1,0 +1,39 @@
+.SocialCause .main-heading1 {
+    display: block; 
+    background: #080f24;
+    color: #fed395; 
+    font-family: "Berkshire Swash";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.5rem; 
+    line-height: 119px;
+  }
+  @media (max-width:480px) {
+    .SocialCause .main-heading1{
+      font-size: 4rem;
+    }
+    
+  }
+  .SocialCause .button {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .SocialCause .years {
+    font-family: "Century Schoolbook";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  
+    color: #fed395;
+  }
+  
+  .SocialCause .years.active {
+    font-weight: 900;
+    font-size: 25px;
+  }

@@ -171,7 +171,7 @@ function Menu(props) {
               onMouseLeave={linksLeaveHandler}
               className="py-4 flex items-center"
               onClick={toggleMenu}
-              to="/"
+              to="/socialCause"
             >
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>

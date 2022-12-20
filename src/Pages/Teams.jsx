@@ -367,7 +367,7 @@ function Teams() {
                       Role="Overall Head"
                         Name="Swapnish Sahare"
                         Image={OC2023}
-                        Phone="+91 7030753158"
+                        Phone="+91 7821825892"
                         Instagram="https://www.instagram.com/swapnish.ss"
                       />
                     </div>
@@ -595,7 +595,7 @@ function Teams() {
                           Instagram="https://www.instagram.com/ishanichuri"
                         />
                         <HeadCard
-                          Name="Prasanath Tata"
+                          Name="Prasanth Tata"
                           Image={Prasanth}
                           Role="Creatives & Multimedia Head"
                           Phone="+91 9000180912"
@@ -896,7 +896,7 @@ function Teams() {
                   Role="Overall Head"
                     Name="Swapnish Sahare"
                     Image={OC2023}
-                    Phone="+91 7030753158"
+                    Phone="+91 7821825892"
                     Instagram="https://www.instagram.com/swapnish.ss"
                   />
                 </div>
@@ -933,7 +933,7 @@ function Teams() {
                     Instagram="https://www.instagram.com/ishanichuri"
                   />
                   <HeadCard
-                    Name="Prasanath Tata"
+                    Name="Prasanth Tata"
                     Image={Prasanth}
                     Role="Creatives & Multimedia Head"
                     Phone="+91 9000180912"

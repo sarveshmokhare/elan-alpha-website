@@ -39,7 +39,7 @@ function Sponsors() {
       </div>
       <div style={{ zIndex: "1" }}>
         <div>
-        <h1 className="text-center text-[#fed395] text-[1.75rem] font-bold mt-4">2022</h1>
+        <h1 className="text-center text-[#fed395] text-[1.5rem] font-bold mt-4">Previous Year Sponsors - 2022</h1>
           <h1 className="heading1">TITLE SPONSOR</h1>
           <img
             src={Hero}

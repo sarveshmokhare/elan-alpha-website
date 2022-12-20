@@ -23,7 +23,7 @@ import Swapnish from "../assets/Team/2022/Swapnish Sahare _ Production _ Pronite
 
 const team2022 =[
     {
-        Name:"Samaran Kulkarni",
+        Name:"Smaran Kulkarni",
         Image:Smaran ,
         Role:"Public Relations Head",
     },

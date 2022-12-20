@@ -37,7 +37,7 @@ function Footer() {
                         <div className='pb-3 lg:py-5 text-golden text-4xl lg:text-5xl font-berkshire'><h1>Contact Us</h1></div>
                         <div className='flex flex-col items-center lg:items-start pb-1.5 lg:pb-8'>
                             <h2 className='text-xl lg:text-xl'>Swapnish Sahare</h2>
-                            <h3 className='text-golden text-base lg:text-md'>Overall Coordinator</h3>
+                            <h3 className='text-golden text-base lg:text-md'>Overall Head</h3>
                             <h3 className='text-base lg:text-md'><a href='tel:+917821825892'>(+91) 78218 25892</a></h3>
                         </div>
                         <div className='flex flex-col items-center lg:items-start pb-5'>
