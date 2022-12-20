@@ -1,7 +1,5 @@
 import React, { useContext, useState } from "react";
 import ThemeContext from "../Contexts/ThemeContext";
-import appdev from "../assets/competitions/appdev.jpg";
-import arduino from "../assets/competitions/arduino.jpg";
 import { eventsdata } from "../Components/events/eventsdata";
 // import '../styles/events.css'
 import EventSlider from "../Components/events/eventsslider";
@@ -30,7 +28,7 @@ function Navigate() {
           <button
             onClick={() => setValue(index)}
             className={
-              "pronites_btn rounded text-[.75rem] vvs:text-lg vs:text-xl sm:px-5 leading-relaxed p-1 text-lg vs:px-3 vs:m-1 flex-wrap lg:p-3 lg:px-5 " +
+              " rounded text-[.75rem] vvs:text-md vs:text-lg sm:px-5 leading-relaxed p-1 text-lg vs:px-3 vs:m-1 flex-wrap lg:p-3 lg:px-5 " +
               (value == index ? "bg-golden text-black" : "bg-blue text-golden")
             }
           >
@@ -121,13 +119,14 @@ function Navigate() {
                 Hyderabad, Elan & ηVision
               </p>
               <br />
-              <p>
+              <p className="mb-5">
                 <b>
                   <b>Note:</b>
                 </b>{" "}
                 The participants shall choose any one(their favourite one) of
                 the above topics.
               </p>
+              <a href="https://techradiance.in/iit-workshop/" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
             </div>
             <div className={index != 0 ? "block" : "hidden"}>
               <div className="text-golden font-cinzel text-center text-xl vs:text-3xl xs:text-4xl font-bold">
@@ -148,7 +147,7 @@ function Events() {
   const context = useContext(ThemeContext);
 
   return (
-    <div className="mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
+    <div className="mt-[76px] lg:mt-0 pb-[8rem] overflow-hidden bg-black bg-no-repeat bg-[position:left_top_-4rem,right_bottom_-.8rem] p-5 md:p-10 bg-[url('./assets/designs/events_mobile_1.svg'),url('./assets/designs/events_mobile_2.svg')] max-[360px]:bg-[length:90vw] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px]">
       <h1 className="heading font-berkshire text-7xl vs:text-8xl text-golden pt-16 lg:pt-0 lg:text-[10rem] relative z-10">
         Events
       </h1>

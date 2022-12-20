@@ -5,18 +5,15 @@ import cut_btn from '../assets/designs/competitions_cut_btn.svg'
 import { cultidata } from '../Components/competitions/Cultidata'
 import { techydata } from '../Components/competitions/TechyData'
 import Popup from 'reactjs-popup'
-import appdev from "../assets/competitions/appdev.jpg"
-import arduino from "../assets/competitions/arduino.jpg"
 import "../styles/competitions.css";
-import CompetitionsSlider from '../Components/competitions/competitionsSlider'
-
-const image = [appdev, arduino]
+// import CompetitionsSlider,{focusNum} from '../Components/competitions/competitionsSlider'
+// import { litfestdata } from '../Components/litfest/litfestdata'
 
 const navbuttons = ['Techy', 'Culti']
 
-const style = {
-  textshadow: '5px 5px'
-}
+// const style = {
+//   textshadow: '5px 5px'
+// }
 const popupnav = ['Intro', 'Rules', 'Timeline', 'Judging', 'Prizes', 'Contact']
 
 function ShowDetails({ item ,type}) {
@@ -35,7 +32,7 @@ function ShowDetails({ item ,type}) {
   return (
     <div>
       <Popup trigger={
-        <button className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose">Learn more</button>
+        <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Learn more</button>
       } position="center center">
         {close => (
           <div className='bg-blue w-full h-full px-5 vs:px-10 overflow-auto z-5 relative bg-[url("assets/designs/competitions_popup_2.svg"),url("assets/designs/competitions_popup_3.svg"),url("assets/designs/competitions_popup_4.svg"),url("assets/designs/competitions_popup_1.svg"),url("assets/designs/competitions_popup_5.svg")] bg-no-repeat bg-[position:left_top,left_bottom,right_bottom,left_center,right_center] bg-[length:150px,100px,50px,100px,200px] rounded-xl'>
@@ -127,16 +124,16 @@ function Hii({ data, sliderValue,type }) {
   return (
 
     data.map((item, index) => (
-      <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/3 "}>
+      <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/4"}>
         <div className='m-2 lg:bg-blue lg:rounded-tl-2xl rounded-br-2xl overflow-hidden'>
-          <img src={item.img} className=' object-cover m-auto lg:h-[20vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
-          <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
+          <img src={item.img} className=' object-cover m-auto lg:h-[15vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
+          <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-2xl xl:text-3xl text-golden text-center font-bold mb-5'>{item.name}</div>
 
 
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.details}
           </div>
           <div className='flex justify-evenly py-5'>
-            <button className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose">Register Now</button>
+            <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button>
             <ShowDetails item={item} type={type}/>
 
           </div>
@@ -148,50 +145,132 @@ function Hii({ data, sliderValue,type }) {
   )
 }
 
+// function Navigate() {
+
+
+
+
+//   
+
+//   return (
+//     <div className='z-0'>
+
+
+//       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
+//         {/* <CompetitionsSlider imagesList={Navigatevalue == 1 ? cultidata.map((item) => item.img) : techydata.map((item) => item.img)} size={width >= 500 ? 3 : 2} /> */}
+//         <div className='w-[700%] flex relative px-[35vw]' id='hii'>
+//           {imagesList.map((item, index) => (
+//             <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
+//           ))}
+//         </div>
+
+//       </div>
+//       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
+//       <input type="range" min={0} max={Navigatevalue == 1 ? 10 : 12}  id="slider"  value={sliderValue} onChange={(e) => {
+//         setSliderValue(e.target.value)
+//         // var curr = document.getElementById('img' + e.target.value.toString())
+//         // // console.log('img' + sliderValue.toString())
+//         // // curr.style.position='relative'
+//         // curr.style.transform='translate('+(-(e.target.value)*100/imagesList.length).toString()+'%,0)'
+
+//       }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
+
+
+//       <div className={("flex flex-wrap justify-evenly")}>
+//         <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} type={Navigatevalue}/>
+//       </div>
+//     </div>
+//   )
+// }
+
+
+
+
+
+
+
+
+
+
+const style = {
+  textshadow: '5px 5px'
+}
+
+
 function Navigate() {
   const [Navigatevalue, setNavigateValue] = useState(0)
   const [sliderValue, setSliderValue] = useState(0)
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
-//   setInterval(()=>{
-//     sliderValue=(sliderValue+1)%techydata.length
-//       console.log(sliderValue)
-// },2000);
+  const imagesList = (Navigatevalue==1?cultidata:techydata).map((item) => item.img)
+  const last = Navigatevalue == 1 ? 10 : 12
+
+  const itemstyle = {
+    position: 'relative',
+    margin: '5px',
+    width: (100 / imagesList.length).toString() + '%',
+    height: (100 * 3 / 10).toString() + 'vw',
+  }
+
+  React.useEffect(() => {
+    document.getElementById('scrolldiv').addEventListener('scroll', () => {
+
+      var i
+      for (i = 0; i <= last; i++) {
+        var id_no = document.getElementById("img" + i.toString())
+        var rect = id_no.getBoundingClientRect();
+        if ((rect.right > width / 2) && (rect.left < width / 2)) {
+          console.log(i)
+          setSliderValue(i)
+          break
+        }
+      }
+
+    })
+  })
 
   return (
     <div className='z-0'>
       <div className='flex lg:justify-center justify-evenly pb-10'>
-        {navbuttons.map((nav_item,index)=>(
-          <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
-        ))}
-      </div>
+         {navbuttons.map((nav_item,index)=>(
+           <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
+         ))}
+       </div>
+      <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
+        <div className='w-[700%] flex relative px-[35vw]' id='hii'>
+          {imagesList.map((item, index) => (
+            <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
+          ))}
+        </div>
 
-      <div className='lg:hidden'>
-        <CompetitionsSlider imagesList={Navigatevalue == 1 ? cultidata.map((item) => item.img) : techydata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
       </div>
+      {/* <div className='lg:hidden'>
+        <LitfestSlider imagesList={litfestdata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
+      </div> */}
       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
-      <input type="range" min={0} max={Navigatevalue == 1 ? 10 : 12}  id="slider" defaultValue={0}  onChange={(e) => {
+      <input type="range" min={0} max={last} defaultValue={0} id="slider" value={sliderValue} onChange={(e) => {
         setSliderValue(e.target.value)
       }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
 
 
-      <div className={("flex flex-wrap justify-evenly")}>
-        <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} type={Navigatevalue}/>
+      <div className={("flex flex-wrap justify-evenly relative z-10")}>
+        <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} />
       </div>
     </div>
   )
 }
 
 function Competitions() {
+  const context = useContext(ThemeContext)
 
   return (
     <div className={"mt-[76px] lg:mt-0 overflow-hidden bg-black bg-no-repeat p-3 vs:p-10 bg-[position:left_top_-5rem_,_right_bottom_-4.5rem]  vs:bg-[length:300px,10%] bg-[length:250px] md:bg-[length:350px,200px] bg-[url('./assets/designs/competitions_mobile_1.svg'),url('./assets/designs/competitions_mobile_2.svg')] lg:bg-[url('./assets/designs/competitions_desktop_1.svg')] lg:bg-[right_top] lg:bg-[length:100px] "}>
-      <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl'>
-        Competitions
-      </div>
-      {<Navigate />}
-    </div>
+       <div className='heading font-berkshire text-[15vw] sm:text-8xl text-center text-golden pt-12 md:pt-24 lg:pt-0 relative z-10 md:text-9xl'>
+         Competitions
+       </div>
+       {<Navigate />}
+     </div>
   )
 }
 

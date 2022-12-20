@@ -1,35 +1,5 @@
 
 
-// function Litfest() {
-
-//   return (
-//     <div className='relative overflow-hidden'>
-//       <div className=' overflow-visible z-10'>
-//         <h1 className='font-berkshire text-7xl py-8 md:py-8  vvs:text-8xl z-10 relative'>Litfest</h1>
-//         <div className='relative z-10'>
-//         </div>
-
-
-//       </div>
-//         {/* bg images */}
-        
-//       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px] '><img className='h-full' src={vase}></img></div>
-//       <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
-//       <div className='absolute right-0 top-[30px] w-[15vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
-//       <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
-//       </div>
-      
-
-//   )
-// }
-
-// export default Litfest
-
-
-
-
-
-
 import React, { useContext, useState } from 'react'
 import ThemeContext from '../Contexts/ThemeContext'
 import arrow from '../assets/designs/competitions_arrow.svg'
@@ -55,16 +25,7 @@ function ShowDetails({ item }) {
 
   const [popupNavValue, setpopupNavValue] = useState(1)
 
-
-  const contentStyle = {
-    position: "fixed",
-    zindex: '999',
-    top: "0",
-    right: "0",
-    // height: "100px",
-    backgroundColor: "red"
-  };
-  // bg - [position: left_top_ - 5rem_, _right_bottom_ - 4.5rem]
+  console.log(!item.reglink)
   return (
     <div>
       <Popup trigger={
@@ -82,7 +43,7 @@ function ShowDetails({ item }) {
             <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
               <div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
                 <div className='text-xl mb-5  whitespace-pre-wrap'>{item.description}</div>
-                <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold'+(item.reglink!=''?'block':'hidden')} href={item.reglink}>Register</a>
+                <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold ' + (!item.reglink ?' hidden':' inline')} href={item.reglink}>Register</a>
               </div>
               <img src={item.img} className='w-full md:w-2/5 mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" />
             </div>
@@ -130,7 +91,7 @@ function Hii({ data, sliderValue }) {
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.more}
           </div>
           <div className='flex justify-evenly py-5'>
-            <a className="bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose hover:cursor-pointer" href={item.reglink}>Register Now</a>
+            <a className={"bg-golden text-black rounded-md text-md px-3 font-century m-1 leading-loose hover:cursor-pointer "+(item.reglink?' inline':' hidden')} href={item.reglink}>Register Now</a>
             <ShowDetails item={item} />
 
           </div>
@@ -147,11 +108,47 @@ function Navigate() {
   const [width, setWidth] = useState(window.innerWidth);
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
+  const imagesList = litfestdata.map((item) => item.img)
+  const last = litfestdata.length-1
+
+  const itemstyle = {
+    position: 'relative',
+    margin: '5px',
+    width: (100 / imagesList.length).toString() + '%',
+    height: (100 * 3 / 10).toString() + 'vw',
+  }
+
+  React.useEffect(() => {
+    document.getElementById('scrolldiv').addEventListener('scroll', () => {
+
+      var i
+      for (i = 0; i <= last; i++) {
+        var id_no = document.getElementById("img" + i.toString())
+        var rect = id_no.getBoundingClientRect();
+        if ((rect.right > width / 2) && (rect.left < width / 2)) {
+          console.log(i)
+          setSliderValue(i)
+          break
+        }
+      }
+
+    })
+  })
+
   return (
     <div className='z-0'>
-      <div className='lg:hidden'>
-        <LitfestSlider imagesList={litfestdata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
+
+      <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
+        <div className='w-[700%] flex relative px-[35vw]' id='hii'>
+          {imagesList.map((item, index) => (
+            <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
+          ))}
+        </div>
+
       </div>
+      {/* <div className='lg:hidden'>
+        <LitfestSlider imagesList={litfestdata.map((item) => item.img)} size={width >= 500 ? 3 : 2} />
+      </div> */}
       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
       <input type="range" min={0} max={litfestdata.length-1} defaultValue={0} id="slider" value={sliderValue} onChange={(e) => {
         setSliderValue(e.target.value)
@@ -165,7 +162,7 @@ function Navigate() {
   )
 }
 
-function Competitions() {
+function Litfest() {
   const context = useContext(ThemeContext)
 
   return (
@@ -184,4 +181,4 @@ function Competitions() {
   )
 }
 
-export default Competitions
+export default Litfest
