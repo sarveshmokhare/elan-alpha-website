@@ -2,8 +2,8 @@ import React from 'react'
 import { BsInstagram, BsYoutube, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-import logo from '../assets/logo_white.png'
-import mail_icon from '../assets/mail_icon.svg'
+const logo = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623909/Elan/bg_images/logo_white_pq9fjb.png'
+const mail_icon = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624845/Elan/bg_images/mail_icon_zhwoy3.svg'
 
 function Footer() {
 

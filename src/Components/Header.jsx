@@ -5,9 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import ThemeContext from "../Contexts/ThemeContext";
-import logo from "../assets/logo_white.png";
-import menuIcon from "../assets/menu_icon.svg";
 import Menu from "./Menu";
+
+const logo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623909/Elan/bg_images/logo_white_pq9fjb.png";
+const menuIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625283/Elan/bg_images/menu_icon_vzj0yx.svg";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

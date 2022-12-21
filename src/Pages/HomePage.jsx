@@ -12,107 +12,108 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 import AnimationContext from "../Contexts/AnimationContext";
-import elanLogo from "../assets/logo_white.png";
-import caPortalIcon from "../assets/ca_portal_icon.svg";
+const elanLogo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623909/Elan/bg_images/logo_white_pq9fjb.png";
+const caPortalIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623942/Elan/bg_images/ca_portal_icon_lnilgn.svg";
 import valenrowIcon from "../assets/valenrow_icon.svg";
-import sec1BottomGraphics from "../assets/moon_line_rings.svg";
-import book from "../assets/book.svg";
-import aboutLeft from "../assets/about_left.svg";
-import aboutRight from "../assets/about_right.svg";
-import valenrowLogo from "../assets/valenrow_logo.svg";
-import sec1DecorLeft from "../assets/sec1_decor_left.svg";
-import sec1BottomGraphicsLarge from "../assets/moon_line_rings_large.svg";
-import aboutTop from "../assets/about_top.svg";
-import aboutBtmR from "../assets/about_bottom_right.svg";
-import aboutBtmC from "../assets/about_bottom_center.svg";
-import aboutBtmL from "../assets/about_bottom_left.svg";
-import aboutBtmLMob from "../assets/about_bottom_left_mobile.svg";
-import aboutBtmRMob from "../assets/about_bottom_right_mobile.svg";
-import timelineJug from "../assets/timeline_jug.svg";
-import timelineBtm from "../assets/timeline_btm.svg";
-import exploreBg from "../assets/explore.svg";
-import galleryBg from "../assets/gallery.svg";
-import galleryBtmBg from "../assets/gallery_btm.svg";
-import statsBg from "../assets/stats.svg";
-import Header from "../Components/Header";
-import inviteText from "../assets/invite_text.svg";
-import fullMoon from "../assets/moon_full.svg";
-import cresentRight from "../assets/cresent_right.svg";
-import halfMoon from "../assets/moon_half.svg";
-import cresentLeft from "../assets/cresent_left.svg";
-import topLine from "../assets/top_line.svg";
-import sampleVid from "../assets/video.mp4";
-import timeline2k171 from "../assets/timeline_images/2017/1.jpg";
-import timeline2k172 from "../assets/timeline_images/2017/2.jpg";
-import timeline2k173 from "../assets/timeline_images/2017/3.jpg";
-import timeline2k174 from "../assets/timeline_images/2017/4.jpg";
+const book = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622555/Elan/bg_images/book_runz9i.svg";
+const aboutLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622626/Elan/bg_images/about_left_wu2elv.svg";
+const aboutRight = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622627/Elan/bg_images/about_right_tysznb.svg";
+const valenrowLogo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623929/Elan/bg_images/valenrow_logo_zkwbw9.svg";
+const sec1DecorLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624131/Elan/bg_images/sec1_decor_left_io8465.svg";
+const sec1BottomGraphicsLarge = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624153/Elan/bg_images/moon_line_rings_large_v92zo2.svg";
+const aboutTop = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622739/Elan/bg_images/about_top_neldzr.svg";
+const aboutBtmR = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622733/Elan/bg_images/about_bottom_right_txzshm.svg";
+const aboutBtmC = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622770/Elan/bg_images/about_bottom_center_mmuc4i.svg";
+const aboutBtmL = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622748/Elan/bg_images/about_bottom_left_vgpvv9.svg";
+const aboutBtmLMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622745/Elan/bg_images/about_bottom_left_mobile_slsuhl.svg";
+const aboutBtmRMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622718/Elan/bg_images/about_bottom_right_mobile_zosh1x.svg";
+const timelineJug = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623361/Elan/bg_images/timeline_jug_huppds.svg";
+const timelineBtm = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623346/Elan/bg_images/timeline_btm_wxotkh.svg";
+const exploreBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623360/Elan/bg_images/explore_uaxnb5.svg";
+const galleryBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623358/Elan/bg_images/gallery_wx7cts.svg";
+const galleryBtmBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623356/Elan/bg_images/gallery_btm_qf07mf.svg";
+const statsBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623339/Elan/bg_images/stats_krnswc.svg";
+const inviteText = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624317/Elan/bg_images/invite_text_lioz94.svg";
+const fullMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624254/Elan/bg_images/moon_full_obblnh.svg";
+const cresentRight = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624315/Elan/bg_images/cresent_right_plpxpn.svg";
+const halfMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624255/Elan/bg_images/moon_half_uzzj5d.svg";
+const cresentLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624315/Elan/bg_images/cresent_left_abrdyj.svg";
+const topLine = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624317/Elan/bg_images/top_line_blwx9b.svg";
+const sampleVid = "https://res.cloudinary.com/dxe7myxfw/video/upload/v1671622094/Elan/Videos/video_nsxght.mp4";
 
-import timeline2k181 from "../assets/timeline_images/2018/1.jpg";
-import timeline2k182 from "../assets/timeline_images/2018/2.jpg";
-import timeline2k183 from "../assets/timeline_images/2018/3.jpg";
-import timeline2k184 from "../assets/timeline_images/2018/4.jpg";
+const timeline2k171 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620071/Elan/Timeline%20Images/2017/1_ejgrnv.jpg";
+const timeline2k172 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620027/Elan/Timeline%20Images/2017/2_jw4iqd.jpg";
+const timeline2k173 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620030/Elan/Timeline%20Images/2017/3_zhkzll.jpg";
+const timeline2k174 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620028/Elan/Timeline%20Images/2017/4_fdnef7.jpg";
 
-import timeline2k191 from "../assets/timeline_images/2019/1.jpg";
-import timeline2k192 from "../assets/timeline_images/2019/2.jpg";
-import timeline2k193 from "../assets/timeline_images/2019/3.jpg";
-import timeline2k194 from "../assets/timeline_images/2019/4.jpg";
+const timeline2k181 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620103/Elan/Timeline%20Images/2018/1_a1xokh.jpg";
+const timeline2k182 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620104/Elan/Timeline%20Images/2018/2_o1pcwa.jpg";
+const timeline2k183 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620105/Elan/Timeline%20Images/2018/3_rztunf.jpg";
+const timeline2k184 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620105/Elan/Timeline%20Images/2018/4_kq2ah5.jpg";
 
-import timeline2k201 from "../assets/timeline_images/2020/1.jpg";
-import timeline2k202 from "../assets/timeline_images/2020/2.jpg";
-import timeline2k203 from "../assets/timeline_images/2020/3.jpg";
-import timeline2k204 from "../assets/timeline_images/2020/4.jpg";
+const timeline2k191 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620128/Elan/Timeline%20Images/2019/1_jyziis.jpg";
+const timeline2k192 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620129/Elan/Timeline%20Images/2019/2_dgtz1m.jpg";
+const timeline2k193 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620128/Elan/Timeline%20Images/2019/3_zq4mzv.jpg";
+const timeline2k194 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620126/Elan/Timeline%20Images/2019/4_nqpdtt.jpg";
 
-import timeline2k211 from "../assets/timeline_images/2021/1.png";
-import timeline2k212 from "../assets/timeline_images/2021/2.png";
-import timeline2k213 from "../assets/timeline_images/2021/3.png";
-import timeline2k214 from "../assets/timeline_images/2021/4.png";
+const timeline2k201 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620138/Elan/Timeline%20Images/2020/1_tfzy5w.jpg";
+const timeline2k202 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620133/Elan/Timeline%20Images/2020/2_is3qh8.jpg";
+const timeline2k203 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620138/Elan/Timeline%20Images/2020/3_blru4f.jpg";
+const timeline2k204 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620132/Elan/Timeline%20Images/2020/4_wt8rmv.jpg";
 
-import timeline2k221 from "../assets/timeline_images/2022/1.jpg";
-import timeline2k222 from "../assets/timeline_images/2022/2.jpg";
-import timeline2k223 from "../assets/timeline_images/2022/3.jpg";
-import timeline2k224 from "../assets/timeline_images/2022/4.jpg";
+const timeline2k211 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620243/Elan/Timeline%20Images/2021/1_rfnynr.png";
+const timeline2k212 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620185/Elan/Timeline%20Images/2021/2_ckdmhh.png";
+const timeline2k213 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620161/Elan/Timeline%20Images/2021/3_snvko1.png";
+const timeline2k214 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620199/Elan/Timeline%20Images/2021/4_ptkvmo.png";
 
-import mobileDecorTop from "../assets/mobile_decor_top.svg";
-import mobileDecorBottom from "../assets/mobile_decor_bottom.svg";
-import moon from "../assets/moon.svg";
-import btmLine from "../assets/bottom_line.svg";
-import ringMoon from "../assets/ring_moon.svg";
-import inviteTextMob from "../assets/invite_text_mobile.svg";
-import audience from "../assets/audience.svg";
-import hat from "../assets/hat.png";
-import calender from "../assets/calender.png";
-import insta from "../assets/insta.png";
-import likes from "../assets/likes.png";
-import threePeeps from "../assets/three_peeps.png";
-import tweets from "../assets/tweets.svg";
-import views from "../assets/views.svg";
+const timeline2k221 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620140/Elan/Timeline%20Images/2022/1_qwrzkm.jpg";
+const timeline2k222 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620234/Elan/Timeline%20Images/2022/2_o3vh1u.jpg";
+const timeline2k223 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620212/Elan/Timeline%20Images/2022/3_kqhkqu.jpg";
+const timeline2k224 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620173/Elan/Timeline%20Images/2022/4_khkpuk.jpg";
+
+const mobileDecorTop = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/mobile_decor_top_rbdjer.svg";
+const mobileDecorBottom = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/mobile_decor_bottom_rxvank.svg";
+const moon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/moon_gvdoed.svg";
+const btmLine = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/bottom_line_uqfqif.svg";
+const ringMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/ring_moon_dmkfwi.svg";
+const inviteTextMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/invite_text_mobile_jezqju.svg";
+const audience = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625025/Elan/bg_images/audience_lhsytp.svg";
+const hat = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/hat_cteqwu.png";
+const calender = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/calender_pavjvx.png";
+const insta = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/insta_crejyu.png";
+const likes = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/likes_xpppxt.png";
+const threePeeps = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/three_peeps_fnzu4a.png";
+const tweets = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/tweets_panzxl.svg";
+const views = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625029/Elan/bg_images/views_bactad.svg";
 
 import ExploreSlider from "../Components/ExploreSlider";
 import GallerySlider from "../Components/GallerySlider";
-import galImg1 from "../assets/gallery/1.png";
-import galImg2 from "../assets/gallery/2.png";
-import galImg4 from "../assets/gallery/4.jpg";
-import galImg6 from "../assets/gallery/6.jpg";
-import galImg7 from "../assets/gallery/7.jpg";
-import galImg12 from "../assets/gallery/12.jpg";
-import galImg13 from "../assets/gallery/13.jpg";
-import galImg14 from "../assets/gallery/14.jpg";
-import galImg15 from "../assets/gallery/15.jpg";
-import galImg16 from "../assets/gallery/16.jpg";
-import galImg17 from "../assets/gallery/17.jpg";
-import galImg18 from "../assets/gallery/18.jpg";
-import galImg19 from "../assets/gallery/19.jpg";
-import galImg20 from "../assets/gallery/20.jpg";
-import galImg21 from "../assets/gallery/21.jpg";
-import galImg22 from "../assets/gallery/22.png";
-import galImg23 from "../assets/gallery/23.jpg";
-import explore1 from "../assets/explore_section/breakfree.webp";
-import explore2 from "../assets/explore_section/glitz.webp";
-import explore3 from "../assets/explore_section/pronites_1.jpg";
-import explore4 from "../assets/explore_section/deepn.webp";
-import explore5 from "../assets/explore_section/proshows.jpeg";
-import explore6 from "../assets/explore_section/shipwreck.png";
-import explore7 from "../assets/explore_section/campusidol.webp";
+
+const galImg1 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621510/Elan/Gallery/1_c0ztha.png";
+const galImg2 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621514/Elan/Gallery/2_qshzyd.png";
+const galImg4 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621582/Elan/Gallery/4_cdvmss.jpg";
+const galImg6 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621499/Elan/Gallery/6_ztled9.jpg";
+const galImg7 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621512/Elan/Gallery/7_kaqhbp.jpg";
+const galImg12 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621504/Elan/Gallery/12_quadfe.jpg";
+const galImg13 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621509/Elan/Gallery/13_nzjjvn.jpg";
+const galImg14 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621512/Elan/Gallery/14_etd209.jpg";
+const galImg15 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621511/Elan/Gallery/15_x0ishy.jpg";
+const galImg16 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621513/Elan/Gallery/16_ogacwv.jpg";
+const galImg17 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621514/Elan/Gallery/17_mll8qu.jpg";
+const galImg18 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621515/Elan/Gallery/18_w4dubq.jpg";
+const galImg19 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621515/Elan/Gallery/19_pmmrez.jpg";
+const galImg20 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/20_jehwmn.jpg";
+const galImg21 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/21_t8gm08.jpg";
+const galImg22 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621548/Elan/Gallery/22_qxmrjv.png";
+const galImg23 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/23_oyvbov.jpg";
+
+const explore1 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621815/Elan/Explore%20Section/breakfree_jivckj.webp";
+const explore2 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621808/Elan/Explore%20Section/glitz_qlpvuo.webp";
+const explore3 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621808/Elan/Explore%20Section/pronites_1_irvpdd.jpg";
+const explore4 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621807/Elan/Explore%20Section/deepn_gpmlg5.webp";
+const explore5 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621868/Elan/Explore%20Section/proshows_lgvukm.jpg";
+const explore6 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621821/Elan/Explore%20Section/shipwreck_mtiags.png";
+const explore7 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621825/Elan/Explore%20Section/campusidol_bpb7zb.webp";
 
 function HomePage() {
   const timelineImgs = [
@@ -372,7 +373,7 @@ function HomePage() {
       }
 
       //mobile opening animation
-      mm.add("(max-width: 550px)", () => {
+      mm.add("(max-width: 850px)", () => {
         const tl = gsap.timeline({
           onStart: () => {
             document.body.style.overflowY = "hidden";
@@ -470,7 +471,7 @@ function HomePage() {
       // scroll animation for timeline section
       const mm2 = gsap.matchMedia();
 
-      mm2.add("(min-width: 1025px)", () => {
+      mm2.add("(min-width: 1024px)", () => {
         gsap.to(".scroll-div", {
           scrollTrigger: {
             trigger: ".timeline-div",
@@ -632,14 +633,17 @@ function HomePage() {
           </div>
 
           {/* buttons div */}
-          <div className="buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 top-[42%] lg:-right-[65%] lg:top-20">
-            <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
+          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[42%] lg:-right-[65%] lg:top-20">
+            {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
               <Link to="/litfest">
                 <div>Litfest</div>
               </Link>
-            </button>
+            </button> */}
+            <Link to='/litfest' className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-[38vw] h-[8vh] md:w-[20vw] lg:w-[14.5vw] lg:h-[10vh] text-[130%] md:text-base lg:text-[3vh]">
+              Litfest
+            </Link>
 
-            <button className="opacity-0 md:opacity-100 lg:opacity-0 bg-green px-1 rounded-lg my-4 w-[46vw] md:w-[38vw] lg:w-[15.5vw] h-[8vh] lg:h-[10vh]">
+            {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 bg-green px-1 rounded-lg my-4 w-[38vw] md:w-[38vw] lg:w-[15.5vw] h-[8vh] lg:h-[10vh]">
               <a
                 className="flex items-center justify-evenly"
                 href="https://ca.elan.org.in"
@@ -648,9 +652,16 @@ function HomePage() {
                 <img src={caPortalIcon} className="w-1/6" alt="icon" />
                 <div className="text-[90%] lg:text-[80%]">CA Portal</div>
               </a>
-            </button>
+            </button> */}
+            <a className="opacity-0 md:opacity-100 lg:opacity-0 bg-green rounded-lg my-4 md:p-4 flex items-center justify-center w-[46vw] h-[8vh] md:w-[20vw] lg:w-[15vw] lg:h-[10vh] lg:p-0"
+              href="https://ca.elan.org.in"
+              target="_blank"
+            >
+              <img src={caPortalIcon} className="pr-3 h-7 lg:h-1/2" alt="icon" />
+              <p className="text-[115%] md:text-base lg:text-[3vh]">CA Portal</p>
+            </a>
 
-            <Link
+            {/* <Link
               className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative"
               to="/valenrow"
             >
@@ -660,6 +671,21 @@ function HomePage() {
 
               <div
                 className="absolute right-[2%] top-[12%] lg:top-[8%] w-[70%] text-[80%] lg:text-[65%] text-"
+                ref={exploreBtnRef}
+              >
+                Explore Valenrow
+              </div>
+            </Link> */}
+            <Link
+              className="opacity-0 md:opacity-100 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-[52vw] md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
+              to="/valenrow"
+            >
+              <div className="h-[125%] md:h-[4.5rem] absolute top-[55%] -translate-y-1/2 right-[65%] lg:h-[13.5vh]">
+                <img src={valenrowIcon} className="h-full" alt="icon" />
+              </div>
+
+              <div
+                className="w-1/2 text-center md:text-base absolute top-1/2 -translate-y-1/2 right-[15%] lg:text-[2.4vh] lg:leading-[150%]"
                 ref={exploreBtnRef}
               >
                 Explore Valenrow

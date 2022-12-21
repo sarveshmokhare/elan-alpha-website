@@ -2,13 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-import caPortalIcon from "../assets/ca_portal_icon.svg";
+const caPortalIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623942/Elan/bg_images/ca_portal_icon_lnilgn.svg";
 import valenrowLogo from "../assets/valenrow_icon.svg";
-import eventsCard from "../assets/events_card.svg";
-import litfestCard from "../assets/litfest_card.svg";
-import menuRing from "../assets/menu_ring.svg";
-import competitionsCard from "../assets/competitions_card.svg";
-import teamCard from "../assets/team_card.svg";
+const menuRing = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625403/Elan/bg_images/menu_ring_tb4lzi.svg";
+const eventsCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625405/Elan/bg_images/events_card_bx8xeq.svg";
+const litfestCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625407/Elan/bg_images/litfest_card_t7hbxr.svg";
+const competitionsCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625406/Elan/bg_images/competitions_card_ri5ryb.svg";
+const teamCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625409/Elan/bg_images/team_card_elww7i.svg";
 
 function Menu(props) {
   const toggleMenu = props.toggleMenu;
