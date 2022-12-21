@@ -273,7 +273,7 @@ function Menu(props) {
 
             <div onClick={toggleMenu}>
               <Link
-                className="flex items-center text-center bg-white py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative"
+                className="flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative"
                 style={{ borderRadius: "40px" }}
                 to="/valenrow"
                 onClick={toggleMenu}
@@ -284,7 +284,7 @@ function Menu(props) {
                   alt="icon"
                   onClick={toggleMenu}
                 />
-                <div className="absolute left-12 text-sm text-black">
+                <div className="absolute left-12 text-sm text-">
                   Explore Valenrow
                 </div>
               </Link>

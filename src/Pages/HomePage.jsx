@@ -270,14 +270,14 @@ function HomePage() {
           gsap.set(".moon5", { right: "-7%" });
 
           gsap.set(".invite-text", { top: "55%", height: "18vh", opacity: 0 });
-          gsap.set(".elan-logo", { height: "13vh", top: "26%" });
+          gsap.set(".elan-logo", { height: "13vh", top: "21%" });
           gsap.set(".left-decor", { height: "65vh", top: "4%" });
           gsap.set(".top-line", { right: "-100%" });
           gsap.set(document.querySelector("header"), { opacity: 1 });
           gsap.set(".valenrow-logo", { opacity: 1 });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(section1.current, {
-            background: "rgb(8, 15, 36, 0.1)",
+            background: "#0000008c",
           });
         }
 
@@ -336,7 +336,7 @@ function HomePage() {
           const tl = gsap.timeline({ defaults: {} });
 
           tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
-          tl.to(".elan-logo", { height: "13vh", top: "26%", duration: 1 }, "<");
+          tl.to(".elan-logo", { height: "13vh", top: "21%", duration: 1 }, "<");
           tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
           tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
           tl.to(
@@ -353,7 +353,7 @@ function HomePage() {
           tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
             section1.current,
             {
-              background: "rgb(8, 15, 36, 0.1)",
+              background: "#0000008c",
               duration: 6,
               ease: "power2.inOut",
             }
@@ -393,12 +393,11 @@ function HomePage() {
             left: "-12%",
           });
           gsap.set(".mob-invite-text", { opacity: 0 });
-          gsap.set(".valenrow-logo", { opacity: 1, top: "14%" });
           gsap.set(".elan-logo", {
-            top: "14%",
+            top: "6%",
             height: "8vh",
           });
-          gsap.set(".valenrow-logo", { top: "12%" });
+          gsap.set(".valenrow-logo", { top: "6%", opacity: 1 });
           gsap.set(section1.current, { height: "80vh" });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(".moon-ring", {
@@ -434,12 +433,12 @@ function HomePage() {
           duration: 1.5,
         });
         tl.to(".elan-logo", {
-          top: "14%",
+          top: "6%",
           height: "8vh",
           duration: 1.5,
           delay: 0.8,
         });
-        tl.to(".valenrow-logo", { top: "12%", duration: 1.5 }, "<");
+        tl.to(".valenrow-logo", { top: "6%", duration: 1.5 }, "<");
         tl.to(
           ".moon-ring",
           {
@@ -579,9 +578,9 @@ function HomePage() {
         {/* Intro section */}
         <div
           ref={section1}
-          className="bg-black text-white font-cinzel font-bold h-[85vh] sm:h-[90vh] relative"
+          className="bg-black text-white font-cinzel font-bold h-[90vh] sm:h-[90vh] relative"
         >
-          <div className="absolute inset-0 bg-[#000000c7]"></div>
+          {/* <div className="absolute inset-0 bg-[#0000001a]"></div> */}
           {/* top decor line */}
           <div className="top-line hidden lg:block   absolute top-0 right-[7%] w-[68vw]">
             <img className="h-[40%]" alt="decor" src={topLine}></img>
@@ -633,7 +632,7 @@ function HomePage() {
           </div>
 
           {/* buttons div */}
-          <div className="buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 bottom-[9%] lg:-right-[65%] lg:top-20">
+          <div className="buttons flex flex-col items-center text-[2.6vh] lg:text-[3.7vh] absolute right-0 left-0 top-[42%] lg:-right-[65%] lg:top-20">
             <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
               <Link to="/litfest">
                 <div>Litfest</div>
@@ -660,7 +659,7 @@ function HomePage() {
               </div>
 
               <div
-                className="absolute right-[2%] top-[12%] lg:top-[8%] w-[70%] text-[80%] lg:text-[65%] text-black"
+                className="absolute right-[2%] top-[12%] lg:top-[8%] w-[70%] text-[80%] lg:text-[65%] text-"
                 ref={exploreBtnRef}
               >
                 Explore Valenrow
@@ -987,7 +986,7 @@ function HomePage() {
             Explore
           </h1>
 
-          <ExploreSlider imagesList={exploreImgs} size={width >= 500 ? 4 : 2} />
+          <ExploreSlider imagesList={exploreImgs} size={width >= 850 ? 4 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[55%] right-0 bottom-[10%]">
@@ -1001,9 +1000,9 @@ function HomePage() {
             Gallery
           </h1>
 
-          <GallerySlider imagesList={gal1} size={width >= 500 ? 3 : 2} />
+          <GallerySlider imagesList={gal1} size={width >= 850 ? 4 : 2} />
 
-          <GallerySlider imagesList={gal2} size={width >= 500 ? 3 : 2} />
+          <GallerySlider imagesList={gal2} size={width >= 850 ? 4 : 2} />
 
           {/* bg images */}
           <div className="absolute h-[85%] left-0 top-0">
@@ -1020,7 +1019,7 @@ function HomePage() {
             Stats
           </h1>
 
-          <div className="flex flex-wrap w-full justify-around px-10 pt-14 lg:pb-5 z-10 relative">
+          <div className="flex flex-wrap w-full justify-around px-[8%] lg:px-[5%] xl:px-[20%] pt-14 lg:pb-5 z-10 relative">
             <div className="flex flex-col items-center justify-center my-4">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={audience}></img>
@@ -1045,9 +1044,6 @@ function HomePage() {
               </div>
               <p>10k+ audience</p>
             </div>
-          </div>
-
-          <div className="flex flex-wrap w-full justify-around px-10 pb-5 z-10 relative">
             <div className="flex flex-col items-center justify-center my-4 mx-2">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={insta}></img>
@@ -1072,6 +1068,33 @@ function HomePage() {
               </div>
               <p>1.1k+ followers</p>
             </div>
+          </div>
+
+          <div className="flex flex-wrap w-full justify-around px-10 pb-5 z-10 relative">
+            {/* <div className="flex flex-col items-center justify-center my-4 mx-2">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
+                <img className="h-full" src={insta}></img>
+              </div>
+              <p>3.7k+ followers</p>
+            </div>
+            <div className="flex flex-col items-center justify-center my-4">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
+                <img className="h-full" src={likes}></img>
+              </div>
+              <p>42k+ likes</p>
+            </div>
+            <div className="flex flex-col items-center justify-center my-4">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
+                <img className="h-full" src={views}></img>
+              </div>
+              <p>82k+ views</p>
+            </div>
+            <div className="flex flex-col items-center justify-center my-4">
+              <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
+                <img className="h-full" src={tweets}></img>
+              </div>
+              <p>1.1k+ followers</p>
+            </div> */}
           </div>
 
           {/* bg images */}

@@ -9,7 +9,7 @@ export default function GallerySlider({ imagesList, size }) {
   var style, itemstyle, insidestyle, repetition;
   const num=Math.ceil(size * 2 / imagesList.length)
   itemstyle = {
-    margin: '5px',
+    margin: '7px',
     width: (100 / length).toString() + '%',
     height: (100 / size * 3 / 5).toString() + 'vw',
   }
@@ -48,7 +48,9 @@ export default function GallerySlider({ imagesList, size }) {
       {repetition.map(() => (
         <div style={insidestyle}>
           {imagesList.map((item) => (
-            <ExploreCard title={item.title} imgUrl={item.imgUrl} href={item.href} />
+            <div style={itemstyle} className='relative hover:scale-105 transition ease-out duration-75' >
+              <ExploreCard title={item.title} imgUrl={item.imgUrl} href={item.href} />
+            </div>
           ))}
         </div>
       ))}
