@@ -1,81 +1,81 @@
 import React from "react";
 // 2021 sponsors
-import Honeywell from "../assets/SponsorImages/Sponsor2021/Honeywell-Logo.png";
-import Blend360 from "../assets/SponsorImages/Sponsor2021/blend-360.png";
-import Blur from "../assets/SponsorImages/Sponsor2021/blur.png";
-import CanaraBank from "../assets/SponsorImages/Sponsor2021/CANBANK.png";
-import CocaCola from "../assets/SponsorImages/Sponsor2021/cocacola.png";
-import CodingNinjas from "../assets/SponsorImages/Sponsor2021/coding-ninjas.png";
-import DemarkSkill from "../assets/SponsorImages/Sponsor2021/demark-skill.png";
-import DLink from "../assets/SponsorImages/Sponsor2021/dlink.png";
-import Fashion from "../assets/SponsorImages/Sponsor2021/Fashion Herald(tbe).png.crdownload.png";
-import HoverRobotix from "../assets/SponsorImages/Sponsor2021/HOVER-ROBTIX.png";
-import IndOil from "../assets/SponsorImages/Sponsor2021/ind oil.png";
-import IndiNoir from "../assets/SponsorImages/Sponsor2021/Indinoir(webp).jpg";
-import Intern360 from "../assets/SponsorImages/Sponsor2021/INTERN-360.png";
-import KLA from "../assets/SponsorImages/Sponsor2021/kla.png";
-import LIC from "../assets/SponsorImages/Sponsor2021/lic-logo.png";
-import Mentorx from "../assets/SponsorImages/Sponsor2021/mentorx.png";
-import NoticeBoard from "../assets/SponsorImages/Sponsor2021/Notice Bard logo.png";
-import NTPC from "../assets/SponsorImages/Sponsor2021/NTPC.png";
-import Nuetech from "../assets/SponsorImages/Sponsor2021/nuetrech.png";
-import QwertyThoughts from "../assets/SponsorImages/Sponsor2021/qwerty-thoughts.png";
-import Salesforce from "../assets/SponsorImages/Sponsor2021/SAFE.png";
-import SBI from "../assets/SponsorImages/Sponsor2021/SBI.png";
-import Technoto from "../assets/SponsorImages/Sponsor2021/TECHNOTO.png";
-import Unblend from "../assets/SponsorImages/Sponsor2021/unblened.png";
-import Vijaya from "../assets/SponsorImages/Sponsor2021/VIJAYA.png";
-import wingfotech from "../assets/SponsorImages/Sponsor2021/wingoftech.png";
-import Xcube from "../assets/SponsorImages/Sponsor2021/xcube.png";
-import YouthIncorporated from "../assets/SponsorImages/Sponsor2021/Youth Incorporated.png";
-import IITHAlumni from "../assets/SponsorImages/Sponsor2021/IITH Alumni.jpeg";
-import Ease from "../assets/SponsorImages/Sponsor2021/Ease.png";
+const Honeywell = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Honeywell-Logo_ewmyo2.png";
+const Blend360 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617302/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/blend-360_us3c0c.png";
+const Blur = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617302/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/blur_ej0zfp.png";
+const CanaraBank = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617302/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/CANBANK_becu5t.png";
+const CocaCola = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617302/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/cocacola_g5pmiu.png";
+const CodingNinjas = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617303/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/coding-ninjas-logo-white_od7czl.png";
+const DemarkSkill = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617303/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/demark-skill_cdmwma.png";
+const DLink = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617303/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/dlink_hicfh2.png";
+const Fashion = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617303/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Fashion_Herald_tbe_.png.crdownload_hubtww.png";
+const HoverRobotix = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/HOVER-ROBTIX_rfawhl.png";
+const IndOil = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/ind_oil_ofw5vc.png";
+const IndiNoir = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Indinoir_webp_cxngjg.jpg";
+const Intern360 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/INTERN-360_z8o6nw.png";
+const KLA = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/kla_guwolw.png";
+const LIC = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/lic-logo_egw3dm.png";
+const Mentorx = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617305/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/mentorx_pqj3dj.png";
+const NoticeBoard = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617305/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Notice_Bard_logo_wd5pxv.png";
+const NTPC = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/NTPC_gyuhca.png";
+const Nuetech = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/nuetrech_wqsktb.png";
+const QwertyThoughts = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/qwerty-thoughts_qchggr.png";
+const Salesforce = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/SAFE_ftmmvz.png";
+const SBI = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/SBI_baphjq.png";
+const Technoto = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/TECHNOTO_onpg85.png";
+const Unblend = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/unblened_zf13o8.png";
+const Vijaya = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617306/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/VIJAYA_ykzrpc.png";
+const wingfotech = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/wingoftech_t0q50v.png";
+const Xcube = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/xcube_guaqnb.png";
+const YouthIncorporated = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Youth_Incorporated_jrdifo.png";
+const IITHAlumni = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617304/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/IITH_Alumni_w4vz3o.jpg";
+const Ease = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617303/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Ease_s0rk1t.webp";
 // 2020 sponsors
-import airmeet20 from "../assets/SponsorImages/Sponsor2020/airmeet - Copy.png";
-import Arcesium20 from "../assets/SponsorImages/Sponsor2020/Arcesium - Copy.png";
-import Bigfm20 from "../assets/SponsorImages/Sponsor2020/Big Fm 92 - Copy.png";
-import campusComedy20 from "../assets/SponsorImages/Sponsor2020/Campus Comedy Club - Copy.png";
-import CanaraBank20 from "../assets/SponsorImages/Sponsor2020/canera bank - Copy.png";
-import celebr82020 from "../assets/SponsorImages/Sponsor2020/celebr8 - Copy.png";
-import ces20 from "../assets/SponsorImages/Sponsor2020/ces - Copy.png";
-import chromatics20 from "../assets/SponsorImages/Sponsor2020/chromatics - Copy.png";
-import cluster20 from "../assets/SponsorImages/Sponsor2020/clustera - Copy.png";
-import code20 from "../assets/SponsorImages/Sponsor2020/code for cause - Copy.png";
-import codingNinja20 from "../assets/SponsorImages/Sponsor2020/coding ninjas - Copy.png";
-import coolwink20 from "../assets/SponsorImages/Sponsor2020/coolwinks - Copy.png";
-import DUbeats20 from "../assets/SponsorImages/Sponsor2020/DUBEATS - Copy.png";
-import DUexpress20 from "../assets/SponsorImages/Sponsor2020/DUExpress - Copy.png";
-import eleation20 from "../assets/SponsorImages/Sponsor2020/eleation - Copy.png";
-import esports20 from "../assets/SponsorImages/Sponsor2020/esports - Copy.png";
-import fanclash20 from "../assets/SponsorImages/Sponsor2020/fanclash - Copy.png";
-import Fashion20 from "../assets/SponsorImages/Sponsor2020/FASHION HERALD LOGO black - Copy.png";
-import fore20 from "../assets/SponsorImages/Sponsor2020/fore - Copy.png";
-import foxmula20 from "../assets/SponsorImages/Sponsor2020/foxmula.png";
-import gmc20 from "../assets/SponsorImages/Sponsor2020/GMC.png";
-import grabon20 from "../assets/SponsorImages/Sponsor2020/GrabOn.png";
-import hansIndia20 from "../assets/SponsorImages/Sponsor2020/hans india.png";
-import honeywell20 from "../assets/SponsorImages/Sponsor2020/Honeywell.png";
-import indinoir20 from "../assets/SponsorImages/Sponsor2020/Indinoir Logo (2).png";
-import internshala20 from "../assets/SponsorImages/Sponsor2020/internshala.png";
-import kaploths20 from "../assets/SponsorImages/Sponsor2020/kaploths.jpg";
-import knowello from "../assets/SponsorImages/Sponsor2020/knowello.png";
-import noticeboard20 from "../assets/SponsorImages/Sponsor2020/Noticebard.png";
-import ntpc20 from "../assets/SponsorImages/Sponsor2020/ntpc.png";
-import qwertythoughts20 from "../assets/SponsorImages/Sponsor2020/Qwerty thoughts.png";
-import sbi20 from "../assets/SponsorImages/Sponsor2020/SBI.png";
-import school20 from "../assets/SponsorImages/Sponsor2020/school.png";
-import Shubang20 from "../assets/SponsorImages/Sponsor2020/Shubang.jpg";
-import skolar20 from "../assets/SponsorImages/Sponsor2020/SKOLAR.png";
-import summachar20 from "../assets/SponsorImages/Sponsor2020/summachar.png";
-import talkingTimber20 from "../assets/SponsorImages/Sponsor2020/talking timber.png";
-import techienest20 from "../assets/SponsorImages/Sponsor2020/techienest.png";
-import telanganaToday20 from "../assets/SponsorImages/Sponsor2020/tt.png";
-import union20 from "../assets/SponsorImages/Sponsor2020/union bank.png";
-import vedana20 from "../assets/SponsorImages/Sponsor2020/vedana.png";
-import vishumoney20 from "../assets/SponsorImages/Sponsor2020/vishumoney.png";
-import wiley20 from "../assets/SponsorImages/Sponsor2020/wiley logo black.png";
-import yocket from "../assets/SponsorImages/Sponsor2020/yocket.png";
-import YouthIncorporated20 from "../assets/SponsorImages/Sponsor2020/youth incorporated.png";
+// import airmeet20 from "../assets/SponsorImages/Sponsor2020/airmeet - Copy.png";
+// import Arcesium20 from "../assets/SponsorImages/Sponsor2020/Arcesium - Copy.png";
+// import Bigfm20 from "../assets/SponsorImages/Sponsor2020/Big Fm 92 - Copy.png";
+// import campusComedy20 from "../assets/SponsorImages/Sponsor2020/Campus Comedy Club - Copy.png";
+// import CanaraBank20 from "../assets/SponsorImages/Sponsor2020/canera bank - Copy.png";
+// import celebr82020 from "../assets/SponsorImages/Sponsor2020/celebr8 - Copy.png";
+// import ces20 from "../assets/SponsorImages/Sponsor2020/ces - Copy.png";
+// import chromatics20 from "../assets/SponsorImages/Sponsor2020/chromatics - Copy.png";
+// import cluster20 from "../assets/SponsorImages/Sponsor2020/clustera - Copy.png";
+// import code20 from "../assets/SponsorImages/Sponsor2020/code for cause - Copy.png";
+// import codingNinja20 from "../assets/SponsorImages/Sponsor2020/coding ninjas - Copy.png";
+// import coolwink20 from "../assets/SponsorImages/Sponsor2020/coolwinks - Copy.png";
+// import DUbeats20 from "../assets/SponsorImages/Sponsor2020/DUBEATS - Copy.png";
+// import DUexpress20 from "../assets/SponsorImages/Sponsor2020/DUExpress - Copy.png";
+// import eleation20 from "../assets/SponsorImages/Sponsor2020/eleation - Copy.png";
+// import esports20 from "../assets/SponsorImages/Sponsor2020/esports - Copy.png";
+// import fanclash20 from "../assets/SponsorImages/Sponsor2020/fanclash - Copy.png";
+// import Fashion20 from "../assets/SponsorImages/Sponsor2020/FASHION HERALD LOGO black - Copy.png";
+// import fore20 from "../assets/SponsorImages/Sponsor2020/fore - Copy.png";
+// import foxmula20 from "../assets/SponsorImages/Sponsor2020/foxmula.png";
+// import gmc20 from "../assets/SponsorImages/Sponsor2020/GMC.png";
+// import grabon20 from "../assets/SponsorImages/Sponsor2020/GrabOn.png";
+// import hansIndia20 from "../assets/SponsorImages/Sponsor2020/hans india.png";
+// import honeywell20 from "../assets/SponsorImages/Sponsor2020/Honeywell.png";
+// import indinoir20 from "../assets/SponsorImages/Sponsor2020/Indinoir Logo (2).png";
+// import internshala20 from "../assets/SponsorImages/Sponsor2020/internshala.png";
+// import kaploths20 from "../assets/SponsorImages/Sponsor2020/kaploths.jpg";
+// import knowello from "../assets/SponsorImages/Sponsor2020/knowello.png";
+// import noticeboard20 from "../assets/SponsorImages/Sponsor2020/Noticebard.png";
+// import ntpc20 from "../assets/SponsorImages/Sponsor2020/ntpc.png";
+// import qwertythoughts20 from "../assets/SponsorImages/Sponsor2020/Qwerty thoughts.png";
+// import sbi20 from "../assets/SponsorImages/Sponsor2020/SBI.png";
+// import school20 from "../assets/SponsorImages/Sponsor2020/school.png";
+// import Shubang20 from "../assets/SponsorImages/Sponsor2020/Shubang.jpg";
+// import skolar20 from "../assets/SponsorImages/Sponsor2020/SKOLAR.png";
+// import summachar20 from "../assets/SponsorImages/Sponsor2020/summachar.png";
+// import talkingTimber20 from "../assets/SponsorImages/Sponsor2020/talking timber.png";
+// import techienest20 from "../assets/SponsorImages/Sponsor2020/techienest.png";
+// import telanganaToday20 from "../assets/SponsorImages/Sponsor2020/tt.png";
+// import union20 from "../assets/SponsorImages/Sponsor2020/union bank.png";
+// import vedana20 from "../assets/SponsorImages/Sponsor2020/vedana.png";
+// import vishumoney20 from "../assets/SponsorImages/Sponsor2020/vishumoney.png";
+// import wiley20 from "../assets/SponsorImages/Sponsor2020/wiley logo black.png";
+// import yocket from "../assets/SponsorImages/Sponsor2020/yocket.png";
+// import YouthIncorporated20 from "../assets/SponsorImages/Sponsor2020/youth incorporated.png";
 
 const Sponsor2022 = [
   {
@@ -89,6 +89,15 @@ const Sponsor2022 = [
 ];
 
 const Sponsor2021 = [
+  {
+    Name: "Honeywell",
+    Description:
+      "Honeywell International Inc. is a technology and manufacturing company. The Company operates through four segments: Aerospace, Home and Building Technologies, Performance Materials and Technologies, and Safety and Productivity Solutions.",
+    Website: "https://www.honeywell.com/in/en",
+    Image: Honeywell,
+    Role: "Sustainable future partner",
+    Instagram: "https://www.instagram.com/honeywell/",
+  },
   {
     Name: "Blend 360",
     Description:
@@ -322,179 +331,180 @@ const Sponsor2021 = [
   {
     Name: "",
     Description:
-      "The magazine showcases relevant information and articles on education in India and abroad. With campus reviews, student profiles, professor interviews and a strong focus on careers and entrepreneurship, the magazine aims to empower the youth in today’s competitive world. ",
-    Website: "",
-    Image: YouthIncorporated,
-    Role: "Youth Media Partner",
-  },
-  {
-    Name: "",
-    Description:
       "EaseMyTrip is an Indian online travel company, founded in 2008 by Nishant Pitti, Rikant Pitti, and Prashant Pitti. Headquartered in New Delhi, the company provides hotel bookings, air tickets, holiday packages, bus bookings, and white-label services.",
     Instagram:
       "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/easemytrip/%3Fhl%3Den&ved=2ahUKEwjNwsbq7eH2AhV2R2wGHbtAB4UQjjh6BAgLEAE&usg=AOvVaw0hfBEB0C-uObw5-J51Xtar",
     Image: Ease,
     Role: "Bookings Partner",
   },
+  {
+    Name: "",
+    Description:
+      "The magazine showcases relevant information and articles on education in India and abroad. With campus reviews, student profiles, professor interviews and a strong focus on careers and entrepreneurship, the magazine aims to empower the youth in today’s competitive world. ",
+    Website: "",
+    Image: YouthIncorporated,
+    Role: "Youth Media Partner",
+  },
+  
 ];
 
 const Sponsor2020 = [
-  {
-    Image: Arcesium20,
-    Role: "ARCESIUM",
-  },
-  {
-    Image: celebr82020,
-    Role: "CELEBR8",
-  },
-  {
-    Image: sbi20,
-    Role: "SBI",
-  },
-  {
-    Image: honeywell20,
-    Role: "HONEYWELL",
-  },
-  {
-    Image: ntpc20,
-    Role: "NTPC",
-  },
-  {
-    Image: airmeet20,
-    Role: "AIRMEET",
-  },
-  {
-    Image: Bigfm20,
-    Role: "BIG FM",
-  },
-  {
-    Image: campusComedy20,
-    Role: "CAMPUS COMEDY CLUB",
-  },
-  {
-    Image: CanaraBank20,
-    Role: "CANARA BANK",
-  },
-  {
-    Image: chromatics20,
-    Role: "CHROMATICS",
-  },
-  {
-    Image: cluster20,
-    Role: "CLUSTERA",
-  },
-  {
-    Image: code20,
-    Role: "CODE FOR CAUSE",
-  },
-  {
-    Image: codingNinja20,
-    Role: "CODING NINJAS",
-  },
-  {
-    Image: coolwink20,
-    Role: "COOLWINKS",
-  },
-  {
-    Image: DUbeats20,
-    Role: "DU BEATS",
-  },
-  {
-    Image: DUexpress20,
-    Role: "DU EXPRESS",
-  },
-  {
-    Image: eleation20,
-    Role: "ELATION",
-  },
-  {
-    Image: esports20,
-    Role: "THE ESPORTS INDIA",
-  },
-  {
-    Image: fanclash20,
-    Role: "FANCLASH",
-  },
-  {
-    Image: Fashion20,
-    Role: "FASHION HERALD",
-  },
-  {
-    Image: fore20,
-    Role: "FORE",
-  },
-  {
-    Image: foxmula20,
-    Role: "FOXMULA",
-  },
-  {
-    Image: grabon20,
-    Role: "GRABON",
-  },
-  {
-    Image: hansIndia20,
-    Role: "HANS INDIA",
-  },
-  {
-    Image: indinoir20,
-    Role: "INDINOIR",
-  },
-  {
-    Image: internshala20,
-    Role: "INTERNSHALA",
-  },
-  {
-    Image: noticeboard20,
-    Role: "NOTICE BOARD",
-  },
-  {
-    Image: qwertythoughts20,
-    Role: "QWERTY THOUGHTS",
-  },
-  {
-    Image: Shubang20,
-    Role: "SHUBANG",
-  },
-  {
-    Image: skolar20,
-    Role: "SKOLAR",
-  },
-  {
-    Image: summachar20,
-    Role: "SUMMACHAR",
-  },
-  {
-    Image: talkingTimber20,
-    Role: "TALKING TIMBER",
-  },
-  {
-    Image: techienest20,
-    Role: "TECHIENEST",
-  },
-  {
-    Image: union20,
-    Role: "UNION BANK",
-  },
-  {
-    Image: vedana20,
-    Role: "VEDANA",
-  },
-  {
-    Image: vishumoney20,
-    Role: "VISHU MONEY",
-  },
-  {
-    Image: wiley20,
-    Role: "WILEY",
-  },
-  {
-    Image: yocket,
-    Role: "YOCKET",
-  },
-  {
-    Image: YouthIncorporated20,
-    Role: "YOUTH INCORPORATED",
-  },
+  // {
+  //   Image: Arcesium20,
+  //   Role: "ARCESIUM",
+  // },
+  // {
+  //   Image: celebr82020,
+  //   Role: "CELEBR8",
+  // },
+  // {
+  //   Image: sbi20,
+  //   Role: "SBI",
+  // },
+  // {
+  //   Image: honeywell20,
+  //   Role: "HONEYWELL",
+  // },
+  // {
+  //   Image: ntpc20,
+  //   Role: "NTPC",
+  // },
+  // {
+  //   Image: airmeet20,
+  //   Role: "AIRMEET",
+  // },
+  // {
+  //   Image: Bigfm20,
+  //   Role: "BIG FM",
+  // },
+  // {
+  //   Image: campusComedy20,
+  //   Role: "CAMPUS COMEDY CLUB",
+  // },
+  // {
+  //   Image: CanaraBank20,
+  //   Role: "CANARA BANK",
+  // },
+  // {
+  //   Image: chromatics20,
+  //   Role: "CHROMATICS",
+  // },
+  // {
+  //   Image: cluster20,
+  //   Role: "CLUSTERA",
+  // },
+  // {
+  //   Image: code20,
+  //   Role: "CODE FOR CAUSE",
+  // },
+  // {
+  //   Image: codingNinja20,
+  //   Role: "CODING NINJAS",
+  // },
+  // {
+  //   Image: coolwink20,
+  //   Role: "COOLWINKS",
+  // },
+  // {
+  //   Image: DUbeats20,
+  //   Role: "DU BEATS",
+  // },
+  // {
+  //   Image: DUexpress20,
+  //   Role: "DU EXPRESS",
+  // },
+  // {
+  //   Image: eleation20,
+  //   Role: "ELATION",
+  // },
+  // {
+  //   Image: esports20,
+  //   Role: "THE ESPORTS INDIA",
+  // },
+  // {
+  //   Image: fanclash20,
+  //   Role: "FANCLASH",
+  // },
+  // {
+  //   Image: Fashion20,
+  //   Role: "FASHION HERALD",
+  // },
+  // {
+  //   Image: fore20,
+  //   Role: "FORE",
+  // },
+  // {
+  //   Image: foxmula20,
+  //   Role: "FOXMULA",
+  // },
+  // {
+  //   Image: grabon20,
+  //   Role: "GRABON",
+  // },
+  // {
+  //   Image: hansIndia20,
+  //   Role: "HANS INDIA",
+  // },
+  // {
+  //   Image: indinoir20,
+  //   Role: "INDINOIR",
+  // },
+  // {
+  //   Image: internshala20,
+  //   Role: "INTERNSHALA",
+  // },
+  // {
+  //   Image: noticeboard20,
+  //   Role: "NOTICE BOARD",
+  // },
+  // {
+  //   Image: qwertythoughts20,
+  //   Role: "QWERTY THOUGHTS",
+  // },
+  // {
+  //   Image: Shubang20,
+  //   Role: "SHUBANG",
+  // },
+  // {
+  //   Image: skolar20,
+  //   Role: "SKOLAR",
+  // },
+  // {
+  //   Image: summachar20,
+  //   Role: "SUMMACHAR",
+  // },
+  // {
+  //   Image: talkingTimber20,
+  //   Role: "TALKING TIMBER",
+  // },
+  // {
+  //   Image: techienest20,
+  //   Role: "TECHIENEST",
+  // },
+  // {
+  //   Image: union20,
+  //   Role: "UNION BANK",
+  // },
+  // {
+  //   Image: vedana20,
+  //   Role: "VEDANA",
+  // },
+  // {
+  //   Image: vishumoney20,
+  //   Role: "VISHU MONEY",
+  // },
+  // {
+  //   Image: wiley20,
+  //   Role: "WILEY",
+  // },
+  // {
+  //   Image: yocket,
+  //   Role: "YOCKET",
+  // },
+  // {
+  //   Image: YouthIncorporated20,
+  //   Role: "YOUTH INCORPORATED",
+  // },
 ];
 
 export { Sponsor2020, Sponsor2021, Sponsor2022 };

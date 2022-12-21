@@ -1,25 +1,25 @@
 import React from 'react'
 
 // 2021 team 
-import Adyasa from "../assets/Team/2021/Adyasa .png" 
-import Ashutosh from "../assets/Team/2021/Ashutosh_Tiwari.jpg"
-import Dhananjay from "../assets/Team/2021/DHANANJAY.jpg"
-import HariOmSingh from "../assets/Team/2021/Hari Om Singh .jpg"
-import Krati from "../assets/Team/2021/Krati.jpg"
-import SaiMahesh from "../assets/Team/2021/Sai Mahesh.jpeg"
-import Sharanya from "../assets/Team/2021/Sharanya.jpg"
-import YMNikhil from "../assets/Team/2021/Y M Nikhil.jpg"
+const Adyasa = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617324/Elan%20and%20NVision%202023/assets/Team/2021/Adyasa_w2yc2j.png" 
+const Ashutosh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617326/Elan%20and%20NVision%202023/assets/Team/2021/Ashutosh_Tiwari_swx5ac.jpg"
+const Dhananjay = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617328/Elan%20and%20NVision%202023/assets/Team/2021/DHANANJAY_bl3xkr.jpg"
+const HariOmSingh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/Team/2021/Hari_Om_Singh_c3mdyl.jpg"
+const Krati = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/Team/2021/Krati_mfwp2y.jpg"
+const SaiMahesh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617308/Elan%20and%20NVision%202023/assets/Team/2021/Sai_Mahesh_ucfs1n.jpg"
+const Sharanya = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617327/Elan%20and%20NVision%202023/assets/Team/2021/Sharanya_lhxhoe.jpg"
+const YMNikhil = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617308/Elan%20and%20NVision%202023/assets/Team/2021/Y_M_Nikhil_guvyyb.jpg"
 // 2022 team 
-import Amogh from "../assets/Team/2022/Amogh Bedarakota Techy _ Workshop.webp"
-import Ashish from "../assets/Team/2022/Ashish Chakravarthy_Finance.webp"
-import Chirag from "../assets/Team/2022/Chirag Jain_Sponsorship (1).webp"
-import Eshwar from "../assets/Team/2022/Eshwar Yadav_Publicity-1.webp"
-import Nishanth from "../assets/Team/2022/Nishanth Kannan_Creatives _ Multimedia (1).webp"
-import Prashanth from "../assets/Team/2022/Prashanth Naik_Hospitality _ Transport.webp"
-import Sachi from "../assets/Team/2022/Sachi Kavitake_Culti _ Biggies, Social Cause, Litr, EML.webp"
-import Sidhardha from "../assets/Team/2022/Sidhardha Grandhi_Creatives_Multimedia.webp"
-import Smaran from "../assets/Team/2022/Smaran_PR,Infi,Web.webp"
-import Swapnish from "../assets/Team/2022/Swapnish Sahare _ Production _ Pronites _ Security.webp"
+const Amogh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617308/Elan%20and%20NVision%202023/assets/Team/2022/Amogh_Bedarakota_Techy___Workshop_wvlxx3.webp"
+const Ashish = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617308/Elan%20and%20NVision%202023/assets/Team/2022/Ashish_Chakravarthy_Finance_jb49xo.webp"
+const Chirag = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617309/Elan%20and%20NVision%202023/assets/Team/2022/Chirag_Jain_Sponsorship_1_vhvzfv.webp"
+const Eshwar = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617354/Elan%20and%20NVision%202023/assets/Team/2022/Eshwar_Yadav_Publicity-1_nn1f2h.webp"
+const Nishanth = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617309/Elan%20and%20NVision%202023/assets/Team/2022/Nishanth_Kannan_Creatives___Multimedia_1_b9mppb.webp"
+const Prashanth = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617309/Elan%20and%20NVision%202023/assets/Team/2022/Prashanth_Naik_Hospitality___Transport_zqqigi.webp"
+const Sachi = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617309/Elan%20and%20NVision%202023/assets/Team/2022/Sachi_Kavitake_Culti___Biggies_Social_Cause_Litr_EML_exsj6k.webp"
+const Sidhardha = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617309/Elan%20and%20NVision%202023/assets/Team/2022/Sidhardha_Grandhi_Creatives_Multimedia_l19r5j.webp"
+const Smaran = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617359/Elan%20and%20NVision%202023/assets/Team/2022/Smaran_PR_Infi_Web_mbgpk5.webp"
+const Swapnish = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617311/Elan%20and%20NVision%202023/assets/Team/2022/Swapnish_Sahare___Production___Pronites___Security_xa9cdu.webp"
 
 const team2022 =[
     {

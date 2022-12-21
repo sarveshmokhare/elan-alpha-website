@@ -4,23 +4,23 @@ import SponsorCard from "../Components/SponsorCard";
 import ThemeContext from "../Contexts/ThemeContext";
 import "../styles/sponsors.css";
 // 2021 sponsors
-import Hero from "../assets/SponsorImages/Sponsor2021/Static Perimeter Board_15 x 3ft-01.png";
-import Honeywell from "../assets/SponsorImages/Sponsor2021/Honeywell-Logo.png";
-import Nisarga from "../assets/SponsorImages/Sponsor2021/Nisarga Logo.png";
+const Hero = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Static_Perimeter_Board_15_x_3ft-01_qassni.png";
+
+const Nisarga = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617305/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Nisarga_Logo_cujflh.png";
 import {
   Sponsor2022,
   Sponsor2020,
   Sponsor2021,
 } from "../Components/SponsorData";
 // 2020 sponsors
-import LandT from "../assets/SponsorImages/Sponsor2020/L&T.png";
+
 // background images
-import BG1 from "../assets/SponsorBackground/2 576.svg";
-import BG2 from "../assets/SponsorBackground/5 1.svg";
-import BG3 from "../assets/SponsorBackground/5 2.svg";
-import BG4 from "../assets/SponsorBackground/2 577.svg";
-import BG5 from "../assets/SponsorBackground/2 578.svg";
-import BG6 from "../assets/SponsorBackground/5 3.svg";
+const BG1 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617380/Elan%20and%20NVision%202023/assets/SponsorBackground/2_576_axuuoo.svg";
+const BG2 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617351/Elan%20and%20NVision%202023/assets/SponsorBackground/5_1_i7aeuc.svg";
+const BG3 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617350/Elan%20and%20NVision%202023/assets/SponsorBackground/5_2_na0ntz.svg";
+const BG4 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617382/Elan%20and%20NVision%202023/assets/SponsorBackground/2_577_wytpl3.svg";
+const BG5 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617383/Elan%20and%20NVision%202023/assets/SponsorBackground/2_578_smvfsy.svg";
+const BG6 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617349/Elan%20and%20NVision%202023/assets/SponsorBackground/5_3_xpteb0.svg";
 
 function Sponsors() {
   useEffect(() => {
@@ -62,25 +62,13 @@ function Sponsors() {
           <img src={BG2} className="BG right-0 top-[22%]" />
           <img src={BG3} className="BG top-[60%]" />
           <img src={BG4} className="BG top-[58%] right-0" />
-          <img src={BG5} className="BG top-[172rem]" />
-          <img src={BG6} className="BG top-[175rem] right-0" />
+          <img src={BG5} className="BG top-[161rem]" />
+          <img src={BG6} className="BG top-[165rem] right-0" />
           <h3 className="heading1">CO-TITLE SPONSOR</h3>
-          <div className="columns-1 my-[20px] w-1/2 m-[auto] sm:columns-2">
-            <img
+          <img
               src={Nisarga}
-              className=" md:my-[40px] sm:mb-[25px]"
+              className="m-[auto] w-[50vw] bg-[#fff]"
             />
-            <img
-              src={Honeywell}
-              // style={{
-              //   width: "30vw",
-              //   height: "150px",
-              //   margin: "auto",
-              //   border: "2px solid #FED395 ",
-              // }}
-              className=" my-[20px]"
-            />
-          </div>
           <h4 className="heading1">SPONSORS</h4>
           <div className="SponCards">
             {Sponsor2021.map((item,index) => (

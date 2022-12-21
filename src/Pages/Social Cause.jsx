@@ -4,9 +4,9 @@ import "../styles/SocialCause.css";
 import { useState, Component } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import SC1 from "../assets/Social Cause Images/social_cause1.jpeg";
-import SC2 from "../assets/Social Cause Images/social_cause2.jpeg";
-import SC3 from "../assets/Social Cause Images/social_cause3.jpeg";
+const SC1 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617294/Elan%20and%20NVision%202023/assets/Social%20Cause%20Images/social_cause1_vapbqv.jpg";
+const SC2 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617294/Elan%20and%20NVision%202023/assets/Social%20Cause%20Images/social_cause2_kp7ftf.jpg";
+const SC3 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617295/Elan%20and%20NVision%202023/assets/Social%20Cause%20Images/social_cause3_ykl5on.jpg";
 function SocialCause() {
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -24,7 +24,7 @@ function SocialCause() {
 
   return (
     <div className="mt-[76px] lg:mt-0 bg-[#080f24] flex flex-col SocialCause ">
-      <h1 className="main-heading1 sm-text-3xl m-4">Social Cause</h1>
+      <h1 className="main-heading1 m-4">Social Cause</h1>
 
       <div className="button">
         <button
