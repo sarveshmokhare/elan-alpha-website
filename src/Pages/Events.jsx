@@ -89,6 +89,7 @@ function Navigate() {
                 <li> Artificial Intelligence and Machine Learning</li>
                 <li>Humanoid Robotics</li>
                 <li>Virtual Reality</li>
+                <li>Blockchain Technology</li>
                 <li>Smart Farming</li>
               </ul>
               <br />

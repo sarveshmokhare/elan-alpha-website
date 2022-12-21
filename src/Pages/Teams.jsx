@@ -426,7 +426,7 @@ function Teams() {
                         />
                         <CoordCard
                           Name="Sumedh Kashikar"
-                          Role="Infromals Coordinator"
+                          Role="Informals Coordinator"
                           Image={Sumedh}
                           Phone="+91 7601041880"
                         />
@@ -648,7 +648,7 @@ function Teams() {
                           Phone="+91 7760087535"
                         />
                         <CoordCard
-                          Name="Sudhesh Venkatachalaam"
+                          Name="Sudhesh Venkatachalam"
                           Role="Creatives Coordinator"
                           Image={Sudhesh}
                           Phone="+91 9003941032"
@@ -808,7 +808,7 @@ function Teams() {
                         />
                         <CoordCard
                           Name="Mehul Srivastava"
-                          Role="Hospitslity Coordinator"
+                          Role="Hospitality Coordinator"
                           Image={Mehul}
                           Phone="+91 6395263137"
                         />
@@ -1136,7 +1136,7 @@ function Teams() {
                   />
                   <CoordCard
                     Name="Sumedh Kashikar"
-                    Role="Infromals Coordinator"
+                    Role="Informals Coordinator"
                     Image={Sumedh}
                     Phone="+91 7601041880"
                   />
@@ -1202,7 +1202,7 @@ function Teams() {
                   />
                   <CoordCard
                     Name="Mehul Srivastava"
-                    Role="Hospitslity Coordinator"
+                    Role="Hospitality Coordinator"
                     Image={Mehul}
                     Phone="+91 6395263137"
                   />

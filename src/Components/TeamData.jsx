@@ -45,12 +45,12 @@ const team2022 =[
     {
         Name:"Sidhardha Grandhi",
         Image:Sidhardha ,
-        Role:"Creatives Head",
+        Role:"Creatives & Multimedia Head",
     },
     {
         Name:"Nishanth Kannan",
         Image:Nishanth ,
-        Role:"Creatives Head",
+        Role:"Creatives & Multimedia Head",
     },
     {
         Name:"Swapnish Sahare",
@@ -77,7 +77,7 @@ const team2021 =[
     {
         Name:"Krati Arela",
         Image:Krati,
-        Role:"PR Head",
+        Role:"Public Relations Head",
 
     },
     {

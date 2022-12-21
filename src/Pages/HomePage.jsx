@@ -719,7 +719,7 @@ function HomePage() {
           <div className="flex p-6 md:pl-10 lg:p-20 pb-0 items-center text-base md:text-2xl">
             <div>
               <p>
-                Elan and ηVision is the annual techno-cultural fest of IIT
+                Elan & ηVision is the annual techno-cultural fest of IIT
                 Hyderabad and is one of the largest fests in South India. It is
                 entirely organized by IITH students.
               </p>
@@ -1048,19 +1048,19 @@ function HomePage() {
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={insta}></img>
               </div>
-              <p>3.7k+ followers</p>
+              <p>3.8k+ followers</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={likes}></img>
               </div>
-              <p>42k+ likes</p>
+              <p>43k+ likes</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={views}></img>
               </div>
-              <p>82k+ views</p>
+              <p>84k+ views</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
