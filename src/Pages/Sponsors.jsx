@@ -62,8 +62,8 @@ function Sponsors() {
           <img src={BG2} className="BG right-0 top-[22%]" />
           <img src={BG3} className="BG top-[60%]" />
           <img src={BG4} className="BG top-[58%] right-0" />
-          <img src={BG5} className="BG top-[161rem]" />
-          <img src={BG6} className="BG top-[165rem] right-0" />
+          <img src={BG5} className="BG top-[610%]" />
+          <img src={BG6} className="BG top-[640%] right-0" />
           <h3 className="heading1">CO-TITLE SPONSOR</h3>
           <img
               src={Nisarga}
