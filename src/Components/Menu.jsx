@@ -110,7 +110,7 @@ function Menu(props) {
       className="h-0 w-screen overflow-y-scroll bg-black fixed top-0 z-50 text-white"
     >
       {/* menu and close wala div */}
-      <div className="flex justify-between px-4 sm:px-5 py-5 text-lg">
+      <div className="flex justify-between px-4 sm:px-5 py-5 text-lg pb-10">
         <Link className="flex items-center" to="/" onClick={toggleMenu}>
           <div className="h-4 pr-2 sm:block">
             <img className="h-full" src={menuRing} alt="icon" />
@@ -123,7 +123,7 @@ function Menu(props) {
       </div>
 
       {/* main div */}
-      <div className="flex pl-6 sm:pr-8 items-center justify-around sm:justify-evenly text-2xl sm:text-3xl">
+      <div className="flex pl-6 sm:pr-8 items-center justify-around sm:justify-evenly text-2xl sm:text-3xl h-[54%] md:h-[70%]">
         {/* links div */}
         <div className="flex flex-col w-1/3 lg:w-1/5">
           <div className="flex flex-col">
@@ -137,7 +137,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">Events</div>
+              <div className="event-name hover:text-golden">Events</div>
             </Link>
 
             <Link
@@ -150,7 +150,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">Competitions</div>
+              <div className="event-name hover:text-golden">Competitions</div>
             </Link>
 
             <Link
@@ -163,7 +163,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">LitFest</div>
+              <div className="event-name hover:text-golden">LitFest</div>
             </Link>
 
             <Link
@@ -176,7 +176,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">Social Cause</div>
+              <div className="event-name hover:text-golden">Social Cause</div>
             </Link>
 
             <Link
@@ -189,7 +189,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">Sponsors</div>
+              <div className="event-name hover:text-golden">Sponsors</div>
             </Link>
 
             <Link
@@ -202,7 +202,7 @@ function Menu(props) {
               <div className="ring-icon h-0">
                 <img className="h-full" src={menuRing}></img>
               </div>
-              <div className="event-name">Team</div>
+              <div className="event-name hover:text-golden">Team</div>
             </Link>
 
             {/* <Link
@@ -228,11 +228,11 @@ function Menu(props) {
         </div>
 
         {/* card and buttons div */}
-        <div className="w-1/2 sm:w-3/4 lg:w-1/2 flex flex-col">
+        <div className="w-1/2 sm:w-3/4 lg:w-1/2 flex flex-col items-center justify-center">
           {/* card div */}
-          <div className="hidden sm:flex justify-center h-[50vh] my-5">
+          <div className="hidden sm:flex justify-center h-[] my-5">
             <Link
-              className="h-full"
+              className="h-"
               onClick={toggleMenu}
               to={hoveredTitle.route}
             >

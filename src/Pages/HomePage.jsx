@@ -373,7 +373,7 @@ function HomePage() {
       }
 
       //mobile opening animation
-      mm.add("(max-width: 850px)", () => {
+      mm.add("(max-width: 1023px)", () => {
         const tl = gsap.timeline({
           onStart: () => {
             document.body.style.overflowY = "hidden";
@@ -403,13 +403,13 @@ function HomePage() {
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(".moon-ring", {
             bottom: "4%",
-            scale: 1.2,
+            height: '5.4vh',
             right: "8%",
             opacity: 1,
           });
           gsap.set(".moon", {
             bottom: "4%",
-            height: "5vh",
+            height: "5.5vh",
             left: "8%",
           });
         }
@@ -444,7 +444,7 @@ function HomePage() {
           ".moon-ring",
           {
             bottom: "4%",
-            scale: 1.2,
+            height: '5.4vh',
             opacity: 1,
             right: "8%",
             rotation: 0,
@@ -574,7 +574,7 @@ function HomePage() {
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return (
-    <div className="mt-20 lg:mt-0">
+    <div className="mt-20 lg:mt-0 overflow-hidden">
       <div className="giant-div">
         {/* Intro section */}
         <div
@@ -639,7 +639,7 @@ function HomePage() {
                 <div>Litfest</div>
               </Link>
             </button> */}
-            <Link to='/litfest' className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-[38vw] h-[8vh] md:w-[20vw] lg:w-[14.5vw] lg:h-[10vh] text-[130%] md:text-base lg:text-[3vh]">
+            <Link to='/litfest' className="opacity-0 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-40 h-16 md:w-32 lg:w-[14.5vw] lg:h-[10vh] text-lg md:text-base lg:text-[3vh]">
               Litfest
             </Link>
 
@@ -653,12 +653,12 @@ function HomePage() {
                 <div className="text-[90%] lg:text-[80%]">CA Portal</div>
               </a>
             </button> */}
-            <a className="opacity-0 md:opacity-100 lg:opacity-0 bg-green rounded-lg my-4 md:p-4 flex items-center justify-center w-[46vw] h-[8vh] md:w-[20vw] lg:w-[15vw] lg:h-[10vh] lg:p-0"
+            <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-40 md:h-20 lg:w-[15vw] lg:h-[10vh] lg:p-0 text-center"
               href="https://ca.elan.org.in"
               target="_blank"
             >
-              <img src={caPortalIcon} className="pr-3 h-7 lg:h-1/2" alt="icon" />
-              <p className="text-[115%] md:text-base lg:text-[3vh]">CA Portal</p>
+              <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" />
+              <p className="text-base md:text-sm lg:text-[3vh]">CA Portal</p>
             </a>
 
             {/* <Link
@@ -677,7 +677,7 @@ function HomePage() {
               </div>
             </Link> */}
             <Link
-              className="opacity-0 md:opacity-100 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-[52vw] md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
+              className="opacity-0 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-44 md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
               to="/valenrow"
             >
               <div className="h-[125%] md:h-[4.5rem] absolute top-[55%] -translate-y-1/2 right-[65%] lg:h-[13.5vh]">
@@ -685,7 +685,7 @@ function HomePage() {
               </div>
 
               <div
-                className="w-1/2 text-center md:text-base absolute top-1/2 -translate-y-1/2 right-[15%] lg:text-[2.4vh] lg:leading-[150%]"
+                className="w-1/2 text-center absolute top-1/2 -translate-y-1/2 right-[15%] text-sm lg:text-[2.4vh] lg:leading-[150%]"
                 ref={exploreBtnRef}
               >
                 Explore Valenrow
@@ -702,7 +702,7 @@ function HomePage() {
           </div>
           {/* height: "8vh",
           left: "3%", */}
-          <div className="moon lg:hidden absolute bottom-[4%] h-[8vh] left-[3%]">
+          <div className="moon lg:hidden absolute bottom-[4%] h-[8vh]  left-[3%]">
             <img className="h-full" src={moon}></img>
           </div>
           <div className="lg:hidden absolute bottom-[6%] right-[0%] flex justify-center w-[100vw]">
@@ -710,7 +710,7 @@ function HomePage() {
           </div>
           {/*initial properties for ringMoon: bottom-[40%] scale-[10] opacity-[25%] right-[25%] */}
           {/*final properties for ringMoon: bottom-[4%] scale-[1.2] opacity-[100%] right-[8%] */}
-          <div className="moon-ring lg:hidden absolute bottom-[40%] scale-[10] md:scale-[1.5] opacity-[25%] right-[25%] md:right-[10%]">
+          <div className="moon-ring lg:hidden absolute bottom-[20%] h-[48vh] opacity-[25%] right-[-30%]">
             <img className="h-full" src={ringMoon}></img>
           </div>
           {/* <div className='sm:hidden flex items-center justify-center absolute bottom-[5%] left-0 right-0'>
@@ -734,12 +734,12 @@ function HomePage() {
 
         {/* About Us */}
         <div className="text-golden py-8 lg:pt-20 border-y-2 border-golden relative">
-          <div className="flex justify-evenly sm:justify-around sm:px-20">
-            <img className="w-[12vw]" alt="graphic" src={aboutLeft} />
+          <div className="flex justify-evenly sm:justify-around px-4 sm:px-20">
+            <img className="w-[16vw] lg:w-[12vw]" alt="graphic" src={aboutLeft} />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-cinzel font-bold z-10">
               About Us
             </h1>
-            <img className="w-[12vw]" alt="graphic" src={aboutRight} />
+            <img className="w-[16vw] lg:w-[12vw]" alt="graphic" src={aboutRight} />
           </div>
 
           <div className="flex p-6 md:pl-10 lg:p-20 pb-0 items-center text-base md:text-2xl">
