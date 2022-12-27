@@ -25,13 +25,13 @@ const aboutTop = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_top_neld
 const aboutBtmR = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_txzshm.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198324";
 const aboutBtmC = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_center_mmuc4i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201395";
 const aboutBtmL = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_vgpvv9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198367";
-const aboutBtmLMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_mobile_slsuhl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127197351";
-const aboutBtmRMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_mobile_zosh1x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127197523";
+const aboutBtmLMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_mobile_slsuhl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130840263";
+const aboutBtmRMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_mobile_zosh1x.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130840781";
 const timelineJug = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_jug_huppds.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202073";
 const timelineBtm = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_btm_wxotkh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198958";
 const exploreBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/explore_uaxnb5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201035";
 const galleryBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_wx7cts.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127200246";
-const galleryBtmBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_btm_qf07mf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198066";
+const galleryBtmBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_btm_qf07mf.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130711123";
 const statsBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/stats_krnswc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672128262763";
 const inviteText = "https://ik.imagekit.io/sarvesh/Elan/more_assets/invite_text_lioz94.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124331739";
 const fullMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_full_obblnh.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330206";
@@ -779,7 +779,7 @@ function HomePage() {
           <div className="hidden lg:block absolute top-0 left-[22%] h-[28%]">
             <img src={aboutTop} className="h-full"></img>
           </div>
-          <div className="hidden lg:block absolute bottom-0 left-[1%] h-[30%]">
+          <div className="hidden lg:block absolute bottom-0 left-0 h-[30%]">
             <img src={aboutBtmL} className="h-full"></img>
           </div>
           <div className="hidden lg:block absolute bottom-0 left-[36%] h-[25%]">
@@ -789,7 +789,7 @@ function HomePage() {
             <img src={aboutBtmR} className="h-full"></img>
           </div>
           {/* mobile */}
-          <div className="lg:hidden absolute -bottom-[10%] left-0 h-[45%]">
+          <div className="lg:hidden absolute -bottom-[10%] left-0 h-[45%] ">
             <img src={aboutBtmLMob} className="h-full"></img>
           </div>
           <div className="lg:hidden absolute -bottom-[10%] right-0 h-[45%]">
