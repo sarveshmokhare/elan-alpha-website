@@ -7,8 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 import ThemeContext from "../Contexts/ThemeContext";
 import Menu from "./Menu";
 
-const logo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623909/Elan/bg_images/logo_white_pq9fjb.png";
-const menuIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625283/Elan/bg_images/menu_icon_vzj0yx.svg";
+const logo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/logo_white_pq9fjb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124336849";
+const menuIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/menu_icon_vzj0yx.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123652534";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

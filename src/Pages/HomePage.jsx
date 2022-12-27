@@ -12,108 +12,108 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 import AnimationContext from "../Contexts/AnimationContext";
-const elanLogo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623909/Elan/bg_images/logo_white_pq9fjb.png";
-const caPortalIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623942/Elan/bg_images/ca_portal_icon_lnilgn.svg";
+const elanLogo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/logo_white_pq9fjb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124336849";
+const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
 import valenrowIcon from "../assets/valenrow_icon.svg";
-const book = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622555/Elan/bg_images/book_runz9i.svg";
-const aboutLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622626/Elan/bg_images/about_left_wu2elv.svg";
-const aboutRight = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622627/Elan/bg_images/about_right_tysznb.svg";
-const valenrowLogo = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623929/Elan/bg_images/valenrow_logo_zkwbw9.svg";
-const sec1DecorLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624131/Elan/bg_images/sec1_decor_left_io8465.svg";
-const sec1BottomGraphicsLarge = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624153/Elan/bg_images/moon_line_rings_large_v92zo2.svg";
-const aboutTop = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622739/Elan/bg_images/about_top_neldzr.svg";
-const aboutBtmR = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622733/Elan/bg_images/about_bottom_right_txzshm.svg";
-const aboutBtmC = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622770/Elan/bg_images/about_bottom_center_mmuc4i.svg";
-const aboutBtmL = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622748/Elan/bg_images/about_bottom_left_vgpvv9.svg";
-const aboutBtmLMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622745/Elan/bg_images/about_bottom_left_mobile_slsuhl.svg";
-const aboutBtmRMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671622718/Elan/bg_images/about_bottom_right_mobile_zosh1x.svg";
-const timelineJug = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623361/Elan/bg_images/timeline_jug_huppds.svg";
-const timelineBtm = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623346/Elan/bg_images/timeline_btm_wxotkh.svg";
-const exploreBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623360/Elan/bg_images/explore_uaxnb5.svg";
-const galleryBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623358/Elan/bg_images/gallery_wx7cts.svg";
-const galleryBtmBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623356/Elan/bg_images/gallery_btm_qf07mf.svg";
-const statsBg = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623339/Elan/bg_images/stats_krnswc.svg";
-const inviteText = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624317/Elan/bg_images/invite_text_lioz94.svg";
-const fullMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624254/Elan/bg_images/moon_full_obblnh.svg";
-const cresentRight = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624315/Elan/bg_images/cresent_right_plpxpn.svg";
-const halfMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624255/Elan/bg_images/moon_half_uzzj5d.svg";
-const cresentLeft = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624315/Elan/bg_images/cresent_left_abrdyj.svg";
-const topLine = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671624317/Elan/bg_images/top_line_blwx9b.svg";
-const sampleVid = "https://res.cloudinary.com/dxe7myxfw/video/upload/v1671622094/Elan/Videos/video_nsxght.mp4";
+const book = "https://ik.imagekit.io/sarvesh/Elan/more_assets/book_runz9i.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123817096";
+const aboutLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_left_wu2elv.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123658455";
+const aboutRight = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_right_tysznb.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123824344";
+const valenrowLogo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_logo_zkwbw9.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124331238";
+const sec1DecorLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/sec1_decor_left_io8465.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123889684";
+const sec1BottomGraphicsLarge = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_line_rings_large_v92zo2.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123594315";
+const aboutTop = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_top_neldzr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198592";
+const aboutBtmR = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_txzshm.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198324";
+const aboutBtmC = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_center_mmuc4i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201395";
+const aboutBtmL = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_vgpvv9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198367";
+const aboutBtmLMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_mobile_slsuhl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127197351";
+const aboutBtmRMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_mobile_zosh1x.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127197523";
+const timelineJug = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_jug_huppds.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202073";
+const timelineBtm = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_btm_wxotkh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198958";
+const exploreBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/explore_uaxnb5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201035";
+const galleryBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_wx7cts.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127200246";
+const galleryBtmBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_btm_qf07mf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198066";
+const statsBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/stats_krnswc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672128262763";
+const inviteText = "https://ik.imagekit.io/sarvesh/Elan/more_assets/invite_text_lioz94.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124331739";
+const fullMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_full_obblnh.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330206";
+const cresentRight = "https://ik.imagekit.io/sarvesh/Elan/more_assets/cresent_right_plpxpn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330564";
+const halfMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_half_uzzj5d.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330451";
+const cresentLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/cresent_left_abrdyj.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123615896";
+const topLine = "https://ik.imagekit.io/sarvesh/Elan/more_assets/top_line_blwx9b.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123754228";
+const sampleVid = "https://ik.imagekit.io/sarvesh/Elan/Videos/video.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1672122995437";
 
-const timeline2k171 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620071/Elan/Timeline%20Images/2017/1_ejgrnv.jpg";
-const timeline2k172 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620027/Elan/Timeline%20Images/2017/2_jw4iqd.jpg";
-const timeline2k173 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620030/Elan/Timeline%20Images/2017/3_zhkzll.jpg";
-const timeline2k174 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620028/Elan/Timeline%20Images/2017/4_fdnef7.jpg";
+const timeline2k171 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120649844";
+const timeline2k172 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120018615";
+const timeline2k173 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120007027";
+const timeline2k174 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120030727";
 
-const timeline2k181 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620103/Elan/Timeline%20Images/2018/1_a1xokh.jpg";
-const timeline2k182 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620104/Elan/Timeline%20Images/2018/2_o1pcwa.jpg";
-const timeline2k183 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620105/Elan/Timeline%20Images/2018/3_rztunf.jpg";
-const timeline2k184 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620105/Elan/Timeline%20Images/2018/4_kq2ah5.jpg";
+const timeline2k181 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970179";
+const timeline2k182 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969752";
+const timeline2k183 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969989";
+const timeline2k184 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970870";
 
-const timeline2k191 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620128/Elan/Timeline%20Images/2019/1_jyziis.jpg";
-const timeline2k192 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620129/Elan/Timeline%20Images/2019/2_dgtz1m.jpg";
-const timeline2k193 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620128/Elan/Timeline%20Images/2019/3_zq4mzv.jpg";
-const timeline2k194 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620126/Elan/Timeline%20Images/2019/4_nqpdtt.jpg";
+const timeline2k191 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119983818";
+const timeline2k192 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984076";
+const timeline2k193 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984067";
+const timeline2k194 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984367";
 
-const timeline2k201 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620138/Elan/Timeline%20Images/2020/1_tfzy5w.jpg";
-const timeline2k202 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620133/Elan/Timeline%20Images/2020/2_is3qh8.jpg";
-const timeline2k203 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620138/Elan/Timeline%20Images/2020/3_blru4f.jpg";
-const timeline2k204 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620132/Elan/Timeline%20Images/2020/4_wt8rmv.jpg";
+const timeline2k201 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969997";
+const timeline2k202 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119977070";
+const timeline2k203 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970264";
+const timeline2k204 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970157";
 
-const timeline2k211 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620243/Elan/Timeline%20Images/2021/1_rfnynr.png";
-const timeline2k212 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620185/Elan/Timeline%20Images/2021/2_ckdmhh.png";
-const timeline2k213 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620161/Elan/Timeline%20Images/2021/3_snvko1.png";
-const timeline2k214 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620199/Elan/Timeline%20Images/2021/4_ptkvmo.png";
+const timeline2k211 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120013079";
+const timeline2k212 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120019076";
+const timeline2k213 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672119979482";
+const timeline2k214 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120011860";
 
-const timeline2k221 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620140/Elan/Timeline%20Images/2022/1_qwrzkm.jpg";
-const timeline2k222 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620234/Elan/Timeline%20Images/2022/2_o3vh1u.jpg";
-const timeline2k223 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620212/Elan/Timeline%20Images/2022/3_kqhkqu.jpg";
-const timeline2k224 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671620173/Elan/Timeline%20Images/2022/4_khkpuk.jpg";
+const timeline2k221 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120027968";
+const timeline2k222 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120625070";
+const timeline2k223 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120624977";
+const timeline2k224 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120128611";
 
-const mobileDecorTop = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/mobile_decor_top_rbdjer.svg";
-const mobileDecorBottom = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/mobile_decor_bottom_rxvank.svg";
-const moon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/moon_gvdoed.svg";
-const btmLine = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/bottom_line_uqfqif.svg";
-const ringMoon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/ring_moon_dmkfwi.svg";
-const inviteTextMob = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/invite_text_mobile_jezqju.svg";
-const audience = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625025/Elan/bg_images/audience_lhsytp.svg";
-const hat = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/hat_cteqwu.png";
-const calender = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/calender_pavjvx.png";
-const insta = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625026/Elan/bg_images/insta_crejyu.png";
-const likes = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625027/Elan/bg_images/likes_xpppxt.png";
-const threePeeps = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/three_peeps_fnzu4a.png";
-const tweets = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625028/Elan/bg_images/tweets_panzxl.svg";
-const views = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625029/Elan/bg_images/views_bactad.svg";
+const mobileDecorTop = "https://ik.imagekit.io/sarvesh/Elan/more_assets/mobile_decor_top_rbdjer.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123757464";
+const mobileDecorBottom = "https://ik.imagekit.io/sarvesh/Elan/more_assets/mobile_decor_bottom_rxvank.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123775006";
+const moon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_gvdoed.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123627881";
+const btmLine = "https://ik.imagekit.io/sarvesh/Elan/more_assets/bottom_line_uqfqif.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330798";
+const ringMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ring_moon_dmkfwi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330652";
+const inviteTextMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/invite_text_mobile_jezqju.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719724";
+const audience = "https://ik.imagekit.io/sarvesh/Elan/more_assets/audience_lhsytp.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123621555";
+const hat = "https://ik.imagekit.io/sarvesh/Elan/more_assets/hat_cteqwu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123774839";
+const calender = "https://ik.imagekit.io/sarvesh/Elan/more_assets/calender_pavjvx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330898";
+const insta = "https://ik.imagekit.io/sarvesh/Elan/more_assets/insta_crejyu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123775016";
+const likes = "https://ik.imagekit.io/sarvesh/Elan/more_assets/likes_xpppxt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123591221";
+const threePeeps = "https://ik.imagekit.io/sarvesh/Elan/more_assets/three_peeps_fnzu4a.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123754750";
+const tweets = "https://ik.imagekit.io/sarvesh/Elan/more_assets/tweets_panzxl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123695955";
+const views = "https://ik.imagekit.io/sarvesh/Elan/more_assets/views_bactad.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123883929";
 
 import ExploreSlider from "../Components/ExploreSlider";
 import GallerySlider from "../Components/GallerySlider";
 
-const galImg1 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621510/Elan/Gallery/1_c0ztha.png";
-const galImg2 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621514/Elan/Gallery/2_qshzyd.png";
-const galImg4 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621582/Elan/Gallery/4_cdvmss.jpg";
-const galImg6 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621499/Elan/Gallery/6_ztled9.jpg";
-const galImg7 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621512/Elan/Gallery/7_kaqhbp.jpg";
-const galImg12 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621504/Elan/Gallery/12_quadfe.jpg";
-const galImg13 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621509/Elan/Gallery/13_nzjjvn.jpg";
-const galImg14 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621512/Elan/Gallery/14_etd209.jpg";
-const galImg15 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621511/Elan/Gallery/15_x0ishy.jpg";
-const galImg16 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621513/Elan/Gallery/16_ogacwv.jpg";
-const galImg17 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621514/Elan/Gallery/17_mll8qu.jpg";
-const galImg18 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621515/Elan/Gallery/18_w4dubq.jpg";
-const galImg19 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621515/Elan/Gallery/19_pmmrez.jpg";
-const galImg20 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/20_jehwmn.jpg";
-const galImg21 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/21_t8gm08.jpg";
-const galImg22 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621548/Elan/Gallery/22_qxmrjv.png";
-const galImg23 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621525/Elan/Gallery/23_oyvbov.jpg";
+const galImg1 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122597396";
+const galImg2 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/2.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591825";
+const galImg4 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/4.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596276";
+const galImg6 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/6.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596123";
+const galImg7 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/7.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596756";
+const galImg12 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/12.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122595943";
+const galImg13 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/13.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122597118";
+const galImg14 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/14.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591800";
+const galImg15 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/15.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591895";
+const galImg16 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/16.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598065";
+const galImg17 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/17.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122599219";
+const galImg18 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/18.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598414";
+const galImg19 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/19.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122599351";
+const galImg20 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/20.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122588648";
+const galImg21 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/21.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598568";
+const galImg22 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/22.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122595409";
+const galImg23 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/23.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122592701";
 
-const explore1 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621815/Elan/Explore%20Section/breakfree_jivckj.webp";
-const explore2 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621808/Elan/Explore%20Section/glitz_qlpvuo.webp";
-const explore3 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621808/Elan/Explore%20Section/pronites_1_irvpdd.jpg";
-const explore4 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621807/Elan/Explore%20Section/deepn_gpmlg5.webp";
-const explore5 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621868/Elan/Explore%20Section/proshows_lgvukm.jpg";
-const explore6 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621821/Elan/Explore%20Section/shipwreck_mtiags.png";
-const explore7 = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671621825/Elan/Explore%20Section/campusidol_bpb7zb.webp";
+const explore1 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/breakfree_jivckj.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122072329";
+const explore2 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/glitz_qlpvuo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122092614";
+const explore3 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/pronites_1_irvpdd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122067254";
+const explore4 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/deepn_gpmlg5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122066583";
+const explore5 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/proshows_lgvukm.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122096927";
+const explore6 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/shipwreck_mtiags.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122097188";
+const explore7 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/campusidol_bpb7zb.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122073343";
 
 function HomePage() {
   const timelineImgs = [
@@ -1124,7 +1124,7 @@ function HomePage() {
           </div>
 
           {/* bg images */}
-          <div className="absolute h-[60%] left-0 top-[-10%] lg:top-0">
+          <div className="absolute h-[32%] lg:h-[50%] left-0 top-[-2%] lg:top-0">
             <img className="h-full" src={statsBg}></img>
           </div>
         </div>

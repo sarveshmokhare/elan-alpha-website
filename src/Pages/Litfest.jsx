@@ -6,10 +6,10 @@ import ThemeContext from '../Contexts/ThemeContext'
 const arrow = 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554771/elan/assets/designs/competitions_arrow_wkwpjg.svg'
 const cut_btn = 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554773/elan/assets/designs/competitions_cut_btn_ybw3n9.svg'
 import Popup from 'reactjs-popup'
-const vase = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671685864/Elan/bg_images/litfest_vase_jn4wbk.svg'
-const mushroom = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671685839/Elan/bg_images/litfest_mushroom_jt9txv.svg'
-const vase_lg = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671685856/Elan/bg_images/litfest_vase_desktop_qxj85o.svg'
-const hands = 'https://res.cloudinary.com/dxe7myxfw/image/upload/v1671685874/Elan/bg_images/litfest_hands_uoojkg.svg'
+const vase = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_vase_jn4wbk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201851'
+const mushroom = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_mushroom_jt9txv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672129181806'
+const vase_lg = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_vase_desktop_qxj85o.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202136'
+const hands = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_hands_uoojkg.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202436'
 import LitfestSlider from '../Components/litfest/litfestslider'
 import { litfestdata } from '../Components/litfest/litfestdata'
 // import "reactjs-popup/dist/index.css";
@@ -187,7 +187,7 @@ function Litfest() {
 
 
       <div className='block lg:hidden absolute right-0 top-[0] h-[150px] vs:h-[200px]'><img className='h-full' src={vase}></img></div>
-      <div className='absolute bottom-0 left-0 h-[24vh]'><img className='h-full' src={mushroom}></img></div>
+      <div className='absolute bottom-0 left-0 h-[18vh] lg:h-[26vh]'><img className='h-full' src={mushroom}></img></div>
       <div className='absolute right-0 top-[30px] h-[20vw]  hidden lg:block'><img className='h-full' src={vase_lg}></img></div>
       <div className='hidden lg:block absolute right-0 bottom-0 h-[25vh]'><img className='h-full' src={hands}></img></div>
     </div>

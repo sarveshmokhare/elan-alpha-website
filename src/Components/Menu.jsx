@@ -2,13 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-const caPortalIcon = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671623942/Elan/bg_images/ca_portal_icon_lnilgn.svg";
+const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
 import valenrowLogo from "../assets/valenrow_icon.svg";
-const menuRing = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625403/Elan/bg_images/menu_ring_tb4lzi.svg";
-const eventsCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625405/Elan/bg_images/events_card_bx8xeq.svg";
-const litfestCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625407/Elan/bg_images/litfest_card_t7hbxr.svg";
-const competitionsCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625406/Elan/bg_images/competitions_card_ri5ryb.svg";
-const teamCard = "https://res.cloudinary.com/dxe7myxfw/image/upload/v1671625409/Elan/bg_images/team_card_elww7i.svg";
+const menuRing = "https://ik.imagekit.io/sarvesh/Elan/more_assets/menu_ring_tb4lzi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124333474";
+const eventsCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/events_card_bx8xeq.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123797965";
+const litfestCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_card_t7hbxr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123891136";
+const competitionsCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/competitions_card_ri5ryb.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123889935";
+const teamCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/team_card_elww7i.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123738336";
 
 function Menu(props) {
   const toggleMenu = props.toggleMenu;
