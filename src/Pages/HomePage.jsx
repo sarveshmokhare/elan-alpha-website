@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 import AnimationContext from "../Contexts/AnimationContext";
 const elanLogo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/logo_white_pq9fjb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124336849";
 const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
-import valenrowIcon from "../assets/valenrow_icon.svg";
+const valenrowIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_icon.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672129770324";
 const book = "https://ik.imagekit.io/sarvesh/Elan/more_assets/book_runz9i.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123817096";
 const aboutLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_left_wu2elv.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123658455";
 const aboutRight = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_right_tysznb.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123824344";

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import gsap from "gsap";
 
 const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
-import valenrowLogo from "../assets/valenrow_icon.svg";
+const valenrowIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_icon.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672129770324";
 const menuRing = "https://ik.imagekit.io/sarvesh/Elan/more_assets/menu_ring_tb4lzi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124333474";
 const eventsCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/events_card_bx8xeq.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123797965";
 const litfestCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_card_t7hbxr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123891136";
@@ -279,7 +279,7 @@ function Menu(props) {
                 onClick={toggleMenu}
               >
                 <img
-                  src={valenrowLogo}
+                  src={valenrowIcon}
                   className="h-24 absolute -top-2"
                   alt="icon"
                   onClick={toggleMenu}
@@ -312,7 +312,7 @@ function Menu(props) {
                         <div>CA Portal</div>
                     </a>
                     <Link className='flex items-center text-center bg-yellow py-5 px-3.5 rounded-lg h-16 w-44 my-4 relative' style={{ borderRadius: '40px' }} to='/' onClick={props.toggleMenu}>
-                        <img src={valenrowLogo} className='h-24 absolute -top-2' alt='icon' />
+                        <img src={valenrowIcon} className='h-24 absolute -top-2' alt='icon' />
                         <div className='absolute left-12 text-sm'>Explore Valenrow</div>
                     </Link>
                 </div> */}
