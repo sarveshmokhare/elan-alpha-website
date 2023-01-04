@@ -11,10 +11,10 @@ const workshops3 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v167155494
 const workshops4 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554941/elan/assets/events/workshop_humanoid_f63isq.png";
 const workshops5 = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554944/elan/assets/events/workshop_vr_cuvhyr.png";
 
-const workshop7jan_1 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710470/elan/assets/events/workshop_7jan_app_bsdc0l.jpg"
-const workshop7jan_2 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710470/elan/assets/events/workshop_7jan_hack_cmrwzd.jpg"
-const workshop7jan_3 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710469/elan/assets/events/workshop_7jan_ds_o5d4sq.jpg"
-const workshop7jan_4 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710467/elan/assets/events/workshop_7jan_ai_y4dywh.jpg"
+const workshop7jan_1 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672827640/elan/assets/events/workshop_4feb_appdev_itp7f1.jpg"
+const workshop7jan_2 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672827641/elan/assets/events/workshop_4feb_ai_o2jzd3.jpg"
+const workshop7jan_3 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672827640/elan/assets/events/workshop_4feb_hack_leqnj1.jpg"
+const workshop7jan_4 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672827638/elan/assets/events/workshop_4feb_data_kgixwg.jpg"
 const workshop19mar_2 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672824183/elan/assets/events/workshop_19mar_online_yshyfn.jpg"
 const workshop19mar_1 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672824170/elan/assets/events/workshop_19mar_offline_ulcqu1.jpg"
 

@@ -115,7 +115,7 @@ function Navigate() {
                     <i>Elan & ηVision</i>
                   </b>
                   , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>7th and 8th of January, 2023</b>. We request that you
+                  <b>4th and 5th of February, 2023</b>. We request that you
                   kindly urge your school's students to participate and benefit
                   from these workshops <br />
                   <br />
