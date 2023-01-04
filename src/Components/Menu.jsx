@@ -254,10 +254,10 @@ function Menu(props) {
             onClick={toggleMenu}
           >
             <Link
-              to="/litfest"
+              to="https://forms.gle/LRMDuMdp79D2yU6ZA"
               className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4"
             >
-              <a>Litfest</a>
+              <a>Merch</a>
             </Link>
 
             <button className="bg-green py-2.5 px-2.5 rounded-md my-4">
