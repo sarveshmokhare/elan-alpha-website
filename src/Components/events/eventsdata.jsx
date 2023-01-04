@@ -15,6 +15,9 @@ const workshop7jan_1 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v167171
 const workshop7jan_2 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710470/elan/assets/events/workshop_7jan_hack_cmrwzd.jpg"
 const workshop7jan_3 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710469/elan/assets/events/workshop_7jan_ds_o5d4sq.jpg"
 const workshop7jan_4 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1671710467/elan/assets/events/workshop_7jan_ai_y4dywh.jpg"
+const workshop19mar_2 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672824183/elan/assets/events/workshop_19mar_online_yshyfn.jpg"
+const workshop19mar_1 ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1672824170/elan/assets/events/workshop_19mar_offline_ulcqu1.jpg"
+
 
 export const eventsdata=[
   
@@ -22,7 +25,7 @@ export const eventsdata=[
   subnames:['Workshops-1','Workshops'],
     description: '',
     img:[],
-    img1: [[workshop7jan_1, workshop7jan_2, workshop7jan_3, workshop7jan_4],[workshops1, workshops2, workshops3, workshops4, workshops5],],
+    img1: [[workshop7jan_1, workshop7jan_2, workshop7jan_3, workshop7jan_4],[workshops1, workshops2, workshops3, workshops4, workshops5],[workshop19mar_1,workshop19mar_2]],
     reglink: ["https://techradiance.in/iit-workshop/","https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
     examples: []
 
@@ -30,7 +33,7 @@ export const eventsdata=[
   {
     name: 'Pronites',
     description:'' ,
-    img1:[[],[]]
+    img1:[[],[],[]]
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
     ,img: [pronites1, pronites2, pronites3, pronites4, pronites5],
     examples: [
@@ -58,7 +61,7 @@ export const eventsdata=[
   ]
   },
   {name:'Informals',
-  img1:[[],[]],
+  img1:[[],[],[]],
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     ,img:[informals1,informals2],
@@ -83,7 +86,7 @@ export const eventsdata=[
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     ,
-    img1:[[],[]],
+    img1:[[],[],[]],
     img: [
       // informals1, informals2;\
     ],

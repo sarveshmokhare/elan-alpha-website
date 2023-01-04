@@ -18,13 +18,27 @@ const dl2 = [
   { name: "Requirements", description: "Laptop and Internet" },
 ];
 
+const dl31=[
+  { name: "Date", description:"19th March 2023"},
+  { name: "Timings", description: "3:00 PM - 5:00 PM" },
+  { name: "Venue", description: "IIT Hyderabad" },
+  { name:"Registration fee",description:"1000"},
+  { name: "Requirements", description: "Camera(preferably) / Mobile phones" },
+]
+
+const dl32=[
+  { name: "Date", description: "19th March 2023" },
+  { name: "Time", description: "3: 00 PM - 4: 00 PM" },
+  { name: "Registration fee", description: "300" },
+]
+
 const navoptions = ["Workshops", "Pronites", "Informals", ""];
-const workshop=['Workshops-1','Workshops-2']
+const workshop = ['Workshop-1', 'Workshop-2', 'Workshop-3']
 
 function Navigate() {
   const [value, setValue] = useState(0);
   const [width, setWidth] = useState(window.innerWidth);
-  const [WorkshopNavigate,setWorkshopNavigate]=useState(0)
+  const [WorkshopNavigate, setWorkshopNavigate] = useState(0)
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return (
@@ -52,7 +66,7 @@ function Navigate() {
             <div className="sub_heading font-cinzel text-4xl vs:text-6xl text-golden font-bold">
               {item.name}
             </div>
-            <div className={(index!=0?"block":'hidden')+" mb-10"}>
+            <div className={(index != 0 ? "block" : 'hidden') + " mb-10"}>
               {item.img.length > 0 ? (
                 <EventSlider
                   imagesList={item.img}
@@ -80,12 +94,12 @@ function Navigate() {
               }
             >
               <div className="flex justify-evenly md:justify-center">
-                {workshop.map((item,index)=>(
+                {workshop.map((item, index) => (
                   <button onClick={() => setWorkshopNavigate(index)} className={(WorkshopNavigate == index ? "bg-golden text-black " : 'bg-blue text-golden ') + "md:mx-5 px-2 rounded-md text-sm leading-loose font-century m-1 md:leading-loose lg:leading-loose mb-5 lg:text-lg"}>{item}</button>
                 ))}
               </div>
 
-              <div className={WorkshopNavigate==0?'block':'hidden'}>
+              <div className={WorkshopNavigate == 0 ? 'block' : 'hidden'}>
                 <div className={" mb-10"}>
                   {item.img1[0].length > 0 ? (
                     <EventSlider
@@ -185,7 +199,7 @@ function Navigate() {
                 <p>
                   The topics we have chosen are at their peak and are booming in their prospects. These workshops will ensure that the students gain basic knowledge, understanding and practical experience, equipping them with the required skills for their bright future.{" "}
                   <br />
-                  
+
 
                   We are collaborating with Techradiance for these workshops.
                   Their well-experienced and reputed instructors are IITians and
@@ -218,8 +232,76 @@ function Navigate() {
                 </p>
                 <a href="https://techradiance.in/iit-workshop/" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
+
+              <div className={WorkshopNavigate == 2 ? 'block' : 'hidden'}>
+                <div className={" mb-10"}>
+                  {item.img1[2].length > 0 ? (
+                    <EventSlider
+                      imagesList={item.img1[2]}
+                      size={width >= 850 ? 4 : 2}
+                      height={index == 0 ? 1 : 3 / 5}
+                    />
+                  ) : undefined}
+                </div>
+                <p className="lg:text-[1.5rem]">
+                  As an essential part of our annual techno-cultural fest,{" "}
+                  <b>
+                    <i>Elan & ηVision</i>
+                  </b>
+                  , we at IIT Hyderabad are conducting a workshop on the{" "}
+                  <b>19th March 2023</b>.
+                  <br /><br />
+
+                  <div className="lg:text-[1rem] text-[1rem]">
+                    For this session, we will be working together with "The Soil Society"  and Pubarun Basu will be the instructor.
+                    <br />
+
+                    Pubarun Basu is a 21-year-old photographer whose work has been published by international organizations such as National Geographic, Forbes, The Guardian, and many more. He made it to the Forbes 30 under 30 Asia 2022 -The Arts list. He was declared as the "Youth Photographer of the Year'' in the Sony World Photography Awards 2021 - organized by the World Photography Organization, making him the first Indian to win this title. He was awarded the Indica Cultural Photography Grant 2021 to develop his project on the tribal communities of North-East India. He was the recipient of the M.P. Birla Award for Excellence in Co-Curricular Activities in 2019.
+                  </div>
+
+                  Visit his <a className="text-white" href="https://linktr.ee/pubarun.basu">linktree</a> to know more.
+                  <br /><br />
+                  <div className="lg:text-[1.2rem] text-[1rem]">
+                    <b>Theme:</b>  The Realm of Coexistence - Photographing the Wonders of Nature
+                    <br /><br />
+                    More Details:
+
+                    THE WORKSHOP IS CONDUCTED IN BOTH ONLINE AND OFFLINE MODE.
+
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row mt-5">
+                    <dl className="w-full sm:w-1/2 pb-5">
+                      <div className="font-extrabold">OFFLINE MODE</div>
+                      {dl31.map((dl_item) => (
+                        <div>
+                          <dt className="font-bold lg:text-xl ">{dl_item.name}:</dt>
+                          <dd className="px-5 lg:text-xl">{dl_item.description}</dd>
+                        </div>
+                      ))}
+                    </dl>
                     
-              
+                    <dl className="w-full sm:w-1/2 pb-5">
+                      <div className="font-extrabold">ONLINE MODE</div>
+                      
+                      {dl32.map((dl_item) => (
+                        <div>
+                          <dt className="font-bold lg:text-xl ">{dl_item.name}:</dt>
+                          <dd className="px-5 lg:text-xl">{dl_item.description}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+<br />
+                  <div className="text-[1rem] mb-5">
+                    At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad in Collaboration with The Soil Society.
+                  </div>
+                </p>
+                <a href="https://unstop.com/workshop/photography-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-576690" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
+
+
+              </div>
+
             </div>
             <div className={index != 0 ? "block" : "hidden"}>
               <div className="text-golden font-cinzel text-center text-xl vs:text-3xl xs:text-4xl font-bold">
