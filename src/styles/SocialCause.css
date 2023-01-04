@@ -5,7 +5,7 @@
     font-family: "Berkshire Swash";
     font-style: normal;
     font-weight: 400;
-    font-size: 5.5rem; 
+    font-size: 4rem; 
     line-height: 119px;
   }
   @media (max-width:480px) {
@@ -16,24 +16,34 @@
   }
   .SocialCause .button {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    width: 100%;
-    padding: 1rem;
+    /* width: 50%;  */
+    padding: 2rem;
   }
   
   .SocialCause .years {
-    font-family: "Century Schoolbook";
+    font-family: 'Century Schoolbook';
     font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-  
-    color: #fed395;
+    font-weight: 400;
+    font-size: 24px;
+    /* line-height: 24px; */
+    color: #E3AA57;
+    background: #0D1838;
   }
   
   .SocialCause .years.active {
-    font-weight: 900;
-    font-size: 25px;
+    color: #0D1838;
+    background: #E3AA57;
   }
+  .SocialCause .Bg{
+    z-index: 1; 
+  }
+  .SocialCause .back {
+    z-index: 2;
+  }
+
+  /* .SocialCause{
+    z-index: -1;
+  } */
