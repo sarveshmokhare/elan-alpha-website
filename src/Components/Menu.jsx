@@ -253,12 +253,13 @@ function Menu(props) {
             className="font-cinzel font-bold text-base flex flex-col sm:flex-row w-full items-center justify-between"
             onClick={toggleMenu}
           >
-            <Link
-              to="https://forms.gle/LRMDuMdp79D2yU6ZA"
+            <a
               className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4"
+              href="https://forms.gle/LRMDuMdp79D2yU6ZA"
+              target="_blank"
             >
-              <a>Merch</a>
-            </Link>
+              <p>Merch</p>
+            </a>
 
             <button className="bg-green py-2.5 px-2.5 rounded-md my-4">
               <a
