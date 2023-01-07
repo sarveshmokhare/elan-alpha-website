@@ -41,9 +41,9 @@ const cresentLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/cresent_lef
 const topLine = "https://ik.imagekit.io/sarvesh/Elan/more_assets/top_line_blwx9b.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123754228";
 const sampleVid = "https://ik.imagekit.io/sarvesh/Elan/Videos/video.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1672122995437";
 
-const timeline2k171 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120649844";
+const timeline2k171 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085894517";
 const timeline2k172 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120018615";
-const timeline2k173 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120007027";
+const timeline2k173 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085894899";
 const timeline2k174 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120030727";
 
 const timeline2k181 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970179";
@@ -61,10 +61,10 @@ const timeline2k202 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/2.jpg
 const timeline2k203 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970264";
 const timeline2k204 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970157";
 
-const timeline2k211 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120013079";
-const timeline2k212 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120019076";
-const timeline2k213 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672119979482";
-const timeline2k214 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672120011860";
+const timeline2k211 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756439";
+const timeline2k212 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/2.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756241";
+const timeline2k213 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085863826";
+const timeline2k214 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/4.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756620";
 
 const timeline2k221 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120027968";
 const timeline2k222 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120625070";
@@ -271,11 +271,12 @@ function HomePage() {
           gsap.set(".moon5", { right: "-7%" });
 
           gsap.set(".invite-text", { top: "55%", height: "18vh", opacity: 0 });
-          gsap.set(".elan-logo", { height: "13vh", top: "21%" });
+          gsap.set(".elan-logo", { height: "13vh", top: "14%" });
           gsap.set(".left-decor", { height: "65vh", top: "4%" });
           gsap.set(".top-line", { right: "-100%" });
           gsap.set(document.querySelector("header"), { opacity: 1 });
           gsap.set(".valenrow-logo", { opacity: 1 });
+          gsap.set(".fest-dates", { opacity: 1 });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(section1.current, {
             background: "#0000008c",
@@ -337,7 +338,7 @@ function HomePage() {
           const tl = gsap.timeline({ defaults: {} });
 
           tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
-          tl.to(".elan-logo", { height: "13vh", top: "21%", duration: 1 }, "<");
+          tl.to(".elan-logo", { height: "13vh", top: "14%", duration: 1 }, "<");
           tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
           tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
           tl.to(
@@ -351,7 +352,17 @@ function HomePage() {
             duration: 1.5,
             ease: "power2.in",
           });
-          tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }).to(
+          tl.to(".fest-dates", {
+            opacity: 1,
+            duration: 1.5,
+            ease: "power2.in",
+          })
+          tl.to(".buttons>*", {
+            opacity: 1,
+            stagger: 0.5,
+            delay: 1,
+          })
+          tl.to(
             section1.current,
             {
               background: "#0000008c",
@@ -399,7 +410,8 @@ function HomePage() {
             height: "8vh",
           });
           gsap.set(".valenrow-logo", { top: "6%", opacity: 1 });
-          gsap.set(section1.current, { height: "80vh" });
+          gsap.set(".fest-dates", { opacity: 1, top: "39%" });
+          gsap.set(section1.current, { height: "86vh" });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(".moon-ring", {
             bottom: "4%",
@@ -433,6 +445,11 @@ function HomePage() {
           ease: "power2.in",
           duration: 1.5,
         });
+        tl.to(".fest-dates", {
+          opacity: 1,
+          ease: "power2.in",
+          duration: 1.5,
+        }, "<");
         tl.to(".elan-logo", {
           top: "6%",
           height: "8vh",
@@ -440,6 +457,10 @@ function HomePage() {
           delay: 0.8,
         });
         tl.to(".valenrow-logo", { top: "6%", duration: 1.5 }, "<");
+        tl.to(".fest-dates", {
+          top: "39%",
+          duration: 1.5,
+        }, "<");
         tl.to(
           ".moon-ring",
           {
@@ -455,7 +476,7 @@ function HomePage() {
         );
         tl.to(
           section1.current,
-          { height: "80vh", ease: "power2.out", duration: 1.5 },
+          { height: "86vh", ease: "power2.out", duration: 1.5 },
           "<"
         );
         tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
@@ -628,12 +649,14 @@ function HomePage() {
           </div>
 
           {/* valenrow logo */}
-          <div className="valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[38vh] lg:h-[85vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center top-[19%] lg:top-[14%]">
+          <div className="valenrow-logo opacity-0 py-3 lg:py-6 sm:px-8 h-[38vh] lg:h-[85vh] absolute left-0 right-0 lg:left-[-10%] flex justify-center top-[19%] lg:top-[7%]">
             <img className="h-full" alt="valenrow_logo" src={valenrowLogo} />
           </div>
 
+          <p className="fest-dates opacity-0 text-golden absolute -translate-x-1/2 left-1/2 lg:left-[47.5%] truncate top-[50%] lg:top-[77%] lg:text-[3.5vh]">17th - 19th February, 2023</p>
+
           {/* buttons div */}
-          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[42%] lg:-right-[65%] lg:top-20">
+          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[45%] lg:-right-[65%] lg:top-20">
             {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
               <Link to="/litfest">
                 <div>Litfest</div>
