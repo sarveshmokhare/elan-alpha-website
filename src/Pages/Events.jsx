@@ -115,9 +115,7 @@ function Navigate() {
                     <i>Elan & ηVision</i>
                   </b>
                   , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>4th and 5th of February, 2023</b>. We request that you
-                  kindly urge your school's students to participate and benefit
-                  from these workshops <br />
+                  <b>4th and 5th of February, 2023</b>.
                   <br />
                 </p>
                 <h4 className="text-xl lg:text-3xl font-bold">
@@ -131,10 +129,8 @@ function Navigate() {
                 </ul>
                 <br />
                 <p>
-                  The topics we have chosen are at their peak and are booming in
-                  their prospects. These workshops will ensure that the students
-                  gain basic knowledge, understanding and practical experience,
-                  equipping them with the required skills for their bright future.{" "}
+                  The topics we have included are at their peak and are booming in
+                  their prospects.{" "}
                   <br />
                   We are collaborating with Gummalla Technologies for these workshops.
                 </p>
@@ -180,9 +176,7 @@ function Navigate() {
                     <i>Elan & ηVision</i>
                   </b>
                   , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>14th and 15th of January, 2023</b>. We request that you
-                  kindly urge your school's students to participate and benefit
-                  from these workshops <br />
+                  <b>14th and 15th of January, 2023</b>.
                   <br />
                 </p>
                 <h4 className="text-xl lg:text-3xl font-bold">
@@ -197,7 +191,7 @@ function Navigate() {
                 </ul>
                 <br />
                 <p>
-                  The topics we have chosen are at their peak and are booming in their prospects. These workshops will ensure that the students gain basic knowledge, understanding and practical experience, equipping them with the required skills for their bright future.{" "}
+                  The topics we have chosen are at their peak and are booming in their prospects.{" "}
                   <br />
 
 
