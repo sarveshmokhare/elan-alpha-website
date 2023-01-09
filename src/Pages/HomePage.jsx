@@ -1093,7 +1093,7 @@ function HomePage() {
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={threePeeps}></img>
               </div>
-              <p>10k+ audience</p>
+              <p>15k+ footfall</p>
             </div>
             <div className="flex flex-col items-center justify-center my-4 mx-2">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
