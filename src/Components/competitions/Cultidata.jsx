@@ -14,8 +14,8 @@ const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/ela
 export const cultidata = [
   {
     name: "Breakfree",
-    reglink: "https://dare2compete.com/o/JBdSQcm?lb=KnvQoHU",
-    sublink: "https://forms.gle/7o7Ur19UWNw5GhPJA",
+    reglink: "",
+    sublink: "",
     documetation:'https://docs.google.com/document/d/1pzpTx8S8wuq0pDtpWWlYoeypnF06Wu0Crbqe258gRM4/edit?usp=sharing',
     format: ['This is a solo dance competition.', 'This competition is open to all age groups.', 'There will be only one round and the results are decided by the judge.', 'You will have to send us the recorded video of the performance through form, prior to the deadline.', 'The submissions can be sent via our website : elan.org.in', 'The selected submissions will be streamed on a video-conferencing app and will be evaluated live by the judges.', 'The list of participants selected will be sent to all the participants through email.', 'Bonus : If you upload your entry on instagram with #elannvision and #elannvision2022, we will upload the top entries on our competitions page - @elan_nvision.competitions. If you have a private account, submit a screenshot of your post, one hour after uploading it.'],
     timeline: { submission: '21st March 2022, 11:59pm', event: '25th March 2022' },
@@ -47,8 +47,8 @@ export const cultidata = [
 
   {
     name: "Beat Trippers",
-    reglink: "https://dare2compete.com/o/I3PEK5Z?lb=KnvQoHU",
-    sublink: "https://forms.gle/BL8zB7cgYiv1d6Mk8",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1s0Xn13I8cMCrzEX4xt0Iw7C6pQTJuqUnyggpFWDZXtY/edit?usp=sharing",
     img: beattrippers,
@@ -73,8 +73,8 @@ export const cultidata = [
   },
   {
     name: "Campus Idol",
-    reglink: "https://dare2compete.com/o/jOnBytU?lb=KnvQoHU",
-    sublink: "https://forms.gle/YPDJXae6UJJhJK346",
+    reglink: "https://unstop.com/p/campus-idol-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586947",
+    sublink: "https://unstop.com/p/campus-idol-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586947",
     documentation:
       "https://docs.google.com/document/d/1qvKRpvBM1DU8wt_sAT3MQ6T0lPrKntDzjm4CMLL5boo/edit?usp=sharing",
     img: campusidol,
@@ -83,27 +83,26 @@ export const cultidata = [
     format: ['This is a solo singing competition', 'There will be only one round', 'This competition is open to all age groups', 'The submissions can be sent via our website before the mentioned deadline: https://elan.org.in/', 'The selected submissions will be streamed on a video - conferencing app and will be evaluated live by the judges', 'The list of participants selected will be sent to all the participants through email.', 'Bonus: If you upload your entry on instagram with #elannvision and #elannvision2022, we will upload the top entries on our competitions page https://www.instagram.com/elan_nvision.competitions/?hl=en. If you have a private account, submit a screenshot of your post, one hour after uploading it.'],
     timeline: { submission: '21st March 2022, 11:59pm', event: '27th March 2022' },
     rules: ['Only 1 entry is allowed per participant.', 'The languages preferred are English, Hindi, and Telugu.', 'The duration of the performance should be 2 - 3 mins.Participant exceeding the advised time limit will invite a penalty', 'Participants can have a karaoke track or play an accompanying instrument and are also allowed to have an instrumentalist accompanist(max 2)', 'NO BACKING VOCALS ALLOWED', 'The audio cannot be processed after recording.The video cannot be edited or have any special effects added to it', 'Rapping is not allowed', 'Songs containing vulgar or explicit lyrics are not allowed and contestants who use vulgar lyrics or perform in an obscene manner will be disqualified from the competition', 'The decision of the judges and the organizers is final and should be accepted by every participant.', 'The organizing team has the complete right to change the prize money if the participation is less than 10.', 'The organizing team has the right to change any or all the documentation mentioned above.'],
-    prizes: ['All the participants will receive a certificate of participation issued by Elan     and Nvision, IIT Hyderabad.', 'Prizes worth ₹15, 000 are up for grabs'],
+    prizes: ['All the participants will receive a certificate of participation issued by Elan     and Nvision, IIT Hyderabad.', 'Prizes worth ₹20,000 are up for grabs'],
     judging: ['Vocal ability', 'Stage presence', 'Pitch', 'Rhythm'],
     contact: [{
-      name: 'Kaustubh Gupta',
-      contact: 8982255359
+      name: 'Alla Hanu Sree',
+      contact: 7416270927
     },
     {
-      name: 'Akula Sravya',
-      contact: 6302999651
+      name: 'Yashmitha Gogineni',
+      contact: 8851947851
     },
     {
-      name: 'Yash Ramteke',
-      contact: 9696333035
+      name: 'Shreya Bangal',
+      contact: 9958002091
     }
     ]
   },
   {
     name: "Filmfare Fiesta",
-    reglink:
-      "https://dare2compete.com/creative-cultural-event/filmfare-fiesta-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-272833",
-    sublink: "https://forms.gle/brEouAmZhbjghXwQA",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1Dch9MOiJLGnyDCf63N6oTgavE4YxqxXWUjoDdGfoMQM/edit?usp=sharing",
     img: film,
@@ -125,8 +124,8 @@ export const cultidata = [
   },
   {
     name: "Stand Up Comedy",
-    reglink: "https://dare2compete.com/o/Un47bgp?lb=KnvQoHU",
-    sublink: "https://forms.gle/8T9GwzxzdqSSu98P7",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/15pHNQlm8iv4UHCrdTv4py64JB39YW2GKAc7eguKMpoo/edit?usp=sharing",
     img: standup,
@@ -149,9 +148,8 @@ export const cultidata = [
   },
   {
     name: "Glitz & Glamour",
-    reglink:
-      "https://dare2compete.com/creative-cultural-event/glitz-glamour-elan-ivision-2022-iit-hyderabad-272835",
-    sublink: "https://forms.gle/YyZAgE2VRCGzUTrE8",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1vYz61w_uMz9aE5rKKIlocSPe5Vx1hQiAHB_nt9N__Us/edit?usp=sharing",
     img: glitz,
@@ -174,8 +172,8 @@ export const cultidata = [
   },
   {
     name: "Paint the Screen",
-    reglink: "https://dare2compete.com/o/2Lvyc1o?lb=KnvQoHU",
-    sublink: "https://forms.gle/9FoS6Bg5kiUt54nE7",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1aMF6wAu0zRFrOK-0Kpq4YCBxlDSCMtLh1Ai7YgD6nCc/edit?usp=sharing",
     img: Paint,
@@ -195,9 +193,8 @@ export const cultidata = [
   },
   {
     name: "Art attack",
-    reglink:
-      "https://dare2compete.com/creative-cultural-event/art-attack-elan-ivision-2022-iit-hyderabad-272827",
-    sublink: "https://forms.gle/fyyrHb4E9MQh5Rmf6",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1sS_LvZlWaBZaksMOs1eYgIMZaLhlWhKVyC6ivmZlUxM/edit?usp=sharing",
     img: artattack,
@@ -219,9 +216,8 @@ export const cultidata = [
   },
   {
     name: "Doddle Creation",
-    reglink:
-      "https://dare2compete.com/creative-cultural-event/doodle-art-elan-ivision-2022-iit-hyderabad-272832",
-    sublink: "https://forms.gle/ZBTCqW9Vh442ifGfA",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1rwGaRbJFfMMR2qOVrPWwdM72eAcNzH8ur_Jv-YTgYIY/edit?usp=sharing",
     img: doddles,
@@ -243,8 +239,8 @@ export const cultidata = [
   },
   {
     name: "Nrityanjali",
-    reglink: "https://dare2compete.com/o/5wkyMb7?lb=KnvQoHU",
-    sublink: "https://forms.gle/bMcrbbZ2MWc4xrE9A",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/1b1Xx39x8NFiNhCHjGkPtyNqCubpALzxyWd3ud3ZfHaU/edit?usp=sharing",
     img: nrytanjali,
@@ -273,8 +269,8 @@ export const cultidata = [
   },
   {
     name: "Picelectic",
-    reglink: "https://dare2compete.com/o/s8GEaNl?lb=KnvQoHU",
-    sublink: "https://forms.gle/1CFEgse2faZkDjVF8",
+    reglink: "",
+    sublink: "",
     documentation:
       "https://docs.google.com/document/d/17W9bejet1uF_NHQQ_66PxkohBfuCS-7AyqpC5su6iFs/edit?usp=sharing",
     img: Picelectic,

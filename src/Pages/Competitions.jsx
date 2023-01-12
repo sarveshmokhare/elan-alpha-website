@@ -136,7 +136,8 @@ function Hii({ data, sliderValue, type }) {
           <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.details}
           </div>
           <div className='flex justify-evenly py-5'>
-            <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button>
+            <a href={item.reglink}>
+            <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button></a>
             <ShowDetails item={item} type={type} />
 
           </div>

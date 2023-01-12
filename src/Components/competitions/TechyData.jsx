@@ -15,8 +15,8 @@ export const techydata = [
       
       {
         name: "Enigma",
-        reglink: "https://dare2compete.com/competition/enigma-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273580",
-        sublink: "https://forms.gle/YPDJXae6UJJhJK346",
+        reglink: "https://unstop.com/p/enigma-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586783",
+        sublink: "https://unstop.com/p/enigma-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586783",
         documentation:
           "https://docs.google.com/document/d/1wzHGJylOVHgLyCJRqWtxTvXHdsSQmRS9vXzJYL_5YOw/edit#heading=h.b6dw3zk5atby",
         img: enig,
@@ -30,22 +30,22 @@ export const techydata = [
       event:'Mar 25, 11:59 AM - 8:00 PM'
     },
     judging: [''],
-    prizes: ['The top two teams will receive prizes worth Rs. 10,000.','This prize money will be awarded via NEFT and will be processed within 30 working days.','The winner will be notified via email sent from(elan@iith.ac.in).','E - certificate of Participation will be given to all the participants who have submitted their model via the submission form.'],
+    prizes: ['The top two teams will receive prizes worth Rs. 7,000.','This prize money will be awarded via NEFT and will be processed within 30 working days.','The winner will be notified via email sent from(elan@iith.ac.in).','E - certificate of Participation will be given to all the participants who have submitted their model via the submission form.'],
     contact: [{
-      name: 'Dhanushikaa S',
-      contact: 6381950947
+      name: 'Aditya Garg',
+      contact: 8309035175
         },
       {
-        name: 'Kushagra Gupta',
-        contact: 9987433388
+        name: 'Anirudh Saikrishnan',
+        contact: 9833632987
         },
   ]
       },
       {
         name: "App Development",
         reglink:
-          "https://dare2compete.com/competition/app-development-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273590",
-        sublink: "https://forms.gle/YyZAgE2VRCGzUTrE8",
+          "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1ie-VxbSXJKeCgXwReFTGrON45q6yJkiJgXBOpd4J-ls/edit",
         img: app,
@@ -64,8 +64,8 @@ export const techydata = [
       },
       {
         name: "Proquest",
-        reglink: "https://dare2compete.com/hackathon/proquest-274160",
-        sublink: "https://forms.gle/BL8zB7cgYiv1d6Mk8",
+        reglink: "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1AGet3_bye_f7wAeF0sRZg6ALPzB10HjhtUf4pqE1A4U/edit",
         img: pro,
@@ -96,8 +96,8 @@ export const techydata = [
       {
         name: "Web Development",
         reglink:
-          "https://dare2compete.com/competition/web-dev-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273400",
-        sublink: "https://forms.gle/brEouAmZhbjghXwQA",
+          "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1xI7zxuOaYU_Zcnk3KNkzp0Aawwi9H1l8eKqIqtC1lg4/edit",
         img: webd,
@@ -116,8 +116,8 @@ export const techydata = [
     },
       {
         name: "Shark Tank",
-        reglink: "https://dare2compete.com/competition/shark-tank-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273354",
-        sublink: "https://forms.gle/7o7Ur19UWNw5GhPJA",
+        reglink: "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1Y20CQekNwFNpwau_yT6YjKdtiQxQnBUUUvNhRR-r3ys/edit",
         img: shark,
@@ -136,8 +136,8 @@ export const techydata = [
       },
       {
         name: "Circuit Building",
-        reglink: "https://dare2compete.com/competition/circuit-building-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-272545",
-        sublink: "https://forms.gle/9FoS6Bg5kiUt54nE7",
+        reglink: "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/13lzjGhe8wtDXJMNlA6aiPhRAJ4vCR6fMo1UVQuJ-V0Q/edit#heading=h.3235yhsygykt",
         img: circut,
@@ -165,8 +165,8 @@ export const techydata = [
       },
       {
         name: "Code Arduino",
-        reglink: "https://dare2compete.com/hackathon/code-arduino-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273568",
-        sublink: "https://forms.gle/8T9GwzxzdqSSu98P7",
+        reglink: "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1ZDsGh_YZHdFvkI4qK2g-gUwfibrUwKd5PLvisbOOj20/edit#heading=h.3235yhsygykt",
         img: arud,
@@ -186,8 +186,8 @@ export const techydata = [
       {
         name: "Machina Doctrina",
         reglink:
-          "https://dare2compete.com/hackathon/machina-doctrinas-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273585",
-        sublink: "https://forms.gle/fyyrHb4E9MQh5Rmf6",
+          "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/17bkoRtcd99baTlUBkFts6MF1GYxZYOR1q4tN4NHtS3Y/edit",
         img: mdd,
@@ -213,8 +213,8 @@ export const techydata = [
       },
       {
         name: "DeepN",
-        reglink: "https://dare2compete.com/hackathon/deepn-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273589",
-        sublink: "https://forms.gle/bMcrbbZ2MWc4xrE9A",
+        reglink: "",
+        sublink: "",
         documentation:
           "https://docs.google.com/document/d/1nMJd8YV4yNsFr0sS9IOW893k_TfFb8fGWfsRnGDGaRY/edit",
         img: depp,
@@ -243,8 +243,8 @@ export const techydata = [
       },
         {
           name: "CAD PRO",
-          reglink: "https://dare2compete.com/competition/cad-pro-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273588",
-          sublink: "https://forms.gle/8T9GwzxzdqSSu98P7",
+          reglink: "",
+          sublink: "",
           documentation:
             "https://docs.google.com/document/d/1yPmSpc-j63HQRnJHIozlBusZvOL_7gOPc4C2eoDhYYs/edit#heading=h.j2sk9juhxzeu",
           img: cad,
@@ -274,8 +274,8 @@ export const techydata = [
         {
           name: "Hackathon",
           reglink:
-            "https://dare2compete.com/hackathon/hackathon-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-272342",
-          sublink: "https://forms.gle/fyyrHb4E9MQh5Rmf6",
+            "",
+          sublink: "",
           documentation:
             "https://docs.google.com/document/d/14xp2tSHajqrY-i9RYA3ZKYcLm2yJnLEZMCTBXbZz_G8/edit",
           img:hack,
@@ -305,8 +305,8 @@ export const techydata = [
         },
         {
           name: "Paper Presentation",
-          reglink: "https://dare2compete.com/competition/paper-presentation-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-272356",
-          sublink: "https://forms.gle/bMcrbbZ2MWc4xrE9A",
+          reglink: "",
+          sublink: "",
           documentation:
             "https://docs.google.com/document/d/1EN1j2047opvegnPWvpc948hF6BheRCR77HRnf9lSbO8/edit",
           img: paperpe,
@@ -337,8 +337,8 @@ export const techydata = [
         },
         {
           name: "Game Jam",
-          reglink: "https://dare2compete.com/competition/game-jam-elan-ivision-2022-iit-hyderabad-indian-institute-of-technology-iit-hyderabad-273560",
-          sublink: "https://forms.gle/bMcrbbZ2MWc4xrE9A",
+          reglink: "",
+          sublink: "",
           documentation:
             "https://docs.google.com/document/d/1yb1K_strRj-p4t3xCVlGbWIl5G2PDZIKjABQq1u7YFo/edit",
           img: "https://ik.imagekit.io/lc4zhdkrtsr/competition/paperpres-min_LdkSwsc0l.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647598285351",
