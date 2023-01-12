@@ -9,7 +9,7 @@ const doddles = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554740/e
 const nrytanjali = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554780/elan/assets/competitions/nryt_k3heau.png";
 const Picelectic = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554759/elan/assets/competitions/pice_jvanor.jpg";
 const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/elan/assets/competitions/paint_gicqs6.png";
-
+const octaves ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673536747/elan/assets/competitions/octaves_hkhtpp.jpg";
 
 export const cultidata = [
   {
@@ -98,6 +98,26 @@ export const cultidata = [
       contact: 9958002091
     }
     ]
+  },
+  {
+    name:"Octaves",
+    reglink:"https://unstop.com/p/octaves-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586950",
+    sublink:"",
+    documentation:"",
+    img:octaves,
+    details: "This event pits the best against the best on the cultural stage. The name says it all and if you think you have mastered the instrument of your choice, then this is the stage for you.Not just that, this also tests your creativity and sees if you can come up with your own tune to wow us.",
+    rules:[
+      "This is a solo instrumental competition. No more than one person is allowed per team.", "Registration can either be done on the spot or online.", "On - Spot registrations would be closed 1 hour before the event.", "This competition consists of two rounds.", "We will provide the instruments.You are welcome to bring your own instruments.", "Round 1: \n \tParticipants will be given 6 minutes to play anything they want.\n\tBased on the scores of the first round 4 participants in total will progress to the second round.\n\tOvershooting the time limit will result in a penalty.", "Round 2:\n\t After qualifying the first round, the finalists will be given tracks to play over.", "A participant can stick to only one instrument for the entire competition.", "Electric instruments are allowed.", " Keyboards can be played only in the piano patch.", "The decisions made by the organizers and the judges will be final and abiding.", "The organizing team has the complete right to change the prize money if the participation is less than five.","The event will be held at the Amphitheatre in IIT Hyderabad."
+    ],
+    timeline: { submission:"13th January, 2023",
+      event:"19th February, 2023"},
+    judging: ["Stage Presence","Rhythm","Technique","Memorization"],
+    prizes: ["All the participants will receive a certificate of participation issued by Elan & nVision, IIT Hyderabad.","Prizes worth Rs 18000(Cash + Gift Vouchers) are\z up for grabs!"],
+    contact: [{ name: "Kaveri Ashwin Kumar",
+    contact: 9515039975},
+    {name:"Divya",
+    contact:8657434081},
+    {name:"Gnaneshwarii B",contact:7382704335}]
   },
   {
     name: "Filmfare Fiesta",

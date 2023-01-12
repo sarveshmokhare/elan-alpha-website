@@ -149,44 +149,6 @@ function Hii({ data, sliderValue, type }) {
   )
 }
 
-// function Navigate() {
-
-
-
-
-//   
-
-//   return (
-//     <div className='z-0'>
-
-
-//       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
-//         {/* <CompetitionsSlider imagesList={Navigatevalue == 1 ? cultidata.map((item) => item.img) : techydata.map((item) => item.img)} size={width >= 500 ? 3 : 2} /> */}
-//         <div className='w-[700%] flex relative px-[35vw]' id='hii'>
-//           {imagesList.map((item, index) => (
-//             <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
-//           ))}
-//         </div>
-
-//       </div>
-//       <img src={arrow} alt="arrow" className='m-auto my-10 w-11/12 block relative lg:hidden' />
-//       <input type="range" min={0} max={Navigatevalue == 1 ? 10 : 12}  id="slider"  value={sliderValue} onChange={(e) => {
-//         setSliderValue(e.target.value)
-//         // var curr = document.getElementById('img' + e.target.value.toString())
-//         // // console.log('img' + sliderValue.toString())
-//         // // curr.style.position='relative'
-//         // curr.style.transform='translate('+(-(e.target.value)*100/imagesList.length).toString()+'%,0)'
-
-//       }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
-
-
-//       <div className={("flex flex-wrap justify-evenly")}>
-//         <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} type={Navigatevalue}/>
-//       </div>
-//     </div>
-//   )
-// }
-
 
 
 
@@ -208,13 +170,19 @@ function Navigate() {
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   const imagesList = (Navigatevalue == 1 ? cultidata : techydata).map((item) => item.img)
-  const last = Navigatevalue == 1 ? 10 : 12
+  const last = Navigatevalue == 1 ? cultidata.length-1 : techydata.length-1
+  const sliderWidth=Navigatevalue==1?cultidata.length*100/2:techydata.length*100/2;
 
   const itemstyle = {
     position: 'relative',
     margin: '5px',
+    objectFit:"cover",
     width: (100 / imagesList.length).toString() + '%',
     height: (100 * 3 / 10).toString() + 'vw',
+  }
+  const sliderStyle={
+    width:sliderWidth+"%",
+
   }
 
   React.useEffect(() => {
@@ -242,7 +210,7 @@ function Navigate() {
         ))}
       </div>
       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
-        <div className='w-[700%] flex relative px-[35vw]' id='hii'>
+        <div className={'flex relative px-[35vw]'} style={sliderStyle} id='hii'>
           {imagesList.map((item, index) => (
             <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
           ))}
