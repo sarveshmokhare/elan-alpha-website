@@ -367,28 +367,28 @@ export const techydata = [
   },
   {
     name: "Game Jam",
-    reglink: "",
-    sublink: "",
+    reglink: "https://unstop.com/p/game-jam-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587268",
+    sublink: "https://unstop.com/p/game-jam-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587268",
     documentation:
       "https://docs.google.com/document/d/1yb1K_strRj-p4t3xCVlGbWIl5G2PDZIKjABQq1u7YFo/edit",
     img: "https://ik.imagekit.io/lc4zhdkrtsr/competition/paperpres-min_LdkSwsc0l.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647598285351",
     details: "Developing a game is the new meta. Game Jam is an event that enables one to create a game from scratch and within the time barrier.",
     format: [''],
-    rules: ['This event will be held in a single round.', 'It will be held in itch.io and the exact links are given at the start of the event.', ' This event starts on 25/03/2022 and lasts for 36 hours.', 'Winners will be announced __days after the event ends.', 'Participants should create a game in stipulated time.', 'All the assets can be used in developing the game (make sure you have the rights to use the assets).', 'Your game should be made within the stipulated time.', 'Relevance to the theme is preferred and has points if the theme is shown in game. (Note: This is not compulsory for the submission of the game however this is only preferred in the view of Game Jam).', 'Other Instructions are written on the Game Jam itch.io page.', 'Each participant has to register for the event by filling their details in the registration form available on the Elan and Nvision 2022 Website.'],
+    rules: ['This event will be held in a single round.', 'It will be held in itch.io and the exact links are given at the start of the event.', ' This event starts on 17/02/2023 and lasts for 36 hours.', 'Winners will be announced __ days after the event ends.', 'Participants should create a game in stipulated time.', 'All the assets can be used in developing the game (make sure you have the rights to use the assets).', 'Your game should be made within the stipulated time.', 'Relevance to the theme is preferred and has points if the theme is shown in game. (Note: This is not compulsory for the submission of the game however this is only preferred in the view of Game Jam).', 'Other Instructions are written on the Game Jam itch.io page.', 'Each participant has to register for the event by filling their details in the registration form available on the Elan and Nvision 2023 Website.'],
     timeline: {
-      regstart: '',
-      regend: '',
-      event: ''
+      regstart: '12th Feb 2023',
+      regend: '16th Feb 2023',
+      event: '17th - 18th Feb'
     },
     judging: ['Concept and complexity of the game', 'Innovative approaches used', 'Art, audio and graphics', 'Relevance to the theme'],
-    prizes: ['The top two participants will receive prizes of worth Rs. 20000.', 'This prize money will be awarded via NEFT and will be processed within 30 working days.', 'The winner will be notified via email sent from(elan@iith.ac.in).', 'E - certificate of Participation will be given to all the participants who have submitted their model via submission form', 'E - certificate of Excellence will be given to the top 2 participants.'],
+    prizes: ['The top two participants will receive prizes of worth Rs. 12000.', 'This prize money will be awarded via NEFT and will be processed within 30 working days.', 'The winner will be notified via email sent from(elan@iith.ac.in).', 'E - certificate of Participation will be given to all the participants who have submitted their model via submission form', 'E - certificate of Excellence will be given to the top 2 participants.'],
     contact: [{
-      name: 'Sumedh Kashikar',
-      contact: 7601041880
+      name: 'Rishi Cheekatla',
+      contact: 9908735687
     },
     {
-      name: 'Ananya Varshney',
-      contact: 8088577412
+      name: 'Sujal Gupta',
+      contact: 6387504144
     },]
   },
   {
@@ -413,8 +413,8 @@ export const techydata = [
     name: "Shooting Planets",
     details: "Processing image of a planet by stacking the Raw Video Data. A detailed Report should be submitted which includes software & settings used for stacking.",
     img: splanets,
-    reglink: "",
-    sublink: "",
+    reglink: "https://unstop.com/p/shooting-planets-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586819",
+    sublink: "https://unstop.com/p/shooting-planets-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586819",
     documentation: "",
     format: [''],
     rules: ["You can use any stacking & photoshop software.", "We will provide the Raw Video Data, but In case you want to capture your own Raw Data, we can make our club Telescope available for you.", "Max Team Size - 4 Members"],
