@@ -64,22 +64,14 @@ function SocialCause() {
           
           <div className="bg-white font-century mb-4 mx-8 p-6 text-xl md:text-3xl back relative">
             <p className="text-black first-letter:text-5xl">
-              Animals play an essential role in human life and planet earth.
-              They are used in various ways. Fashion.
+            In Anatole France's words, “Until one has loved an animal, a part of one's soul remains unawakened.” Animals play an essential role in human life and planet earth. They are the planet's most vulnerable inhabitants, so they deserve our most robust support and the right to enjoy life and liberty. The term “Ikshana” means caring for or looking after and can be applied to any living creature. 
+
+
               <br/>
               <br/>
-               Every year large numbers
-              of animals, including cattle, pigs, goats, sheep, crocodiles,
-              snakes, stingrays, seals, emus, kangaroos, horses and more are
-              killed for their skins. Amusement. Animals are being taken
-              advantage of, suffering, and even dying for the amusement and
-              pleasure of onlookers. Circus.Zoo.Hunting for fun.<br/>
-              <br/> Nutrition.
-              Animals are source of energy and readily digested protein. Hens.
-              Goat. Cow. Pigs are some examples. Science. Animals are used for
-              scientific research. For testing new products, medicines, and the
-              list goes on. They go through a lot to satisfy our needs. They are
-              planets most vulnerable inhabitants so,
+              The shocking number of animal cruelty cases reported daily is just the tip of the iceberg—most cases are never reported. Unlike violent crimes against people, cases of animal abuse are not compiled, making it difficult to calculate just how common they are.
+<br/>
+              <br/> As a considerably evolved species, our job is to protect what is essential and maintain the world's balance. This year Elan & nVision aims to increase awareness about animal welfare among the people through Ikshana-Love animals. Stay tuned for further updates.
             </p>
             <p className="text-center text-3xl md:text-5xl p-2 md:p-8 font-semibold">
             They deserve our <span className="text-[#009329]">strongest support</span> and are <br/> entitled for the <span className="text-[#009329]" >right to enjoy life</span> and <span className="text-[#009329]">liberty.</span>
