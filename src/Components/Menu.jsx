@@ -2,13 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 
-const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
-const valenrowIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_icon.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672129770324";
-const menuRing = "https://ik.imagekit.io/sarvesh/Elan/more_assets/menu_ring_tb4lzi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124333474";
-const eventsCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/events_card_bx8xeq.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123797965";
-const litfestCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_card_t7hbxr.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123891136";
-const competitionsCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/competitions_card_ri5ryb.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123889935";
-const teamCard = "https://ik.imagekit.io/sarvesh/Elan/more_assets/team_card_elww7i.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123738336";
+import caPortalIcon from "../assets/miscellaneous/ca_portal_icon_lnilgn.svg";
+import competitionsCard from "../assets/miscellaneous/competitions_card_ri5ryb.svg";
+import eventsCard from "../assets/miscellaneous/events_card_bx8xeq.svg";
+import litfestCard from "../assets/miscellaneous/litfest_card_t7hbxr.svg";
+import menuRing from "../assets/miscellaneous/menu_ring_tb4lzi.svg";
+import teamCard from "../assets/miscellaneous/team_card_elww7i.svg";
+import valenrowIcon from "../assets/miscellaneous/valenrow_icon.svg";
 
 function Menu(props) {
   const toggleMenu = props.toggleMenu;

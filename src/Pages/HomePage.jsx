@@ -12,108 +12,109 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 import AnimationContext from "../Contexts/AnimationContext";
-const elanLogo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/logo_white_pq9fjb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124336849";
-const caPortalIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ca_portal_icon_lnilgn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719121";
-const valenrowIcon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_icon.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672129770324";
-const book = "https://ik.imagekit.io/sarvesh/Elan/more_assets/book_runz9i.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123817096";
-const aboutLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_left_wu2elv.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123658455";
-const aboutRight = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_right_tysznb.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123824344";
-const valenrowLogo = "https://ik.imagekit.io/sarvesh/Elan/more_assets/valenrow_logo_zkwbw9.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124331238";
-const sec1DecorLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/sec1_decor_left_io8465.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123889684";
-const sec1BottomGraphicsLarge = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_line_rings_large_v92zo2.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123594315";
-const aboutTop = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_top_neldzr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198592";
-const aboutBtmR = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_txzshm.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198324";
-const aboutBtmC = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_center_mmuc4i.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201395";
-const aboutBtmL = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_vgpvv9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198367";
-const aboutBtmLMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_left_mobile_slsuhl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130840263";
-const aboutBtmRMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/about_bottom_right_mobile_zosh1x.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130840781";
-const timelineJug = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_jug_huppds.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202073";
-const timelineBtm = "https://ik.imagekit.io/sarvesh/Elan/more_assets/timeline_btm_wxotkh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127198958";
-const exploreBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/explore_uaxnb5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201035";
-const galleryBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_wx7cts.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127200246";
-const galleryBtmBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/gallery_btm_qf07mf.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672130711123";
-const statsBg = "https://ik.imagekit.io/sarvesh/Elan/more_assets/stats_krnswc.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672128262763";
-const inviteText = "https://ik.imagekit.io/sarvesh/Elan/more_assets/invite_text_lioz94.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124331739";
-const fullMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_full_obblnh.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330206";
-const cresentRight = "https://ik.imagekit.io/sarvesh/Elan/more_assets/cresent_right_plpxpn.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330564";
-const halfMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_half_uzzj5d.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330451";
-const cresentLeft = "https://ik.imagekit.io/sarvesh/Elan/more_assets/cresent_left_abrdyj.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123615896";
-const topLine = "https://ik.imagekit.io/sarvesh/Elan/more_assets/top_line_blwx9b.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123754228";
-const sampleVid = "https://ik.imagekit.io/sarvesh/Elan/Videos/video.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1672122995437";
 
-const timeline2k171 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085894517";
-const timeline2k172 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120018615";
-const timeline2k173 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085894899";
-const timeline2k174 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2017/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120030727";
+import aboutBtmC from "../assets/miscellaneous/about_bottom_center_mmuc4i.png";
+import aboutBtmLMob from "../assets/miscellaneous/about_bottom_left_mobile_slsuhl.svg";
+import aboutBtmL from "../assets/miscellaneous/about_bottom_left_vgpvv9.png";
+import aboutBtmRMob from "../assets/miscellaneous/about_bottom_right_mobile_zosh1x.svg";
+import aboutBtmR from "../assets/miscellaneous/about_bottom_right_txzshm.png";
+import aboutLeft from "../assets/miscellaneous/about_left_wu2elv.svg";
+import aboutRight from "../assets/miscellaneous/about_right_tysznb.svg";
+import aboutTop from "../assets/miscellaneous/about_top_neldzr.png";
+import audience from "../assets/miscellaneous/audience_lhsytp.svg";
+import book from "../assets/miscellaneous/book_runz9i.svg";
+import btmLine from "../assets/miscellaneous/bottom_line_uqfqif.svg";
+import caPortalIcon from "../assets/miscellaneous/ca_portal_icon_lnilgn.svg";
+import elanLogo from "../assets/miscellaneous/logo_white_pq9fjb.png";
+import calender from "../assets/miscellaneous/calender_pavjvx.png";
+import cresentLeft from "../assets/miscellaneous/cresent_left_abrdyj.svg";
+import cresentRight from "../assets/miscellaneous/cresent_right_plpxpn.svg";
+import exploreBg from "../assets/miscellaneous/explore_uaxnb5.png";
+import galleryBtmBg from "../assets/miscellaneous/gallery_btm_qf07mf.svg";
+import galleryBg from "../assets/miscellaneous/gallery_wx7cts.png";
+import hat from "../assets/miscellaneous/hat_cteqwu.png";
+import insta from "../assets/miscellaneous/insta_crejyu.png";
+import inviteText from "../assets/miscellaneous/invite_text_lioz94.svg";
+import inviteTextMob from "../assets/miscellaneous/invite_text_mobile_jezqju.svg";
+import likes from "../assets/miscellaneous/likes_xpppxt.png";
+import mobileDecorBottom from "../assets/miscellaneous/mobile_decor_bottom_rxvank.svg";
+import mobileDecorTop from "../assets/miscellaneous/mobile_decor_top_rbdjer.svg";
+import fullMoon from "../assets/miscellaneous/moon_full_obblnh.svg";
+import moon from "../assets/miscellaneous/moon_gvdoed.svg";
+import halfMoon from "../assets/miscellaneous/moon_half_uzzj5d.svg";
+import sec1BottomGraphicsLarge from "../assets/miscellaneous/moon_line_rings_large_v92zo2.svg";
+import ringMoon from "../assets/miscellaneous/ring_moon_dmkfwi.svg";
+import sec1DecorLeft from "../assets/miscellaneous/sec1_decor_left_io8465.svg";
+import statsBg from "../assets/miscellaneous/stats_krnswc.png";
+import threePeeps from "../assets/miscellaneous/three_peeps_fnzu4a.png";
+import timelineBtm from "../assets/miscellaneous/timeline_btm_wxotkh.png";
+import timelineJug from "../assets/miscellaneous/timeline_jug_huppds.png";
+import topLine from "../assets/miscellaneous/top_line_blwx9b.svg";
+import tweets from "../assets/miscellaneous/tweets_panzxl.svg";
+import valenrowIcon from "../assets/miscellaneous/valenrow_icon.svg";
+import valenrowLogo from "../assets/miscellaneous/valenrow_logo_zkwbw9.svg";
+import views from "../assets/miscellaneous/views_bactad.svg";
 
-const timeline2k181 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970179";
-const timeline2k182 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969752";
-const timeline2k183 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969989";
-const timeline2k184 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2018/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970870";
+import sampleVid from "../assets/Videos/video.mp4";
 
-const timeline2k191 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119983818";
-const timeline2k192 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984076";
-const timeline2k193 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984067";
-const timeline2k194 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2019/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119984367";
+import timeline2k171 from "../assets/Timeline_Images/2017/1.jpeg";
+import timeline2k172 from "../assets/Timeline_Images/2017/2.jpg";
+import timeline2k173 from "../assets/Timeline_Images/2017/3.jpeg";
+import timeline2k174 from "../assets/Timeline_Images/2017/4.jpg";
 
-const timeline2k201 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119969997";
-const timeline2k202 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119977070";
-const timeline2k203 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970264";
-const timeline2k204 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2020/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672119970157";
+import timeline2k181 from "../assets/Timeline_Images/2018/1.jpg";
+import timeline2k182 from "../assets/Timeline_Images/2018/2.jpg";
+import timeline2k183 from "../assets/Timeline_Images/2018/3.jpg";
+import timeline2k184 from "../assets/Timeline_Images/2018/4.jpg";
 
-const timeline2k211 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756439";
-const timeline2k212 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/2.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756241";
-const timeline2k213 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/3.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085863826";
-const timeline2k214 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2021/4.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1673085756620";
+import timeline2k191 from "../assets/Timeline_Images/2019/1.jpg";
+import timeline2k192 from "../assets/Timeline_Images/2019/2.jpg";
+import timeline2k193 from "../assets/Timeline_Images/2019/3.jpg";
+import timeline2k194 from "../assets/Timeline_Images/2019/4.jpg";
 
-const timeline2k221 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120027968";
-const timeline2k222 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120625070";
-const timeline2k223 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120624977";
-const timeline2k224 = "https://ik.imagekit.io/sarvesh/Timeline_Images/2022/4.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672120128611";
+import timeline2k201 from "../assets/Timeline_Images/2020/1.jpg";
+import timeline2k202 from "../assets/Timeline_Images/2020/2.jpg";
+import timeline2k203 from "../assets/Timeline_Images/2020/3.jpg";
+import timeline2k204 from "../assets/Timeline_Images/2020/4.jpg";
 
-const mobileDecorTop = "https://ik.imagekit.io/sarvesh/Elan/more_assets/mobile_decor_top_rbdjer.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123757464";
-const mobileDecorBottom = "https://ik.imagekit.io/sarvesh/Elan/more_assets/mobile_decor_bottom_rxvank.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123775006";
-const moon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/moon_gvdoed.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123627881";
-const btmLine = "https://ik.imagekit.io/sarvesh/Elan/more_assets/bottom_line_uqfqif.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330798";
-const ringMoon = "https://ik.imagekit.io/sarvesh/Elan/more_assets/ring_moon_dmkfwi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330652";
-const inviteTextMob = "https://ik.imagekit.io/sarvesh/Elan/more_assets/invite_text_mobile_jezqju.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123719724";
-const audience = "https://ik.imagekit.io/sarvesh/Elan/more_assets/audience_lhsytp.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123621555";
-const hat = "https://ik.imagekit.io/sarvesh/Elan/more_assets/hat_cteqwu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123774839";
-const calender = "https://ik.imagekit.io/sarvesh/Elan/more_assets/calender_pavjvx.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124330898";
-const insta = "https://ik.imagekit.io/sarvesh/Elan/more_assets/insta_crejyu.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123775016";
-const likes = "https://ik.imagekit.io/sarvesh/Elan/more_assets/likes_xpppxt.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123591221";
-const threePeeps = "https://ik.imagekit.io/sarvesh/Elan/more_assets/three_peeps_fnzu4a.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672123754750";
-const tweets = "https://ik.imagekit.io/sarvesh/Elan/more_assets/tweets_panzxl.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123695955";
-const views = "https://ik.imagekit.io/sarvesh/Elan/more_assets/views_bactad.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123883929";
+import timeline2k211 from "../assets/Timeline_Images/2021/1.jpeg";
+import timeline2k212 from "../assets/Timeline_Images/2021/2.jpeg";
+import timeline2k213 from "../assets/Timeline_Images/2021/3.jpeg";
+import timeline2k214 from "../assets/Timeline_Images/2021/4.jpeg";
+
+import timeline2k221 from "../assets/Timeline_Images/2022/1.jpg";
+import timeline2k222 from "../assets/Timeline_Images/2022/2.jpg";
+import timeline2k223 from "../assets/Timeline_Images/2022/3.jpg";
+import timeline2k224 from "../assets/Timeline_Images/2022/4.jpg";
 
 import ExploreSlider from "../Components/ExploreSlider";
 import GallerySlider from "../Components/GallerySlider";
 
-const galImg1 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/1.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122597396";
-const galImg2 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/2.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591825";
-const galImg4 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/4.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596276";
-const galImg6 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/6.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596123";
-const galImg7 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/7.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122596756";
-const galImg12 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/12.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122595943";
-const galImg13 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/13.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122597118";
-const galImg14 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/14.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591800";
-const galImg15 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/15.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122591895";
-const galImg16 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/16.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598065";
-const galImg17 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/17.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122599219";
-const galImg18 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/18.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598414";
-const galImg19 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/19.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122599351";
-const galImg20 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/20.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122588648";
-const galImg21 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/21.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122598568";
-const galImg22 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/22.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122595409";
-const galImg23 = "https://ik.imagekit.io/sarvesh/Elan/Gallery_Section/23.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122592701";
+import galImg1 from "../assets/Gallery_Section/1.jpeg";
+import galImg2 from "../assets/Gallery_Section/2.jpeg";
+import galImg4 from "../assets/Gallery_Section/4.jpeg";
+import galImg6 from "../assets/Gallery_Section/6.jpeg";
+import galImg7 from "../assets/Gallery_Section/7.jpeg";
+import galImg12 from "../assets/Gallery_Section/12.jpeg";
+import galImg13 from "../assets/Gallery_Section/13.jpeg";
+import galImg14 from "../assets/Gallery_Section/14.jpeg";
+import galImg15 from "../assets/Gallery_Section/15.jpeg";
+import galImg16 from "../assets/Gallery_Section/16.jpeg";
+import galImg17 from "../assets/Gallery_Section/17.jpeg";
+import galImg18 from "../assets/Gallery_Section/18.jpeg";
+import galImg19 from "../assets/Gallery_Section/19.jpeg";
+import galImg20 from "../assets/Gallery_Section/20.jpeg";
+import galImg21 from "../assets/Gallery_Section/21.jpeg";
+import galImg22 from "../assets/Gallery_Section/22.jpeg";
+import galImg23 from "../assets/Gallery_Section/23.jpeg";
 
-const explore1 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/breakfree_jivckj.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122072329";
-const explore2 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/glitz_qlpvuo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122092614";
-const explore3 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/pronites_1_irvpdd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122067254";
-const explore4 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/deepn_gpmlg5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122066583";
-const explore5 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/proshows_lgvukm.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122096927";
-const explore6 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/shipwreck_mtiags.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672122097188";
-const explore7 = "https://ik.imagekit.io/sarvesh/Elan/Explore_Section/campusidol_bpb7zb.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1672122073343";
+import explore1 from "../assets/Explore_Section/1_breakfree_jivckj.jpeg";
+import explore2 from "../assets/Explore_Section/2_glitz_qlpvuo.png";
+import explore3 from "../assets/Explore_Section/3_pronites_1_irvpdd.jpg";
+import explore4 from "../assets/Explore_Section/4_deepn_gpmlg5.png";
+import explore5 from "../assets/Explore_Section/5__proshows_lgvukm.jpg";
+import explore6 from "../assets/Explore_Section/6_campusidol_bpb7zb.jpeg";
+import explore7 from "../assets/Explore_Section/7_shipwreck_mtiags.png";
 
 function HomePage() {
   const timelineImgs = [
@@ -1070,7 +1071,7 @@ function HomePage() {
             Stats
           </h1>
 
-          <div className="flex flex-wrap w-full justify-around px-[8%] lg:px-[5%] xl:px-[20%] pt-14 lg:pb-5 z-10 relative">
+          <div className="flex flex-wrap w-full justify-around px-[8%] lg:px-[5%] xl:px-[20%] pt-14 lg:pb-7 z-10 relative">
             <div className="flex flex-col items-center justify-center my-4">
               <div className="h-10 mb-2 lg:mb-4 lg:h-16 mx-8 md:mx-20">
                 <img className="h-full" src={audience}></img>

@@ -2,8 +2,8 @@ import React from 'react'
 import { BsInstagram, BsYoutube, BsLinkedin, BsFacebook, BsTwitter } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-const logo = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/logo_white_pq9fjb.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672124336849'
-const mail_icon = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/mail_icon_zhwoy3.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1672123889601'
+import logo from '../assets/miscellaneous/logo_white_pq9fjb.png'
+import mail_icon from '../assets/miscellaneous/mail_icon_zhwoy3.svg'
 
 function Footer() {
 

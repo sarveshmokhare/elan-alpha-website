@@ -3,9 +3,10 @@
 import React, { useContext, useState, useEffect } from 'react'
 import gsap from 'gsap'
 import ThemeContext from '../Contexts/ThemeContext'
+import Popup from 'reactjs-popup'
+
 const arrow = 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554771/elan/assets/designs/competitions_arrow_wkwpjg.svg'
 const cut_btn = 'https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554773/elan/assets/designs/competitions_cut_btn_ybw3n9.svg'
-import Popup from 'reactjs-popup'
 const vase = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_vase_jn4wbk.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127201851'
 const mushroom = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_mushroom_jt9txv.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672129181806'
 const vase_lg = 'https://ik.imagekit.io/sarvesh/Elan/more_assets/litfest_vase_desktop_qxj85o.png?ik-sdk-version=javascript-1.4.3&updatedAt=1672127202136'
