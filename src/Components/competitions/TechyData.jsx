@@ -17,6 +17,9 @@ const splanets ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541692/e
 const drone ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan/assets/competitions/drone_apyfuc.jpg"
 const drift_king ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan/assets/competitions/drift_king_rxq2x5.jpg"
 const explorer ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan/assets/competitions/explorer_sqlinx.jpg"
+const game_jam ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673636537/elan/assets/competitions/game_jam_chk4v9.jpg"
+
+
 export const techydata = [
 
   {
@@ -371,7 +374,7 @@ export const techydata = [
     sublink: "https://unstop.com/p/game-jam-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587268",
     documentation:
       "https://docs.google.com/document/d/1yb1K_strRj-p4t3xCVlGbWIl5G2PDZIKjABQq1u7YFo/edit",
-    img: "https://ik.imagekit.io/lc4zhdkrtsr/competition/paperpres-min_LdkSwsc0l.png?ik-sdk-version=javascript-1.4.3&updatedAt=1647598285351",
+    img: game_jam,
     details: "Developing a game is the new meta. Game Jam is an event that enables one to create a game from scratch and within the time barrier.",
     format: [''],
     rules: ['This event will be held in a single round.', 'It will be held in itch.io and the exact links are given at the start of the event.', ' This event starts on 17/02/2023 and lasts for 36 hours.', 'Winners will be announced __ days after the event ends.', 'Participants should create a game in stipulated time.', 'All the assets can be used in developing the game (make sure you have the rights to use the assets).', 'Your game should be made within the stipulated time.', 'Relevance to the theme is preferred and has points if the theme is shown in game. (Note: This is not compulsory for the submission of the game however this is only preferred in the view of Game Jam).', 'Other Instructions are written on the Game Jam itch.io page.', 'Each participant has to register for the event by filling their details in the registration form available on the Elan and Nvision 2023 Website.'],

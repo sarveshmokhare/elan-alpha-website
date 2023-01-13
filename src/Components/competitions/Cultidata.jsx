@@ -10,6 +10,7 @@ const nrytanjali = "https://res.cloudinary.com/dky4ljqmf/image/upload/v167155478
 const Picelectic = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554759/elan/assets/competitions/pice_jvanor.jpg";
 const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/elan/assets/competitions/paint_gicqs6.png";
 const octaves ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673536747/elan/assets/competitions/octaves_hkhtpp.jpg";
+const dj_wars ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673636392/elan/assets/competitions/dj_wars_wrer9u.jpg"
 
 export const cultidata = [
   {
@@ -124,7 +125,7 @@ export const cultidata = [
     reglink:"https://unstop.com/p/dj-wars-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587247",
     sublink:"https://unstop.com/p/dj-wars-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587247",
     documentation:"",
-    img:octaves,
+    img:dj_wars,
     details: "This is a solo DJ contest, where DJs go head to head to give a wonderful performance. The event is a one-round event. Participants can either register online or register on-spot. On-spot registrations will close 1 hour before the event starts.",
     rules:["Each DJ will be given a maximum time of 15 minutes to perform for both prelims and finals.",
       "5 minutes would be given in addition to the 15 minutes for the participants to set up for their performance.",
