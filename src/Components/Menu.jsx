@@ -165,7 +165,18 @@ function Menu(props) {
               </div>
               <div className="event-name hover:text-golden">LitFest</div>
             </Link>
-
+            <a
+              onMouseEnter={linksHoverHandler}
+              onMouseLeave={linksLeaveHandler}
+              className="py-4 flex items-center"
+              onClick={toggleMenu}
+              href="http://cryptex.elan.org.in/"
+            >
+              <div className="ring-icon h-0">
+                <img className="h-full" src={menuRing}></img>
+              </div>
+              <div className="event-name hover:text-golden">Cryptex</div>
+            </a>
             <Link
               onMouseEnter={linksHoverHandler}
               onMouseLeave={linksLeaveHandler}
