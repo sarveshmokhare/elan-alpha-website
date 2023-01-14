@@ -18,7 +18,7 @@ const drone ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan
 const drift_king ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan/assets/competitions/drift_king_rxq2x5.jpg"
 const explorer ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673541691/elan/assets/competitions/explorer_sqlinx.jpg"
 const game_jam ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673636537/elan/assets/competitions/game_jam_chk4v9.jpg"
-
+const robo_soccer ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673690742/elan/assets/competitions/robo_soccer_mq1lln.jpg"
 
 export const techydata = [
 
@@ -520,6 +520,34 @@ export const techydata = [
       event: ''
     },
   },
+  {
+    name: "Robo Soccer",
+    details: "Soccer (Football) is a sport that breeds raw adrenaline, passion, and emotions that a player and a spectator cannot even fathom. Ever imagined constructing a Soccer bot, pitting it against other strong, worthy bots in a 'nail-biting' tournament and being the best? Robo soccer is an event that promises to unleash the spirit of football  and Robotics flair within you, and the tenacity of the game is undoubtedly going to require some steely nerves.",
+    img: robo_soccer,
+    reglink: "",
+    sublink: "",
+    documentation: "",
+    format: [],
+    rules: ["Build two robots that can kick a ball into the opponent’s Goal Post. Use your creativity and come up with innovative  mechanisms to smash the ball into the goal post. ", "The teams are encouraged to come up with innovative ideas of robots as long as they adhere to the below mentioned rules", "The soccer field is 2.4m x 1.8m", "Goal post is 45 cm in length and 30 cm in height. ", "Boundary of the field will be covered by a high wall. ", "There are two regions in the field, green field and blue field. ", "A Tennis Ball(around 6.5 cm in diameter) will be used.", "There may be up to 10% error in the dimensions mentioned above ", "Each team is allowed to have a maximum of two bots.", "Both must fit into a cube of(25 X 25 X 25)cm at all times.It may not expand beyond these dimensions during any point of the match.", "        Note : Consider these dimensions to be the maximum limit.Some relaxation may or may not be provided.To be on safer side, participants are required to stick to this limit ", "An on board battery with the voltage rating not exceeding 12.5 V is allowed.", "The weight of each bot should not exceed 1.5 kg(this includes the battery).Remote / Wires are not taken into consideration", "The remote control for the bot could be a wired or a wireless one.In case it is wired, make sure that the length of the wire is greater than 3.5m.The wire should never be taut at any time during the game.", "Grabbing the ball is not permitted.The bot should have a grabbing mechanism.Such bots will have to compete after removing the gripper.", "In the case of a wireless bot, you must be able to control it with two different frequencies. The organisers will not be responsible for frequency interference. ", "Fans or any other windage setup is NOT allowed.The ball should be moved only through physical contact.", "Any dangerous attachment like spinners, blades are not allowed.In case of queries, regarding attachments, kindly contact the organisers at the earliest", "The bot can have a maximum clearance of 3 cm from the ground level.This is to ensure the ball doesn’t go under the bot", "The bot must be submitted before the start of the competition.No changes except charging the battery and replacing/ removing damaged parts will be permitted.", "Addition of extra items like rocks, weights etc.to increase the weight of the bot is not permitted", "Teams are encouraged to bring some common spare parts.In case, some parts are damaged, it may affect their performance in the overall competition", "The Competition will be split into two phases - Group and Knockout. The exact structure will be revealed on spot", "Each match will last for 4 mins - 2 mins per half", "Match will start from the centre of the field.One team will start with the ball during the start of each half.", "Time will be stopped for stoppages.No added time at the end of halves. ", "In case of stoppage in the game or if the ball goes out of the arena, play will restart from the centre.The team which started the half will get to start the ball.", "Point System for group stage-\n\tWin - 3 points\n\tDraw - 1 point\n\tLoss - 0 point", "Tie Breaker in Group Stage (Decreasing Order of Precedence)-\n\tHigher Goal Difference\n\tHigher Goal(s) Scored\n\tLesser cumulative penalty points\n\tIn case, all parameters are tied, a draw will decide the qualifying team", "In case of a tie in the knockout phase. An extra time of 2 min (1 min per half). The first team to score will be declared winner (Golden Goal). The remaining time will not be played.", "In case of a tie even in the extra time, the following will decide the advancing team\nTie Breaker in Knockout Stage\n\tLesser penalty points in the particular game\n\tHigher cumulative Goal Difference \n\tLesser cumulative penalty points in the entire tournament(including group stage)\n\tHigher finish in Group Stage\n\tHigher cumulative Goals Scored\n\t", "A goal will be considered only if the ball crosses the goal line completely", "If there is a deadlock for more than 10s(No real movement of ball), play will be started from centre", "The objective of the competition is to promote open and fair play. Penalties and Fouls have been designed keeping this in mind. All teams are required to play with the positive and competitive spirit and not exploit any loopholes in the rules.", "Ramming into the opponent's robot intentionally (without the ball in the play)- 5pts. The bot needs to move the ball, in this process if the bot rams into the opponent bot, that will be considered legal.", "The bot can’t corner the ball and deny the opponent an attempt to kick / hit the ball.If a team holds the ball in a corner for more than 5 sec, then a penalty of 5 points will be awarded.In case, a team is observed cornering the ball repeatedly during the game, penalty upto 10 points may be given(even if duration is less than 5 sec)", "    In case of wired controllers, the team should ensure sufficiently long wires(at least 3.5m).If in any case, it is found that the wire is interrupting play, a penalty of 3 pts will be awarded.In case, it is intentional, penalty upto 5 points may be awarded.", "Any move causing serious damage to the opponent’s bot will lead to a penalty of 10 points.In severe cases, the team may be disqualified from the tournament", "If any point, a team accumulates  more than 10 penalty points(> 10), the team will have to play the rest of the match with just one bot.", "In case a team accumulates more than 20 penalty points, it will lose the match on spot(irrespective of score) with a - 3 Goal Differential(0 scored, 3 conceded).In severe cases, the team may be disqualified from the tournament.", "Both the bots are not allowed to cover the goal completely for more than 5 seconds.A penalty of 5 points may be awarded in this case. If a team is seen to do this repeatedly during the match(even if for less than 5 sec), a similar penalty may be awarded.However, one bot can cover the goal at all times(without any time limit). ", "In case , a significant part(motor, wheels, etc) of the bot falls down without the opponent's interference, play will be stopped upto 30 seconds at max. The team can replace/ remove the corresponding part of the bot. However a penalty of 3 points may be awarded in this case", "The team has a right to appeal / defend a foul.In all cases, the judges decision will be final.", "The above mentioned rules are subject to change. Major changes will be informed to the participants separately but they are requested to constantly check the rulebook for any updates","In justified cases, the judge has the right to make decisions which may contradict the above mentioned rules"],
+    prizes: ["Prizes for the first 2 positions are worth Rs. 40000"],
+    judging: [""],
+    contact: [{ name:"Mehwish Naz",
+      contact: 9334862420
+},
+{
+  name:"Akshat Jain",
+  contact: 7489852277
+},
+{
+  name:"Mohammad Shees",
+  contact: 7081770180
+}],
+    timeline: {
+      regstart: '13th Feb 2023',
+      regend: '16th Feb 2023',
+      event: '18th Feb 2023'
+    },
+  },
 ];
 
         // {
@@ -530,9 +558,9 @@ export const techydata = [
         //   sublink:"",
         //   documentation:"",
         //   format: [],
-        //   rules:[],
-        //   prizes:[],
-        //   judging:[],
+        //   rules:[""],
+        //   prizes:[""],
+        //   judging:[""],
         //   contact: [],
         //   timeline: {
         //     regstart: '',

@@ -11,6 +11,8 @@ const Picelectic = "https://res.cloudinary.com/dky4ljqmf/image/upload/v167155475
 const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/elan/assets/competitions/paint_gicqs6.png";
 const octaves ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673536747/elan/assets/competitions/octaves_hkhtpp.jpg";
 const dj_wars ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673636392/elan/assets/competitions/dj_wars_wrer9u.jpg"
+const rap ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673690742/elan/assets/competitions/rap_j6ps9p.jpg"
+const natyakram ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673690742/elan/assets/competitions/natyakram_vzvh7z.jpg"
 
 export const cultidata = [
   {
@@ -150,6 +152,68 @@ export const cultidata = [
     {name:"Venu Naik",
     contact:8978792258},
     {name:"Kanna Naveen",contact:9618388082}]
+  },
+  {
+    name: "Rap Battle",
+    details: "Wanna put your rapping skills to the test? Come off and face against other rappers to show your versatility to the world! Rap Battle is coming for the first time under Elan & nVision 2023!",
+    img: rap,
+    reglink: "",
+    sublink: "",
+    documentation: "",
+    format: [],
+    rules: ["This is a solo rapping competition.", "Registration can either be done on the spot or online.", "        On - Spot registrations would be closed 1 hour before the event.", "This competition will have only one round, but in case of extreme participation, we might have two rounds for the event.", "Both rounds will have the same rules, except the participants will be given a topic to prepare a rap verse on the spot for the second round.", "Each performance can be an original/unoriginal rap verse and should not exceed 5 minutes. The original ones will get bonus points. ", "Participants should have their own beat to rap to.The participants should have the necessary rights to the beats they use.", "The decisions made by the organizers and the judges will be final and abiding.", "The organizing team has the complete right to change the prize money if the participation is less than ten.","The event will be held at the Amphitheatre in IIT Hyderabad."],
+    prizes: ["All the participants will receive a certificate of participation issued by Elan & nVision, IIT Hyderabad.","Prizes worth Rs 18000 are up for grabs!"],
+    judging: ["Technical Skill","Lyrics","Rhythm and Timing ","Originality","Stage Presence"],
+    contact: [{
+      name:"Parth Kansagra",
+      contact: 7016005187
+    },
+  {
+    name:"Rajat Premchandani",
+    contact: 9145223377
+  },
+{
+  name:"Tanay Laddha",
+  contact: 7737971658
+}],
+    timeline: {
+      submission: '13th January, 2023',
+      event: '18th February, 2023'
+    },
+  },
+  {
+    name: "Natyakram",
+    details: "Drama, like other forms of Art, imitates life. It is the specific mode of fiction represented in performance. So come show us some amazing talents and celebrate the festival of NAATAKAM.",
+    img: natyakram,
+    reglink: "",
+    sublink: "",
+    documentation: "",
+    format: [],
+    rules: ["This is a Offline Drama competition,", "Each team comprises a maximum of 10 participants.", "Languages preferred Hindi, Telugu & English.", "Registration can be done through online or on spot", "On - Spot Registration closes one hour before the start of the event.", "The eligibility: Age limit for the competition is 15 to 25 years","Duration: Duration of stage performance is limited to 15 minutes(minimum of 10 mins.).","        Language \n\tUsage of any kind of vulgar or abusive language is strictly not allowedn\n\tThe script should not be insensitive while dealing with  issues such as religion, race etc","All equipment and its operation is the responsibility of the participants","The  participants are expected to reach the venue atleast 30 min prior to the start of their event.","Demeanor-\n\tThe presentation should take into account the comfort and safety of the audience and actors.\n\tParticipants should not portray indecent actions, excessive movements that are provocative.","The organizing team has the complete right to change the prize money if the participation is less than 8."],
+    prizes: ["All the participants will receive participation certificates by Elan & Nvision, IIT Hyderabad.","Prizes worth ₹18, 000 are up for grabs"],
+    judging: ["Creativity of Drama","Overall presentation of Drama","Script Writing"],
+    contact: [
+      {
+        name: "Kanishka Prasad",
+        contact:8121894659
+      },
+      {
+        name:"Piyush Kothawade",
+        contact: 9274996164
+      },
+      {
+        name:"Omkar Nilkanth",
+        contact: 7058884881
+      },
+      {
+        name:"Kathyayani Shiv Kumar",
+        contact: 9908103703
+      }
+    ],
+    timeline: {
+      // submission:"",
+      event: '19th Feb, 2023'
+    },
   },
   {
     name: "Filmfare Fiesta",

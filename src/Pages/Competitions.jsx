@@ -66,7 +66,6 @@ function ShowDetails({ item, type }) {
               </ul>
 
               <div className={(popupNavValue == 3 ? ' block' : 'hidden')}>
-
                 <ul className={type == 1 ? 'block' : 'hidden'}>
                   <li className='flex flex-col sm:flex-row'>
                     <div className='text-golden text-2xl  w-full sm:w-1/2'>Submission deadline:</div>
@@ -227,7 +226,7 @@ function Navigate() {
 
 
       <div className={("flex flex-wrap justify-evenly relative z-10")}>
-        <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} />
+        <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} type={Navigatevalue}/>
       </div>
     </div>
   )
