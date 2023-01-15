@@ -68,8 +68,8 @@ function ShowDetails({ item, type }) {
               <div className={(popupNavValue == 3 ? ' block' : 'hidden')}>
                 <ul className={type == 1 ? 'block' : 'hidden'}>
                   <li className='flex flex-col sm:flex-row'>
-                    <div className='text-golden text-2xl  w-full sm:w-1/2'>Submission deadline:</div>
-                    <div className='text-golden text-lg vvs:text-xl font-berkshire w-full sm:w-1/2 text-right sm:text-left'>{item.timeline.submission}</div>
+                    <div className='text-golden text-2xl  w-full sm:w-1/2'>Poster Release:</div>
+                    <div className='text-golden text-lg vvs:text-xl font-berkshire w-full sm:w-1/2 text-right sm:text-left'>{item.timeline.poster}</div>
                   </li>
                   <li className='flex flex-col sm:flex-row'>
                     <div className='text-golden text-2xl w-full sm:w-1/2'>Event date:</div>

@@ -53,7 +53,7 @@ export const techydata = [
   {
     name: "App Development",
     reglink:
-      "",
+      "https://unstop.com/p/app-development-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587631",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1ie-VxbSXJKeCgXwReFTGrON45q6yJkiJgXBOpd4J-ls/edit",
@@ -75,7 +75,7 @@ export const techydata = [
     name: "Open Source Hacking",
     details: "The EOSH: Elan Open Source Hacking event is being conducted by Elan & nVision 2023, IIT Hyderabad. This three-day technical event will focus on developing innovative solutions to issues and features on the most widely-used open-source software such as distros, libraries, and many more. This competition is a fantastic chance for students to mix artistic expression with technology, acquire confidence, and triumph over other participants in the open-source race. Participating in this event will help you improve your open-source skills, speed, and competition in the real world.",
     img: os_hacking,
-    reglink: "",
+    reglink: "https://unstop.com/p/eosh-elan-open-source-hacking-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587757",
     sublink: "",
     documentation: "",
     format: [],
@@ -94,7 +94,7 @@ export const techydata = [
   },
   {
     name: "Proquest",
-    reglink: "",
+    reglink: "https://unstop.com/p/proquest-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586940",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1AGet3_bye_f7wAeF0sRZg6ALPzB10HjhtUf4pqE1A4U/edit",
@@ -126,7 +126,7 @@ export const techydata = [
   {
     name: "Web Development",
     reglink:
-      "",
+      "https://unstop.com/p/web-development-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586825",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1xI7zxuOaYU_Zcnk3KNkzp0Aawwi9H1l8eKqIqtC1lg4/edit",
@@ -218,7 +218,7 @@ export const techydata = [
   {
     name: "Machina Doctrina",
     reglink:
-      "",
+      "https://unstop.com/p/machina-doctrinas-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-588346",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/17bkoRtcd99baTlUBkFts6MF1GYxZYOR1q4tN4NHtS3Y/edit",
@@ -245,7 +245,7 @@ export const techydata = [
   },
   {
     name: "DeepN",
-    reglink: "",
+    reglink: "https://unstop.com/p/deepn-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587648",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1nMJd8YV4yNsFr0sS9IOW893k_TfFb8fGWfsRnGDGaRY/edit",
@@ -434,7 +434,7 @@ export const techydata = [
     name: "Champ of Ramp",
     details: "Racing is a sport that produces raw energy, desire, and feelings that neither a participant nor a spectator can comprehend. Have you ever envisioned building a racing vehicle, competing against other solid and deserving bots in a 'nail-biting' competition, and coming out on top? Champ of Ramp is an event that promises to awaken your inner racing and electronics enthusiast, and the game's ferocity will surely need some steely nerves.\nChamp of Ramp will be a remote control vehicle race featuring two rounds: THE QUALIFIERS and THE FINALS.",
     img: champ_ramp,
-    reglink: "",
+    reglink: "https://unstop.com/p/champ-of-ramp-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587625",
     sublink: "",
     documentation: "",
     format: [],
@@ -456,10 +456,10 @@ export const techydata = [
     },
   },
   {
-    name: "Explorer",
+    name: "Maze Explorer",
     details: "A multi level competition that involves various challenges and obstacles in increasing order of difficulty which would screen out the fastest and the most agile bot. Design a bot and compete to see if it has got the moves to dance past all the hurdles in its path",
     img: explorer,
-    reglink: "",
+    reglink: "https://unstop.com/p/maze-explorer-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586688",
     sublink: "",
     documentation: "",
     format: [],
@@ -477,7 +477,7 @@ export const techydata = [
     name: "Drone Challenge",
     details: "Drones are objects that the world is looking up to, literally! A multi level competition that involves various challenges and obstacles in increasing order of difficulty which would screen out the fastest and the most agile drone. Design a drone and compete to see if it has got the moves to dance past all the obstacles.",
     img: drone,
-    reglink: "",
+    reglink: "https://unstop.com/p/drone-challenge-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586792",
     sublink: "",
     documentation: "",
     format: [],
