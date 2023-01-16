@@ -1,18 +1,18 @@
-const  breakfree= "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554825/elan/assets/competitions/breakfree_c4ma9o.jpg";
-const beattrippers = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554847/elan/assets/competitions/beattrippers_ep6mpv.jpg";
-const campusidol = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554792/elan/assets/competitions/campusidol_linvrs.jpg";
-const film = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554741/elan/assets/competitions/filmm_k7jtu3.jpg";
-const standup = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554765/elan/assets/competitions/standup_gktkjv.jpg";
-const glitz = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554746/elan/assets/competitions/glitz_q0gysf.jpg";
-const artattack = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554653/elan/assets/competitions/artattack_wiaenn.jpg";
-const doddles = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554740/elan/assets/competitions/doodles_svpjel.jpg";
-const nrytanjali = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554780/elan/assets/competitions/nryt_k3heau.png";
-const Picelectic = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554759/elan/assets/competitions/pice_jvanor.jpg";
-const Paint = "https://res.cloudinary.com/dky4ljqmf/image/upload/v1671554762/elan/assets/competitions/paint_gicqs6.png";
-const octaves ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673536747/elan/assets/competitions/octaves_hkhtpp.jpg";
-const dj_wars ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673636392/elan/assets/competitions/dj_wars_wrer9u.jpg"
-const rap ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673690742/elan/assets/competitions/rap_j6ps9p.jpg"
-const natyakram ="https://res.cloudinary.com/dky4ljqmf/image/upload/v1673690742/elan/assets/competitions/natyakram_vzvh7z.jpg"
+const breakfree = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/breakfree_c4ma9o.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876158138";
+const beattrippers = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/beattrippers_ep6mpv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164359";
+const campusidol = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/campusidol_linvrs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162142";
+const film = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/filmm_k7jtu3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156497";
+const standup = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/standup_gktkjv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161634";
+const glitz = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/glitz_q0gysf.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159751";
+const artattack = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/artattack_wiaenn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157087";
+const doddles = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/doodles_svpjel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159147";
+const nrytanjali = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/nryt_k3heau.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164380";
+const Picelectic = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pice_jvanor.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164866";
+const Paint = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/paint_gicqs6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876163033";
+const octaves ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/octaves_hkhtpp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156438";
+const dj_wars ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/dj_wars_wrer9u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159253"
+const rap ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/rap_j6ps9p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161707"
+const natyakram ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/natyakram_vzvh7z.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159264"
 
 export const cultidata = [
   {
@@ -240,7 +240,7 @@ export const cultidata = [
   },
   {
     name: "Stand Up Comedy",
-    reglink: "",
+    reglink: "https://unstop.com/p/stand-up-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-588795",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/15pHNQlm8iv4UHCrdTv4py64JB39YW2GKAc7eguKMpoo/edit?usp=sharing",
@@ -288,7 +288,7 @@ export const cultidata = [
   },
   {
     name: "Paint the Screen",
-    reglink: "",
+    reglink: "https://unstop.com/p/paint-the-screen-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-588311",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1aMF6wAu0zRFrOK-0Kpq4YCBxlDSCMtLh1Ai7YgD6nCc/edit?usp=sharing",
@@ -332,7 +332,7 @@ export const cultidata = [
   },
   {
     name: "Doddle Creation",
-    reglink: "",
+    reglink: "https://unstop.com/p/doodle-art-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-588266",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1rwGaRbJFfMMR2qOVrPWwdM72eAcNzH8ur_Jv-YTgYIY/edit?usp=sharing",
