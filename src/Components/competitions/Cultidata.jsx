@@ -103,7 +103,7 @@ export const cultidata = [
     ]
   },
   {
-    name:"Octaves",
+    name:"Octave",
     reglink:"https://unstop.com/p/octaves-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586950",
     sublink:"",
     documentation:"",

@@ -50,7 +50,7 @@ const Gaurang = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617363/E
 const Sneha = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617314/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Pronites_Sneha_zpmvkp.jpg";
 const Aryan = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617315/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Aryan_lepgpr.jpg";
 const Hemang = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617315/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Hemang_Nimma_kqzsth.jpg";
-const Sahasra = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617317/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Sahasra_zrx81m.jpg";
+// const Sahasra = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617317/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Sahasra_zrx81m.jpg";
 const Arnav = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617315/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Security_Arnav_ixkfol.jpg";
 const Yoshita = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617315/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Social_cause_Yoshita_gagsou.jpg";
 const Rishi = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617316/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Sponsorship__Rishi_Kumar_Ravulapelly_a5www6.jpg";
@@ -69,6 +69,9 @@ const HimanshuGupta = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v167161
 const Sarvesh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617319/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Web_Sarvesh_xsjvvp.jpg";
 const Manoj = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617319/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Workshop_Manoj_Kumar_Reddy_iopzfy.jpg";
 const Geetha = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617319/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Workshops_GEETHA_BHAVANA_kyjpf5.jpg";
+const Siri_publicity = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1673774855/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Siri_eioj0z.jpg";
+const vamsi = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1673774855/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Vamsi_ygdhz3.jpg";
+const vignesh = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1673774855/Elan%20and%20NVision%202023/assets/Team/2023/Coords/Publicity_Vignesh_l5bzhn.jpg";
 
 import { team2021, team2022 } from "../Components/TeamData";
 function Teams() {
@@ -1046,10 +1049,22 @@ function Teams() {
                     Phone="+91 9731918202"
                   />
                   <CoordCard
-                    Name="Sahasra Todupunuri"
+                    Name="Siri Akshara Thota"
                     Role="Publicity Coordinator"
-                    Image={Sahasra}
-                    Phone="+91 7842742788"
+                    Image={Siri_publicity}
+                    Phone="+91 6303696200"
+                  />
+                  <CoordCard
+                    Name="Narsupalli Sai Vamsi"
+                    Role="Publicity Coordinator"
+                    Image={vamsi}
+                    Phone="+91 6302477639"
+                  />
+                  <CoordCard
+                    Name="Vignesh Sreepathi"
+                    Role="Publicity Coordinator"
+                    Image={vignesh}
+                    Phone="+91 8121462682"
                   />
                   <CoordCard
                     Name="Asit Desai"
