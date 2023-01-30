@@ -19,7 +19,7 @@ const irshaad ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/irsh
 export const cultidata = [
   {
     name: "Breakfree",
-    reglink: "",
+    reglink: "https://unstop.com/creative-cultural-event/breakfree-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-594932",
     sublink: "",
     documetation:'https://docs.google.com/document/d/1pzpTx8S8wuq0pDtpWWlYoeypnF06Wu0Crbqe258gRM4/edit?usp=sharing',
     format: ['This is a solo dance competition.', 'This competition is open to all age groups.', 'There will be only one round and the results are decided by the judge.', 'You will have to send us the recorded video of the performance through form, prior to the deadline.', 'The submissions can be sent via our website : elan.org.in', 'The selected submissions will be streamed on a video-conferencing app and will be evaluated live by the judges.', 'The list of participants selected will be sent to all the participants through email.', 'Bonus : If you upload your entry on instagram with #elannvision and #elannvision2022, we will upload the top entries on our competitions page - @elan_nvision.competitions. If you have a private account, submit a screenshot of your post, one hour after uploading it.'],

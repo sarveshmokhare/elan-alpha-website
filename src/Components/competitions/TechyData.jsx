@@ -147,7 +147,7 @@ export const techydata = [
   },
   {
     name: "Shark Tank",
-    reglink: "",
+    reglink: "https://unstop.com/p/shark-tank-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-590825",
     sublink: "",
     documentation:
       "https://docs.google.com/document/d/1Y20CQekNwFNpwau_yT6YjKdtiQxQnBUUUvNhRR-r3ys/edit",
