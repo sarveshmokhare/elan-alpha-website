@@ -43,7 +43,7 @@ export const cultidata = [
     sublink: "",
     documetation:'https://docs.google.com/document/d/1pzpTx8S8wuq0pDtpWWlYoeypnF06Wu0Crbqe258gRM4/edit?usp=sharing',
     format: ['This is a solo dance competition.', 'This competition is open to all age groups.', 'There will be only one round and the results are decided by the judge.', 'You will have to send us the recorded video of the performance through form, prior to the deadline.', 'The submissions can be sent via our website : elan.org.in', 'The selected submissions will be streamed on a video-conferencing app and will be evaluated live by the judges.', 'The list of participants selected will be sent to all the participants through email.', 'Bonus : If you upload your entry on instagram with #elannvision and #elannvision2022, we will upload the top entries on our competitions page - @elan_nvision.competitions. If you have a private account, submit a screenshot of your post, one hour after uploading it.'],
-    timeline: { event: '25th March 2022' },
+    timeline: { event: '18th Feb 2023' },
     rules:
       ['SOLO:\n', 'This is an offline solo dance competition.', 'This is the Hyderabad audition conducted by Hip Hop International, India', 'This competition is open to all age groups. ', 'There will be only one round and the results are decided by the judge. ', 'All dance forms are accepted except classical dance.', 'Only 1 entry is allowed per participant.', 'Registration can be online or on - spot during Elan & ηvision 2023.', 'On - Spot Registration closes one hour before the start of the event.', 'All the participants need to be at the Venue 1hr before the event starts.', 'The duration of the performance should be 1.30 - 2mins. ', 'The use of props is allowed. ', 'The participants should bring their own song track in a Pen drive and submit the same to our team 10 mins before your performance ', 'Spilling of any substance that might damage the stage is strictly not allowed', 'Violation of any of the above will result in a penalty ', 'Songs containing vulgar or explicit lyrics will not be allowed.Contestants who perform in an obscene or vulgar manner will be disqualified from the competition. ', 'Any illegal or unethical act related to the competition will lead to immediate disqualification. ', 'The decision of the organizers and judges shall be final and binding. ', 'The organizing team has the complete right to change the prize money if the participation is less than ten.', 'Registration fee: 100 Rs per participant(Every participant will have full access to all the shows in the fest)', 'The event will be held in IIT Hyderabad campus during the fest.(Time, transportation and other details will be provided for the registered people)\n\n', 'DUO/TRIO:\n', 'This is an offline Duo/Trio dance competition. ', 'This is the Hyderabad audition conducted by Hip Hop International, India', 'This competition is open to all age groups. ', 'There will be only one round and the results are decided by the judge. ', 'All dance forms are accepted except classical dance.', 'Head of the team should register with the participant names and contact.', 'Only 1 entry is allowed per participant(same participant cannot participate in  different groups ) ', 'Registration can be online or on- spot during Elan & ηvision 2023.', 'On - Spot Registration closes one hour before the start of the event.', 'All the participants need to be at the Venue 1hr before the event starts.', 'The duration of the performance should be 2 - 3mins. ', 'The use of props is allowed. ', 'The teams should bring their own song track in a Pen drive and submit the same to our team 10 mins before your performance ', 'Spilling of any substance that might damage the stage is strictly not allowed', 'Violation of any of the above will result in a penalty ', 'Songs containing vulgar or explicit lyrics will not be allowed.Contestants who perform in an obscene or vulgar manner will be disqualified from the competition. ', 'Any illegal or unethical act related to the competition will lead to immediate disqualification. ', 'The decision of the organizers and judges shall be final and binding. ', 'The organizing team has the complete right to change the prize money if the participation is less than six.', 'Registration fee: 150 Rs per team(Every participant will have full access to all the shows in the fest)', 'The event will be held in IIT Hyderabad campus during the fest.(Time, transportation and other details will be provided for the registered people).', '\n\n', 'This is a group dance competition with minimum 4 to maximum 18 members in a group and at any point of time at least 4 members should be present on the stage', 'This is the Hyderabad audition conducted by Hip Hop International, India', 'This competition is open to all age groups. ', 'There will be only one round and the results are decided by the judge. ', 'All dance forms are accepted except classical dance.', 'Head of the team should register with the participant names and contact.', 'Only 1 entry is allowed per participant(same participant cannot participate in different groups ) ', 'Registration can be online or on - spot during Elan & ηvision 2023.', 'On - Spot Registration closes one hour before the start of the event.', 'All the participants need to be at the Venue 1hr before the event starts.', 'The duration of the performance should be 3 - 7mins.', 'The use of props is allowed. ', 'The maximum stage time for the performance including time to set up props, entering, leaving,….is 8mins', 'The teams should bring their own song track in a Pen drive and submit the same to our team 10 mins before your performance ', 'Spilling of any substance that might damage the stage is strictly not allowed', 'Violation of any of the above will result in a penalty ', 'Songs containing vulgar or explicit lyrics will not be allowed.Contestants who perform in an obscene or vulgar manner will be disqualified from the competition. ', 'Any illegal or unethical act related to the competition will lead to immediate disqualification. ', 'The decision of the organizers and judges shall be final and binding. ', 'The organizing team has the complete right to change the prize money if the participation is less than five.', 'Registration fee: 200 Rs per team(Every participant will have full access to all the shows in the fest)','The event will be held in IIT Hyderabad campus during the fest.(Time, transportation and other details will be provided for the registered people).'],
      
@@ -102,32 +102,6 @@ export const cultidata = [
 
   },
 
-  {
-    name: "Beat Trippers",
-    reglink: "",
-    sublink: "",
-    documentation:
-      "https://docs.google.com/document/d/1s0Xn13I8cMCrzEX4xt0Iw7C6pQTJuqUnyggpFWDZXtY/edit?usp=sharing",
-    img: beattrippers,
-    details:
-      "Coordination is what matters when it comes to a group performance. It is a group dance event where one can show off their individual talents or spellbind the crowd with their coordination. It's time to move and shake and drop it.",
-    format: ['This is a group dance competition with minimum 3 to maximum 8 members in a group.', 'This competition is open to all age groups.', 'There will be only one round and the results are decided by the judge.', 'Head of the team should register online with the participant names and contact.', 'You will have to send us the recorded video of the performance through form, prior to the deadline.', 'The submissions can be sent via our website: elan.org.in', 'The selected submissions will be streamed on a video- conferencing app and will be evaluated live by the judges.', 'The list of participants selected will be sent to all the participants through email.', 'Bonus : If you upload your entry on instagram with #elannvision and #elannvision2022, we will upload the top entries on our competitions page - @elan_nvision.competitionsIf you have a private account, submit a screenshot of your post, two hours after uploading it.'],
-    timeline: { poster: '21st March 2022, 11:59pm', event:  '27th March 2022' },
-    rules: ['Only 1 entry is allowed per participant.', 'All styles are accepted except classical.', 'The duration of the performance should be 3 - 5 mins.', 'The use of props is allowed.', 'The video cannot be edited or have any special effects added to it.', 'The song must be clearly audible in the video.Also the recording must be taken in good lighting and with clarity.', 'Songs containing vulgar or explicit lyrics will not be allowed.Contestants who perform in an obscene or vulgar manner will be disqualified from the competition.', 'Any illegal or unethical act related to the competition will lead to immediate disqualification.', 'The decision of the organizers and judges shall be final and binding.', 'The organizing team has the complete right to change the prize money if the participation is less than ten.'],
-    prizes: ['All the participants will receive a certificate of participation issued by Elan and  ηVision, IIT Hyderabad.', 'Prizes worth ₹15, 000 are up for grabs'],
-    judging: ['Choreography', 'Creativity', 'Energy', 'Difficulty of Execution', 'Attire', 'Music Mix', 'Musicality', 'Synchronization', 'Formation'],
-    contact: [{
-      name: 'Prasham Walvekar',
-      contact: 9822040753
-    },
-    {
-      name: 'Anushka Garg',
-      contact: 8602932029
-    }, {
-      name: 'Nivas',
-      contact: 9398367852
-    }]
-  },
   {
     name: "Campus Idol",
     reglink: "https://unstop.com/p/campus-idol-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586947",
@@ -340,12 +314,16 @@ export const cultidata = [
     judging: ['Impact','Creativity','Composition'],
     prizes: ['All the participants will receive participation certificates by Elan and ηvision , IIT Hyderabad .','Prizes worth ₹12, 000 are up for grabs.'],
     contact: [{
-      name: 'Aman Jagtap',
-      contact: 7235915379
+      name: 'Anurag',
+      contact: 7303554640
     },
     {
-      name: 'Seeram Lakshmi Sreya',
-      contact: 9391322582
+      name: 'Adarsh',
+      contact: 6361325605
+    },
+    {
+      name: 'Ramcharan',
+      contact: 9666997468
     }
     ]
   },
