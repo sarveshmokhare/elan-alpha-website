@@ -18,15 +18,15 @@ const dl2 = [
   { name: "Requirements", description: "Laptop and Internet" },
 ];
 
-const dl31=[
-  { name: "Date", description:"19th March 2023"},
+const dl31 = [
+  { name: "Date", description: "19th March 2023" },
   { name: "Timings", description: "3:00 PM - 5:00 PM" },
   { name: "Venue", description: "IIT Hyderabad" },
-  { name:"Registration fee",description:"1000"},
+  { name: "Registration fee", description: "1000" },
   { name: "Requirements", description: "Camera(preferably) / Mobile phones" },
 ]
 
-const dl32=[
+const dl32 = [
   { name: "Date", description: "19th March 2023" },
   { name: "Time", description: "3: 00 PM - 4: 00 PM" },
   { name: "Registration fee", description: "300" },
@@ -148,13 +148,13 @@ function Navigate() {
 
                 </p>
                 <br />
-                {/* <p className="mb-5">
+                <p className="mb-5">
                   <b>
                     <b>Note:</b>
                   </b>{" "}
                   The participants shall choose any one(their favourite one) of
                   the above topics.
-                </p> */}
+                </p>
                 <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
 
@@ -272,10 +272,10 @@ function Navigate() {
                         </div>
                       ))}
                     </dl>
-                    
+
                     <dl className="w-full sm:w-1/2 pb-5">
                       <div className="font-extrabold">ONLINE MODE</div>
-                      
+
                       {dl32.map((dl_item) => (
                         <div>
                           <dt className="font-bold lg:text-xl ">{dl_item.name}:</dt>
@@ -284,7 +284,7 @@ function Navigate() {
                       ))}
                     </dl>
                   </div>
-<br />
+                  <br />
                   <div className="text-[1rem] mb-5">
                     At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad in Collaboration with The Soil Society.
                   </div>
