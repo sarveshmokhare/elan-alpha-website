@@ -1,22 +1,44 @@
-const pronites1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_1_vcxymp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876312865";
-const pronites2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_2_hfzoao.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311470";
-const pronites3 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_3_m8wt6r.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311360";
-const pronites4 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_4_wzwhhg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311522";
-const pronites5 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_5_c6u2z2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309309";
-const informals1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/informals_1_dfwk8h.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309921";
-const informals2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/informals_2_fufzho.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876307594";
-const workshops1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_ai_dfrrnn.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876310648";
-const workshops2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_blockc_fbfleq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311852";
-const workshops3 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_farming_nlhdni.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308613";
-const workshops4 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_humanoid_f63isq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308261";
-const workshops5 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_vr_cuvhyr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308004";
+// const pronites1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_1_vcxymp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876312865";
+// const pronites2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_2_hfzoao.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311470";
+// const pronites3 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_3_m8wt6r.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311360";
+// const pronites4 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_4_wzwhhg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311522";
+// const pronites5 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/pronites_5_c6u2z2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309309";
+// const informals1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/informals_1_dfwk8h.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309921";
+// const informals2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/informals_2_fufzho.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876307594";
+// const workshops1 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_ai_dfrrnn.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876310648";
+// const workshops2 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_blockc_fbfleq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311852";
+// const workshops3 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_farming_nlhdni.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308613";
+// const workshops4 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_humanoid_f63isq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308261";
+// const workshops5 = "https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_vr_cuvhyr.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308004";
 
-const workshop7jan_1 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_appdev_itp7f1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308408"
-const workshop7jan_2 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_ai_o2jzd3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309162"
-const workshop7jan_3 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_hack_leqnj1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308902"
-const workshop7jan_4 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_data_kgixwg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311811"
-const workshop19mar_2 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_19mar_online_yshyfn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308926"
-const workshop19mar_1 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_19mar_offline_ulcqu1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876307833"
+// const workshop7jan_1 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_appdev_itp7f1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308408"
+// const workshop7jan_2 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_ai_o2jzd3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876309162"
+// const workshop7jan_3 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_hack_leqnj1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308902"
+// const workshop7jan_4 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_4feb_data_kgixwg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876311811"
+// const workshop19mar_2 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_19mar_online_yshyfn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876308926"
+// const workshop19mar_1 ="https://ik.imagekit.io/himanshukumargupta/Elan/events/workshop_19mar_offline_ulcqu1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876307833"
+
+
+import pronites1 from "../../assets/events/pronites_1.jpg";
+import pronites2 from "../../assets/events/pronites_2.jpg";
+import pronites3 from "../../assets/events/pronites_3.webp";
+import pronites4 from "../../assets/events/pronites_4.jpg";
+import pronites5 from "../../assets/events/pronites_5.jpg";
+import informals1 from "../../assets/events/informals_1.jpeg";
+import informals2 from "../../assets/events/informals_2.jpeg";
+import workshops1 from "../../assets/events/workshop_ai.png";
+import workshops2 from "../../assets/events/workshop_blockc.png";
+import workshops3 from "../../assets/events/workshop_farming.png";
+import workshops4 from "../../assets/events/workshop_humanoid.png";
+import workshops5 from "../../assets/events/workshop_vr.png";
+// import workshop7jan_1 from "../../assets/events/workshop_4feb_ai.jpg";
+// import workshop7jan_2 from "../../assets/events/workshop_4feb_appdev.jpg";
+// import workshop7jan_3 from "../../assets/events/workshop_4feb_data.jpg";
+// import workshop7jan_4 from "../../assets/events/workshop_4feb_hack.jpg";
+import workshop19mar_2 from "../../assets/events/workshop_19mar_offline.jpg";
+import workshop19mar_1 from "../../assets/events/workshop_19mar_online.jpg";
+import workshop19feb_1 from "../../assets/events/workshop_19feb_ai.jpeg";
+
 
 
 export const eventsdata=[
@@ -25,7 +47,7 @@ export const eventsdata=[
   subnames:['Workshops-1','Workshops'],
     description: '',
     img:[],
-    img1: [[workshop7jan_1, workshop7jan_2, workshop7jan_3, workshop7jan_4],[workshops1, workshops2, workshops3, workshops4, workshops5],[workshop19mar_1,workshop19mar_2]],
+    img1: [[workshop19feb_1,workshop19feb_1],[workshops1, workshops2, workshops3, workshops4, workshops5],[workshop19mar_1,workshop19mar_2]],
     reglink: ["https://techradiance.in/iit-workshop/","https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
     examples: []
 

@@ -1,20 +1,40 @@
-const breakfree = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/breakfree_c4ma9o.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876158138";
-const beattrippers = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/beattrippers_ep6mpv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164359";
-const campusidol = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/campusidol_linvrs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162142";
-const film = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/filmm_k7jtu3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156497";
-const standup = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/standup_gktkjv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161634";
-const glitz = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/glitz_q0gysf.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159751";
-const artattack = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/artattack_wiaenn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157087";
-const doddles = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/doodles_svpjel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159147";
-const nrytanjali = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/nryt_k3heau.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164380";
-const Picelectic = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pice_jvanor.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164866";
-const Paint = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/paint_gicqs6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876163033";
-const octaves ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/octaves_hkhtpp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156438";
-const dj_wars ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/dj_wars_wrer9u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159253"
-const rap ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/rap_j6ps9p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161707"
-const natyakram ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/natyakram_vzvh7z.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159264"
-const pixel ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pixel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674751586552"
-const irshaad ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/irshaad.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674756420768"
+// const breakfree = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/breakfree_c4ma9o.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876158138";
+// const beattrippers = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/beattrippers_ep6mpv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164359";
+// const campusidol = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/campusidol_linvrs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162142";
+// const film = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/filmm_k7jtu3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156497";
+// const standup = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/standup_gktkjv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161634";
+// const glitz = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/glitz_q0gysf.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159751";
+// const artattack = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/artattack_wiaenn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157087";
+// const doddles = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/doodles_svpjel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159147";
+// const nrytanjali = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/nryt_k3heau.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164380";
+// const Picelectic = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pice_jvanor.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164866";
+// const Paint = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/paint_gicqs6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876163033";
+// const octaves ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/octaves_hkhtpp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156438";
+// const dj_wars ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/dj_wars_wrer9u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159253"
+// const rap ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/rap_j6ps9p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161707"
+// const natyakram ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/natyakram_vzvh7z.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159264"
+// const pixel ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pixel.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674751586552"
+// const irshaad ="https://ik.imagekit.io/himanshukumargupta/Elan/competitions/irshaad.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1674756420768"
+
+
+import breakfree from "../../assets/competitions/breakfree.jpg";
+import beattrippers from "../../assets/competitions/beattrippers.jpg";
+import campusidol from "../../assets/competitions/campusidol.jpg";
+import film from "../../assets/competitions/filmm.jpg";
+import standup from "../../assets/competitions/standup.jpg";
+import glitz from "../../assets/competitions/glitz.jpg";
+import artattack from "../../assets/competitions/artattack.jpg";
+import doddles from "../../assets/competitions/doodles.jpg";
+import nrytanjali from "../../assets/competitions/nryt.png";
+import Picelectic from "../../assets/competitions/pice.jpg";
+import Paint from "../../assets/competitions/paint.png";
+import irshaad from "../../assets/competitions/irshaad.jpeg";
+import octaves from "../../assets/competitions/octaves.jpg";
+import pixel from "../../assets/competitions/pixel.jpg";
+import natyakram from "../../assets/competitions/natyakram.jpg";
+import rap from "../../assets/competitions/rap.jpg";
+import dj_wars from "../../assets/competitions/dj_wars.jpg";
+
 
 export const cultidata = [
   {

@@ -1,24 +1,48 @@
-const pro = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pq1_b7grdz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162602";
-const webd = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/webdev_yuflsp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162232";
-const shark = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/sharktank_mjhw5w.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157124";
-const hack = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/hackk_efamgg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164323";
-const mdd = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/mddd_wwvuiw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159818";
-const paperpe = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/paperpres_t5u4v2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161434";
-const arud = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/arduino_ijnxye.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156457";
-const enig = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/enigmaa_avruxs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164394";
-const app = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/appdev_ugld9i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164339";
-const cad = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/cad1_vxyige.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159510";
-const circut = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/circuit_tas40i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159460";
-const depp = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/deepn_svsjfs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164542";
-const rocket = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/sugar_rocketry_ibikkh.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159143"
-const champ_ramp = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/champ_ramp_ni1smn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156537"
-const os_hacking = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/oshacking_qlfodk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161805"
-const splanets = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/splanets_pljila.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159532"
-const drone = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/drone_apyfuc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156634"
-const drift_king = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/drift_king_rxq2x5.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157129"
-const explorer = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/explorer_sqlinx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164477"
-const game_jam = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/game_jam_chk4v9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161964"
-const robo_soccer = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/robo_soccer_mq1lln.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156605"
+// const pro = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/pq1_b7grdz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162602";
+// const webd = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/webdev_yuflsp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876162232";
+// const shark = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/sharktank_mjhw5w.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157124";
+// const hack = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/hackk_efamgg.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164323";
+// const mdd = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/mddd_wwvuiw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159818";
+// const paperpe = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/paperpres_t5u4v2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161434";
+// const arud = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/arduino_ijnxye.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156457";
+// const enig = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/enigmaa_avruxs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164394";
+// const app = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/appdev_ugld9i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164339";
+// const cad = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/cad1_vxyige.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159510";
+// const circut = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/circuit_tas40i.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159460";
+// const depp = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/deepn_svsjfs.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164542";
+// const rocket = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/sugar_rocketry_ibikkh.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159143"
+// const champ_ramp = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/champ_ramp_ni1smn.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156537"
+// const os_hacking = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/oshacking_qlfodk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161805"
+// const splanets = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/splanets_pljila.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876159532"
+// const drone = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/drone_apyfuc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156634"
+// const drift_king = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/drift_king_rxq2x5.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876157129"
+// const explorer = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/explorer_sqlinx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876164477"
+// const game_jam = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/game_jam_chk4v9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876161964"
+// const robo_soccer = "https://ik.imagekit.io/himanshukumargupta/Elan/competitions/robo_soccer_mq1lln.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876156605"
+
+import pro from "../../assets/competitions/pq1.jpg";
+import webd from "../../assets/competitions/webdev.jpg";
+import shark from "../../assets/competitions/sharktank.jpeg";
+import hack from "../../assets/competitions/hackk.jpg";
+import mdd from "../../assets/competitions/mddd.jpg";
+import paperpe from "../../assets/competitions/paperpres.png";
+import arud from "../../assets/competitions/arduino.jpg";
+import enig from "../../assets/competitions/enigmaa.jpg";
+import app from "../../assets/competitions/appdev.jpg";
+import cad from "../../assets/competitions/cad1.png";
+import circut from "../../assets/competitions/circuit.jpg";
+import depp from "../../assets/competitions/deepn.jpg";
+import rocket from "../../assets/competitions/rocket.webp";
+import champ_ramp from "../../assets/competitions/champ_ramp.jpg";
+import os_hacking from "../../assets/competitions/os_hacking.jpg";
+import splanets from "../../assets/competitions/splanets.jpg";
+import drone from "../../assets/competitions/drone.jpg";
+import drift_king from "../../assets/competitions/drift_king.jpg";
+import explorer from "../../assets/competitions/explorer.jpg";
+import game_jam from "../../assets/competitions/game_jam.jpg";
+import robo_soccer from "../../assets/competitions/robo_soccer.jpg";
+
+
 
 export const techydata = [
 
