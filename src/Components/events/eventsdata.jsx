@@ -26,15 +26,15 @@ import pronites4 from "../../assets/events/pronites_4.jpg";
 import pronites5 from "../../assets/events/pronites_5.jpg";
 import informals1 from "../../assets/events/informals_1.jpeg";
 import informals2 from "../../assets/events/informals_2.jpeg";
-import workshops1 from "../../assets/events/workshop_ai.png";
-import workshops2 from "../../assets/events/workshop_blockc.png";
-import workshops3 from "../../assets/events/workshop_farming.png";
-import workshops4 from "../../assets/events/workshop_humanoid.png";
-import workshops5 from "../../assets/events/workshop_vr.png";
-// import workshop7jan_1 from "../../assets/events/workshop_4feb_ai.jpg";
-// import workshop7jan_2 from "../../assets/events/workshop_4feb_appdev.jpg";
-// import workshop7jan_3 from "../../assets/events/workshop_4feb_data.jpg";
-// import workshop7jan_4 from "../../assets/events/workshop_4feb_hack.jpg";
+// import workshops1 from "../../assets/events/workshop_ai.png";
+// import workshops2 from "../../assets/events/workshop_blockc.png";
+// import workshops3 from "../../assets/events/workshop_farming.png";
+// import workshops4 from "../../assets/events/workshop_humanoid.png";
+// import workshops5 from "../../assets/events/workshop_vr.png";
+import workshop7jan_1 from "../../assets/events/workshop_4feb_ai.jpg";
+import workshop7jan_2 from "../../assets/events/workshop_4feb_appdev.jpg";
+import workshop7jan_3 from "../../assets/events/workshop_4feb_data.jpg";
+import workshop7jan_4 from "../../assets/events/workshop_4feb_hack.jpg";
 import workshop19mar_2 from "../../assets/events/workshop_19mar_offline.jpg";
 import workshop19mar_1 from "../../assets/events/workshop_19mar_online.jpg";
 import workshop19feb_1 from "../../assets/events/workshop_19feb_ai.jpeg";
@@ -47,7 +47,7 @@ export const eventsdata=[
   subnames:['Workshops-1','Workshops'],
     description: '',
     img:[],
-    img1: [[workshop19feb_1,workshop19feb_1],[workshops1, workshops2, workshops3, workshops4, workshops5],[workshop19mar_1,workshop19mar_2]],
+    img1: [[workshop19feb_1, workshop19feb_1], [workshop7jan_1, workshop7jan_2, workshop7jan_3, workshop7jan_4],[workshop19mar_1,workshop19mar_2]],
     reglink: ["https://techradiance.in/iit-workshop/","https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
     examples: []
 

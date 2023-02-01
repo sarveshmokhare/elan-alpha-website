@@ -12,7 +12,6 @@ const dl1 = [
 ];
 
 const dl2 = [
-  { name: "Eligibility", description: "Class 8 and above" },
   { name: "Timings", description: "9:00 AM to 5:00 PM" },
   { name: "Venue", description: "IIT Hyderabad" },
   { name: "Requirements", description: "Laptop and Internet" },
@@ -160,7 +159,7 @@ function Navigate() {
 
               <div className={WorkshopNavigate == 1 ? 'block' : 'hidden'}>
                 <div className={" mb-10"}>
-                  {item.img1[1].length > 0 ? (
+                  {item.img1[0].length > 0 ? (
                     <EventSlider
                       imagesList={item.img1[1]}
                       size={width >= 850 ? 4 : 2}
@@ -174,28 +173,24 @@ function Navigate() {
                     <i>Elan & ηVision</i>
                   </b>
                   , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>14th and 15th of January, 2023</b>.
+                  <b>4th and 5th of February, 2023</b>.
                   <br />
                 </p>
                 <h4 className="text-xl lg:text-3xl font-bold">
                   The topics we'll be looking at are:
                 </h4>
                 <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
-                  <li> Artificial Intelligence and Machine Learning</li>
-                  <li>Humanoid Robotics</li>
-                  <li>Virtual Reality</li>
-                  <li>Blockchain Technology</li>
-                  <li>Smart Farming</li>
+                  <li>Artificial Intelligence and Machine Learning</li>
+                  <li>Data Science</li>
+                  <li>Ethical Hacking</li>
+                  <li>Android Development</li>
                 </ul>
                 <br />
                 <p>
-                  The topics we have chosen are at their peak and are booming in their prospects.{" "}
+                  The topics we have included are at their peak and are booming in
+                  their prospects.{" "}
                   <br />
-
-
-                  We are collaborating with Techradiance for these workshops.
-                  Their well-experienced and reputed instructors are IITians and
-                  have worked with many top MNCs like Google and Amazon.
+                  We are collaborating with Gummalla Technologies for these workshops.
                 </p>
                 <br />
                 <dl>
@@ -209,10 +204,8 @@ function Navigate() {
 
                 <br />
                 <p>
-                  As a part of these workshops, the participants shall receive a
-                  project kit inclusive of the registration fee. At the end of the
-                  workshop, the participants shall obtain certification from IIT
-                  Hyderabad, Elan & ηVision
+                  At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad.
+
                 </p>
                 <br />
                 <p className="mb-5">
@@ -222,7 +215,7 @@ function Navigate() {
                   The participants shall choose any one(their favourite one) of
                   the above topics.
                 </p>
-                <a href="https://techradiance.in/iit-workshop/" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
+                <a href="https://unstop.com/p/technical-workshop-elan-ivision-2023-indian-institute-of-technology-iit-hyderabad-566831" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
 
               <div className={WorkshopNavigate == 2 ? 'block' : 'hidden'}>
