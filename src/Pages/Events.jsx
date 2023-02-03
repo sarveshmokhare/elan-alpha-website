@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import gsap from "gsap";
 import ThemeContext from "../Contexts/ThemeContext";
 import { eventsdata } from "../Components/events/eventsdata";
+import Hii from "../Components/events/eventsCard"
 // import '../styles/events.css'
 import EventSlider from "../Components/events/eventsslider";
 
@@ -65,7 +66,7 @@ function Navigate() {
             <div className="sub_heading font-cinzel text-4xl vs:text-6xl text-golden font-bold">
               {item.name}
             </div>
-            <div className={(index != 0 ? "block" : 'hidden') + " mb-10"}>
+            <div className={(index != 0 &&index!=3? "block" : 'hidden') + " mb-10"}>
               {item.img.length > 0 ? (
                 <EventSlider
                   imagesList={item.img}
@@ -288,7 +289,12 @@ function Navigate() {
               </div>
 
             </div>
-            <div className={index != 0 ? "block" : "hidden"}>
+            
+            <div className={(index == 3 ? "flex" : "hidden")+" xs:flex-row flex-col w-full justify-evenly"}>
+              <Hii data={eventsdata[3].types}></Hii>
+            </div>
+
+            <div className={index != 0 && index!=3? "block" : "hidden"}>
               <div className="text-golden font-cinzel text-center text-xl vs:text-3xl xs:text-4xl font-bold">
                 Stay Tuned for updates!
               </div>
