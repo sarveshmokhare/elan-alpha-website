@@ -26,6 +26,7 @@ import book from "../assets/miscellaneous/book_runz9i.svg";
 import btmLine from "../assets/miscellaneous/bottom_line_uqfqif.svg";
 import caPortalIcon from "../assets/miscellaneous/ca_portal_icon_lnilgn.svg";
 import elanLogo from "../assets/miscellaneous/logo_white_pq9fjb.png";
+import elanGreenkoDate from "../assets/miscellaneous/elan_greenko_date.png";
 import calender from "../assets/miscellaneous/calender_pavjvx.png";
 import cresentLeft from "../assets/miscellaneous/cresent_left_abrdyj.svg";
 import cresentRight from "../assets/miscellaneous/cresent_right_plpxpn.svg";
@@ -272,7 +273,7 @@ function HomePage() {
           gsap.set(".moon5", { right: "-7%" });
 
           gsap.set(".invite-text", { top: "55%", height: "18vh", opacity: 0 });
-          gsap.set(".elan-logo", { height: "13vh", top: "14%" });
+          gsap.set(".elan-logo", { height: "11vh", top: "16.5%" });
           gsap.set(".left-decor", { height: "65vh", top: "4%" });
           gsap.set(".top-line", { right: "-100%" });
           gsap.set(document.querySelector("header"), { opacity: 1 });
@@ -339,7 +340,7 @@ function HomePage() {
           const tl = gsap.timeline({ defaults: {} });
 
           tl.to(".invite-text", { top: "55%", height: "18vh", duration: 1 });
-          tl.to(".elan-logo", { height: "13vh", top: "14%", duration: 1 }, "<");
+          tl.to(".elan-logo", { height: "11vh", top: "16.5%", duration: 1 }, "<");
           tl.to(".left-decor", { height: "65vh", top: "4%" }, "<");
           tl.to(".top-line", { right: "-100%", duration: 2 }, "<");
           tl.to(
@@ -407,8 +408,8 @@ function HomePage() {
           });
           gsap.set(".mob-invite-text", { opacity: 0 });
           gsap.set(".elan-logo", {
-            top: "6%",
-            height: "8vh",
+            top: "8.5%",
+            height: "7vh",
           });
           gsap.set(".valenrow-logo", { top: "6%", opacity: 1 });
           gsap.set(".fest-dates", { opacity: 1, top: "39%" });
@@ -452,8 +453,8 @@ function HomePage() {
           duration: 1.5,
         }, "<");
         tl.to(".elan-logo", {
-          top: "6%",
-          height: "8vh",
+          top: "8.5%",
+          height: "7vh",
           duration: 1.5,
           delay: 0.8,
         });
@@ -636,8 +637,8 @@ function HomePage() {
           </div>
 
           {/* elan logo */}
-          <div className="elan-logo h-[10vh] absolute right-0 left-0 flex justify-center top-[20%] md:top-[20%] lg:top-[23%]">
-            <img className="h-full" alt="elan_logo" src={elanLogo} />
+          <div className="elan-logo h-[9vh] absolute right-0 left-0 flex justify-center top-[20%] md:top-[20%] lg:top-[23%]">
+            <img className="h-full" alt="elan_logo" src={elanGreenkoDate} />
           </div>
 
           {/* desktop invite text */}
@@ -797,7 +798,7 @@ function HomePage() {
             part of the fest.This festival features several professional and
             semi-professional crowd-pulling events and promises to be a grand
             event showcasing the best of cultural performances, technical
-            solutions, and student community advances 2022
+            solutions, and advances from the student community.
           </p>
 
           {/* bg graphics */}

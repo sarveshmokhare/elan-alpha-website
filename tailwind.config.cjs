@@ -40,7 +40,7 @@ module.exports = {
       fontFamily: {
         berkshire: ["Berkshire Swash", "cursive"],
         cinzel: ["Cinzel Decorative", "cursive"],
-        century: ["Century Schoolbook"],
+        century: ["Century Schoolbook", "serif"],
       },
     },
   },
