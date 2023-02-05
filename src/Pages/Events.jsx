@@ -5,7 +5,7 @@ import { eventsdata } from "../Components/events/eventsdata";
 import Hii from "../Components/events/eventsCard"
 // import '../styles/events.css'
 import EventSlider from "../Components/events/eventsslider";
-
+import EventsImgVidSlider from "../Components/events/eventsImgVidSlider";
 const dl1 = [
   { name: "Timings", description: "10.00 am - 4.30 pm" },
   { name: "Venue", description: "IIT Hyderabad" },
@@ -15,7 +15,7 @@ const dl1 = [
 const dl2 = [
   { name: "Timings", description: "9:00 AM to 5:00 PM" },
   { name: "Venue", description: "IIT Hyderabad" },
-  { name: "Requirements", description: "Laptop and Internet" },
+  // { name: "Requirements", description: "Laptop and Internet" },
 ];
 
 const dl31 = [
@@ -148,23 +148,24 @@ function Navigate() {
 
                 </p>
                 <br />
-                <p className="mb-5">
+                {/* <p className="mb-5">
                   <b>
                     <b>Note:</b>
                   </b>{" "}
                   The participants shall choose any one(their favourite one) of
                   the above topics.
-                </p>
+                </p> */}
                 <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
 
               <div className={WorkshopNavigate == 1 ? 'block' : 'hidden'}>
                 <div className={" mb-10"}>
-                  {item.img1[0].length > 0 ? (
-                    <EventSlider
+                  {item.img1[1].length > 0 ? (
+                    <EventsImgVidSlider
                       imagesList={item.img1[1]}
                       size={width >= 850 ? 4 : 2}
                       height={index == 0 ? 1 : 3 / 5}
+                      typeList={[0,1]}
                     />
                   ) : undefined}
                 </div>
@@ -174,34 +175,31 @@ function Navigate() {
                     <i>Elan & ηVision</i>
                   </b>
                   , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>4th and 5th of February, 2023</b>.
+                  <b>18th and 19th of February, 2023</b>.
                   <br />
                 </p>
                 <h4 className="text-xl lg:text-3xl font-bold">
-                  The topics we'll be looking at are:
+                  The topics we'll be looking at is:
                 </h4>
                 <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
-                  <li>Artificial Intelligence and Machine Learning</li>
-                  <li>Data Science</li>
-                  <li>Ethical Hacking</li>
-                  <li>Android Development</li>
+                  <li>Metaverse AR-VR</li>
                 </ul>
                 <br />
                 <p>
                   The topics we have included are at their peak and are booming in
                   their prospects.{" "}
                   <br />
-                  We are collaborating with Gummalla Technologies for these workshops.
+                  We are collaborating with Wingfotech for these workshops.
                 </p>
                 <br />
-                <dl>
-                  {dl2.map((dl_item) => (
+                {/* <dl> */}
+                  {/* {dl2.map((dl_item) => (
                     <div>
                       <dt className="font-bold lg:text-2xl ">{dl_item.name}:</dt>
                       <dd className="px-5 lg:text-2xl">{dl_item.description}</dd>
                     </div>
                   ))}
-                </dl>
+                </dl> */}
 
                 <br />
                 <p>
@@ -209,14 +207,8 @@ function Navigate() {
 
                 </p>
                 <br />
-                <p className="mb-5">
-                  <b>
-                    <b>Note:</b>
-                  </b>{" "}
-                  The participants shall choose any one(their favourite one) of
-                  the above topics.
-                </p>
-                <a href="https://unstop.com/p/technical-workshop-elan-ivision-2023-indian-institute-of-technology-iit-hyderabad-566831" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
+                
+                <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad-copy" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
 
               <div className={WorkshopNavigate == 2 ? 'block' : 'hidden'}>

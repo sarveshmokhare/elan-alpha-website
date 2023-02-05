@@ -34,15 +34,16 @@ import informals2 from "../../assets/events/informals_2.jpeg";
 // import workshops3 from "../../assets/events/workshop_farming.png";
 // import workshops4 from "../../assets/events/workshop_humanoid.png";
 // import workshops5 from "../../assets/events/workshop_vr.png";
-import workshop7jan_1 from "../../assets/events/workshop_4feb_ai.jpg";
-import workshop7jan_2 from "../../assets/events/workshop_4feb_appdev.jpg";
-import workshop7jan_3 from "../../assets/events/workshop_4feb_data.jpg";
-import workshop7jan_4 from "../../assets/events/workshop_4feb_hack.jpg";
+// import workshop7jan_1 from "../../assets/events/workshop_4feb_ai.jpg";
+// import workshop7jan_2 from "../../assets/events/workshop_4feb_appdev.jpg";
+// import workshop7jan_3 from "../../assets/events/workshop_4feb_data.jpg";
+// import workshop7jan_4 from "../../assets/events/workshop_4feb_hack.jpg";
 import workshop19mar_2 from "../../assets/events/workshop_19mar_offline.jpg";
 import workshop19mar_1 from "../../assets/events/workshop_19mar_online.jpg";
 import workshop19feb_1 from "../../assets/events/workshop_19feb_ai.jpeg";
 import workshop19feb_ai_2 from "../../assets/events/workshop_19feb_ai2.jpeg"
-
+import workshop19feb_arvr_image from "../../assets/events/workshop19feb_arvr_image.jpeg"
+import workshop19feb_arvr_video from "../../assets/events/workshop19feb_arvr_video.mp4"
 
 
 export const eventsdata = [
@@ -52,7 +53,7 @@ export const eventsdata = [
     subnames: ['Workshops-1', 'Workshops'],
     description: '',
     img: [],
-    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop7jan_1, workshop7jan_2, workshop7jan_3, workshop7jan_4], [workshop19mar_1, workshop19mar_2]],
+    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop19feb_arvr_image, workshop19feb_arvr_video], [workshop19mar_1, workshop19mar_2]],
     reglink: ["https://techradiance.in/iit-workshop/", "https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
     examples: []
 
