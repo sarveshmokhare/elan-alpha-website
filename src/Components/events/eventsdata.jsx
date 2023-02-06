@@ -44,6 +44,17 @@ import workshop19feb_1 from "../../assets/events/workshop_19feb_ai.jpeg";
 import workshop19feb_ai_2 from "../../assets/events/workshop_19feb_ai2.jpeg"
 import workshop19feb_arvr_image from "../../assets/events/workshop19feb_arvr_image.jpeg"
 import workshop19feb_arvr_video from "../../assets/events/workshop19feb_arvr_video.mp4"
+import cyber_security from "../../assets/events/cyber_security.png"
+import data_science from "../../assets/events/data_science.png"
+import deep_learning from "../../assets/events/deep_learning.png"
+import ethical_hacking from "../../assets/events/ethical_hacking.png"
+import mind_control from "../../assets/events/mind_control.png"
+import nitro from "../../assets/events/nitro.png"
+import python_coding from "../../assets/events/python_coding.png"
+import rc_air from "../../assets/events/rc_air.png"
+import robotics from "../../assets/events/robotics.png"
+import web_development from "../../assets/events/web_development.png"
+
 
 
 export const eventsdata = [
@@ -53,17 +64,18 @@ export const eventsdata = [
     subnames: ['Workshops-1', 'Workshops'],
     description: '',
     img: [],
-    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop19feb_arvr_image, workshop19feb_arvr_video], [workshop19mar_1, workshop19mar_2]],
-    reglink: ["https://techradiance.in/iit-workshop/", "https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
-    examples: []
+    topicName: ['','Metaverse AR-VR','Cyber Security','Data Science','Deep Learning','Ethical Hacking','Mind Control','Nitro Engine Buggy Car','Python Coding','RC Aircraft','Robotics','Web Development'],
+    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop19feb_arvr_image, workshop19feb_arvr_video],[cyber_security,cyber_security],[data_science,data_science],[deep_learning,deep_learning],[ethical_hacking,ethical_hacking],[mind_control,mind_control],[nitro,nitro],[python_coding,python_coding],[rc_air,rc_air],[robotics,robotics],[web_development,web_development], [workshop19mar_1, workshop19mar_2]],
+    // reglink: ["https://techradiance.in/iit-workshop/", "https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
+    examples: [],
+    regLink: ['', '', 'https://unstop.com/workshops-webinars/cyber-security-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599111?lb=OSnx6jL', 'https://unstop.com/workshops-webinars/data-science-with-python-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599210?lb=wbzBtMX', 'https://unstop.com/o/piIqnk4?lb=wbzBtMX', 'https://unstop.com/workshops-webinars/ethical-hacking-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599093?lb=OSnx6jL', 'https://unstop.com/o/qib4mLK?lb=OSnx6jL', 'https://unstop.com/o/bm9TBG5?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/python-coding-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599304?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/rc-aircraft-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599356?lb=eTMEs5X', 'https://unstop.com/workshops-webinars/robotics-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599315?lb=eTMEs5X','https://unstop.com/workshops-webinars/web-development-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599880?lb=eTMEs5X']
 
   },
   {
     name: 'Pronites',
     description: '',
-    img1: [[], [], []]
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
-    , img: [pronites1, pronites2, pronites3, pronites4, pronites5],
+     img: [pronites1, pronites2, pronites3, pronites4, pronites5],
     examples: [
       //   {
       //   name: 'Sunburn - lost stories',
@@ -90,7 +102,6 @@ export const eventsdata = [
   },
   {
     name: 'Informals',
-    img1: [[], [], []],
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     , img: [informals1, informals2],
@@ -115,7 +126,6 @@ export const eventsdata = [
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     ,
-    img1: [[], [], []],
     img: [
       // informals1, informals2;\
     ],

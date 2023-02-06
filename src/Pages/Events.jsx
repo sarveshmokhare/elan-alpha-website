@@ -33,7 +33,11 @@ const dl32 = [
 ]
 
 const navoptions = ["Workshops", "Pronites", "Informals", ""];
-const workshop = ['Workshop-1', 'Workshop-2', 'Workshop-3']
+const workshop = [];
+for (let i = 0; i < eventsdata[0].img1.length; ++i) {
+  workshop.push('Workshop-' + (i + 1));
+}
+// const workshop = ['Workshop-1', 'Workshop-2', 'Workshop-3','Work']
 
 function Navigate() {
   const [value, setValue] = useState(0);
@@ -51,7 +55,7 @@ function Navigate() {
           <button
             onClick={() => setValue(index)}
             className={
-              " rounded text-[.75rem] vvs:text-md vs:text-lg sm:px-5 leading-relaxed p-1 text-lg vs:px-3 vs:m-1 flex-wrap lg:p-3 lg:px-5 " +
+              "rounded text-[.75rem] vvs:text-md vs:text-lg sm:px-5 leading-relaxed p-1 text-lg vs:px-3 vs:m-1 flex-wrap lg:p-3 lg:px-5 " +
               (value == index ? "bg-golden text-black" : "bg-blue text-golden")
             }
           >
@@ -66,7 +70,8 @@ function Navigate() {
             <div className="sub_heading font-cinzel text-4xl vs:text-6xl text-golden font-bold">
               {item.name}
             </div>
-            <div className={(index != 0 &&index!=3? "block" : 'hidden') + " mb-10"}>
+            {/* {index != 0 && index != 3} */}
+            <div className={(index != 0 && index != 3 ? "block" : 'hidden') + " mb-10"}>
               {item.img.length > 0 ? (
                 <EventSlider
                   imagesList={item.img}
@@ -88,12 +93,13 @@ function Navigate() {
                 </li>
               ))}
             </ul>
+            {index==0&&
             <div
               className={
                 (index == 0 ? "block " : "hidden ") + "text-golden lg:p-10"
               }
             >
-              <div className="flex justify-evenly md:justify-center">
+              <div className="flex flex-wrap justify-evenly md:justify-center">
                 {workshop.map((item, index) => (
                   <button onClick={() => setWorkshopNavigate(index)} className={(WorkshopNavigate == index ? "bg-golden text-black " : 'bg-blue text-golden ') + "md:mx-5 px-2 rounded-md text-sm leading-loose font-century m-1 md:leading-loose lg:leading-loose mb-5 lg:text-lg"}>{item}</button>
                 ))}
@@ -157,65 +163,70 @@ function Navigate() {
                 </p> */}
                 <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
               </div>
+              {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
 
-              <div className={WorkshopNavigate == 1 ? 'block' : 'hidden'}>
-                <div className={" mb-10"}>
-                  {item.img1[1].length > 0 ? (
-                    <EventsImgVidSlider
-                      imagesList={item.img1[1]}
-                      size={width >= 850 ? 4 : 2}
-                      height={index == 0 ? 1 : 3 / 5}
-                      typeList={[0,1]}
-                    />
-                  ) : undefined}
-                </div>
-                <p className="lg:text-[1.5rem]">
-                  As an essential part of our annual techno-cultural fest,{" "}
-                  <b>
-                    <i>Elan & ηVision</i>
-                  </b>
-                  , we at IIT Hyderabad are conducting workshops on the{" "}
-                  <b>18th and 19th of February, 2023</b>.
+                <div className={WorkshopNavigate == index + 1 ? 'block' : 'hidden'}>
+                  <div className={" mb-10"}>
+                    {eventsdata[0].img1[index + 1].length > 0 ? (
+                      <EventsImgVidSlider
+                        imagesList={eventsdata[0].img1[index + 1]}
+                        size={width >= 850 ? 4 : 2}
+                        height={index == 0 ? 1 : 3 / 5}
+                        typeList={index==0?[0,1]:[0,0]}
+                      />
+                    ) : undefined}
+                  </div>
+                  <p className="lg:text-[1.5rem]">
+                    As an essential part of our annual techno-cultural fest,{" "}
+                    <b>
+                      <i>Elan & ηVision</i>
+                    </b>
+                    , we at IIT Hyderabad are conducting workshops on the{" "}
+                    <b>18th and 19th of February, 2023</b>.
+                    <br />
+                  </p>
+                  <h4 className="text-xl lg:text-3xl font-bold">
+                    The topics we'll be looking at is:
+                  </h4>
+                  <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
+                    <li>{eventsdata[0].topicName[index+1]}</li>
+                  </ul>
                   <br />
-                </p>
-                <h4 className="text-xl lg:text-3xl font-bold">
-                  The topics we'll be looking at is:
-                </h4>
-                <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
-                  <li>Metaverse AR-VR</li>
-                </ul>
-                <br />
-                <p>
-                  The topics we have included are at their peak and are booming in
-                  their prospects.{" "}
+                  <p>
+                    The topics we have included are at their peak and are booming in
+                    their prospects.{" "}
+                    <br />
+                    We are collaborating with Wingfotech for these workshops.
+                  </p>
                   <br />
-                  We are collaborating with Wingfotech for these workshops.
-                </p>
-                <br />
-                {/* <dl> */}
-                  {/* {dl2.map((dl_item) => (
+                  <dl>
+                  {dl2.map((dl_item) => (
                     <div>
                       <dt className="font-bold lg:text-2xl ">{dl_item.name}:</dt>
                       <dd className="px-5 lg:text-2xl">{dl_item.description}</dd>
                     </div>
                   ))}
-                </dl> */}
+                </dl>
 
-                <br />
-                <p>
-                  At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad.
+                  <br />
+                  <p>
+                    At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad.
 
-                </p>
-                <br />
-                
-                <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad-copy" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
-              </div>
+                  </p>
+                  <br />
 
-              <div className={WorkshopNavigate == 2 ? 'block' : 'hidden'}>
+                  <a href={eventsdata[0].regLink[index+1]} className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
+                </div>
+
+              ))
+              }
+
+
+              <div className={WorkshopNavigate == 12 ? 'block' : 'hidden'}>
                 <div className={" mb-10"}>
-                  {item.img1[2].length > 0 ? (
+                  {item.img1[12].length > 0 ? (
                     <EventSlider
-                      imagesList={item.img1[2]}
+                      imagesList={item.img1[12]}
                       size={width >= 850 ? 4 : 2}
                       height={index == 0 ? 1 : 3 / 5}
                     />
@@ -281,12 +292,13 @@ function Navigate() {
               </div>
 
             </div>
-            
-            <div className={(index == 3 ? "flex" : "hidden")+" xs:flex-row flex-col w-full justify-evenly"}>
+        }
+
+            <div className={(index == 3 ? "flex" : "hidden") + " xs:flex-row flex-col w-full justify-evenly"}>
               <Hii data={eventsdata[3].types}></Hii>
             </div>
 
-            <div className={index != 0 && index!=3? "block" : "hidden"}>
+            <div className={index != 0 && index != 3 ? "block" : "hidden"}>
               <div className="text-golden font-cinzel text-center text-xl vs:text-3xl xs:text-4xl font-bold">
                 Stay Tuned for updates!
               </div>
