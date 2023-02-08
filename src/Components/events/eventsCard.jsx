@@ -113,6 +113,7 @@ export default function Hii({ data, sliderValue, type }) {
   return (
 
     data.map((item, index) => (
+      
       <div className={"my-10 block w-full xs:w-1/2 lg:w-1/4"}>
         <div className='m-2 bg-blue rounded-tl-2xl rounded-br-2xl overflow-hidden'>
           <img src={item.img} className='mt-5 xs:mt-0 object-cover m-auto lg:h-[15vw] h-[30vw] lg:w-full mb-5 lg:block' alt="" />

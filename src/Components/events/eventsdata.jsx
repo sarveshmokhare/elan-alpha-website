@@ -64,18 +64,19 @@ export const eventsdata = [
     subnames: ['Workshops-1', 'Workshops'],
     description: '',
     img: [],
-    topicName: ['','Metaverse AR-VR','Cyber Security','Data Science','Deep Learning','Ethical Hacking','Mind Control','Nitro Engine Buggy Car','Python Coding','RC Aircraft','Robotics','Web Development'],
-    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop19feb_arvr_image, workshop19feb_arvr_video],[cyber_security,cyber_security],[data_science,data_science],[deep_learning,deep_learning],[ethical_hacking,ethical_hacking],[mind_control,mind_control],[nitro,nitro],[python_coding,python_coding],[rc_air,rc_air],[robotics,robotics],[web_development,web_development], [workshop19mar_1, workshop19mar_2]],
+    topicName: ['', 'Metaverse AR-VR', 'Cyber Security', 'Data Science', 'Deep Learning', 'Ethical Hacking', 'Mind Control', 'Nitro Engine Buggy Car', 'Python Coding', 'RC Aircraft', 'Robotics', 'Web Development'],
+    img1: [[workshop19feb_1, workshop19feb_ai_2], [workshop19feb_arvr_image, workshop19feb_arvr_video], [cyber_security, cyber_security], [data_science, data_science], [deep_learning, deep_learning], [ethical_hacking, ethical_hacking], [mind_control, mind_control], [nitro, nitro], [python_coding, python_coding], [rc_air, rc_air], [robotics, robotics], [web_development, web_development], [workshop19mar_1, workshop19mar_2]],
+    docsLink: ['', '', 'https://drive.google.com/file/d/1-Yp1eVX-GkEI-Fi_1qb9IGokn_qkN4OO/view?usp=drivesdk', 'https://drive.google.com/file/d/1XqwDzbTobsXiXc8lyL3vwl_U-X8hiq_R/view?usp=drivesdk','https://drive.google.com/file/d/1NxQot8Gtj_Ey3NyKjA3q7RqaZNGTOUUR/view?usp=drivesdk', 'https://drive.google.com/file/d/1OBdwRlFtzjiimVzXK2V4v2itL1D-XRMZ/view?usp=drivesdk', 'https://drive.google.com/file/d/1-POh-qv7i1Inu0REe0XV-1eem1OnrfeO/view?usp=drivesdk', 'https://drive.google.com/file/d/1uGNbuKwK4rGYIXRzL5BUxCahy4qJbOvZ/view?usp=drivesdk', 'https://drive.google.com/file/d/1c47uCPwk5o-QWkC9eoEswgwbbGcRxvwT/view?usp=drivesdk', 'https://drive.google.com/file/d/1fkmgT12FKEFCiuAXpW3sYXA3X0N_XAsY/view?usp=drivesdk', 'https://drive.google.com/file/d/1lp61ILh2IOi5odg6L_FQdH1MK4t4XpM0/view?usp=drivesdk','https://drive.google.com/file/d/1AW9ZpK1Cit9QgrI5ofnJKfjmIW7a1iBm/view?usp=drivesdk' ],
     // reglink: ["https://techradiance.in/iit-workshop/", "https://unstop.com/workshop/technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-566831"],
     examples: [],
-    regLink: ['', '', 'https://unstop.com/workshops-webinars/cyber-security-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599111?lb=OSnx6jL', 'https://unstop.com/workshops-webinars/data-science-with-python-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599210?lb=wbzBtMX', 'https://unstop.com/o/piIqnk4?lb=wbzBtMX', 'https://unstop.com/workshops-webinars/ethical-hacking-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599093?lb=OSnx6jL', 'https://unstop.com/o/qib4mLK?lb=OSnx6jL', 'https://unstop.com/o/bm9TBG5?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/python-coding-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599304?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/rc-aircraft-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599356?lb=eTMEs5X', 'https://unstop.com/workshops-webinars/robotics-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599315?lb=eTMEs5X','https://unstop.com/workshops-webinars/web-development-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599880?lb=eTMEs5X']
+    regLink: ['', 'https://utkraanti.mojo.page/workshop-at-iit-hyderabad-copy', 'https://unstop.com/workshops-webinars/cyber-security-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599111?lb=OSnx6jL', 'https://unstop.com/workshops-webinars/data-science-with-python-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599210?lb=wbzBtMX', 'https://unstop.com/o/piIqnk4?lb=wbzBtMX', 'https://unstop.com/workshops-webinars/ethical-hacking-technical-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599093?lb=OSnx6jL', 'https://unstop.com/o/qib4mLK?lb=OSnx6jL', 'https://unstop.com/o/bm9TBG5?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/python-coding-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599304?lb=mxNXtPg', 'https://unstop.com/workshops-webinars/rc-aircraft-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599356?lb=eTMEs5X', 'https://unstop.com/workshops-webinars/robotics-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599315?lb=eTMEs5X', 'https://unstop.com/workshops-webinars/web-development-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-599880?lb=eTMEs5X']
 
   },
   {
     name: 'Pronites',
     description: '',
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
-     img: [pronites1, pronites2, pronites3, pronites4, pronites5],
+    img: [pronites1, pronites2, pronites3, pronites4, pronites5],
     examples: [
       //   {
       //   name: 'Sunburn - lost stories',
@@ -105,6 +106,72 @@ export const eventsdata = [
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     , img: [informals1, informals2],
+    topics: [{
+      name: 'Dragons and ladders',
+      description: 'Your snakes and ladders with a twist!',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Match making',
+      description: 'Love finds you in the least expected times, come try your luck!',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Spin the wheel',
+      description: 'test your luck',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Face painting and tattoos',
+      description: 'Get a makeover and blend into the world of Valenrow',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Blow the candle',
+      description: 'If you secretly enjoy blowing all the lit candles around you, this is your game.',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Cookie eating competition',
+      description: 'Do you like eating cookies? But with a twist?',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Mystery Rooms',
+      description: 'Get to delve deeper into the world of valenrow and uncover its deepest secrets!',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'What’s in the box?',
+      description: 'What’s in the box¿',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'How high can you go?',
+      description: 'Participants write confessions on post its and stick it as high as possible.',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'Pull your magic drink.',
+      description: 'If you spillin it, you ain’t killin it! /// no spill is how we drill (either one) minute to win it.',
+      img: '',
+      linkPresent: false,
+    },
+    {
+      name: 'polaroid photo clicking',
+      img: '',
+      linkPresent: false,
+    }
+    ],
     examples: [
       // {name:'PUBG'},
       //   {name: 'DOTA'},
@@ -123,9 +190,10 @@ export const eventsdata = [
   },
   {
     name: 'Biggies',
-    description: ''
+    description: '',
+    
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
-    ,
+  
     img: [
       // informals1, informals2;\
     ],
@@ -245,5 +313,5 @@ export const eventsdata = [
     ]
 
   },
-  
+
 ]
