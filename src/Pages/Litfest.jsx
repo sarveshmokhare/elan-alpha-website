@@ -43,11 +43,11 @@ function ShowDetails({ item }) {
               ))}
             </div>
             <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
-              <div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
+              {item.description.length != 0 ? <><div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
                 <div className='text-xl mb-5  whitespace-pre-wrap'>{item.description}</div>
                 <a className={'w-full bg-golden text-black rounded-md text-2xl px-3 py-1 font-century  relative hover:cursor-pointer font-semibold ' + (!item.reglink ? ' hidden' : ' inline')} href={item.reglink}>Register</a>
               </div>
-              <img src={item.img} className='w-full md:w-2/5 mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" />
+                <img src={item.img} className='w-full md:w-2/5 mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" /></> : <img src={item.img} className='w-full mx-1 md:object-contain object-contain p-5 xs:p-10 md:p-5 md:p-0 overflow-hidden' alt="" />}
             </div>
 
             <div className='m-5'>
@@ -86,7 +86,7 @@ function Hii({ data, sliderValue }) {
     data.map((item, index) => (
       <div className={'my-10 w-full ' + (sliderValue == index ? "block" : "hidden") + " lg:block lg:w-1/4 "}>
         <div className='m-2 lg:bg-blue lg:rounded-tl-2xl rounded-br-2xl overflow-hidden'>
-          <img src={item.img} className=' object-cover m-auto lg:h-[15vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
+          <img src={item.img} className=' object-cover m-auto lg:h-[20vw] h-[60vw] lg:w-full mb-5 hidden lg:block' alt="" />
           <div className='font-cinzel text-[10vw] vvs:text-4xl md:text-5xl lg:text-3xl xl:text-4xl text-golden text-center font-bold mb-5'>{item.name}</div>
 
 
@@ -117,7 +117,7 @@ function Navigate() {
     position: 'relative',
     margin: '5px',
     width: (100 / imagesList.length).toString() + '%',
-    height: (100 * 3 / 10).toString() + 'vw',
+    height: (100 * 4 / 10).toString() + 'vw',
   }
 
   React.useEffect(() => {
@@ -143,7 +143,7 @@ function Navigate() {
       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
         <div className='w-[700%] flex relative px-[35vw]' id='hii'>
           {imagesList.map((item, index) => (
-            <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full" /></div>
+            <div style={itemstyle} id={'img' + index.toString()}><img src={item} alt="" className="h-full w-full object-cover" /></div>
           ))}
         </div>
 

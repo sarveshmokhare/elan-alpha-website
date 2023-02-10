@@ -4,7 +4,7 @@ import ThemeContext from '../Contexts/ThemeContext'
 const arrow = 'https://ik.imagekit.io/himanshukumargupta/Elan/designs/competitions_arrow_wkwpjg.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876194691'
 const cut_btn = 'https://ik.imagekit.io/himanshukumargupta/Elan/designs/competitions_cut_btn_ybw3n9.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876194858'
 
-
+import { BsDiscord } from 'react-icons/bs'
 import { cultidata } from '../Components/competitions/Cultidata'
 import { techydata } from '../Components/competitions/TechyData'
 import Popup from 'reactjs-popup'
@@ -13,9 +13,6 @@ import "../styles/competitions.css";
 
 const navbuttons = ['Techy', 'Culti']
 
-// const style = {
-//   textshadow: '5px 5px'
-// }
 const popupnav = ['Intro', 'Rules', 'Timeline', 'Judging', 'Prizes', 'Contact']
 
 function ShowDetails({ item, type }) {
@@ -207,6 +204,8 @@ function Navigate() {
           <button onClick={() => setNavigateValue(index)} className={"rounded px-3 sm:px-8  mx-5 text-2xl  md:text-3xl md:leading-loose lg:leading-normal lg:text-3xl " + (Navigatevalue == index ? "bg-golden text-black" : "bg-blue text-golden")} >{nav_item}</button>
         ))}
       </div>
+      {Navigatevalue == 0 && <><div className='text-lg sm:text-xl text-golden text-center'>All the registered candidates are requested to join this discord server <a href="https://discord.gg/tu9dh23sde" className='text-white inline'>here</a> </div>
+        <div className='text-sm sm:text-lg text-golden text-center'>Only join the channel which you have registered for</div></>}
       <div className='lg:hidden overflow-x-scroll  w-[100%]' id='scrolldiv'>
         <div className={'flex relative px-[35vw]'} style={sliderStyle} id='hii'>
           {imagesList.map((item, index) => (
@@ -223,7 +222,7 @@ function Navigate() {
         setSliderValue(e.target.value)
       }} className="w-10/12  top-[-55px] right-0  block m-auto relative lg:hidden" />
 
-
+      
       <div className={("flex flex-wrap justify-evenly relative z-10")}>
         <Hii data={Navigatevalue == 1 ? cultidata : techydata} sliderValue={sliderValue} type={Navigatevalue}/>
       </div>

@@ -45,7 +45,47 @@ import robo_soccer from "../../assets/competitions/robo_soccer.jpg";
 
 
 export const techydata = [
+  {
+    name: "Shark Tank",
+    reglink: "https://unstop.com/p/shark-tank-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-590825",
+    sublink: "",
+    documentation:
+      "https://docs.google.com/document/d/1Y20CQekNwFNpwau_yT6YjKdtiQxQnBUUUvNhRR-r3ys/edit",
+    img: shark,
+    details:
+      "Elan & ηVision 2023, IIT Hyderabad proudly presents its pitching event \"Shark Tank\".A pitch is the first thing that is required by any entrepreneur to showcase their ideas and get the listeners interested and invested in it.In this event, participants will have to pitch their ideas in front of a large crowd and a panel of judges.Test your skills against other budding entrepreneurs during Elan & ηVision 2023.",
+    format: [''],
+    rules: ['The participants (solo) must go through two stages, the first one being a shortlisting round well before the event date and the second round requires the participants to pitch in the ideas live at event time.', 'Participants are required to pitch their idea and convince the judges that it is the best among other pitches.', 'Startup / Pitching Ideas can be of any domain that is possible and not already used / in use.', 'Stage 1 (Filtering): Brief Your Idea\n\tSubmit your projects in the form that is available on our website.', 'Stage 2: Pitch Your Idea\n\tShortlisted participants will be allowed to make a 5 - minute live pitch, followed by a few questions by the Judge at the session at Elan & ηVision 2023.\n\tThey need to convince the judges why they think the judge should invest in their ideas.\n\tExplain the pros and cons.', 'Individual Participation. This is a solo competition and participants cannot participate in teams for this event.', 'All the participants are given an equal amount at the start.', 'Participants cannot spend any money on their own idea.', 'Participants cannot spend more than half of their money on one single idea.', 'Each participant has to spend his / her money on at least three ideas.', 'Participants have to spend all of their money.', 'Register @elan.org.in official site.'],
+    timeline: {
+      regstart: '18th Jan 2023',
+      regend: '5th Feb 2023',
+      event: '19th Feb 2023 (Announcement of Round 2 Qualifiers - 13th Feb 2023)'
+    },
+    judging: ['Top two individuals with their ideas as the most funding and the judge’s choice will be winning the prize money.'],
+    prizes: ['The top two teams will receive prizes worth Rs. 8000', 'This prize money will be awarded via NEFT and will be processed within 30 working days.', 'The winner will be notified via email sent from elan@iith.ac.in.', 'An E-certificate of participation will be given to all the participants who have submitted their model via submission form', 'An E-certificate of excellence will be given to the top 2 individuals.'],
+    contact: [{ name: 'PRITESH SINGH', contact: 9555963168 }, { name: 'SHWETANSHU KUMAR', contact: 9340744031 }, { name: 'SADHIKA SINGH', contact: 9794545145 }]
+  },
+  {
+    name: "Hackathon",
+    reglink: "https://unstop.com/hackathons/hackathon-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-600551?lb=wyamADj",
+    sublink: "",
+    documentation:
+      "",
+    img: shark,
+    details:
+      "Elan & ηvision 2023, IIT Hyderabad proudly presents its hackathon competition. An event that challenges participants to create innovative prototypes for their ideas. It is a 24hrs competition, so grab the chance to influence creativity and innovation by designing a peculiar development during Elan & ηvision 2023.",
+    format: [''],
+    rules: ['The theme for the hackathon and the exact problem statement in which the participant needs to develop their prototype (either hardware/ software) will be presented live during the event. The participants will have 24hrs to develop their prototype. If the prototype is involving a hardware part the participants need to submit a video of its working. If the prototype is a software code the participant will need to upload it into their git repository and should submit the GitHub link in the form provided for submission that will be available on the website as well shared to the participant via email.', 'The hackathon will last for a total of 24 hours.', 'If the prototype is involving a hardware part the participants need to submit a video of its working.', 'If the prototype is involving any software then the teams are required to submit their code in a private Github repository shared with a limited number of Github IDs.', 'The submission Github repository should contain a README.md with detailed instructions on how to build all your software on a Linux machine running Ubuntu 20.04 LTS / 21.10.', 'A team can submit only one entry for the contest. Participation in the event is subjected on a “per-team” basis meaning you are not allowed to be on more than one team at the event.', 'Teams can consist of one and up to four members(max).No more than 4 participants per team.', 'Any intellectual property developed during and within the scope of the hackathon must be open source and licensed under one of the licenses referenced in Open Source licenses & Standards.', 'Teams are also required to give an interactive demonstration of the project to a panel of judges, who might ask questions specific to either the implementation or usability of your project.', 'We highly encourage everyone to exit their silos.Assemble a diverse team with members from different disciplines.This can increase knowledge sharing and will help build your network.One of our prize categories is for the Best Multi- Functional Collaboration', 'All decisions taken by the organizers and judges will be final and binding.', 'Each participant has to register for the event by filling their details in the registration form available on the Elan and Nvision 2023 Website (https://elan.org.in/competitions)'],
+    timeline: {
+      regstart: '',
+      regend: '',
+      event: '18th Feb 2023'
+    },
+    judging: [''],
+    prizes: ['The top two teams will receive prizes worth Rs. 10,000.','This prize money will be awarded via NEFT and will be processed within 30 working days.','The winner will be notified via email sent from(elan@iith.ac.in).','E - certificate of Participation will be given to all the participants who have submitted their model via the submission form','E - certificate of Excellence will be given to the top 2 teams.'],
 
+    contact: [{ name: 'Naman Dhanawat', contact: 7300008850 }, { name: 'Vaishnavi Goswami', contact: 6307789081 },]
+  },
   {
     name: "Enigma",
     reglink: "https://unstop.com/p/enigma-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-586783",
@@ -184,28 +224,7 @@ export const techydata = [
     contact: 9405975702
   }]
   },
-  {
-    name: "Shark Tank",
-    reglink: "https://unstop.com/p/shark-tank-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-590825",
-    sublink: "",
-    documentation:
-      "https://docs.google.com/document/d/1Y20CQekNwFNpwau_yT6YjKdtiQxQnBUUUvNhRR-r3ys/edit",
-    img: shark,
-    details:
-      "Pitch is the first thing that is required by any entrepreneur. In this event participants have to pitch their ideas in front of a large audience in an online mode.",
-    format: [''],
-    rules: ['Individual Participation', 'All the participants are given equal amount at the start', 'Participants cannot spend any money on their own idea', 'Participants cannot spend more than half of their money on one single idea', 'Each participant has to spend his/her money on at least three ideas', 'Participants have to spend all their money', 'The participants (solo) must go through two stages, the first one being a shortlisting round well before the event date and the second round requires the participants to pitch in the ideas live at event time.', 'Participants are required to pitch their idea and convince the judges that it is the best among other pitches.',
-        'Startup/ Pitching Ideas can be of any domain that is possible and not already used in use.', 'STAGE 1 (Filtering) - Submit your project in the form that is available on our website', 'STAGE 2 (Pitch)',
-        'Shortlisted participants will be allowed to make a 5-minute live pitch, followed by a few questions by the Judge at the session at Elan & ηVision 2023.', 'They need to convince the judges why they think the judge should invest in their ideas.', 'Explain the pros and cons.'],
-    timeline: {
-      regstart: '18th Jan 2023',
-      regend: '5th Feb 2023',
-      event: '19th Feb 2023 (Announcement of Round 2 Qualifiers - 13th Feb 2023)'
-    },
-    judging: ['Top two individuals with their ideas as the most funding and the judge’s choice will be winning the prize money.'],
-    prizes: ['The top two teams will receive prizes worth Rs. 8000', 'This prize money will be awarded via NEFT and will be processed within 30 working days.', 'The winner will be notified via email sent from elan@iith.ac.in.', 'An E-certificate of participation will be given to all the participants who have submitted their model via submission form', 'An E-certificate of excellence will be given to the top 2 individuals.'],
-    contact: [{ name: 'PRITESH SINGH', contact: 9555963168}, {name: 'SHWETANSHU KUMAR', contact: 9340744031}, {name: 'SADHIKA SINGH', contact: 9794545145}]
-  },
+  
   {
     name: "Circuit Building",
     reglink: "https://unstop.com/competition/circuit-building-competition-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-587222",

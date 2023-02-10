@@ -21,8 +21,54 @@ import meant from '../../assets/litfest/thats_what_they_meant.png'
 import whatif from '../../assets/litfest/what_if.png'
 import word_games from '../../assets/litfest/word_games.png'
 import this_that from '../../assets/litfest/This_or_That.png'
+import stew from '../../assets/litfest/stew.jpeg'
+import quill_story from '../../assets/litfest/quill_story.jpeg'
+import quirky from '../../assets/litfest/quirky.jpeg'
+import silly_what from '../../assets/litfest/silly_what.jpeg'
+import general_rules from '../../assets/litfest/general_rules.jpeg'
+import quizenrow from '../../assets/litfest/quizenrow.jpeg'
 
 export const litfestdata=[
+  {
+    name: 'QUIZENROW',
+    description: '',
+    more: '',
+    rules: [],
+    judging: [],
+    date: '18, 19 Feb 2023',
+    reglink: ''
+    , img: quizenrow
+  },
+  {
+    name: 'THE QUILL STORY',
+    description: '',
+    more: '',
+    rules: ['Contestants can participate solo or in groups of two or three.','All of the three games in the above list are generally single - player games.And since team participation is allowed, only one participant from a team will be let to represent the team in each game.','Each participant should represent the team in at least one game.So, if your team is of size 3, each person should take part in one of the three games and if it\'s of size 2, one person in two games and the other in the other game.','The team/ contestant with the highest cumulative score at the end of the three games will be declared the winner.','The rules are very similar to Story Chain, in that each person will have to continue the story from where the one before them has left.','What\'s different is that the contestants are supposed to replace the following pronouns - "he, she, me, I, him, her, they, them, we, us" with the word "Quill".','If a team\'s representative accidentally uses one of the above pronouns or takes more than 12 sec to come up with a sentence, their team gets immediately disqualified.','The last team to stay wins.'],
+    judging: [],
+    date: '17 Feb 2023, 6pm',
+    reglink: ''
+    , img: quill_story
+  },
+  {
+    name: 'QUIRKY JUST A MINUTE',
+    description: '',
+    more: '',
+    rules: ['Contestants can participate solo or in groups of two or three.', 'All of the three games in the above list are generally single - player games.And since team participation is allowed, only one participant from a team will be let to represent the team in each game.', 'Each participant should represent the team in at least one game.So, if your team is of size 3, each person should take part in one of the three games and if it\'s of size 2, one person in two games and the other in the other game.', 'The team/ contestant with the highest cumulative score at the end of the three games will be declared the winner.', 'The game is played pretty much in the same way as the usual Just a Minute, in that each contestant will have to speak on the topic for exactly a minute.', 'The quirkiness of the game lies on the topic given.The topics are bound to be something silly and random.For instance, "Why toilet papers are the greatest invention of mankind" is a possible topic.', 'The exact topic would be revealed to the contestant on the spot and they will get 30 sec to process and prepare before they begin their speech.', 'Taking long pauses(> 5 sec), repetition of the same idea will fetch negative marking.', 'This time around though, we\'ve decided to not let the other contestants interrupt when the speaker violates any of the rules to avoid chaos and confusion.'],
+    judging: [],
+    date: '17 Feb 2023, 6pm',
+    reglink: ''
+    , img: quirky
+  },
+  {
+    name: 'SILLY WHAT IFS',
+    description: '',
+    more: '',
+    rules: ['Contestants can participate solo or in groups of two or three.', 'All of the three games in the above list are generally single - player games.And since team participation is allowed, only one participant from a team will be let to represent the team in each game.', 'Each participant should represent the team in at least one game.So, if your team is of size 3, each person should take part in one of the three games and if it\'s of size 2, one person in two games and the other in the other game.', 'The team/ contestant with the highest cumulative score at the end of the three games will be declared the winner.', 'Each team will have to choose a "what if" prompt from a set of three.','The "what if" prompts are bound to be not just hypothetical but also funnily silly, as it is an informal and fun event.A possible prompt could be, "What If Apes took over the world?"','One representative from each team will have to write a short paragraph based on that prompt.','Time limit: 15 min.','Word limit: 400 words.'],
+    judging: ['Creativity','Humour'],
+    date: '17 Feb 2023, 6pm',
+    reglink: ''
+    , img: silly_what
+  },
   {
     name: 'INKED VERSES',
     description: '“Poetry is when an emotion has found its thought and the thought has found words.”\n-Robert Frost \n Put your poetry skills to display by writing a poem based on the given prompt.This time around, you will be given a set of 3 prompts.You are expected to weave together all the three prompts into a poem.',
