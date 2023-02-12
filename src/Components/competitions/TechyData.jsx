@@ -41,6 +41,8 @@ import drift_king from "../../assets/competitions/drift_king.jpg";
 import explorer from "../../assets/competitions/explorer.jpg";
 import game_jam from "../../assets/competitions/game_jam.jpg";
 import robo_soccer from "../../assets/competitions/robo_soccer.jpg";
+import ewaste from "../../assets/competitions/ewaste.jpg";
+import hackathon from "../../assets/competitions/hackathon.jpg";
 
 
 
@@ -71,7 +73,7 @@ export const techydata = [
     sublink: "",
     documentation:
       "",
-    img: shark,
+    img: hackathon,
     details:
       "Elan & ηvision 2023, IIT Hyderabad proudly presents its hackathon competition. An event that challenges participants to create innovative prototypes for their ideas. It is a 24hrs competition, so grab the chance to influence creativity and innovation by designing a peculiar development during Elan & ηvision 2023.",
     format: [''],
@@ -585,6 +587,24 @@ export const techydata = [
       regstart: '13th Feb 2023',
       regend: '16th Feb 2023',
       event: '18th Feb 2023'
+    },
+  },
+  {
+    name: "E-Waste Management",
+    details: "",
+    img: ewaste,
+    reglink: "https://unstop.com/p/e-waste-management-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-590890",
+    sublink: "",
+    documentation: "",
+    format: [],
+    rules: ["Round 1: Art from E-Waste(Online):\n\tGather old electronic devices and e-waste\n\tRepurpose them into works of art or a new useful tool\n\tIt can be for design and decoration purposes or a helpful item\n\tTake a picture of yourself with what you created and send it",'Round 2: Presentation(Offline):\n\tYou have to present researched, innovative and practical ideas on some topics related to e-waste like\n\tUpcycling old electronics into new items or methods to fix our own gadgets and turnthem into something different and useful\n\tHow to make environmentally friendly electronics to increase their lifetime or ways ofbetter disposal of e-waste using the 3Rs\n\tYou will have to present it to judges and answer their questions'],
+    prizes: [],
+    judging: [],
+    contact: [],
+    timeline: {
+      // regstart: '13th Feb 2023',
+      // regend: '16th Feb 2023',
+      // event: '18th Feb 2023'
     },
   },
 ];

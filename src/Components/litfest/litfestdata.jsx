@@ -30,6 +30,16 @@ import quizenrow from '../../assets/litfest/quizenrow.jpeg'
 
 export const litfestdata=[
   {
+    name: 'STEW',
+    description: '',
+    more: '',
+    rules: ['Contestants can participate solo or in groups of two or three.', 'All of the three games in the above list are generally single - player games.And since team participation is allowed, only one participant from a team will be let to represent the team in each game.', 'Each participant should represent the team in at least one game.So, if your team is of size 3, each person should take part in one of the three games and if it\'s of size 2, one person in two games and the other in the other game.', 'The team/ contestant with the highest cumulative score at the end of the three games will be declared the winner.'],
+    judging: [],
+    date: '17 Feb 2023',
+    reglink: ''
+    , img: stew
+  },
+  {
     name: 'QUIZENROW',
     description: '',
     more: '',
