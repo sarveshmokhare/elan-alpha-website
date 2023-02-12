@@ -3,9 +3,9 @@ import "../styles/team.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-const bg1 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617392/Elan%20and%20NVision%202023/assets/Team/CardBG/BG1_nvbvvj.svg";
-const bg2 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617393/Elan%20and%20NVision%202023/assets/Team/CardBG/BG2_qi5lgu.svg";
-const bg3 = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617363/Elan%20and%20NVision%202023/assets/Team/CardBG/BG3_d0ctej.svg";
+import bg1 from "../assets/Team/CardBG/BG1_nvbvvj.svg";
+import bg2 from "../assets/Team/CardBG/BG2_qi5lgu.svg";
+import bg3 from "../assets/Team/CardBG/BG3_d0ctej.svg";
 import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 function HeadCard({ Name, Image, Role, Phone, Instagram, Twitter, Linkedin }) {
   useEffect(() => {
