@@ -9,7 +9,8 @@ const Hero = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan
 const Nisarga = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617305/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Nisarga_Logo_cujflh.png";
 //2023 sponsors
 import greenko from "../assets/2023 Sponsors/Greenko White Png.png";
-import uniball from "../assets/2023 Sponsors/unimitsu.png"
+import uniball from "../assets/2023 Sponsors/unimitsu.png";
+import blend360 from "../assets/2023 Sponsors/blend360-full-color-800x300-100.jpg";
 import {
   Sponsor2022,
   Sponsor2020,
@@ -70,6 +71,12 @@ function Sponsors() {
           <h3 className="heading1">CO-TITLE SPONSOR</h3>
           <img
               src={uniball}
+              className="m-[auto] w-[50vw] "
+            />
+            <br/>
+            <br/>
+            <img
+              src={blend360}
               className="m-[auto] w-[50vw] "
             />
           

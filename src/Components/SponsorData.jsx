@@ -119,15 +119,6 @@ const Sponsor2022 = [
     Linkedin: "",
   },
   {
-    Name: "Blend 360",
-    Description:
-      "Blend360 is a company with strong values, a passion to work with the elite, and focus on data science. They are well known for their core capabilities to data science solutions to various companies.",
-    Website: "https://www.honeywell.com/in/en",
-    Image: blend360,
-    Role: "Data Science Partner",
-    Linkedin: "https://www.linkedin.com/company/blend360",
-  },
-  {
     Name: "Vintrus",
     Description: "Vintrus Skill Development Program is a video-based online education platform offering top-quality training programs. Our program is designed to prepare students for a corporate environment by providing hands-on experience in industries they may join in the future.",
     Website: "https://vintrus.com/",
