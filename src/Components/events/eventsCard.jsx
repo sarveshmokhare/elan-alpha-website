@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Popup from "reactjs-popup";
-
-const cut_btn = 'https://ik.imagekit.io/himanshukumargupta/Elan/designs/competitions_cut_btn_ybw3n9.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1673876194858'
+import cut_btn from '../../assets/designs/competitions_cut_btn.svg'
 
 
 const popupnav = ['Intro', 'Rules', 'Timeline', 'Judging', 'Prizes', 'Contact']

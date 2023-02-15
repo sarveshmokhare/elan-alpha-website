@@ -11,6 +11,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+import SchedulePopup from "../Components/schedule/schedulePopup";
+
 import AnimationContext from "../Contexts/AnimationContext";
 
 import aboutBtmC from "../assets/miscellaneous/about_bottom_center_mmuc4i.png";
@@ -597,7 +599,9 @@ function HomePage() {
   window.addEventListener("resize", () => setWidth(window.innerWidth));
 
   return (
+
     <div className="mt-20 lg:mt-0 overflow-hidden">
+      
       <div className="giant-div">
         {/* Intro section */}
         <div
@@ -687,6 +691,7 @@ function HomePage() {
               <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" />
               <p className="text-base md:text-sm lg:text-[3vh]">CA Portal</p>
             </a>
+            
 
             {/* <Link
               className="opacity-0 md:opacity-100 lg:opacity-0 text-center bg-yellow rounded-[40px] h-[8.5vh] w-[50vw] lg:h-[9vh]  md:w-[38vw] lg:w-[16vw] my-4 relative"
@@ -703,6 +708,7 @@ function HomePage() {
                 Explore Valenrow
               </div>
             </Link> */}
+            <SchedulePopup />
             <Link
               className="opacity-0 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-44 md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
               to="/valenrow"
@@ -770,6 +776,7 @@ function HomePage() {
           </div>
 
           <div className="flex p-6 md:pl-10 lg:p-20 pb-0 items-center text-base md:text-2xl">
+            
             <div>
               <p>
                 Elan & ηVision is the annual techno-cultural fest of IIT
@@ -825,6 +832,7 @@ function HomePage() {
         </div>
 
         {/* Timeline */}
+        
         <div
           ref={timelineParentRef}
           className="text-golden py-10 lg:px-16 lg:text-xl relative"

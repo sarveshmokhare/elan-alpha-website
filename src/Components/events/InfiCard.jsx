@@ -12,7 +12,8 @@ export default function InfiCard({ data }) {
 
       <div className={"my-10 block w-full xs:w-1/2 lg:w-1/4"}>
         <div className='m-2 bg-blue rounded-tl-2xl rounded-br-2xl overflow-hidden'>
-
+          { (item.img) &&   <img src={item.img} className='mt-5 xs:mt-0 object-cover m-auto lg:h-[15vw] h-[30vw] lg:w-full mb-5 lg:block' alt="" />
+}
           <div className='font-cinzel text-[5vw] vvs:text-3xl md:text-3xl lg:text-2xl xl:text-3xl text-golden text-center font-bold m-5'>{item.name}</div>
           <div className="text-golden m-3">
             {item.description}

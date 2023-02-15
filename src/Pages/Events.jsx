@@ -304,12 +304,19 @@ function Navigate() {
             </div>
 
             <div className={index == 1 ? "block" : "hidden"}>
-              <div className="text-golden font-cinzel text-center text-xl vs:text-3xl xs:text-4xl font-bold">
-                Stay Tuned for updates!
-              </div>
-              <div className="text-white text-xl text-center">
-                Follow our social media handles to never miss updates
-              </div>
+
+              {eventsdata[1].types.map((pronites_item,index)=>(
+                <ul>
+                  <h2 className="text-golden text-3xl mb-2 mt-8">{pronites_item.name}</h2>
+                  {pronites_item.lists.map((list_item)=>(
+                    <li className="text-sm text-golden sm:text-lg">{list_item}</li>
+                  ))}
+
+                </ul>
+              ))}
+    
+
+
             </div>
 
             <div className={(index == 2 ? "flex" : "hidden") + " xs:flex-row flex-wrap flex-col w-full justify-evenly"}>

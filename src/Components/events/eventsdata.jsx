@@ -54,6 +54,13 @@ import python_coding from "../../assets/events/python_coding.png"
 import rc_air from "../../assets/events/rc_air.png"
 import robotics from "../../assets/events/robotics.png"
 import web_development from "../../assets/events/web_development.png"
+import face_paint from "../../assets/events/face_paint.jpeg"
+import mystery_box from "../../assets/events/mystery_box.jpeg"
+import polaroid from "../../assets/events/polaroid.jpeg"
+import snake_ladder from "../../assets/events/snake_ladder.jpeg"
+import spin_wheel from "../../assets/events/spin_wheel.jpeg"
+import tug_war from "../../assets/events/tug_war.jpeg"
+import twister from "../../assets/events/twister.jpeg"
 
 
 
@@ -77,57 +84,51 @@ export const eventsdata = [
     description: '',
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
     img: [pronites1, pronites2, pronites3, pronites4, pronites5],
-    examples: [
-      //   {
-      //   name: 'Sunburn - lost stories',
-      //   description: 'Lost stories is an Indian DJ/ producer  and are best known for their amazing tracks, which have an amazing blend of Indian folk and electronic music.'
-      // },
-      // { name: 'Navjot Ahuja' },
-      // { name: 'Alchemy' },
-      // { name: 'The Touchdown' },
-      // {
-      //   name: 'Zakir khan',
-      //   description: 'With about 7.13 million subscribers on youtube, Zakir khan is one of India’s biggest stand - up comedians who has performed to sold - out audiences all over the world.'
-      // },
-      // {
-      //   name: 'Darshan Raval',
-      //   description: 'The Young and Emerging singing sensation, Darshan Raval is an Indian singer, songwriter, composer, and actor who sings songs mostly in Hindi and Gujarati.'
-      // },
-      // { name: 'The Yellow Diary' },
-      // {
-      //   name: 'The Rave Republic',
-      //   description: 'Rave Republic is a Singaporean DJ duo best known for their pop - EDM crossover productions signed to Warner Music Singapore.'
-      // },
-      // { name: 'When Chai Met Toast' }
-    ]
+    types: [{
+      name: '17th February',
+      lists:['Anand Bhaskar Collective(Indian Indie) (Musical Band)'],
+    },
+    {
+      name:'18th February',
+      lists: ['Aashish Solanki(Standup Comedian)','Pratyush Dhiman aka Pratsofficial(Indian Film Pop)(Singer)','Gajendra Verma(Indian Film Pop)(Singer)']
+    },
+    {
+      name:'19th February',
+      lists: ['DJ Shaan(Dance / Electronic)(Indian DJ / Producer)','DJ Zephyrtone(Electronic Dance and Pop)(Indian DJ Duo)']
+    }],
+    examples:[]
   },
   {
     name: 'Informals',
     description: ''
     // 'From foodathons to thrilling treasure hunts, infi gives a memorable experience for gangs of friends with various crowd-pulling games where everything is marvelous. Infi is a place that ensures that the participants grab a bagful of memories.'
     , img: [informals1, informals2],
-    topics: [{
-      name: 'Dragons and ladders',
-      description: 'Your snakes and ladders with a twist!',
-      img: '',
-      linkPresent: false,
+    topics: [
+    {
+      name:'Tug Of War',
+      img:tug_war,
+      linkPresent:false,
     },
     {
-      name: 'Match making',
-      description: 'Love finds you in the least expected times, come try your luck!',
-      img: '',
+      name:'Twister',
+      img: twister,
       linkPresent: false,
     },
     {
       name: 'Spin the wheel',
       description: 'test your luck',
-      img: '',
+      img: spin_wheel,
       linkPresent: false,
     },
+      {
+        name: 'polaroid photo clicking',
+        img: polaroid,
+        linkPresent: false,
+      },
     {
       name: 'Face painting and tattoos',
       description: 'Get a makeover and blend into the world of Valenrow',
-      img: '',
+      img: face_paint,
       linkPresent: false,
     },
     {
@@ -142,18 +143,31 @@ export const eventsdata = [
       img: '',
       linkPresent: false,
     },
+      {
+        name: 'What’s in the box?',
+        description: 'What’s in the box¿',
+        img: mystery_box,
+        linkPresent: false,
+      },
     {
       name: 'Mystery Rooms',
       description: 'Get to delve deeper into the world of valenrow and uncover its deepest secrets!',
       img: '',
       linkPresent: false,
     },
-    {
-      name: 'What’s in the box?',
-      description: 'What’s in the box¿',
-      img: '',
-      linkPresent: false,
-    },
+      {
+        name: 'Dragons and ladders',
+        description: 'Your snakes and ladders with a twist!',
+        img: '',
+        linkPresent: false,
+      },
+      {
+        name: 'Match making',
+        description: 'Love finds you in the least expected times, come try your luck!',
+        img: '',
+        linkPresent: false,
+      },
+    
     {
       name: 'How high can you go?',
       description: 'Participants write confessions on post its and stick it as high as possible.',
@@ -166,11 +180,7 @@ export const eventsdata = [
       img: '',
       linkPresent: false,
     },
-    {
-      name: 'polaroid photo clicking',
-      img: '',
-      linkPresent: false,
-    }
+    
     ],
     examples: [
       // {name:'PUBG'},
@@ -185,8 +195,7 @@ export const eventsdata = [
       //   {name:'DODGE BALL'},
       //   {name:'TWISTER'},
       //   {name:'OFFLINE EVENTS'}
-    ]
-
+    ],
   },
   {
     name: 'Biggies',
