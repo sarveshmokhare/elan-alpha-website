@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.74 30.31">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .04em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #079884;
+      }
+
+      .cls-4 {
+        letter-spacing: .08em;
+      }
+
+      .cls-5 {
+        letter-spacing: .06em;
+      }
+
+      .cls-6 {
+        letter-spacing: .04em;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+
+      .cls-3 {
+        font-family: Bahnschrift, Bahnschrift;
+        font-size: 20.58px;
+        font-variation-settings: 'wght' 400, 'wdth' 100;
+      }
+
+      .cls-8 {
+        letter-spacing: .04em;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(34.82 22.48)"><tspan class="cls-6" x="0" y="0">V</tspan><tspan class="cls-1" x="13.01" y="0">I</tspan><tspan class="cls-4" x="19.5" y="0">N</tspan><tspan class="cls-5" x="35.54" y="0">T</tspan><tspan class="cls-7" x="46.67" y="0">RU</tspan><tspan class="cls-8" x="74.42" y="0">S</tspan></text>
+  <g>
+    <path class="cls-2" d="M12.25,0V1.4c7.56,.04,13.68,6.18,13.68,13.76s-6.16,13.76-13.76,13.76c-4.35,0-8.22-2.02-10.74-5.16l-1.44,.43c2.76,3.72,7.19,6.13,12.18,6.13,8.37,0,15.16-6.79,15.16-15.16S20.59,.04,12.25,0Z"/>
+    <g>
+      <circle class="cls-2" cx="12.19" cy="15.16" r="6.51"/>
+      <path class="cls-2" d="M12.19,5.43v1.2c4.71,0,8.53,3.82,8.53,8.53s-3.82,8.53-8.53,8.53v1.2c5.37,0,9.73-4.36,9.73-9.73S17.56,5.43,12.19,5.43Z"/>
+      <path class="cls-2" d="M12.33,2.92v1.51c5.93,0,10.73,4.81,10.73,10.73s-4.81,10.73-10.73,10.73c-1.92,0-3.72-.5-5.28-1.39l-.96,1.18c1.83,1.09,3.96,1.71,6.24,1.71,6.76,0,12.24-5.48,12.24-12.24S19.09,2.92,12.33,2.92Z"/>
+    </g>
+  </g>
+</svg>

@@ -669,9 +669,9 @@ function HomePage() {
               </Link>
             </button> */}
             <a className="opacity-0 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-40 h-16 md:w-32 lg:w-[14.5vw] lg:h-[10vh] text-lg md:text-base lg:text-[3vh]"
-              href="https://forms.gle/LRMDuMdp79D2yU6ZA"
+              href="https://docs.google.com/spreadsheets/d/1IHg0mcIM7mVZvBzmKG4X_UoK7QCXRWMZG69LqpEhmWM/edit?usp=sharing"
               target="_blank">
-              <p>Merch</p>
+              <p>Accomodation</p>
             </a>
 
             {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 bg-green px-1 rounded-lg my-4 w-[38vw] md:w-[38vw] lg:w-[15.5vw] h-[8vh] lg:h-[10vh]">
