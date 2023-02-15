@@ -7,6 +7,9 @@ import "../styles/sponsors.css";
 const Hero = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617307/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Static_Perimeter_Board_15_x_3ft-01_qassni.png";
 
 const Nisarga = "https://res.cloudinary.com/dq2ygjqtw/image/upload/v1671617305/Elan%20and%20NVision%202023/assets/SponsorImages/Sponsor2021/Nisarga_Logo_cujflh.png";
+//2023 sponsors
+import greenko from "../assets/2023 Sponsors/Greenko White Png.png";
+import uniball from "../assets/2023 Sponsors/unimitsu.png"
 import {
   Sponsor2022,
   Sponsor2020,
@@ -52,11 +55,11 @@ function Sponsors() {
       </div>
       <div style={{ zIndex: "1" }}>
         <div>
-        <h1 className="text-center text-[#fed395] text-[1.5rem] font-bold mt-4">Previous Year Sponsors - 2022</h1>
+        {/* <h1 className="text-center text-[#fed395] text-[1.5rem] font-bold mt-4">Previous Year Sponsors - 2022</h1> */}
           <h1 className="heading1">TITLE SPONSOR</h1>
           <img
-            src={Hero}
-            className=" m-[auto] w-[50vw] bg-[#fff]"
+            src={greenko}
+            className=" m-[auto] w-[50vw] "
           />
           <img src={BG1} className="BG top-[20%]" />
           <img src={BG2} className="BG right-0 top-[22%]" />
@@ -66,12 +69,13 @@ function Sponsors() {
           <img src={BG6} className="BG top-[640%] right-0" />
           <h3 className="heading1">CO-TITLE SPONSOR</h3>
           <img
-              src={Nisarga}
-              className="m-[auto] w-[50vw] bg-[#fff]"
+              src={uniball}
+              className="m-[auto] w-[50vw] "
             />
+          
           <h4 className="heading1">SPONSORS</h4>
           <div className="SponCards">
-            {Sponsor2021.map((item,index) => (
+            {Sponsor2022.map((item,index) => (
               <SponsorCard
                 className={(index === 24) ? "bg-[#fff]" : ""}
                 // style={{
