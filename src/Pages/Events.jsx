@@ -164,7 +164,7 @@ function Navigate() {
                 </p> */}
                   <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
                 </div>
-                {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((item, index) => (
+                {[1, 1, 1, 1, 1, 1].map((item, index) => (
 
                   <div className={WorkshopNavigate == index + 1 ? 'block' : 'hidden'}>
                     <div className={" mb-10"}>
@@ -173,7 +173,7 @@ function Navigate() {
                           imagesList={eventsdata[0].img1[index + 1]}
                           size={width >= 850 ? 4 : 2}
                           height={index == 0 ? 1 : 3 / 5}
-                          typeList={index == 0 ? [0, 1] : [0, 0]}
+                          typeList={[0, 0]}
                         />
                       ) : undefined}
                     </div>
@@ -198,7 +198,7 @@ function Navigate() {
                       their prospects.{" "}
                       <br />
                       We are collaborating with {index == 0 ? 'Wingfotech' :'OSSEB'} for these workshops. <br />
-                      {(index == 7 || index == 8 || index == 9) && "These workshops are open for school students as well."}
+                      {(index == 4) && "These workshops are open for school students as well."}
                     </p>
                     <br />
                     <dl>
@@ -218,20 +218,20 @@ function Navigate() {
                     <br />
 
                     <a href={eventsdata[0].regLink[index + 1]} className="bg-golden text-blue p-2 rounded m-auto inline mr-2">Register Now</a>
-                    {index!=0 &&
-                      <a href={eventsdata[0].docsLink[index + 1]} className="bg-golden text-blue p-2 rounded m-auto inline">Learn more</a>
-                    }
+                    
+                      <a href={eventsdata[0].docsLink[index +1]} className="bg-golden text-blue p-2 rounded m-auto inline">Learn more</a>
+                  
                   </div>
 
                 ))
                 }
 
 
-                <div className={WorkshopNavigate == 12 ? 'block' : 'hidden'}>
+                <div className={WorkshopNavigate == 7 ? 'block' : 'hidden'}>
                   <div className={" mb-10"}>
-                    {item.img1[12].length > 0 ? (
+                    {item.img1[7].length > 0 ? (
                       <EventSlider
-                        imagesList={item.img1[12]}
+                        imagesList={item.img1[7]}
                         size={width >= 850 ? 4 : 2}
                         height={index == 0 ? 1 : 3 / 5}
                       />
