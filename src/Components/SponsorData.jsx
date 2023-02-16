@@ -96,7 +96,9 @@ import unstop from "../assets/2023 Sponsors/unstop-logo-1000x395.png";
 import banna from "../assets/2023 Sponsors/Banna.jpg";
 import meredien from "../assets/2023 Sponsors/merHYDMDrgb-286194-For RGB display social media only White on Mid-Century Blue background Click-JPG.jpg";
 import sealordEnter from "../assets/2023 Sponsors/Sealord Enter.jpg";
-import musee from "../assets/2023 Sponsors/musee.jpg"
+import musee from "../assets/2023 Sponsors/musee.jpg";
+import honeywell from "../assets/2023 Sponsors/Honeywell-Logo_ewmyo2.png";
+import henryHarvin from "../assets/2023 Sponsors/Henry-Harvin-696x364.png"
 //Media sponsors
 import blogAdda from "../assets/2023 Sponsors/BA_Logo_Blue_On_White.png";
 import knowFest from "../assets/2023 Sponsors/Logo_300_100.png";
@@ -109,21 +111,15 @@ import fashionHerald from "../assets/2023 Sponsors/FASHION HERALD LOGO white1.pn
 import grooveNexus from "../assets/2023 Sponsors/Groovenexus Logo (1).png";
 
 const Sponsor2022 = [
+  
   {
-    Name: "Unstop",
+    Name: "Honeywell",
     Description:
-      "It connects STUDENTS across domains to a world of opportunities across the GLOBE. This enables students to learn & upskill, showcase their talent, and gain CV points while getting rewarded and hired by their dream employers & ultimately, #GoBeyondResumes. All of this helps companies to brand, source, engage, assess, and hire the right talent through new-age hiring and engagement solutions and #GoBeyondBoundaries.",
-    Website: "https://unstop.com/#!",
-    Image: unstop,
-    Role: "Powered By",
-    Linkedin: "",
-  },
-  {
-    Name: "Vintrus",
-    Description: "Vintrus Skill Development Program is a video-based online education platform offering top-quality training programs. Our program is designed to prepare students for a corporate environment by providing hands-on experience in industries they may join in the future.",
-    Website: "https://vintrus.com/",
-    Image:vintrus,
-    Role: "Internship Partner",
+      "Honeywell International Inc. is a technology and manufacturing company. The Company operates through four segments: Aerospace, Home and Building Technologies, Performance Materials and Technologies, and Safety and Productivity Solutions.",
+    Website: "https://www.honeywell.com/in/en",
+    Image: honeywell,
+    Role: "Platinum Sponsor",
+    Instagram: "https://www.instagram.com/honeywell/",
   },
   {
     Name: "Canara Bank",
@@ -143,6 +139,42 @@ const Sponsor2022 = [
     Image: lic,
     Role: "Silver sponsor",
   },
+  {
+    Name: "Unstop",
+    Description:
+      "It connects STUDENTS across domains to a world of opportunities across the GLOBE. This enables students to learn & upskill, showcase their talent, and gain CV points while getting rewarded and hired by their dream employers & ultimately, #GoBeyondResumes. All of this helps companies to brand, source, engage, assess, and hire the right talent through new-age hiring and engagement solutions and #GoBeyondBoundaries.",
+    Website: "https://unstop.com/#!",
+    Image: unstop,
+    Role: "Powered By",
+    Linkedin: "",
+  },
+  {
+    Name: "NTPC",
+    Description:
+      "NTPC Limited, formerly known as National Thermal Power Corporation Limited, is an Indian Public Sector Undertaking, engaged in the business of generation of electricity and allied activities.",
+    Website: "https://www.ntpc.co.in/",
+    Instagram: "https://www.instagram.com/ntpclimited/?hl=en",
+    Image: ntpc,
+    Role: "Gold sponsor",
+  },
+  {
+    Name: "Vintrus",
+    Description: "Vintrus Skill Development Program is a video-based online education platform offering top-quality training programs. Our program is designed to prepare students for a corporate environment by providing hands-on experience in industries they may join in the future.",
+    Website: "https://vintrus.com/",
+    Image:vintrus,
+    Role: "Internship Partner",
+  },
+  {
+    Name: "Henry Harvin",
+    Description:
+      "Henry Harvin has been operational since July 2013 having offices across 11+ cities in US, India & UAE (including Fremont (San Francisco Bay Area, USA), Dubai Mainland (UAE), Noida, Delhi, Bangalore, Mumbai, Chennai, Hyderabad, Pune, Kochi, Chandigarh) with a strong team of 600+ employees and 650+ consultants. Having a portfolio of 600+ upskilling and reskilling training programs across 27+ categories, Henry Harvin® has trained 4,60,000+ individuals, conducts 7000+ classes/month and is a registered training vendor to more than 210+ corporates out of 900+ corporate clients and 130+ colleges across the globe.",
+    Website: "hhttps://www.henryharvin.com/",
+    Instagram: "",
+    Image: henryHarvin,
+    Role: "",
+  },
+  
+  
   {
     Name: "Old Town Soda",
     Description:
@@ -188,15 +220,7 @@ const Sponsor2022 = [
     Image: grabON,
     Role: "Savings Partner",
   },
-  {
-    Name: "NTPC",
-    Description:
-      "NTPC Limited, formerly known as National Thermal Power Corporation Limited, is an Indian Public Sector Undertaking, engaged in the business of generation of electricity and allied activities.",
-    Website: "https://www.ntpc.co.in/",
-    Instagram: "https://www.instagram.com/ntpclimited/?hl=en",
-    Image: ntpc,
-    Role: "Gold sponsor",
-  },
+  
   {
     Name: "Ease My Trip",
     Description:
@@ -204,7 +228,7 @@ const Sponsor2022 = [
     Instagram:
       "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/easemytrip/%3Fhl%3Den&ved=2ahUKEwjNwsbq7eH2AhV2R2wGHbtAB4UQjjh6BAgLEAE&usg=AOvVaw0hfBEB0C-uObw5-J51Xtar",
     Image: ease,
-    Role: "Bookings Partner",
+    Role: "Holiday Partner",
   },
   {
     Name: "Interview Buddy",

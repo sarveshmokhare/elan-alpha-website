@@ -44,9 +44,10 @@ export default function SchedulePopup() {
                   
                   <div className="text-golden flex flex-col">
                     {item.events.map((events_item)=>(
-                      <div className="flex">
-                        <div className="w-1/2">{events_item.name}</div>
-                        <div className="w-1/2">{events_item.time}</div>
+                      <div className="flex ">
+                        <div className="w-1/3">{events_item.time}</div>
+                        <div className="w-1/3">{events_item.venue}</div>
+                        <div className="w-1/3">{events_item.event}</div>
                       </div>
                     ))}
                   </div>
