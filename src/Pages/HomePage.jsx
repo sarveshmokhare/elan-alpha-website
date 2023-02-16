@@ -685,11 +685,11 @@ function HomePage() {
               </a>
             </button> */}
             <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-40 md:h-20 lg:w-[15vw] lg:h-[10vh] lg:p-0 text-center"
-              href="https://ca.elan.org.in"
+              href="https://register.elan.org.in"
               target="_blank"
             >
-              <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" />
-              <p className="text-base md:text-sm lg:text-[3vh]">CA Portal</p>
+              {/* <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" /> */}
+              <p className="text-base md:text-sm lg:text-[3vh]">Registration</p>
             </a>
             
 
