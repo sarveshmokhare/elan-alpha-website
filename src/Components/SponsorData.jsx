@@ -98,7 +98,10 @@ import meredien from "../assets/2023 Sponsors/merHYDMDrgb-286194-For RGB display
 import sealordEnter from "../assets/2023 Sponsors/Sealord Enter.jpg";
 import musee from "../assets/2023 Sponsors/musee.jpg";
 import honeywell from "../assets/2023 Sponsors/Honeywell-Logo_ewmyo2.png";
-import henryHarvin from "../assets/2023 Sponsors/Henry-Harvin-696x364.png"
+import henryHarvin from "../assets/2023 Sponsors/Henry-Harvin-696x364.png";
+import plumbodylovin from "../assets/2023 Sponsors/images-14.jpeg";
+import rage from "../assets/2023 Sponsors/Copy of Rage Coffee New Logo_page-0001.jpg";
+import drv from "../assets/2023 Sponsors/Copy of DRV LOGO 1_page-0001.jpg"
 //Media sponsors
 import blogAdda from "../assets/2023 Sponsors/BA_Logo_Blue_On_White.png";
 import knowFest from "../assets/2023 Sponsors/Logo_300_100.png";
@@ -171,7 +174,25 @@ const Sponsor2022 = [
     Website: "hhttps://www.henryharvin.com/",
     Instagram: "",
     Image: henryHarvin,
-    Role: "",
+    Role: "Education Partner",
+  },
+  {
+    Name: "Plum Body Lovin",
+    Description:
+      "",
+    Website: "https://plumgoodness.com/pages/bodylovin",
+    Instagram: "",
+    Image: plumbodylovin,
+    Role: "Body and Bath Partner",
+  },
+  {
+    Name: "Rage Coffee",
+    Description:
+      "",
+    Website: "https://ragecoffee.com/products/rage-coffee",
+    Instagram: "",
+    Image: rage,
+    Role: "Coffee Partner",
   },
   
   
@@ -182,7 +203,7 @@ const Sponsor2022 = [
     Website: "https://theoldtown.in/",
     Instagram: "",
     Image: oldTownSoda,
-    Role: "",
+    Role: "Soda Partner",
   },
   {
     Name: "abhibus",
@@ -260,7 +281,7 @@ const Sponsor2022 = [
     Website: "https://sealordentertainment.com/",
     Instagram: "",
     Image: sealordEnter,
-    Role: "Accomodation Partner",
+    Role: "Talent Partner",
   },
   {
     Name: "Musee musicals",
@@ -269,6 +290,14 @@ const Sponsor2022 = [
     Instagram: "",
     Image: musee,
     Role: "Instrument Partner",
+  },
+  {
+    Name: "Dr. Vaidyas",
+    Description:"" ,
+    Website: "https://drvaidyas.com/",
+    Instagram: "",
+    Image: drv,
+    Role: "Ayurveda Partner",
   },
   // media Sponsors
   {

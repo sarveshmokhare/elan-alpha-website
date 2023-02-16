@@ -708,7 +708,8 @@ function HomePage() {
                 Explore Valenrow
               </div>
             </Link> */}
-            <SchedulePopup />
+            <div className="opacity-0 lg:opacity-0  rounded-lg my-4 flex items-center justify-center h-16 w-40 md:h-20 lg:w-[15vw] lg:h-[10vh] lg:p-0 text-center" ><SchedulePopup  /></div>
+            
             <Link
               className="opacity-0 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-44 md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
               to="/valenrow"
