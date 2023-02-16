@@ -265,21 +265,21 @@ function Menu(props) {
             onClick={toggleMenu}
           >
             <a
-              className="bg-[#AD002A] text-golden py-4 px-8 rounded-md my-4"
+              className="bg-[#AD002A] text-golden py-4 px-4 rounded-md my-4"
               href="https://docs.google.com/spreadsheets/d/1IHg0mcIM7mVZvBzmKG4X_UoK7QCXRWMZG69LqpEhmWM/edit?usp=sharing"
               target="_blank"
             >
               <p>Accomodation</p>
             </a>
 
-            <button className="bg-green py-2.5 px-2.5 rounded-md my-4">
+            <button className="bg-green py-4 px-2.5 rounded-md my-4 mx-1">
               <a
                 className="flex items-center"
-                href="https://ca.elan.org.in"
+                href="https://register.elan.org.in"
                 target="_blank"
               >
-                <img src={caPortalIcon} className="h-8 pr-2.5" alt="icon" />
-                <div>CA Portal</div>
+                {/* <img src={caPortalIcon} className="h-8 pr-2.5" alt="icon" /> */}
+                <div>Registration</div>
               </a>
             </button>
 

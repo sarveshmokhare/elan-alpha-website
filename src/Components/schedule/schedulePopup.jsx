@@ -35,7 +35,7 @@ export default function SchedulePopup() {
             <img src={cut_btn} alt="" className='block fixed right-5 top-5 w-6 hover:cursor-pointer' onClick={close} />
             <div className='flex flex-row  justify-evenly mb-5 flex-wrap mt-5'>
               {ScheduleData.map((nav_item, index) => (
-                <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-blue bg-golden' : 'text-golden bg-blue ')}>{nav_item.date}</button>
+                <button onClick={() => { setpopupNavValue(index + 1) }} className={'block text-xl px-2 m-2 leading-normal rounded ' + (popupNavValue == (index + 1) ? 'text-blue bg-golden' : 'text-golden bg-blue border-[.1px] border-golden')}>{nav_item.date}</button>
               ))}
             </div>
             <div>
@@ -43,6 +43,11 @@ export default function SchedulePopup() {
                 (popupNavValue==index+1) &&
                   
                   <div className="text-golden flex flex-col">
+                    <div className="flex mb-3">
+                      <div className="w-1/3 font-berkshire vs:text-3xl text-2xl">Timings</div>
+                      <div className="w-1/3 font-berkshire vs:text-3xl text-2xl">Venue</div>
+                      <div className="w-1/3 font-berkshire vs:text-3xl text-2xl">Event</div>
+                    </div>
                     {item.events.map((events_item)=>(
                       <div className="flex ">
                         <div className="w-1/3">{events_item.time}</div>

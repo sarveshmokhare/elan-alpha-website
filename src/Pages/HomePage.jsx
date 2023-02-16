@@ -58,6 +58,8 @@ import valenrowIcon from "../assets/miscellaneous/valenrow_icon.svg";
 import valenrowLogo from "../assets/miscellaneous/valenrow_logo_zkwbw9.svg";
 import views from "../assets/miscellaneous/views_bactad.svg";
 
+import elanLogoNew from "../assets/elan_greenko_uni_blend.png";
+
 import sampleVid from "../assets/Videos/video.mp4";
 
 import timeline2k171 from "../assets/Timeline_Images/2017/1.jpeg";
@@ -642,7 +644,7 @@ function HomePage() {
 
           {/* elan logo */}
           <div className="elan-logo h-[9vh] absolute right-0 left-0 flex justify-center top-[20%] md:top-[20%] lg:top-[23%]">
-            <img className="h-full" alt="elan_logo" src={elanGreenkoDate} />
+            <img className="h-full" alt="elan_logo" src={elanLogoNew} />
           </div>
 
           {/* desktop invite text */}
