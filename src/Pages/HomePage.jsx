@@ -416,8 +416,8 @@ function HomePage() {
             height: "7vh",
           });
           gsap.set(".valenrow-logo", { top: "6%", opacity: 1 });
-          gsap.set(".fest-dates", { opacity: 1, top: "39%" });
-          gsap.set(section1.current, { height: "86vh" });
+          gsap.set(".fest-dates", { opacity: 1, top: "35%" });
+          gsap.set(section1.current, { height: "101vh" });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(".moon-ring", {
             bottom: "4%",
@@ -464,7 +464,7 @@ function HomePage() {
         });
         tl.to(".valenrow-logo", { top: "6%", duration: 1.5 }, "<");
         tl.to(".fest-dates", {
-          top: "39%",
+          top: "35%",
           duration: 1.5,
         }, "<");
         tl.to(
@@ -480,11 +480,11 @@ function HomePage() {
           },
           "<"
         );
-        tl.to(
-          section1.current,
-          { height: "86vh", ease: "power2.out", duration: 1.5 },
-          "<"
-        );
+        // tl.to(
+        //   section1.current,
+        //   { height: "100vh", ease: "power2.out", duration: 1.5 },
+        //   "<"
+        // );
         tl.to(".buttons>*", { opacity: 1, stagger: 0.5 }, "<+0.9");
         tl.to(".moon", {
           // rotation: 18,
@@ -608,7 +608,7 @@ function HomePage() {
         {/* Intro section */}
         <div
           ref={section1}
-          className="bg-black text-white font-cinzel font-bold h-[90vh] sm:h-[90vh] relative"
+          className="bg-black text-white font-cinzel font-bold h-[100vh] sm:h-[90vh] relative"
         >
           {/* <div className="absolute inset-0 bg-[#0000001a]"></div> */}
           {/* top decor line */}
@@ -661,16 +661,16 @@ function HomePage() {
             <img className="h-full" alt="valenrow_logo" src={valenrowLogo} />
           </div>
 
-          <p className="fest-dates opacity-0 text-golden absolute -translate-x-1/2 left-1/2 lg:left-[47.5%] truncate top-[50%] lg:top-[77%] lg:text-[3.5vh]">17th - 19th February, 2023</p>
+          <p className="fest-dates opacity-0 text-golden absolute -translate-x-1/2 left-1/2 lg:left-[47.5%] truncate top-[47%] lg:top-[77%] lg:text-[3.5vh]">17th - 19th February, 2023</p>
 
           {/* buttons div */}
-          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[45%] lg:-right-[65%] lg:top-20">
+          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[38%] lg:-right-[65%] lg:top-20">
             {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
               <Link to="/litfest">
                 <div>Litfest</div>
               </Link>
             </button> */}
-            <a className="opacity-0 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-40 h-16 md:w-32 lg:w-[14.5vw] lg:h-[10vh] text-lg md:text-base lg:text-[3vh]"
+            <a className="opacity-0 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden rounded-lg my-4 w-48 h-16 md:w-48 lg:w-[16vw] lg:h-[10vh] text-lg md:text-base lg:text-[3vh]"
               href="https://docs.google.com/spreadsheets/d/1IHg0mcIM7mVZvBzmKG4X_UoK7QCXRWMZG69LqpEhmWM/edit?usp=sharing"
               target="_blank">
               <p>Accomodation</p>
@@ -686,7 +686,7 @@ function HomePage() {
                 <div className="text-[90%] lg:text-[80%]">CA Portal</div>
               </a>
             </button> */}
-            <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-40 md:h-20 lg:w-[15vw] lg:h-[10vh] lg:p-0 text-center"
+            <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-48 lg:w-[16vw] lg:h-[10vh] lg:p-0 text-center"
               href="https://register.elan.org.in"
               target="_blank"
             >
@@ -710,10 +710,10 @@ function HomePage() {
                 Explore Valenrow
               </div>
             </Link> */}
-            <div className="opacity-0 lg:opacity-0  rounded-lg my-4 flex items-center justify-center h-16 w-40 md:h-20 lg:w-[15vw] lg:h-[10vh] lg:p-0 text-center" ><SchedulePopup  /></div>
+            <div className="opacity-0 lg:opacity-0  rounded-lg my-4 flex items-center justify-center h-16 w-48 lg:w-[16vw] lg:h-[10vh] lg:p-0 text-center" ><SchedulePopup  /></div>
             
             <Link
-              className="opacity-0 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-44 md:w-[20vw] md:h-16 md:py-3 relative lg:w-[15vw] lg:h-[10vh]"
+              className="opacity-0 lg:opacity-0 bg-yellow rounded-full my-4 flex items-end justify-center h-[8.5vh] w-48 md:w-[24vw] md:h-16 md:py-3 relative lg:w-[16vw] lg:h-[10vh]"
               to="/valenrow"
             >
               <div className="h-[125%] md:h-[4.5rem] absolute top-[55%] -translate-y-1/2 right-[65%] lg:h-[13.5vh]">
