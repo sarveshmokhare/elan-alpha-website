@@ -101,7 +101,8 @@ import honeywell from "../assets/2023 Sponsors/Honeywell-Logo_ewmyo2.png";
 import henryHarvin from "../assets/2023 Sponsors/Henry-Harvin-696x364.png";
 import plumbodylovin from "../assets/2023 Sponsors/images-14.jpeg";
 import rage from "../assets/2023 Sponsors/Copy of Rage Coffee New Logo_page-0001.jpg";
-import drv from "../assets/2023 Sponsors/Copy of DRV LOGO 1_page-0001.jpg"
+import drv from "../assets/2023 Sponsors/Copy of DRV LOGO 1_page-0001.jpg";
+import centro from "../assets/2023 Sponsors/Centro.jpg"
 //Media sponsors
 import blogAdda from "../assets/2023 Sponsors/BA_Logo_Blue_On_White.png";
 import knowFest from "../assets/2023 Sponsors/Logo_300_100.png";
@@ -282,6 +283,14 @@ const Sponsor2022 = [
     Instagram: "",
     Image: sealordEnter,
     Role: "Talent Partner",
+  },
+  {
+    Name: "Centro",
+    Description:"" ,
+    Website: "",
+    Instagram: "",
+    Image: centro,
+    Role: "Fashion Partner",
   },
   {
     Name: "Musee musicals",
