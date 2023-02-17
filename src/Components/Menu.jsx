@@ -10,6 +10,8 @@ import menuRing from "../assets/miscellaneous/menu_ring_tb4lzi.svg";
 import teamCard from "../assets/miscellaneous/team_card_elww7i.svg";
 import valenrowIcon from "../assets/miscellaneous/valenrow_icon.svg";
 
+import SchedulePopup from "../Components/schedule/schedulePopup";
+
 function Menu(props) {
   const toggleMenu = props.toggleMenu;
   const menuOpen = props.menuOpen;
@@ -282,6 +284,10 @@ function Menu(props) {
                 <div>Registration</div>
               </a>
             </button>
+            <div className=" py-4 px-1.5 rounded-lg my-2 ">
+            <SchedulePopup />
+            </div>
+            
 
             <div onClick={toggleMenu}>
               <Link

@@ -86,14 +86,14 @@ import canaraBank from "../assets/2023 Sponsors/CANBANK_becu5t.png";
 import lic from "../assets/2023 Sponsors/lic-logo_egw3dm.png";
 import oldTownSoda from "../assets/2023 Sponsors/OLD TOWN SODA-01.jpg";
 import abhibus from "../assets/2023 Sponsors/Logo.png";
-import wowmomo from "../assets/2023 Sponsors/Wow-Momo.jpg";
+import wowmomo from "../assets/2023 Sponsors/WM_WC_Logo (1).png";
 import bbq from "../assets/2023 Sponsors/BBQ logo.png";
 import grabON from "../assets/2023 Sponsors/GrabOn_highres_darkgrey_secondary.png";
 import ntpc from "../assets/2023 Sponsors/NTPCLogo.png";
 import ease from "../assets/2023 Sponsors/Colored Logo.png";
 import interviewBuddy from "../assets/2023 Sponsors/InterviewBuddy_Logo_Alpha.png";
 import unstop from "../assets/2023 Sponsors/unstop-logo-1000x395.png";
-import banna from "../assets/2023 Sponsors/Banna.jpg";
+import banna from "../assets/2023 Sponsors/Banna Logo-01.png";
 import meredien from "../assets/2023 Sponsors/merHYDMDrgb-286194-For RGB display social media only White on Mid-Century Blue background Click-JPG.jpg";
 import sealordEnter from "../assets/2023 Sponsors/Sealord Enter.jpg";
 import musee from "../assets/2023 Sponsors/musee.jpg";
@@ -102,9 +102,19 @@ import henryHarvin from "../assets/2023 Sponsors/Henry-Harvin-696x364.png";
 import plumbodylovin from "../assets/2023 Sponsors/images-14.jpeg";
 import rage from "../assets/2023 Sponsors/Copy of Rage Coffee New Logo_page-0001.jpg";
 import drv from "../assets/2023 Sponsors/Copy of DRV LOGO 1_page-0001.jpg";
-import centro from "../assets/2023 Sponsors/Centro.jpg"
+import centro from "../assets/2023 Sponsors/Centro.jpg";
+import wingfotech from "../assets/2023 Sponsors/wingoftech_t0q50v.png";
+import dominos from "../assets/2023 Sponsors/dominos-pizza-readies-new-logo-png-10.png";
+import apache from "../assets/2023 Sponsors/Apache Series_Racing DNA Unleashed White -  Logo.png";
+import natureGate from "../assets/2023 Sponsors/NatureGate logo_CTC_page-0001.jpg";
+import playto from "../assets/2023 Sponsors/Playto Logo.png";
+import penguin from "../assets/2023 Sponsors/PRHI-logo.jpg";
+import sirona from "../assets/2023 Sponsors/Sirona-Brand-Logo-760x460px (1).png";
+import cranberry from "../assets/2023 Sponsors/Logo cranberry _page-0001.jpg";
+import scaryHouse from "../assets/2023 Sponsors/scary house.jpeg";
+
 //Media sponsors
-import blogAdda from "../assets/2023 Sponsors/BA_Logo_Blue_On_White.png";
+import blogAdda from "../assets/2023 Sponsors/blogadda-og.png";
 import knowFest from "../assets/2023 Sponsors/Logo_300_100.png";
 import etv from "../assets/2023 Sponsors/WhatsApp Image 2023-02-15 at 00.19.51.jpg";
 import eenadu from "../assets/2023 Sponsors/WhatsApp Image 2023-02-15 at 00.19.52.jpg";
@@ -161,6 +171,16 @@ const Sponsor2022 = [
     Image: ntpc,
     Role: "Gold sponsor",
   },
+   {
+    Name: "Wingfotech",
+    Description:
+      "Wingfotech is a quality certified & MSME (Government of India) recognized institute providing a comprehensive e-learning platform dedicated to developing the state of art learning techniques in the field of advanced engineering branches and high-end technology",
+    Facebook: "https://www.facebook.com/wingfotech/",
+    Likedin:
+      "https://www.linkedin.com/company/wingfotech/?originalSubdomain=in",
+    Image: wingfotech,
+    Role: "Silver Sponsor",
+  },
   {
     Name: "Vintrus",
     Description: "Vintrus Skill Development Program is a video-based online education platform offering top-quality training programs. Our program is designed to prepare students for a corporate environment by providing hands-on experience in industries they may join in the future.",
@@ -177,43 +197,16 @@ const Sponsor2022 = [
     Image: henryHarvin,
     Role: "Education Partner",
   },
-  {
-    Name: "Plum Body Lovin",
-    Description:
-      "",
-    Website: "https://plumgoodness.com/pages/bodylovin",
-    Instagram: "",
-    Image: plumbodylovin,
-    Role: "Body and Bath Partner",
-  },
-  {
-    Name: "Rage Coffee",
-    Description:
-      "",
-    Website: "https://ragecoffee.com/products/rage-coffee",
-    Instagram: "",
-    Image: rage,
-    Role: "Coffee Partner",
-  },
   
   
   {
-    Name: "Old Town Soda",
+    Name: "Apache",
     Description:
       "",
-    Website: "https://theoldtown.in/",
+    Website: "https://www.tvsmotor.com/tvs-apache",
     Instagram: "",
-    Image: oldTownSoda,
-    Role: "Soda Partner",
-  },
-  {
-    Name: "abhibus",
-    Description:
-      "AbhiBus - which means Bus Now (in Hindi), is India's leading bus booking platform which allows Indian Bus Travellers to book bus tickets at a click, from the convenience of their homes and offices.  With ticket inventory from over 2500 operators and 75000 routes, abhibus.com is the preferred choice of online booking, when it comes to bus travel.",
-    Website: "https://www.abhibus.com/",
-    Instagram: "",
-    Image: abhibus,
-    Role: "Travel Partner",
+    Image: apache,
+    Role: "Stunt Partner",
   },
   {
     Name: "WOW Momo",
@@ -242,6 +235,100 @@ const Sponsor2022 = [
     Image: grabON,
     Role: "Savings Partner",
   },
+  {
+    Name: "Dominos",
+    Description:
+      "",
+    Website: "https://www.dominos.co.in/",
+    Instagram: "",
+    Image: dominos,
+    Role: "Food Partner",
+  },
+  {
+    Name: "Rage Coffee",
+    Description:
+      "",
+    Website: "https://ragecoffee.com/products/rage-coffee",
+    Instagram: "",
+    Image: rage,
+    Role: "Coffee Partner",
+  },
+  {
+    Name: "Nature Gate",
+    Description:
+      "Nature Gate offers premium quality snacks and sweet treats which are spread across categories like baked, gluten-free, vegan and without added sugar. We aim to provide healthier, crispier and crunchier snacking options for all your munching cravings!",
+    Website: "https://naturegate.in/",
+    Instagram: "",
+    Image: natureGate,
+    Role: "Munching Partner",
+  },
+  {
+    Name: "Cranberry",
+    Description:
+      "",
+    Website: "https://theoldtown.in/",
+    Instagram: "",
+    Image: cranberry,
+    Role: "Merchandise Partner",
+  },
+  {
+    Name: "Old Town Soda",
+    Description:
+      "",
+    Website: "https://theoldtown.in/",
+    Instagram: "",
+    Image: oldTownSoda,
+    Role: "Soda Partner",
+  },
+  {
+    Name: "Penguin",
+    Description:
+      "Penguin Books was the brainchild of British publisher Allen Lane, back in 1935. Urban legend speaks of his fruitless quest to find a good book to read at an affordable price at the Exeter Railway Station, which, among other factors, led to the inspiration for Penguin Books and the production of a range of affordable and high-quality paperback books. At the time, paperbacks weren’t the chosen format for anyone wishing to publish serious, well-written literature. But surprising initial sceptics, the books soon found a market in the UK, setting the tone that would fundamentally change the publishing world forever.",
+    Website: "https://penguin.co.in/",
+    Instagram: "",
+    Image: penguin,
+    Role: "Knowledge Partner",
+  },
+  {
+    Name: "Playto",
+    Description:
+      "",
+    Website: "https://www.playtolabs.com/",
+    Instagram: "",
+    Image: playto,
+    Role: "Robotics Partner",
+  },
+  
+  {
+    Name: "Sirona",
+    Description:
+      "",
+    Website: "https://www.thesirona.com/buy/period-care",
+    Instagram: "",
+    Image: sirona,
+    Role: "Hygiene Partner",
+  },
+  {
+    Name: "Plum Body Lovin",
+    Description:
+      "",
+    Website: "https://plumgoodness.com/pages/bodylovin",
+    Instagram: "",
+    Image: plumbodylovin,
+    Role: "Body and Bath Partner",
+  },
+  
+  
+  {
+    Name: "abhibus",
+    Description:
+      "AbhiBus - which means Bus Now (in Hindi), is India's leading bus booking platform which allows Indian Bus Travellers to book bus tickets at a click, from the convenience of their homes and offices.  With ticket inventory from over 2500 operators and 75000 routes, abhibus.com is the preferred choice of online booking, when it comes to bus travel.",
+    Website: "https://www.abhibus.com/",
+    Instagram: "",
+    Image: abhibus,
+    Role: "Travel Partner",
+  },
+  
   
   {
     Name: "Ease My Trip",
@@ -307,6 +394,15 @@ const Sponsor2022 = [
     Instagram: "",
     Image: drv,
     Role: "Ayurveda Partner",
+  },
+  {
+    Name: "Scary House",
+    Description:
+      "",
+    Website: "https://www.playtolabs.com/",
+    Instagram: "",
+    Image: scaryHouse,
+    Role: "Fun with Fear Partner",
   },
   // media Sponsors
   {
