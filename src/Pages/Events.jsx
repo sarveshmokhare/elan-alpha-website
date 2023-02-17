@@ -77,7 +77,8 @@ function Navigate() {
                 <EventSlider
                   imagesList={item.img}
                   size={width >= 850 ? 4 : 2}
-                  height={index == 0 ? 1 : 3 / 5}
+                  height={1}
+                  typeList={[0,0,0,0,0,0,0,0]}
                 />
               ) : undefined}
             </div>
@@ -109,10 +110,11 @@ function Navigate() {
                 <div className={WorkshopNavigate == 0 ? 'block' : 'hidden'}>
                   <div className={" mb-10"}>
                     {item.img1[0].length > 0 ? (
-                      <EventSlider
+                      <EventsImgVidSlider
                         imagesList={item.img1[0]}
                         size={width >= 850 ? 4 : 2}
                         height={index == 0 ? 1 : 3 / 5}
+                        typeList={Array(item.img1[0].length).fill(0)}
                       />
                     ) : undefined}
                   </div>
@@ -230,10 +232,11 @@ function Navigate() {
                 <div className={WorkshopNavigate == 7 ? 'block' : 'hidden'}>
                   <div className={" mb-10"}>
                     {item.img1[7].length > 0 ? (
-                      <EventSlider
+                      <EventsImgVidSlider
                         imagesList={item.img1[7]}
                         size={width >= 850 ? 4 : 2}
                         height={index == 0 ? 1 : 3 / 5}
+                        typeList={[0,0]}
                       />
                     ) : undefined}
                   </div>

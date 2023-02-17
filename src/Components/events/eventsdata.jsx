@@ -61,6 +61,15 @@ import snake_ladder from "../../assets/events/snake_ladder.jpeg"
 import spin_wheel from "../../assets/events/spin_wheel.jpeg"
 import tug_war from "../../assets/events/tug_war.jpeg"
 import twister from "../../assets/events/twister.jpeg"
+import pro1 from '../../assets/events/pro1.jpg'
+import pro2 from '../../assets/events/pro2.jpg'
+import pro3 from '../../assets/events/pro3.jpg'
+import pro4 from '../../assets/events/pro4.jpg'
+import pro5 from '../../assets/events/pro5.jpg'
+import pro6 from '../../assets/events/pro6.jpg'
+import abc1 from '../../assets/events/ABC1.jpg'
+import abc2 from '../../assets/events/ABC3(1).jpg'
+// import provideo from '../../assets/events/VID20221224192303.mp4'
 
 
 
@@ -83,7 +92,7 @@ export const eventsdata = [
     name: 'Pronites',
     description: '',
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
-    img: [pronites1, pronites2, pronites3, pronites4, pronites5],
+    img: [pro6, abc1,abc2,pro2, pro3, pro4, pro5, pro1,],
     types: [{
       name: '17th February',
       lists:['Anand Bhaskar Collective(Indian Indie) (Musical Band)'],

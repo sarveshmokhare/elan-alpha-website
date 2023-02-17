@@ -417,7 +417,7 @@ function HomePage() {
           });
           gsap.set(".valenrow-logo", { top: "6%", opacity: 1 });
           gsap.set(".fest-dates", { opacity: 1, top: "35%" });
-          gsap.set(section1.current, { height: "101vh" });
+          // gsap.set(section1.current, { height: "100vh" });
           gsap.set(".buttons>*", { opacity: 1 });
           gsap.set(".moon-ring", {
             bottom: "4%",
@@ -608,7 +608,7 @@ function HomePage() {
         {/* Intro section */}
         <div
           ref={section1}
-          className="bg-black text-white font-cinzel font-bold h-[100vh] sm:h-[90vh] relative"
+          className="bg-black text-white font-cinzel font-bold h-[100vh] lg:h-[90vh] relative"
         >
           {/* <div className="absolute inset-0 bg-[#0000001a]"></div> */}
           {/* top decor line */}
@@ -664,7 +664,7 @@ function HomePage() {
           <p className="fest-dates opacity-0 text-golden absolute -translate-x-1/2 left-1/2 lg:left-[47.5%] truncate top-[47%] lg:top-[77%] lg:text-[3.5vh]">17th - 19th February, 2023</p>
 
           {/* buttons div */}
-          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[38%] lg:-right-[65%] lg:top-20">
+          <div className="buttons flex flex-col items-center absolute right-0 left-0 top-[38%] md:top-[40%] lg:-right-[65%] lg:top-20">
             {/* <button className="opacity-0 md:opacity-100 lg:opacity-0 flex items-center justify-center bg-[#AD002A] text-golden py-4 lg:py-9 px-8 lg:px-12 rounded-lg my-4 lg:h-[10vh] w-[38vw] md:w-[38vw] lg:w-[15.5vw]">
               <Link to="/litfest">
                 <div>Litfest</div>

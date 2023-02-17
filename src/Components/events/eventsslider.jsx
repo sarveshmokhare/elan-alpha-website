@@ -2,7 +2,7 @@ import { useState } from "react"
 import "../../styles/slider.css";
 
 
-export default function EventsSlider({ imagesList, size,imgheight }) {
+export default function EventsSlider({ imagesList, size,imgheight, typeList }) {
 
   const [HoverValue, setHoverValue] = useState(false)
   const length = imagesList.length
@@ -12,7 +12,6 @@ export default function EventsSlider({ imagesList, size,imgheight }) {
     margin: '5px',
     width: (100 / length).toString() + '%',
     height: (100 / size * imgheight).toString() + 'vw',
-    objectFit:'cover'
   }
 
   if (length < 2 * size) {
@@ -47,9 +46,18 @@ export default function EventsSlider({ imagesList, size,imgheight }) {
     <div style={style} onMouseEnter={() => { setHoverValue(true) }} onMouseLeave={() => { setHoverValue(false) }}>
 
       {repetition.map(() => (
-        <div style={insidestyle}>
-          {imagesList.map((item) => (
-            <div style={itemstyle}><img src={item} alt="" className="h-full w-full" /></div>
+        <div style={insidestyle} className="h-[40vw] dm:h-[20vw]" >
+          {imagesList.map((item,index) => (
+            // <div style={itemstyle}><img src={item} alt="" className="h-full w-full object-cover" /></div>
+            <div style={itemstyle}>
+              {typeList[index] == 0 ?
+                <img src={item} alt="" className="h-full w-full object-cover" /> :
+                <video className="h-full w-full object-cover" controls>
+                  <source src={item} type="video/mp4" />
+                </video>
+              }
+
+            </div>
           ))}
         </div>
       ))}
