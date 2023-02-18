@@ -112,6 +112,8 @@ import penguin from "../assets/2023 Sponsors/PRHI-logo.jpg";
 import sirona from "../assets/2023 Sponsors/Sirona-Brand-Logo-760x460px (1).png";
 import cranberry from "../assets/2023 Sponsors/Logo cranberry _page-0001.jpg";
 import scaryHouse from "../assets/2023 Sponsors/scary house.jpeg";
+import sas from "../assets/2023 Sponsors/SAS.jpg";
+import tribevibe from "../assets/2023 Sponsors/Tribe vibe.jpg";
 
 //Media sponsors
 import blogAdda from "../assets/2023 Sponsors/blogadda-og.png";
@@ -180,6 +182,16 @@ const Sponsor2022 = [
       "https://www.linkedin.com/company/wingfotech/?originalSubdomain=in",
     Image: wingfotech,
     Role: "Silver Sponsor",
+  },
+  {
+    Name:"SAS",
+    Image:sas,
+    Role:"Entertainment Partner",
+  },
+  {
+    Name:"Tribe Vibe",
+    Image:tribevibe,
+    Role:"Festival Partner",
   },
   {
     Name: "Vintrus",
