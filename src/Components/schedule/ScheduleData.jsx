@@ -93,7 +93,7 @@ export const ScheduleData = [
         event:"Social Cause Talk"
       },
       {
-        time:"4pm-5pm",
+        time:"11:30am-12:30pm",
         venue:"Auditorium",
         event:"Ramoji FilmCity CEO EML Talk"
       },
