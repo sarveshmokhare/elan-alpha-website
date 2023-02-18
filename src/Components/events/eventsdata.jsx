@@ -70,6 +70,16 @@ import pro6 from '../../assets/events/pro6.jpg'
 import abc1 from '../../assets/events/ABC1.jpg'
 import abc2 from '../../assets/events/ABC3(1).jpg'
 // import provideo from '../../assets/events/VID20221224192303.mp4'
+import gv1 from '../../assets/events/gv1.jpg'
+import gv2 from '../../assets/events/gv2.jpg'
+import gv3 from '../../assets/events/gv3.jpg'
+import gv4 from '../../assets/events/gv4.jpg'
+import gv5 from '../../assets/events/gv5.jpg'
+import gv6 from '../../assets/events/gv6.jpg'
+import gv7 from '../../assets/events/gv7.jpg'
+import shaan1 from '../../assets/events/shaan1.jpg'
+import shaan2 from '../../assets/events/shaan2.jpg'
+import shaan3 from '../../assets/events/shaan3.jpg'
 
 
 
@@ -92,7 +102,7 @@ export const eventsdata = [
     name: 'Pronites',
     description: '',
     // 'Apart from the competitions our fest never fails to amuse people with fun and exciting shows',
-    img: [pro6, abc1,abc2,pro2, pro3, pro4, pro5, pro1,],
+    img: [gv7, gv6,shaan1,gv4,gv3,gv2,gv1,shaan2,shaan3,pro6, abc1,abc2,pro2, pro3, pro4, pro5, pro1,],
     types: [{
       name: '17th February',
       lists:['Anand Bhaskar Collective(Indian Indie) (Musical Band)'],

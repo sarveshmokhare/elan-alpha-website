@@ -46,7 +46,7 @@ export default function EventsSlider({ imagesList, size,imgheight, typeList }) {
     <div style={style} onMouseEnter={() => { setHoverValue(true) }} onMouseLeave={() => { setHoverValue(false) }}>
 
       {repetition.map(() => (
-        <div style={insidestyle} className="h-[40vw] dm:h-[20vw]" >
+        <div style={insidestyle} className="h-[50vw] dm:h-[25vw]" >
           {imagesList.map((item,index) => (
             // <div style={itemstyle}><img src={item} alt="" className="h-full w-full object-cover" /></div>
             <div style={itemstyle}>

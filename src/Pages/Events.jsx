@@ -78,7 +78,7 @@ function Navigate() {
                   imagesList={item.img}
                   size={width >= 850 ? 4 : 2}
                   height={1}
-                  typeList={[0,0,0,0,0,0,0,0]}
+                  typeList={Array(item.img.length).fill(0)}
                 />
               ) : undefined}
             </div>
