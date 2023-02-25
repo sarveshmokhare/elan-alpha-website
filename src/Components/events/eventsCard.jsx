@@ -35,7 +35,7 @@ function ShowDetails({ item, type }) {
             <div className={'flex relative flex-col-reverse md:flex-row ' + (popupNavValue == 1 ? 'block' : 'hidden')}>
               <div className='w-full md:w-3/5 flex-col justify-evenly text-golden mx-1'>
                 <div className='text-xl'>{item.details}</div>
-                <button className="bg-golden text-black rounded-md text-2xl px-3 font-century mt-5 relative font-semibold">Register</button>
+                {/* <button className="bg-golden text-black rounded-md text-2xl px-3 font-century mt-5 relative font-semibold">Register</button> */}
               </div>
               <img src={item.img} className='w-full md:w-2/5 mx-1 object-cover md:p-5 md:p-0 overflow-hidden' alt="" />
             </div>
@@ -122,8 +122,8 @@ export default function Hii({ data, sliderValue, type }) {
           {/* <div className='text-xl text-golden text-thin font-century lg:hidden mx-5'>{item.details}
           </div> */}
           <div className='flex justify-evenly py-5'>
-            <a href={item.reglink}>
-              <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button></a>
+            {/* <a href={item.reglink}>
+              <button className="bg-golden text-black rounded-md text-sm xl:text-md px-1 font-century m-1 leading-loose">Register Now</button></a> */}
             <ShowDetails item={item} type={type} />
 
           </div>

@@ -34,10 +34,10 @@ const dl32 = [
 ]
 
 const navoptions = ["Workshops", "Pronites", "Informals", ""];
-const workshop = [];
-for (let i = 0; i < eventsdata[0].img1.length; ++i) {
-  workshop.push('Workshop-' + (i + 1));
-}
+const workshop = ['Workshop-1'];
+// for (let i = 0; i < eventsdata[0].img1.length; ++i) {
+//   workshop.push('Workshop-' + (i + 1));
+// }
 // const workshop = ['Workshop-1', 'Workshop-2', 'Workshop-3','Work']
 
 function Navigate() {
@@ -107,129 +107,9 @@ function Navigate() {
                   ))}
                 </div>
 
+                
+
                 <div className={WorkshopNavigate == 0 ? 'block' : 'hidden'}>
-                  <div className={" mb-10"}>
-                    {item.img1[0].length > 0 ? (
-                      <EventsImgVidSlider
-                        imagesList={item.img1[0]}
-                        size={width >= 850 ? 4 : 2}
-                        height={index == 0 ? 1 : 3 / 5}
-                        typeList={Array(item.img1[0].length).fill(0)}
-                      />
-                    ) : undefined}
-                  </div>
-                  <p className="lg:text-[1.5rem]">
-                    As an essential part of our annual techno-cultural fest,{" "}
-                    <b>
-                      <i>Elan & ηVision</i>
-                    </b>
-                    , we at IIT Hyderabad are conducting workshops on the{" "}
-                    <b>18th and 19th of February, 2023</b>.
-                    <br />
-                  </p>
-                  <br />
-                  <h4 className="text-xl lg:text-3xl font-bold">
-                    The topics we'll be looking at is:
-                  </h4>
-                  <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
-                    <li>Artificial Intelligence and Machine Learning</li>
-                  </ul>
-                  <br />
-                  <p>
-                    The topics we have included are at their peak and are booming in
-                    their prospects.{" "}
-                    <br />
-                    We are collaborating with wingfotech for these workshops.
-                  </p>
-                  <br />
-                  <dl>
-                    {dl1.map((dl_item) => (
-                      <div>
-                        <dt className="font-bold lg:text-2xl ">{dl_item.name}:</dt>
-                        <dd className="px-5 lg:text-2xl">{dl_item.description}</dd>
-                      </div>
-                    ))}
-                  </dl>
-
-                  <br />
-                  <p>
-                    At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad.
-
-                  </p>
-                  <br />
-                  {/* <p className="mb-5">
-                  <b>
-                    <b>Note:</b>
-                  </b>{" "}
-                  The participants shall choose any one(their favourite one) of
-                  the above topics.
-                </p> */}
-                  <a href="https://utkraanti.mojo.page/workshop-at-iit-hyderabad" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
-                </div>
-                {[1, 1, 1, 1, 1, 1].map((item, index) => (
-
-                  <div className={WorkshopNavigate == index + 1 ? 'block' : 'hidden'}>
-                    <div className={" mb-10"}>
-                      {eventsdata[0].img1[index + 1].length > 0 ? (
-                        <EventsImgVidSlider
-                          imagesList={eventsdata[0].img1[index + 1]}
-                          size={width >= 850 ? 4 : 2}
-                          height={index == 0 ? 1 : 3 / 5}
-                          typeList={[0, 0]}
-                        />
-                      ) : undefined}
-                    </div>
-                    <p className="lg:text-[1.5rem]">
-                      As an essential part of our annual techno-cultural fest,{" "}
-                      <b>
-                        <i>Elan & ηVision</i>
-                      </b>
-                      , we at IIT Hyderabad are conducting workshops on the{" "}
-                      <b>18th and 19th of February, 2023</b>.
-                      <br />
-                    </p>
-                    <h4 className="text-xl lg:text-3xl font-bold">
-                      The topics we'll be looking at is:
-                    </h4>
-                    <ul className="list-disc mx-5 lg:text-2xl lg:mt-3">
-                      <li>{eventsdata[0].topicName[index + 1]}</li>
-                    </ul>
-                    <br />
-                    <p>
-                      The topics we have included are at their peak and are booming in
-                      their prospects.{" "}
-                      <br />
-                      We are collaborating with {index == 0 ? 'Wingfotech' :'OSSEB'} for these workshops. <br />
-                      {(index == 4) && "These workshops are open for school students as well."}
-                    </p>
-                    <br />
-                    <dl>
-                      {dl2.map((dl_item) => (
-                        <div>
-                          <dt className="font-bold lg:text-2xl ">{dl_item.name}:</dt>
-                          <dd className="px-5 lg:text-2xl">{dl_item.description}</dd>
-                        </div>
-                      ))}
-                    </dl>
-
-                    <br />
-                    <p>
-                      At the end of the workshop, the participants shall obtain certification from Elan & ηVision, IIT Hyderabad.
-
-                    </p>
-                    <br />
-
-                    <a href={eventsdata[0].regLink[index + 1]} className="bg-golden text-blue p-2 rounded m-auto inline mr-2">Register Now</a>
-                    
-                      <a href={eventsdata[0].docsLink[index +1]} className="bg-golden text-blue p-2 rounded m-auto inline">Learn more</a>
-                  
-                  </div>
-
-                ))
-                }
-
-
-                <div className={WorkshopNavigate == 7 ? 'block' : 'hidden'}>
                   <div className={" mb-10"}>
                     {item.img1[7].length > 0 ? (
                       <EventsImgVidSlider
