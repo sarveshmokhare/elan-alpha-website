@@ -274,16 +274,16 @@ function Menu(props) {
               <p>Accomodation</p>
             </a>
 
-            <button className="bg-green py-4 px-2.5 rounded-md my-4 mx-1">
+            {/* <button className="bg-green py-4 px-2.5 rounded-md my-4 mx-1">
               <a
                 className="flex items-center"
                 href="https://register.elan.org.in"
                 target="_blank"
               >
-                {/* <img src={caPortalIcon} className="h-8 pr-2.5" alt="icon" /> */}
+                <img src={caPortalIcon} className="h-8 pr-2.5" alt="icon" />
                 <div>Registration</div>
               </a>
-            </button>
+            </button> */}
             <div className=" py-4 px-1.5 rounded-lg my-2 ">
             <SchedulePopup />
             </div>

@@ -101,15 +101,15 @@ function Navigate() {
                   (index == 0 ? "block " : "hidden ") + "text-golden lg:p-10"
                 }
               >
-                <div className="flex flex-wrap justify-evenly md:justify-center">
+                {/* <div className="flex flex-wrap justify-evenly md:justify-center">
                   {workshop.map((item, index) => (
                     <button onClick={() => setWorkshopNavigate(index)} className={(WorkshopNavigate == index ? "bg-golden text-black " : 'bg-blue text-golden ') + "md:mx-5 px-2 rounded-md text-sm leading-loose font-century m-1 md:leading-loose lg:leading-loose mb-5 lg:text-lg"}>{item}</button>
                   ))}
-                </div>
+                </div> */}
 
                 
 
-                <div className={WorkshopNavigate == 0 ? 'block' : 'hidden'}>
+                {/* <div className={WorkshopNavigate == 0 ? 'block' : 'hidden'}>
                   <div className={" mb-10"}>
                     {item.img1[7].length > 0 ? (
                       <EventsImgVidSlider
@@ -177,7 +177,7 @@ function Navigate() {
                   <a href="https://unstop.com/workshop/photography-workshop-elan-nvision-2023-indian-institute-of-technology-iit-hyderabad-576690" className="bg-golden text-blue p-2 rounded m-auto inline">Register Now</a>
 
 
-                </div>
+                </div> */}
 
               </div>
             }

@@ -686,13 +686,13 @@ function HomePage() {
                 <div className="text-[90%] lg:text-[80%]">CA Portal</div>
               </a>
             </button> */}
-            <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-48 lg:w-[16vw] lg:h-[10vh] lg:p-0 text-center"
+            {/* <a className="opacity-0 lg:opacity-0 bg-green rounded-lg my-4 flex items-center justify-center h-16 w-48 lg:w-[16vw] lg:h-[10vh] lg:p-0 text-center"
               href="https://register.elan.org.in"
               target="_blank"
             >
-              {/* <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" /> */}
+              <img src={caPortalIcon} className="pr-3 h-7 md:h-5 lg:h-1/2" alt="icon" />
               <p className="text-base md:text-sm lg:text-[3vh]">Registration</p>
-            </a>
+            </a> */}
             
 
             {/* <Link
